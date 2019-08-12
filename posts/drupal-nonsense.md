@@ -15,3 +15,5 @@ It’s not trivial, and I always look for these things:
 * Some other thing
 
 But sometimes it’s helpful to just think in general about this stuff.
+
+{% figure "noaa-JG_HfydoNqY-unsplash.jpg" "a caption" %}
