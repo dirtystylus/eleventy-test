@@ -5,7 +5,6 @@ end_date: 2019-08-30
 author: Emily Nussbaum
 genre: Nonfiction
 format: Hardcover
-thumbnail: i-like-to-watch.jpg
+thumbnail: reading/i-like-to-watch.jpg
 ---
-
 A fabulous collection of tv criticism — these are not all Emily Nussbaum’s top shows, but they do show how her voice has evolved over the years.
