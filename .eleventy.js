@@ -41,6 +41,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
 
+  // An image helper to generate figure markup
+  eleventyConfig.addShortcode("figure", require("./src/utils/figure.js"));
+
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
@@ -99,3 +102,4 @@ module.exports = function (eleventyConfig) {
     }
   };
 };
+

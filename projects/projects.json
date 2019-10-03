@@ -1,4 +1,5 @@
 {
   "layout": "project",
-  "content_type": "project"
+  "content_type": "project",
+  "project_type": "foobar"
 }
