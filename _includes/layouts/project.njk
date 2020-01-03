@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-project
+---
+<h1>{{ title }}</h1>
+<div class="project-meta">
+<ul>
+  <li>{{ project_date | readableDate }}</li>
+  <li>{{ project_type }}</li>
+</ul>
+</div>
+
+{{ content | safe }}
+
+<p><a href="{{ '/projects' | url }}">← All Projects</a></p>

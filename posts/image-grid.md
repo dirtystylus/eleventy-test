@@ -7,7 +7,11 @@ tags:
 layout: layouts/post.njk
 ---
 
-## Image Grid
+This is a post containing an image grid. Sometimes you just need to have more than one image.
+
+{% figure "DSCF1431.jpg" "caption" %}
+
+This is a grid.
 
 <div class="gallery">
 
@@ -17,5 +21,10 @@ layout: layouts/post.njk
 * ![DSCF1434.jpg](/img/DSCF1434.jpg)
 * ![DSCF1435.jpg](/img/DSCF1435.jpg)
 * ![DSCF1436.jpg](/img/DSCF1436.jpg)
+* ![DSCF1434.jpg](/img/DSCF1434.jpg)
+* ![DSCF1431.jpg](/img/DSCF1431.jpg)
+* ![DSCF1432.jpg](/img/DSCF1432.jpg)
+* ![DSCF1433.jpg](/img/DSCF1433.jpg)
+
 
 </div>
