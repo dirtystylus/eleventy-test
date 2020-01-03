@@ -42,6 +42,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
 
   // An image helper to generate figure markup
+
   eleventyConfig.addShortcode("figure", require("./src/utils/figure.js"));
 
   /* Markdown Plugins */
