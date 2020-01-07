@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("project", "layouts/project.njk");
+  eleventyConfig.addLayoutAlias("book", "layouts/book.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
@@ -40,6 +41,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("projects", function (collection) {
     return collection.getAll().filter(function (item) {
       return item.data.content_type == "project";
+    });
+  });
+
+  // Return books
+  eleventyConfig.addCollection("reading", function (collection) {
+    return collection.getAll().filter(function (item) {
+      return item.data.content_type == "book";
     });
   });
 

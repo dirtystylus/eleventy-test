@@ -21,3 +21,7 @@ function foo(bar) {
   const v = 'foo';
 }
 ```
+
+```js/1
+This is more code
+```

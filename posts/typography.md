@@ -32,3 +32,7 @@ There are no affordances to the taps. No edges to the active areas. Nothing to h
 Interface quibbles aside, my reading pace has definitely been helped by having a Kindle. Its single-purpose nature has been superior for reading than using my iPad, where distractions abound. I typically read two books at a time: one on the Kindle during my train commute, and a paper book at home during the evenings/weekends.
 
 I’m not buying a significantly higher number of books, though — most of the books on my Kindle are loaned by my local library through Overdrive. It’s definitely worth checking if you have ebook lending through your library.
+
+## Second Headline
+
+Another section in this blog post.
