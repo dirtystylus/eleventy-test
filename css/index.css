@@ -256,6 +256,11 @@ body {
     h1 {
       grid-column: content-start / content-end;
     }
+
+    h2 {
+      grid-column: content-start / content-end;
+    }
+
     .post-meta {
       grid-column: content-start / content-end;
     }
