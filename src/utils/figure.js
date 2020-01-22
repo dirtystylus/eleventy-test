@@ -4,8 +4,8 @@ module.exports = (image, caption, className) => {
   const captionMarkup = caption ? `<figcaption>${caption}</figcaption>` : '';
   return `<figure${classMarkup}>
   <picture>
-  <source srcset="/img/${image}?nf_resize=fit&w=700" media="(min-width: 1200px)">
-  <source srcset="/img/${image}?nf_resize=fit&w=600" media="(min-width: 740px)">
+  <source srcset="/img/${image}?nf_resize=fit&w=1200" media="(min-width: 1220px)">
+  <source srcset="/img/${image}?nf_resize=fit&w=700" media="(min-width: 740px)">
   <img src="/img/${image}?nf_resize=fit&w=500" /></picture>
   ${captionMarkup}
   </figure>`;
