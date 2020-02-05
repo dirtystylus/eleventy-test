@@ -3,6 +3,7 @@ title: The Odyssey
 description: Emily Wilson’s new translation of The Odyssey
 date: 2020-01-03
 publication_date: 2018-09-20
+cover_image: book-nk-jemisin-black-future-month.jpg
 tags:
   - reading
 ---
