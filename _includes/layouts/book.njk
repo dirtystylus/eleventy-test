@@ -6,10 +6,10 @@ templateClass: tmpl-book
 <div class="book-meta">
 <ul>
   <li>{{ publication_date | readableDate }}</li>
-  <li>{% figure cover_image, "foo" %}</li>
+  <li>{% figure cover_image, "", "book_thumb" %}</li>
 </ul>
 </div>
-
+hi
 {{ content | safe }}
 
 <p><a href="{{ '/reading' | url }}">← All Books</a></p>
