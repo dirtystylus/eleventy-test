@@ -1,4 +1,4 @@
 {
-  "layout": "layouts/reading.njk",
-  "permalink": "/reading/{{ title | slug }}/"
+  "layout": "book",
+  "content_type": "book"
 }

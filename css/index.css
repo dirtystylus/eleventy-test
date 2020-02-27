@@ -256,6 +256,15 @@ body {
     h1 {
       grid-column: content-start / content-end;
     }
+
+    h2 {
+      grid-column: content-start / content-end;
+    }
+
+    ul {
+      grid-column: content-start / content-end;
+    }
+
     .post-meta {
       grid-column: content-start / content-end;
     }
@@ -344,7 +353,8 @@ figure {
 .gallery {
 	max-width: 1200px;
 	margin-left: auto;
-	margin-right: auto;
+  margin-right: auto;
+  grid-column: content-start / content-end;
 }
 
 .gallery > ul {

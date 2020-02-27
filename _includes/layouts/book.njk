@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-book
+---
+<h1>{{ title }}</h1>
+<div class="book-meta">
+<ul>
+  <li>{{ publication_date | readableDate }}</li>
+  <li>{% figure cover_image, "", "book_thumb" %}</li>
+</ul>
+</div>
+hi
+{{ content | safe }}
+
+<p><a href="{{ '/reading' | url }}">← All Books</a></p>
