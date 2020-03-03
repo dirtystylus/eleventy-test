@@ -6,7 +6,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -18,12 +18,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("book", "layouts/book.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "dd LLL yyyy"
+    );
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+  eleventyConfig.addFilter("htmlDateString", dateObj => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
   // Get the first `n` elements of a collection.
@@ -38,15 +40,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
   // Return projects
-  eleventyConfig.addCollection("projects", function (collection) {
-    return collection.getAll().filter(function (item) {
+  eleventyConfig.addCollection("projects", function(collection) {
+    return collection.getAll().filter(function(item) {
       return item.data.content_type == "project";
     });
   });
 
   // Return books
-  eleventyConfig.addCollection("reading", function (collection) {
-    return collection.getAll().filter(function (item) {
+  eleventyConfig.addCollection("reading", function(collection) {
+    return collection.getAll().filter(function(item) {
       return item.data.content_type == "book";
     });
   });
@@ -59,7 +61,7 @@ module.exports = function (eleventyConfig) {
 
   // Next/Previous navigation
   // See: https://brycewray.com/posts/2019/12/previous-next-eleventy/
-  eleventyConfig.addCollection("posts", function (collection) {
+  eleventyConfig.addCollection("posts", function(collection) {
     const coll = collection.getFilteredByTag("posts");
 
     for (let i = 0; i < coll.length; i++) {
@@ -88,8 +90,8 @@ module.exports = function (eleventyConfig) {
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
-      ready: function (err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404.html');
+      ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync("_site/404.html");
 
         browserSync.addMiddleware("*", (req, res) => {
           // Provides the 404 content without redirect.
@@ -100,18 +102,13 @@ module.exports = function (eleventyConfig) {
       ghostMode: {
         clicks: false,
         forms: false,
-        scroll: false,
-      },
+        scroll: false
+      }
     }
   });
 
   return {
-    templateFormats: [
-      "md",
-      "njk",
-      "html",
-      "liquid"
-    ],
+    templateFormats: ["md", "njk", "html", "liquid"],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about those.
@@ -136,4 +133,3 @@ module.exports = function (eleventyConfig) {
     }
   };
 };
-
