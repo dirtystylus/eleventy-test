@@ -4,12 +4,22 @@ templateClass: tmpl-book
 ---
 <h1>{{ title }}</h1>
 <div class="book-meta">
-<ul>
-  <li>{{ publication_date | readableDate }}</li>
-  <li>{% figure cover_image, "", "book_thumb" %}</li>
-</ul>
+<dl>
+  <dt>Author</dt>
+  <dd>{{ author }}</dd>
+  <dt>Publication Date</dt>
+  <dd>{{ publication_date | readableDate }}</dd>
+  <dt>Genre</dt>
+  <dd>{{ genre }}</dd>
+  <dt>Format</dt>
+  <dd>{{ format }}</dd>
+  <dt>Started Reading</dt>
+  <dd>{{ reading_start_date | readableDate }}</dd>
+  <dt>Finished Reading</dt>
+  <dd>{{ reading_end_date | readableDate }}</dd>
+</dl>
 </div>
-hi
+{% figure cover_image, "", "book_thumb" %}
 {{ content | safe }}
 
 <p><a href="{{ '/reading' | url }}">← All Books</a></p>

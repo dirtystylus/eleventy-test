@@ -11,4 +11,10 @@ eleventyNavigation:
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
+<h2>Recent Books I’ve Read</h2>
+
+{% set bookslist = collections.reading | head(-3) %}
+{% set bookslistCounter = collections.reading | length %}
+{% include "bookslist.njk" %}
+
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
