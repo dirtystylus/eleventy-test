@@ -1,4 +1,4 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ (bookslistCounter or bookslist.length) + 1 }}">
+<ul reversed class="postlist">
 {% for book in bookslist | reverse %}
   <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
     <a href="{{ book.url | url }}" class="postlist-link">{% if book.data.title %}{{ book.data.title }}{% else %}<code>{{ book.url }}</code>{% endif %}</a> 
@@ -6,4 +6,4 @@
     <p>{{ book.data.description }}</p>
   </li>
 {% endfor %}
-</ol>
+</ul>
