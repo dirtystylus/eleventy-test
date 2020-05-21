@@ -2,7 +2,12 @@
 layout: layouts/base.njk
 templateClass: tmpl-book
 ---
+<article class="content-main container">
 <h1>{{ title }}</h1>
+<div class="book-details">
+<div class="book-cover book-shadow">
+{% figure cover_image, "", "book-thumb" %}
+</div>
 <div class="book-meta">
 <dl>
   <dt>Author</dt>
@@ -19,7 +24,8 @@ templateClass: tmpl-book
   <dd>{{ reading_end_date | readableDate }}</dd>
 </dl>
 </div>
-{% figure cover_image, "", "book_thumb" %}
-{{ content | safe }}
+</div>
 
+{{ content | safe }}
+</article>
 <p><a href="{{ '/reading' | url }}">← All Books</a></p>

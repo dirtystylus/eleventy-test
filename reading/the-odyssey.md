@@ -1,5 +1,6 @@
 ---
 title: The Odyssey
+author: Homer, translated by Emily Wilson
 date: 2020-03-02
 description: Emily Wilson’s new translation of The Odyssey
 publication_date: 2018-09-20
@@ -12,4 +13,7 @@ tags:
   - reading
 ---
 
-I’m now reading the Emily Wilson translation of *The Odyssey* by Homer.
+I’m now reading the Emily Wilson translation of _The Odyssey_ by Homer. I found it comforting, and not at all alien. Sometimes I would ponder a small section of text, and flip back and forth to the glossary to figure out how Emily Wilson had translated things.
+
+> This is a quote from the book,
+> It’s a very long book with a ton of different themes, and I struggled to finish it.
