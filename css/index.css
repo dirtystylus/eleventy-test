@@ -461,14 +461,14 @@ pre {
   grid-column: content-bleed-start / content-bleed-end;
   background: #ededed;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  grid-template-columns: 1fr 2fr;
+  /* justify-items: center; */
   /* padding: 1em; */
 }
 
 .book-cover {
   /* width: 90%; */
-  padding: 1em;
+  padding: 1rem;
 }
 
 .book-thumb img {
@@ -476,24 +476,33 @@ pre {
 }
 
 .book-single .book-details h1 {
+  font-size: 1.1rem;
   font-style: italic;
   margin: 0;
+}
+
+.book-single .book-details h2 {
+  font-size: 1rem;
+  margin: 0.25rem 0 0 0;
 }
 
 .book-meta {
   /* border-top: 1px solid #999;
   border-bottom: 1px solid #999; */
   margin: 0;
-  padding: 0 0 0 1em;
+  padding: 1rem;
+}
+
+.book-single .book-meta dl {
+  font-size: 0.8rem;
 }
 
 .book-meta dt {
-  font-size: 0.8em;
   color: #666666;
 }
 
 .book-meta dd {
-  margin: 0 0 0.6em 0;
+  margin: 0 0 0.4rem 0;
 }
 
 .book-meta dd:last-child {
@@ -549,7 +558,7 @@ pre {
 
   .book-single .book-meta dl {
     /* font-size: 0.9em; */
-    margin: 3rem 0 0 0;
+    /* margin: 3rem 0 0 0; */
   }
 
   .book-single .book-meta dd {
@@ -570,5 +579,9 @@ pre {
   .book-single .book-details h2 {
     /* font-size: 1.5rem; */
     margin: 0;
+  }
+
+  .book-single .book-meta dl {
+    margin: 3rem 0 0 0;
   }
 }
