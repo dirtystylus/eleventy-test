@@ -461,7 +461,7 @@ pre {
   grid-column: content-bleed-start / content-bleed-end;
   background: #ededed;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 40% 60%;
   /* justify-items: center; */
   /* padding: 1em; */
 }
@@ -577,8 +577,7 @@ pre {
     margin: 0;
   }
   .book-single .book-details h2 {
-    /* font-size: 1.5rem; */
-    margin: 0;
+    margin: 0.5rem 0 0 0;
   }
 
   .book-single .book-meta dl {
