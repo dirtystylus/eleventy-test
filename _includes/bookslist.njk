@@ -1,9 +1,24 @@
 <ul reversed class="postlist">
 {% for book in bookslist %}
-  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-    <a href="{{ book.url | url }}" class="postlist-link">{% if book.data.title %}{{ book.data.title }}{% else %}<code>{{ book.url }}</code>{% endif %}</a>     
-    <p>{{ book.data.description }}</p>
-    <span class="post-meta">Finished <time class="postlist-date" datetime="{{ book.data.reading_end_date | htmlDateString }}">{{ book.data.reading_end_date | readableDate }}</time></span>
+  <li class="postlist-item">
+  <a href="{{ book.url | url }}" class="postlist-link">
+  <div class="book-details">
+  <div class="book-cover book-shadow">
+    {% figure book.data.cover_image, "", "book-thumb" %}
+    </div>
+    <div class="book-meta">
+      <h1>{{ book.data.title }}</h1>
+      <h2>{{book.data.author}}</h2>
+      <dl>
+        <dt>Started Reading</dt>
+        <dd>{{ book.data.reading_start_date | readableDate }}</dd>
+        <dt>Finished Reading</dt>
+        <dd>{{ book.data.reading_end_date | readableDate }}</dd>
+      </dl>
+    </div>
+</div>
+  </article>
+  </a>
   </li>
 {% endfor %}
 </ul>

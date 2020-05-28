@@ -457,7 +457,7 @@ pre {
 }
 
 /* Book Detail */
-.book-details {
+.tmpl-book .book-details {
   grid-column: content-bleed-start / content-bleed-end;
   background: #ededed;
   display: grid;
@@ -466,65 +466,67 @@ pre {
   /* padding: 1em; */
 }
 
-.book-cover {
+.tmpl-book .book-cover {
   /* width: 90%; */
   padding: 1rem;
 }
 
-.book-thumb img {
+.tmpl-book .book-thumb img {
   /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); */
 }
 
-.book-single .book-details h1 {
+.tmpl-book .book-details h1 {
   font-size: 1.1rem;
   font-style: italic;
   margin: 0;
 }
 
-.book-single .book-details h2 {
+.tmpl-book .book-details h2 {
   font-size: 1rem;
   margin: 0.25rem 0 0 0;
 }
 
-.book-meta {
+.tmpl-book .book-meta {
   /* border-top: 1px solid #999;
   border-bottom: 1px solid #999; */
   margin: 0;
   padding: 1rem;
 }
 
-.book-single .book-meta dl {
+.tmpl-book .book-meta dl {
   font-size: 0.8rem;
 }
 
-.book-meta dt {
+.tmpl-book .book-meta dt {
   color: #666666;
+  font-weight: 400;
 }
 
-.book-meta dd {
+.tmpl-book .book-meta dd {
   margin: 0 0 0.4rem 0;
+  font-weight: 400;
 }
 
-.book-meta dd:last-child {
+.tmpl-book .book-meta dd:last-child {
   margin: 0;
 }
 
-.book-body {
+.tmpl-book .book-body {
   grid-column: content-start;
   margin-top: 1rem;
 }
 
 @media (min-width: 45rem) {
-  .book-single .book-details h1 {
+  .tmpl-book .book-details h1 {
     /* font-size: 2rem;
     font-style: italic; */
     margin: 0;
   }
-  .book-single .book-details h2 {
+  .tmpl-book .book-details h2 {
     /* font-size: 1.5rem; */
     margin: 0;
   }
-  .book-single .book-details {
+  .tmpl-book .book-details {
     grid-column: content-gutter-start / content-gutter-end;
     display: grid;
     grid-template-columns:
@@ -537,18 +539,18 @@ pre {
     justify-items: left;
   }
 
-  .book-single .book-cover {
+  .tmpl-book .book-cover {
     grid-column: book-detail-start;
     /* flex: 1 50%; */
     /* align-self: center; */
     padding: 0;
   }
 
-  .book-single .book-thumb img {
+  .tmpl-book .book-thumb img {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   }
 
-  .book-single .book-meta {
+  .tmpl-book .book-meta {
     /* flex: 2 50%; */
     margin: 0;
     padding: 0 0 0 3rem;
@@ -556,31 +558,107 @@ pre {
     /* align-self: center; */
   }
 
-  .book-single .book-meta dl {
+  .tmpl-book .book-meta dl {
     /* font-size: 0.9em; */
     /* margin: 3rem 0 0 0; */
   }
 
-  .book-single .book-meta dd {
+  .tmpl-book .book-meta dd {
     margin: 0 0 0.5rem 0;
   }
 
-  .book-body {
+  .tmpl-book .book-body {
     grid-column: content-start / span 6;
   }
 }
 
 @media (min-width: 60rem) {
-  .book-single .book-details h1 {
+  .tmpl-book .book-details h1 {
     font-size: 2rem;
     font-style: italic;
     margin: 0;
   }
-  .book-single .book-details h2 {
+  .tmpl-book .book-details h2 {
     margin: 0.5rem 0 0 0;
   }
 
-  .book-single .book-meta dl {
+  .tmpl-book .book-meta dl {
     margin: 3rem 0 0 0;
   }
+}
+
+/* Books List */
+
+.tmpl-books-list .container {
+  display: block;
+}
+
+.tmpl-books-list .postlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  justify-items: center;
+  align-items: top;
+}
+
+.tmpl-books-list .postlist-item {
+  background: #ededed;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* height: 100%; */
+  max-width: 200px;
+}
+
+.tmpl-books-list .book-details {
+  padding: 1rem;
+}
+
+.tmpl-books-list a[href].postlist-link {
+  text-decoration: none;
+  color: var(--darkgray);
+  margin: 0;
+  padding: 0;
+}
+
+.tmpl-books-list a[href].postlist-link:visited {
+  text-decoration: none;
+  color: var(--darkgray);
+}
+
+.tmpl-books-list .book-details h1 {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+}
+
+.tmpl-books-list .book-details h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0.25rem 0 0 0;
+}
+
+.tmpl-books-list .book-cover {
+  max-width: 160px;
+}
+
+.tmpl-books-list .book-meta dl {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.tmpl-books-list .book-meta dt {
+  color: #666666;
+  font-weight: 400;
+}
+
+.tmpl-books-list .book-meta dd {
+  margin: 0 0 0.4rem 0;
+  font-weight: 400;
+}
+
+.tmpl-books-list .book-meta dd:last-child {
+  margin: 0;
 }
