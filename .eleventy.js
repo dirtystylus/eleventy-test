@@ -48,9 +48,14 @@ module.exports = function (eleventyConfig) {
 
   // Return books
   eleventyConfig.addCollection("reading", function (collection) {
-    return collection.getAll().filter(function (item) {
-      return item.data.content_type == "book";
-    });
+    return collection
+      .getAll()
+      .filter(function (item) {
+        return item.data.content_type == "book";
+      })
+      .sort(function (a, b) {
+        return b.date - a.date;
+      });
   });
 
   eleventyConfig.addPassthroughCopy("img");

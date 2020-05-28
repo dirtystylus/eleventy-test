@@ -4,27 +4,28 @@ templateClass: tmpl-book
 ---
 <article class="content-main container book-single">
 <div class="book-details">
-<div class="book-cover book-shadow">
-{% figure cover_image, "", "book-thumb" %}
+  <div class="book-cover book-shadow">
+  {% figure cover_image, "", "book-thumb" %}
+  </div>
+  <div class="book-meta">
+    <h1>{{ title }}</h1>
+    <h2>{{author}}</h2>
+    <dl>
+      <dt>Publication Date</dt>
+      <dd>{{ publication_date | readableDate }}</dd>
+      <dt>Genre</dt>
+      <dd>{{ genre }}</dd>
+      <dt>Format</dt>
+      <dd>{{ format }}</dd>
+      <dt>Started Reading</dt>
+      <dd>{{ reading_start_date | readableDate }}</dd>
+      <dt>Finished Reading</dt>
+      <dd>{{ reading_end_date | readableDate }}</dd>
+    </dl>
+  </div>
 </div>
-<div class="book-meta">
-  <h1>{{ title }}</h1>
-  <h2>{{author}}</h2>
-<dl>
-  <dt>Publication Date</dt>
-  <dd>{{ publication_date | readableDate }}</dd>
-  <dt>Genre</dt>
-  <dd>{{ genre }}</dd>
-  <dt>Format</dt>
-  <dd>{{ format }}</dd>
-  <dt>Started Reading</dt>
-  <dd>{{ reading_start_date | readableDate }}</dd>
-  <dt>Finished Reading</dt>
-  <dd>{{ reading_end_date | readableDate }}</dd>
-</dl>
-</div>
-</div>
-
+<div class="book-body">
 {{ content | safe }}
+</div>
 </article>
 <p><a href="{{ '/reading' | url }}">← All Books</a></p>
