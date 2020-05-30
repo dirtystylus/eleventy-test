@@ -123,6 +123,16 @@ pre {
   background-color: #902f2f;
 }
 
+/* Images */
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 95vh;
+}
+
 /* Header */
 .home {
   padding: 0 1rem;
@@ -237,7 +247,7 @@ body {
 }
 
 @media (min-width: 45em) {
-  .container {
+  .tmpl-post .container {
     display: grid;
     grid-template-columns:
       calc(50vw - 37.25rem)
@@ -247,108 +257,85 @@ body {
       [content-end] 100px
       [content-gutter-end] 1fr
       [content-bleed-end] calc(50vw - 37.25rem);
-    /* grid-template-columns:
-      calc(50vw - 31.25rem)
-      [content-bleed-start] 1fr
-      [content-gutter-start] 100px
-      [content-start] repeat(6, [col-start] 1fr)
-      [content-end] 100px
-      [content-gutter-end] 1fr [content-bleed-end]
-      calc(50vw - 31.25rem); */
   }
 }
 
-/* @media (min-width: 60em) {
-  .container {
-    grid-template-columns:
-      [content-bleed-start] minmax(1em, 10%)
-      [content-gutter-start] 100px
-      [content-start] repeat(5, [col-start] 1fr)
-      [content-end] 100px
-      [content-gutter-end] minmax(1em, 10%) [content-bleed-end];
-  }
-} */
-
-h1 {
+.tmpl-post h1 {
   grid-column: content-start / content-end;
 }
 
-h2 {
+.tmpl-post h2 {
   grid-column: content-start / content-end;
 }
 
-ul {
+.tmpl-post ul {
   grid-column: content-start / content-end;
 }
 
-.post-meta {
+.tmpl-post .post-meta {
   grid-column: content-start / content-end;
 }
 
-figure {
+.tmpl-post figure {
   margin: 0;
   grid-column: content-start / content-end;
 }
 
-img {
-  max-width: 100%;
-  max-height: 95vh;
-}
-.cinemascope {
+.tmpl-post .cinemascope {
   grid-column: content-bleed-start / content-bleed-end;
   justify-self: center;
 }
 
-.normal {
+.tmpl-post .normal {
   grid-column: content-start / content-end;
 }
 
-.container > p {
+.tmpl-post .container > p {
   grid-column: content-start / content-end;
 }
 
-.container blockquote {
+.tmpl-post .container blockquote {
   grid-column: content-start / content-end;
   border-left: 6px solid #e2e2e2;
   margin: 0;
   padding-left: 1em;
 }
 
-.container > blockquote > p:first-child {
+.tmpl-post .container > blockquote > p:first-child {
   margin-top: 0;
 }
 
-.aside-right-wrap {
+.tmpl-post .aside-right-wrap {
   grid-column: content-start / content-gutter-end;
 }
 
-.aside-right-wrap > p {
+.tmpl-post .aside-right-wrap > p {
   line-height: 1.4;
 }
 
-.aside-right-wrap > aside {
+.tmpl-post .aside-right-wrap > aside {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   font-style: italic;
 }
 
-.aside-right-wrap > aside > p:last-child {
+.tmpl-post .aside-right-wrap > aside > p:last-child {
   margin-bottom: 1em;
 }
 
 @media (min-width: 45em) {
-  .aside-right-wrap {
+  .tmpl-post .aside-right-wrap {
     grid-column: content-start / content-gutter-end;
     display: flex;
     align-items: flex-start;
   }
 
-  .aside-right-wrap > p {
+  .tmpl-post .aside-right-wrap > p {
     line-height: 1.4;
     flex: 2 70%;
   }
 
-  .aside-right-wrap > aside {
+  .tmpl-post .aside-right-wrap > aside {
     padding: 0;
     margin-left: 1em;
     font-style: italic;
@@ -359,35 +346,35 @@ img {
     flex: 1 30%;
   }
 
-  .aside-right-wrap > aside > p {
+  .tmpl-post .aside-right-wrap > aside > p {
     padding: 0 0 0 1em;
     margin: 0;
     line-height: 1.5;
   }
 }
 
-.aside-left-wrap {
+.tmpl-post .aside-left-wrap {
   grid-column: content-start / content-end;
 }
 
-.aside-left-wrap > aside {
+.tmpl-post .aside-left-wrap > aside {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   font-style: italic;
 }
 
-.aside-left-wrap > aside > p:last-child {
+.tmpl-post .aside-left-wrap > aside > p:last-child {
   margin-bottom: 1em;
 }
 
 @media (min-width: 45em) {
-  .aside-left-wrap {
+  .tmpl-post .aside-left-wrap {
     grid-column: content-gutter-start / content-end;
     display: flex;
     align-items: flex-start;
   }
 
-  .aside-left-wrap > aside {
+  .tmpl-post .aside-left-wrap > aside {
     order: 1;
     padding: 0;
     margin-right: 2em;
@@ -398,22 +385,22 @@ img {
     border-bottom: none;
     flex: 1 30%;
   }
-  .aside-left-wrap > aside > p {
+  .tmpl-post .aside-left-wrap > aside > p {
     margin: 0;
   }
 
-  .aside-left-wrap > p {
+  .tmpl-post .aside-left-wrap > p {
     line-height: 1.4;
     order: 2;
     flex: 2 70%;
   }
 }
 
-figure {
+.tmpl-post figure {
   grid-column: content-start / content-end;
 }
 
-pre {
+.tmpl-post pre {
   grid-column: content-start / content-end;
 }
 
@@ -517,6 +504,18 @@ pre {
 }
 
 @media (min-width: 45rem) {
+  .tmpl-book .container {
+    display: grid;
+    grid-template-columns:
+      calc(50vw - 37.25rem)
+      [content-bleed-start] 1fr
+      [content-gutter-start] 100px
+      [content-start] repeat(6, [col-start] 1fr)
+      [content-end] 100px
+      [content-gutter-end] 1fr
+      [content-bleed-end] calc(50vw - 37.25rem);
+  }
+
   .tmpl-book .book-details h1 {
     /* font-size: 2rem;
     font-style: italic; */
@@ -590,7 +589,15 @@ pre {
 /* Books List */
 
 .tmpl-books-list .container {
-  display: block;
+  display: grid;
+  grid-template-columns:
+    calc(50vw - 31.25rem)
+    [content-start] 1fr
+    calc(50vw - 31.25rem);
+}
+
+.books-list-title {
+  grid-column-start: content-start;
 }
 
 .tmpl-books-list .postlist {
@@ -599,16 +606,20 @@ pre {
   grid-auto-rows: 1fr;
   justify-items: center;
   align-items: top;
+  grid-column-start: content-start;
+  /* max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; */
 }
 
 .tmpl-books-list .postlist-item {
-  background: #ededed;
+  /* background: #ededed; */
   border: 0;
   margin: 0;
   padding: 0;
   width: 100%;
   /* height: 100%; */
-  max-width: 200px;
+  max-width: 190px;
 }
 
 .tmpl-books-list .book-details {
@@ -627,14 +638,14 @@ pre {
   color: var(--darkgray);
 }
 
-.tmpl-books-list .book-details h1 {
+.tmpl-books-list .book-meta-title {
   font-size: 1.1rem;
   font-style: italic;
   font-weight: 400;
-  margin: 0;
+  margin: 0.5rem 0 0 0;
 }
 
-.tmpl-books-list .book-details h2 {
+.tmpl-books-list .book-meta-author {
   font-size: 0.9rem;
   font-weight: 400;
   margin: 0.25rem 0 0 0;
@@ -644,21 +655,7 @@ pre {
   max-width: 160px;
 }
 
-.tmpl-books-list .book-meta dl {
+.tmpl-books-list .book-meta-finished {
   font-size: 0.8rem;
   margin-top: 1rem;
-}
-
-.tmpl-books-list .book-meta dt {
-  color: #666666;
-  font-weight: 400;
-}
-
-.tmpl-books-list .book-meta dd {
-  margin: 0 0 0.4rem 0;
-  font-weight: 400;
-}
-
-.tmpl-books-list .book-meta dd:last-child {
-  margin: 0;
 }

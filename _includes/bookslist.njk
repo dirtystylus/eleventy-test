@@ -1,4 +1,4 @@
-<ul reversed class="postlist">
+<ul class="postlist">
 {% for book in bookslist %}
   <li class="postlist-item">
   <a href="{{ book.url | url }}" class="postlist-link">
@@ -7,14 +7,9 @@
     {% figure book.data.cover_image, "", "book-thumb" %}
     </div>
     <div class="book-meta">
-      <h1>{{ book.data.title }}</h1>
-      <h2>{{book.data.author}}</h2>
-      <dl>
-        <dt>Started Reading</dt>
-        <dd>{{ book.data.reading_start_date | readableDate }}</dd>
-        <dt>Finished Reading</dt>
-        <dd>{{ book.data.reading_end_date | readableDate }}</dd>
-      </dl>
+      <h1 class="book-meta-title">{{ book.data.title }}</h1>
+      <h2 class="book-meta-author">{{book.data.author}}</h2>
+      <div class="book-meta-finished">Finished {{ book.data.reading_end_date | readableDate }}</div>
     </div>
 </div>
   </article>

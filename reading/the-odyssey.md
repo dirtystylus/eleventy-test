@@ -1,6 +1,6 @@
 ---
 title: The Odyssey
-author: Homer, translated by Emily Wilson
+author: Homer (Emily Wilson translation)
 date: 2020-04-02
 description: Emily Wilson’s new translation of The Odyssey
 publication_date: 2018-09-20
