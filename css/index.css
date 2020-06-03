@@ -44,13 +44,22 @@ a[href]:visited {
   color: var(--navy);
 }
 main {
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 /* main :first-child {
   margin-top: 0;
 } */
 header {
   border-bottom: 1px dashed var(--lightgray);
+  display: grid;
+  grid-template-columns:
+    calc(50vw - 37.25rem)
+    [content-bleed-start] 1fr
+    [content-gutter-start] 100px
+    [content-start] repeat(6, [col-start] 1fr)
+    [content-end] 100px
+    [content-gutter-end] 1fr
+    [content-bleed-end] calc(50vw - 37.25rem);
 }
 header:after {
   content: "";
@@ -139,6 +148,7 @@ img {
   float: left;
   margin: 1rem 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
+  grid-column: content-bleed-start;
 }
 .home :link:not(:hover) {
   text-decoration: none;
@@ -148,8 +158,9 @@ img {
 .nav {
   padding: 0;
   list-style: none;
-  float: left;
-  margin-left: 1em;
+  grid-column: content-gutter-start / content-gutter-end;
+  /* float: left; */
+  /* margin-left: 1em; */
 }
 .nav-item {
   display: inline-block;
@@ -501,6 +512,13 @@ body {
 .tmpl-book .book-body {
   grid-column: content-start;
   margin-top: 1rem;
+}
+
+.tmpl-book .book--books-list-link {
+  grid-column: content-gutter-start;
+  border-top: 1px dashed var(--lightgray);
+  margin-top: 2rem;
+  padding-top: 1rem;
 }
 
 @media (min-width: 45rem) {
