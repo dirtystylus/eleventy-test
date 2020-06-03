@@ -604,7 +604,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: 1fr;
-  justify-items: center;
+  justify-items: left;
   align-items: top;
   grid-column-start: content-start;
   /* max-width: 1200px;
@@ -623,7 +623,7 @@ body {
 }
 
 .tmpl-books-list .book-details {
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .tmpl-books-list a[href].postlist-link {
