@@ -4,9 +4,10 @@ permalink: /reading/
 eleventyNavigation:
   key: Reading
   order: 2
+templateClass: tmpl-books-list
 ---
 <div class="content-main container">
-<h1>Reading</h1>
+<h1 class="books-list-title">Reading</h1>
 
 {% set bookslist = collections.reading %}
 {% include "bookslist.njk" %}
