@@ -76,7 +76,6 @@ header:after {
 footer {
   display: grid;
   grid-template-columns: 1fr;
-  /* margin: 2rem 0; */
   background: lightgrey;
   padding: 2rem 0;
 }
@@ -680,9 +679,6 @@ body {
   justify-items: left;
   align-items: top;
   grid-column-start: content-start;
-  /* max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 .tmpl-books-list .postlist-item {
