@@ -5,6 +5,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const moment = require("moment");
+const now = new Date();
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -17,10 +19,22 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("project", "layouts/project.njk");
   eleventyConfig.addLayoutAlias("book", "layouts/book.njk");
 
+  // Date filters
+
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "LLL dd, yyyy"
     );
+  });
+
+  // limit filter
+  eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
+    return array.slice(0, limit);
+  });
+
+  // date filter
+  eleventyConfig.addNunjucksFilter("date", function (date, format) {
+    return moment(date).format(format);
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string

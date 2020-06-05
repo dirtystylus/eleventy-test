@@ -5,7 +5,7 @@ templateClass: tmpl-post
 <article class="content-main container">
 <h1>{{ title }}</h1>
 {{ content | safe }}
-</article>
+<div class="post--next-previous-link">
 {% if nextPost.url %}
   <p class="ctr">
     <strong>Next</strong>: 
@@ -18,4 +18,5 @@ templateClass: tmpl-post
     <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
   </p>
 {% endif %}
-<p><a href="{{ '/' | url }}">← Home</a></p>
+</div>
+</article>

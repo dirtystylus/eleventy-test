@@ -52,20 +52,51 @@ main {
 header {
   border-bottom: 1px dashed var(--lightgray);
   display: grid;
-  grid-template-columns:
-    calc(50vw - 37.25rem)
-    [content-bleed-start] 1fr
-    [content-gutter-start] 100px
-    [content-start] repeat(6, [col-start] 1fr)
-    [content-end] 100px
-    [content-gutter-end] 1fr
-    [content-bleed-end] calc(50vw - 37.25rem);
+  grid-template-columns: 160px 1fr;
 }
 header:after {
   content: "";
   display: table;
   clear: both;
 }
+
+@media (min-width: 45em) {
+  header {
+    grid-template-columns:
+      calc(50vw - 37.25rem)
+      [content-bleed-start] 1fr
+      [content-gutter-start] 100px
+      [content-start] repeat(6, [col-start] 1fr)
+      [content-end] 100px
+      [content-gutter-end] 1fr
+      [content-bleed-end] calc(50vw - 37.25rem);
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* margin: 2rem 0; */
+  background: lightgrey;
+  padding: 2rem 0;
+}
+
+@media (min-width: 45em) {
+  footer {
+    grid-template-columns:
+      calc(50vw - 37.25rem)
+      [content-bleed-start] 1fr
+      [content-gutter-start] 100px
+      [content-start] repeat(6, [col-start] 1fr)
+      [content-end] 100px
+      [content-gutter-end] 1fr
+      [content-bleed-end] calc(50vw - 37.25rem);
+  }
+  .footer--copyright {
+    grid-column: content-start / content-end;
+  }
+}
+
 table {
   margin: 1em 0;
 }
@@ -145,11 +176,18 @@ img {
 /* Header */
 .home {
   padding: 0 1rem;
-  float: left;
+  /* float: left; */
   margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
-  grid-column: content-bleed-start;
+  font-size: 1rem; /* 16px /16 */
+  grid-column: 1;
 }
+
+@media (min-width: 45em) {
+  .home {
+    grid-column: content-bleed-start / content-start;
+  }
+}
+
 .home :link:not(:hover) {
   text-decoration: none;
 }
@@ -158,13 +196,20 @@ img {
 .nav {
   padding: 0;
   list-style: none;
-  grid-column: content-gutter-start / content-gutter-end;
+  grid-column: 2;
   /* float: left; */
   /* margin-left: 1em; */
 }
+
+@media (min-width: 45em) {
+  .nav {
+    grid-column: content-start / content-bleed-end;
+  }
+}
+
 .nav-item {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
@@ -255,6 +300,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
+  margin: 2rem 1rem 0 1rem;
 }
 
 @media (min-width: 45em) {
@@ -268,6 +314,7 @@ body {
       [content-end] 100px
       [content-gutter-end] 1fr
       [content-bleed-end] calc(50vw - 37.25rem);
+    margin: 2rem 0;
   }
 }
 
@@ -332,6 +379,13 @@ body {
 
 .tmpl-post .aside-right-wrap > aside > p:last-child {
   margin-bottom: 1em;
+}
+
+.tmpl-post .post--next-previous-link {
+  grid-column: content-start / content-end;
+  border-top: 1px dashed var(--lightgray);
+  margin-top: 2rem;
+  padding-top: 1rem;
 }
 
 @media (min-width: 45em) {
@@ -457,7 +511,7 @@ body {
 /* Book Detail */
 .tmpl-book .book-details {
   grid-column: content-bleed-start / content-bleed-end;
-  background: #ededed;
+  /* background: #ededed; */
   display: grid;
   grid-template-columns: 40% 60%;
   /* justify-items: center; */
@@ -509,13 +563,17 @@ body {
   margin: 0;
 }
 
+.tmpl-book .book-thumb img {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
 .tmpl-book .book-body {
   grid-column: content-start;
   margin-top: 1rem;
 }
 
 .tmpl-book .book--books-list-link {
-  grid-column: content-gutter-start;
+  grid-column: content-start / content-end;
   border-top: 1px dashed var(--lightgray);
   margin-top: 2rem;
   padding-top: 1rem;
@@ -532,6 +590,7 @@ body {
       [content-end] 100px
       [content-gutter-end] 1fr
       [content-bleed-end] calc(50vw - 37.25rem);
+    margin: 2rem 0;
   }
 
   .tmpl-book .book-details h1 {
@@ -551,7 +610,7 @@ body {
       [book-detail-start] 1fr 2fr
       [book-detail-end] 100px
       [book-detail-gutter-end];
-    background: #ededed;
+    /* background: #ededed; */
     padding: 1em 0;
     justify-items: left;
   }
@@ -561,10 +620,6 @@ body {
     /* flex: 1 50%; */
     /* align-self: center; */
     padding: 0;
-  }
-
-  .tmpl-book .book-thumb img {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   }
 
   .tmpl-book .book-meta {
