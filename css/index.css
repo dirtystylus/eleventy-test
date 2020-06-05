@@ -73,6 +73,30 @@ header:after {
   }
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* margin: 2rem 0; */
+  background: lightgrey;
+  padding: 2rem 0;
+}
+
+@media (min-width: 45em) {
+  footer {
+    grid-template-columns:
+      calc(50vw - 37.25rem)
+      [content-bleed-start] 1fr
+      [content-gutter-start] 100px
+      [content-start] repeat(6, [col-start] 1fr)
+      [content-end] 100px
+      [content-gutter-end] 1fr
+      [content-bleed-end] calc(50vw - 37.25rem);
+  }
+  .footer--copyright {
+    grid-column: content-start / content-end;
+  }
+}
+
 table {
   margin: 1em 0;
 }
@@ -357,6 +381,13 @@ body {
   margin-bottom: 1em;
 }
 
+.tmpl-post .post--next-previous-link {
+  grid-column: content-start / content-end;
+  border-top: 1px dashed var(--lightgray);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
 @media (min-width: 45em) {
   .tmpl-post .aside-right-wrap {
     grid-column: content-start / content-gutter-end;
@@ -480,7 +511,7 @@ body {
 /* Book Detail */
 .tmpl-book .book-details {
   grid-column: content-bleed-start / content-bleed-end;
-  background: #ededed;
+  /* background: #ededed; */
   display: grid;
   grid-template-columns: 40% 60%;
   /* justify-items: center; */
@@ -532,13 +563,17 @@ body {
   margin: 0;
 }
 
+.tmpl-book .book-thumb img {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
 .tmpl-book .book-body {
   grid-column: content-start;
   margin-top: 1rem;
 }
 
 .tmpl-book .book--books-list-link {
-  grid-column: content-gutter-start;
+  grid-column: content-start / content-end;
   border-top: 1px dashed var(--lightgray);
   margin-top: 2rem;
   padding-top: 1rem;
@@ -575,7 +610,7 @@ body {
       [book-detail-start] 1fr 2fr
       [book-detail-end] 100px
       [book-detail-gutter-end];
-    background: #ededed;
+    /* background: #ededed; */
     padding: 1em 0;
     justify-items: left;
   }
@@ -585,10 +620,6 @@ body {
     /* flex: 1 50%; */
     /* align-self: center; */
     padding: 0;
-  }
-
-  .tmpl-book .book-thumb img {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   }
 
   .tmpl-book .book-meta {
