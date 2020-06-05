@@ -52,20 +52,27 @@ main {
 header {
   border-bottom: 1px dashed var(--lightgray);
   display: grid;
-  grid-template-columns:
-    calc(50vw - 37.25rem)
-    [content-bleed-start] 1fr
-    [content-gutter-start] 100px
-    [content-start] repeat(6, [col-start] 1fr)
-    [content-end] 100px
-    [content-gutter-end] 1fr
-    [content-bleed-end] calc(50vw - 37.25rem);
+  grid-template-columns: 160px 1fr;
 }
 header:after {
   content: "";
   display: table;
   clear: both;
 }
+
+@media (min-width: 45em) {
+  header {
+    grid-template-columns:
+      calc(50vw - 37.25rem)
+      [content-bleed-start] 1fr
+      [content-gutter-start] 100px
+      [content-start] repeat(6, [col-start] 1fr)
+      [content-end] 100px
+      [content-gutter-end] 1fr
+      [content-bleed-end] calc(50vw - 37.25rem);
+  }
+}
+
 table {
   margin: 1em 0;
 }
@@ -145,11 +152,18 @@ img {
 /* Header */
 .home {
   padding: 0 1rem;
-  float: left;
+  /* float: left; */
   margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
-  grid-column: content-bleed-start;
+  font-size: 1rem; /* 16px /16 */
+  grid-column: 1;
 }
+
+@media (min-width: 45em) {
+  .home {
+    grid-column: content-bleed-start / content-start;
+  }
+}
+
 .home :link:not(:hover) {
   text-decoration: none;
 }
@@ -158,13 +172,20 @@ img {
 .nav {
   padding: 0;
   list-style: none;
-  grid-column: content-gutter-start / content-gutter-end;
+  grid-column: 2;
   /* float: left; */
   /* margin-left: 1em; */
 }
+
+@media (min-width: 45em) {
+  .nav {
+    grid-column: content-start / content-bleed-end;
+  }
+}
+
 .nav-item {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 .nav-item a[href]:not(:hover) {
   text-decoration: none;
@@ -255,6 +276,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
+  margin: 2rem 1rem 0 1rem;
 }
 
 @media (min-width: 45em) {
@@ -268,6 +290,7 @@ body {
       [content-end] 100px
       [content-gutter-end] 1fr
       [content-bleed-end] calc(50vw - 37.25rem);
+    margin: 2rem 0;
   }
 }
 
@@ -532,6 +555,7 @@ body {
       [content-end] 100px
       [content-gutter-end] 1fr
       [content-bleed-end] calc(50vw - 37.25rem);
+    margin: 2rem 0;
   }
 
   .tmpl-book .book-details h1 {
