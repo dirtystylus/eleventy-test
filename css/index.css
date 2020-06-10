@@ -172,6 +172,12 @@ img {
   max-height: 95vh;
 }
 
+figcaption {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: var(--darkgray);
+}
+
 /* Header */
 .home {
   padding: 0 1rem;
@@ -318,7 +324,21 @@ body {
 }
 
 .tmpl-post h1 {
-  grid-column: content-start / content-end;
+  font-family: sans-serif;
+  font-weight: 400;
+  grid-column: content-start / span 9;
+  margin-bottom: 0.5rem;
+}
+
+.tmpl-post .post--meta {
+  grid-column: content-start / span 9;
+  margin-bottom: 3rem;
+}
+
+.tmpl-post time {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  color: var(--gray);
 }
 
 .tmpl-post h2 {
@@ -334,7 +354,7 @@ body {
 }
 
 .tmpl-post figure {
-  margin: 0;
+  margin: 0 0 1rem 0;
   grid-column: content-start / content-end;
 }
 
