@@ -4,6 +4,7 @@ templateClass: tmpl-post
 ---
 <article class="content-main container">
 <h1>{{ title }}</h1>
+<div class="post--meta"><time>{{ date | readableDate }}</time></div>
 {{ content | safe }}
 <div class="post--next-previous-link">
 {% if nextPost.url %}
