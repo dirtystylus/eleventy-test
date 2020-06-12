@@ -77,7 +77,7 @@ function foo(bar) {
 }
 ```
 
-Overall, though, the Kindle’s interface still contains too many overloaded interface elements. Craig Mod took a look at the Kindle interaction model in this essay, and much of his critique still holds true: What is the iOS Kindle interaction model? The iOS Kindle model is the “hidden spaces” model. That is, all active interface elements are invisible. This “hidden spaces” model of interaction is supremely user antagonistic.
+“Overall, though, the Kindle’s interface still contains too many overloaded interface elements.” Craig Mod took a look at the Kindle interaction model in this essay, and much of his critique still holds true: What is the iOS Kindle interaction model? The iOS Kindle model is the “hidden spaces” model. That is, all active interface elements are invisible. This “hidden spaces” model of interaction is supremely user antagonistic.
 
 1. List Item One
 1. Another item to consider

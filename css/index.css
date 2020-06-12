@@ -34,7 +34,7 @@ p:last-child {
 
 ul,
 ol {
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 2rem;
   list-style-position: outside;
 }
 
@@ -150,7 +150,7 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1rem;
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 1rem 1rem;
   background-color: #f6f6f6;
 }
 .highlight-line {
@@ -456,6 +456,7 @@ body {
 .tmpl-post .container > p {
   /* grid-column: content-start / content-end; */
   grid-column: 1;
+  hanging-punctuation: first;
 }
 
 @media (min-width: 45em) {
