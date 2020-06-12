@@ -34,8 +34,17 @@ p:last-child {
 
 ul,
 ol {
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1rem;
   list-style-position: outside;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    ul,
+    ol {
+      padding: 0 0 0 1.4rem;
+    }
+  }
 }
 
 @media (min-width: 45em) {
@@ -153,6 +162,15 @@ pre {
   margin: 1rem 0 1rem 1rem;
   background-color: #f6f6f6;
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    pre {
+      margin: 1rem 0 1rem 1.4rem;
+    }
+  }
+}
+
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
@@ -470,6 +488,14 @@ body {
   grid-column: 1;
   margin: 1rem 0;
   padding-left: 1rem;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .tmpl-post .container blockquote {
+      padding-left: 1.4rem;
+    }
+  }
 }
 
 @media (min-width: 45em) {
