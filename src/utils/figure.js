@@ -1,5 +1,5 @@
 // Figure Shortcode
-module.exports = (image, caption, styleName) => {
+module.exports = (image, caption, altText, styleName) => {
   const styleObj = {
     cinemascope: [
       { width: 1200, breakwidth: 1000 },
@@ -22,7 +22,7 @@ module.exports = (image, caption, styleName) => {
   return `<figure${classMarkup}>
   <picture>
   ${srcsetMarkup}
-  <img src="/img/${image}?nf_resize=fit&w=400" /></picture>
+  <img src="/img/${image}?nf_resize=fit&w=400" alt="${altText}" /></picture>
   ${captionMarkup}
   </figure>`;
   //return `<figure${className ? ` class="${className}"` : ''}><img src="/img/${image}" />${caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`;
