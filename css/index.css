@@ -367,7 +367,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   grid-column: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 @media (min-width: 45em) {
@@ -705,13 +705,15 @@ body {
 }
 
 .tmpl-book .book-details h1 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-style: italic;
+  font-weight: 400;
   margin: 0;
 }
 
 .tmpl-book .book-details h2 {
   font-size: 1rem;
+  font-weight: 400;
   margin: 0.25rem 0 0 0;
 }
 
@@ -724,6 +726,7 @@ body {
 
 .tmpl-book .book-meta dl {
   font-size: 0.8rem;
+  margin-top: 2rem;
 }
 
 .tmpl-book .book-meta dt {
@@ -841,18 +844,30 @@ body {
 .tmpl-books-list .container {
   display: grid;
   grid-template-columns:
-    calc(50vw - 31.25rem)
+    calc(50vw - 17rem)
     [content-start] 1fr
-    calc(50vw - 31.25rem);
+    calc(50vw - 17rem);
 }
 
+@media (min-width: 45rem) {
+  .tmpl-books-list .container {
+    grid-template-columns:
+      calc(50vw - 24.875rem)
+      [content-start] 1fr
+      calc(50vw - 24.875rem);
+  }
+}
+
+/* h1 for books archive */
 .books-list-title {
+  font-size: 2rem;
   grid-column-start: content-start;
+  font-weight: 400;
 }
 
 .tmpl-books-list .postlist {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: 1fr;
   justify-items: left;
   align-items: top;
