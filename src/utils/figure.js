@@ -6,7 +6,7 @@ module.exports = (image, caption, styleName) => {
       { width: 850, breakwidth: 650 },
     ],
     book_thumb: [{ width: 300, breakwidth: 400 }],
-    default: [{ width: 700, breakwidth: 650 }],
+    default: [{ width: 850, breakwidth: 650 }],
   };
 
   const styleItem = styleObj[styleName]
