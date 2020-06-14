@@ -123,9 +123,19 @@ footer {
   margin-left: 1rem;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 45rem) {
   footer {
     grid-template-columns: var(--grid--base);
+  }
+  .footer--copyright {
+    grid-column: content-start / content-end;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 60rem) {
+  footer {
+    grid-template-columns: var(--grid--wide);
   }
   .footer--copyright {
     grid-column: content-start / content-end;
