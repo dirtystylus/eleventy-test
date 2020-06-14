@@ -896,6 +896,18 @@ body {
   }
 }
 
+@media (min-width: 65rem) {
+  .home {
+    padding: 0;
+  }
+  .books-list-title {
+    grid-column: content-bleed-start / content-bleed-end;
+  }
+  .tmpl-books-list .postlist {
+    grid-column: content-bleed-start / content-bleed-end;
+  }
+}
+
 .tmpl-books-list .postlist-item {
   /* background: #ededed; */
   border: 0;
