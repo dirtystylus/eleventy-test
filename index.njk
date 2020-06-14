@@ -10,6 +10,8 @@ layout: layouts/home.njk
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
+<hr>
+
 <h2>Recent Books I’ve Read</h2>
 
 {% set bookslist = collections.reading | head(-3) %}

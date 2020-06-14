@@ -82,6 +82,16 @@ a[href] {
 a[href]:visited {
   color: var(--navy);
 }
+
+hr {
+  border: 0;
+  height: 2px;
+  background: var(--lightgray);
+  grid-column: content-start / content-end;
+  width: 100%;
+  margin: 3em 0 2em 0;
+}
+
 main {
   /* padding: 1rem; */
 }
@@ -343,6 +353,12 @@ figcaption {
   margin-bottom: 2em;
   border-bottom: 1px solid lightgrey;
   padding-bottom: 2em;
+}
+
+.postlist-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .postlist-item .post-meta {
