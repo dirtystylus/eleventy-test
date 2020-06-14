@@ -271,9 +271,31 @@ figcaption {
 }
 
 /* Posts list */
+.tmpl-posts-list h1 {
+  grid-column: 1;
+}
+
+@media (min-width: 45em) {
+  .tmpl-posts-list h1 {
+    grid-column: content-start / content-bleed-end;
+  }
+}
+
 .postlist {
   list-style: none;
   padding: 0;
+}
+
+@media (min-width: 45rem) {
+  .postlist {
+    grid-column: content-start / content-end;
+  }
+}
+
+@media (min-width: 60rem) {
+  .postlist {
+    font-size: 1.125rem;
+  }
 }
 
 .postlist-item {
@@ -355,7 +377,7 @@ body {
 }
 
 @media (min-width: 45rem) {
-  .tmpl-post .container {
+  .container {
     display: grid;
     grid-template-columns: var(--grid--base);
     margin: 2em 0;
@@ -363,7 +385,7 @@ body {
 }
 
 @media (min-width: 60rem) {
-  .tmpl-post .container {
+  .container {
     display: grid;
     grid-template-columns: var(--grid--wide);
     margin: 2em 0;
