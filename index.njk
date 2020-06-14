@@ -1,8 +1,10 @@
 ---
 layout: layouts/home.njk
 ---
+<div class="content-main container">
+<h1>Home</h1>
 
-<h1>Latest 3 Posts</h1>
+<h2>Latest 3 Posts</h2>
 
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
@@ -14,4 +16,4 @@ layout: layouts/home.njk
 {% set bookslistCounter = collections.reading | length %}
 {% include "bookslist.njk" %}
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+</div>

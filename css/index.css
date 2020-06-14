@@ -270,12 +270,43 @@ figcaption {
   text-decoration: underline;
 }
 
-/* Posts list */
-.tmpl-posts-list h1 {
+/* Homepage */
+
+.tmpl-home h1 {
+  font-weight: 400;
   grid-column: 1;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 45rem) {
+  .tmpl-home h1 {
+    grid-column: content-start / content-end;
+  }
+}
+
+.tmpl-home h2 {
+  font-weight: 400;
+  grid-column: 1;
+}
+
+@media (min-width: 45rem) {
+  .tmpl-home h2 {
+    grid-column: content-start / content-end;
+  }
+}
+
+@media (min-width: 60rem) {
+  .tmpl-home .bookslist {
+    grid-column: content-start / content-end;
+  }
+}
+
+/* Posts list */
+.tmpl-posts-list h1 {
+  grid-column: 1;
+  font-weight: 400;
+}
+
+@media (min-width: 45rem) {
   .tmpl-posts-list h1 {
     grid-column: content-start / content-bleed-end;
   }
@@ -322,9 +353,9 @@ a[href].postlist-link:visited {
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
-.tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
-  font-weight: 700;
+
+.postlist-link {
+  font-size: 1.125em; /* 19px /16 */
 }
 
 /* Tags */
@@ -908,7 +939,7 @@ body {
   }
 }
 
-.tmpl-books-list .postlist {
+.bookslist {
   display: grid;
   grid-template-columns: var(--grid--books--list);
   grid-auto-rows: 1fr;
@@ -916,10 +947,11 @@ body {
   justify-items: left;
   align-items: top;
   grid-column: 1;
+  list-style: none;
 }
 
 @media (min-width: 45em) {
-  .tmpl-books-list .postlist {
+  .bookslist {
     grid-column: content-start / content-end;
   }
 }
@@ -927,16 +959,18 @@ body {
 @media (min-width: 65rem) {
   .home {
     padding: 0;
+    font-family: sans-serif;
+    font-weight: 400;
   }
   .books-list-title {
     grid-column: content-bleed-start / content-bleed-end;
   }
-  .tmpl-books-list .postlist {
+  .bookslist {
     grid-column: content-bleed-start / content-bleed-end;
   }
 }
 
-.tmpl-books-list .postlist-item {
+.bookslist-item {
   /* background: #ededed; */
   border: 0;
   margin: 0;
@@ -950,36 +984,36 @@ body {
   /* padding: 1em; */
 }
 
-.tmpl-books-list a[href].postlist-link {
+.bookslist-item a[href].postlist-link {
   text-decoration: none;
   color: var(--darkgray);
   margin: 0;
   padding: 0;
 }
 
-.tmpl-books-list a[href].postlist-link:visited {
+.bookslist-item a[href].postlist-link:visited {
   text-decoration: none;
   color: var(--darkgray);
 }
 
-.tmpl-books-list .book-meta-title {
+.bookslist-item .book-meta-title {
   font-size: 1.1em;
   font-style: italic;
   font-weight: 400;
   margin: 0.5em 0 0 0;
 }
 
-.tmpl-books-list .book-meta-author {
+.bookslist-item .book-meta-author {
   font-size: 0.9em;
   font-weight: 400;
   margin: 0.25em 0 0 0;
 }
 
-.tmpl-books-list .book-cover {
+.bookslist-item .book-cover {
   max-width: 160px;
 }
 
-.tmpl-books-list .book-meta-finished {
+.bookslist-item .book-meta-finished {
   font-size: 0.8em;
   margin-top: 1em;
 }
