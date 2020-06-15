@@ -49,7 +49,7 @@ Another section in this blog post.
 
 > There are no affordances to the taps. No edges to the active areas. Nothing to hint at what might happen. This creates what I call a “brittle” interface — where one wrong tap sends you careening in an unknown direction, without knowing why or how you got there.
 
-I’m not buying a significantly higher number of books, though — most of the books on my Kindle are loaned by my local library through Overdrive. It’s definitely worth checking if you have ebook lending through your library.
+I’m not buying a significantly higher number of books, though — most of the books on my Kindle are loaned by my local library through Overdrive. It’s definitely worth checking if you have ebook lending through your library[^1].
 
 - List Item One
 - Another item to consider
@@ -82,3 +82,5 @@ function foo(bar) {
 1. Last one, I promise
 
 Overall, though, the Kindle’s interface still contains too many overloaded interface elements. Craig Mod took a look at the Kindle interaction model in this essay, and much of his critique still holds true: What is the iOS Kindle interaction model? The iOS Kindle model is the “hidden spaces” model. That is, all active interface elements are invisible. This “hidden spaces” model of interaction is supremely user antagonistic.
+
+[^1]: This is the first footnote.

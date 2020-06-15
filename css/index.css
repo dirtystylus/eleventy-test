@@ -733,6 +733,19 @@ body {
   }
 }
 
+.footnote-ref a[href],
+.footnote-ref a[href]:visited {
+  text-decoration: none;
+  color: var(--red);
+  margin: 0 0 0 0.1em;
+}
+
+@media (min-width: 45rem) {
+  .tmpl-post .footnotes {
+    grid-column: content-start / content-end;
+  }
+}
+
 /* Image Grid */
 
 /* set a max width, and center */

@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
 const moment = require("moment");
 const now = new Date();
 
@@ -99,12 +100,27 @@ module.exports = function (eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true,
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
-  });
+    typographer: true,
+  })
+    .use(markdownItAnchor, {
+      permalink: true,
+      permalinkClass: "direct-link",
+      permalinkSymbol: "#",
+    })
+    .use(markdownItFootnote);
+
+  markdownLibrary.renderer.rules.footnote_caption = (tokens, idx) => {
+    let n = Number(tokens[idx].meta.id + 1).toString();
+
+    if (tokens[idx].meta.subId > 0) {
+      n += ":" + tokens[idx].meta.subId;
+    }
+
+    return n;
+  };
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  function render_footnote_caption(tokens, idx /*, options, env, slf*/) {}
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
