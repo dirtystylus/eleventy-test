@@ -137,7 +137,7 @@ module.exports = function (eleventyConfig) {
       const classMarkup = styleName ? ` class="${styleName}"` : "";
       debug("figure data: ", data);
       data = data.trim();
-      if (data !== undefined && data !== "\n" && data !== "") {
+      if (data !== undefined && data !== "") {
         data = markdownLibrary.renderInline(data);
         captionMarkup = `<figcaption>${data}</figcaption>`;
       } else {
