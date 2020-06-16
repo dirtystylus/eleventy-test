@@ -135,7 +135,7 @@ module.exports = function (eleventyConfig) {
         ? styleObj[styleName]
         : styleObj["default"];
       const classMarkup = styleName ? ` class="${styleName}"` : "";
-      debug("data:" + (data !== undefined && data !== "\n"));
+      // debug("data:" + (data !== undefined && data !== "\n"));
       if (data !== undefined && data !== "\n") {
         data = data.trim();
         data = markdownLibrary.renderInline(data);
