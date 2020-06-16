@@ -135,13 +135,15 @@ module.exports = function (eleventyConfig) {
         ? styleObj[styleName]
         : styleObj["default"];
       const classMarkup = styleName ? ` class="${styleName}"` : "";
-      if (data !== undefined && data !== "\n") {
-        data = data.trim();
+      debug("figure data: ", data);
+      data = data.trim();
+      if (data !== undefined && data !== "\n" && data !== "") {
         data = markdownLibrary.renderInline(data);
         captionMarkup = `<figcaption>${data}</figcaption>`;
       } else {
         captionMarkup = "";
       }
+      debug("captionMarkup: ", captionMarkup);
       let srcsetMarkup = "";
       styleItem.forEach((element) => {
         srcsetMarkup += `<source srcset="/img/${image}?nf_resize=fit&w=${element.width}" media="(min-width: ${element.breakwidth}px)"></source>`;
