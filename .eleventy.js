@@ -8,7 +8,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
 const moment = require("moment");
 const now = new Date();
-// const debug = require("debug")("markllobrera");
+const debug = require("debug")("markllobrera");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -135,7 +135,6 @@ module.exports = function (eleventyConfig) {
         ? styleObj[styleName]
         : styleObj["default"];
       const classMarkup = styleName ? ` class="${styleName}"` : "";
-      // debug("data:" + (data !== undefined && data !== "\n"));
       if (data !== undefined && data !== "\n") {
         data = data.trim();
         data = markdownLibrary.renderInline(data);
