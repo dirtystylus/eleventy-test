@@ -8,7 +8,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
 const moment = require("moment");
 const now = new Date();
-const debug = require("debug")("markllobrera");
+// const debug = require("debug")("markllobrera");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -143,16 +143,11 @@ module.exports = function (eleventyConfig) {
       } else {
         captionMarkup = "";
       }
-      debug("captionMarkup: " + captionMarkup);
-      // const captionMarkup = data ? `<figcaption>${data}</figcaption>` : "";
-      //   // const srcsetMarkup = className === 'cinemascope' ? `<source srcset="/img/${image}?nf_resize=fit&w=1200" media="(min-width: 1000px)"><source srcset = "/img/${image}?nf_resize=fit&w=700" media = "(min-width: 650px)" >` : `<source srcset = "/img/${image}?nf_resize=fit&w=700" media = "(min-width: 650px)" >`;
       let srcsetMarkup = "";
       styleItem.forEach((element) => {
         srcsetMarkup += `<source srcset="/img/${image}?nf_resize=fit&w=${element.width}" media="(min-width: ${element.breakwidth}px)"></source>`;
       });
       return `<figure${classMarkup}><picture>${srcsetMarkup}<img src="/img/${image}?nf_resize=fit&w=400" alt="${altText}" /></picture>${captionMarkup}</figure>`;
-      // data = markdownLibrary.renderInline(data);
-      // return `<p>${data}</p>`;
     }
   );
 
