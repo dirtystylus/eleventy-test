@@ -10,7 +10,9 @@ layout: layouts/post.njk
 
 This is a post containing an image grid. Sometimes you just need to have more than one image.
 
-{% figure "DSCF1431.jpg" "caption" %}
+{% figure "DSCF1431.jpg" "Foggy fog" %}
+A caption
+{% endfigure %}
 
 This is a grid.
 

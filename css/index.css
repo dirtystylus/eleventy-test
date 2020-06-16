@@ -505,6 +505,18 @@ body {
   }
 }
 
+.tmpl-post h4 {
+  font-size: 1em;
+  font-weight: 700;
+  grid-column: 1;
+}
+
+@media (min-width: 45em) {
+  .tmpl-post h4 {
+    grid-column: content-start / content-end;
+  }
+}
+
 .tmpl-post ul,
 .tmpl-post ol {
   grid-column: 1;

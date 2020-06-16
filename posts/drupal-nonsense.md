@@ -11,9 +11,11 @@ layout: layouts/post.njk
 
 It’s not trivial, and I always look for these things:
 
-* A hearty constitution
-* Some other thing
+- A hearty constitution
+- Some other thing
 
 But sometimes it’s helpful to just think in general about this stuff.
 
-{% figure "noaa-JG_HfydoNqY-unsplash.jpg" "a caption" %}
+{% figure "noaa-JG_HfydoNqY-unsplash.jpg" "Lightning in a bottle" %}
+A caption
+{% endfigure%}
