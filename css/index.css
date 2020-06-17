@@ -812,10 +812,6 @@ body {
   padding: 1em;
 }
 
-.tmpl-book .book-thumb img {
-  /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); */
-}
-
 .tmpl-book .book-details h1 {
   font-size: 1.25em;
   font-style: italic;
@@ -913,11 +909,6 @@ body {
     padding: 0 0 0 3em;
     border: none;
     /* align-self: center; */
-  }
-
-  .tmpl-book .book-meta dl {
-    /* font-size: 0.9em; */
-    /* margin: 3em 0 0 0; */
   }
 
   .tmpl-book .book-meta dd {
