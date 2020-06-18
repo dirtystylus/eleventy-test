@@ -7,8 +7,7 @@ layout: layouts/post.njk
 
 This is a quick paragraph of text.
 
-{% figure "DSCF1431.jpg", "Trees bathed in fog.", "cinemascope" %}
-{% endfigure %}
+![Trees bathed in fog.](/img/DSCF1431.jpg){.cinemascope}
 
 Early-morning fog in _Richwood, KY_
 

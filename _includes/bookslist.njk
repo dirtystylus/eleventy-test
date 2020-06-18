@@ -4,8 +4,8 @@
   <a href="{{ book.url | url }}" class="postlist-link">
   <div class="book-details">
   <div class="book-cover book-shadow">
-    {% figure book.data.cover_image, book.data.title, "book-thumb" %}
-    {% endfigure %}
+    {# {% figure book.data.cover_image, book.data.title, "book-thumb" %} #}
+    ![{{book.data.title}}]({{ book.data.cover_image }})
     </div>
     <div class="book-meta">
       <h1 class="book-meta-title">{{ book.data.title }}</h1>

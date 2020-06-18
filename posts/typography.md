@@ -5,9 +5,7 @@ date: 2019-11-06
 layout: layouts/post.njk
 ---
 
-{% figure "DSCF1431.jpg", "Trees bathed in fog.", "cinemascope" %}
-Early-morning fog in Richwood, KY
-{% endfigure %}
+![Trees bathed in fog](/img/DSCF1431.jpg "Caption One"){data-responsiver=cinemascope}
 
 I grabbed a Kindle Paperwhite during the recent clearance discounts (and as expected, it’s since been supplanted by a new version).
 
@@ -27,9 +25,7 @@ This is an aside, a word.<br>It has multiple lines.
 
 There are no affordances to the taps. No edges to the active areas. Nothing to hint at what might happen. This creates what I call a “brittle” interface — where one wrong tap sends you careening in an unknown direction, without knowing why or how you got there.
 
-{% figure "DSCF1433.jpg", "Barn with distant trees barely visible in the fog." %}
-Testing if **Paired Shortcodes** can take _Markdown_ transformations
-{% endfigure %}
+![Barn with distant trees barely visible in the fog](/img/DSCF1433.jpg "Caption with *Markdown* **content**")
 
 Interface quibbles aside, my reading pace has definitely been helped by having a Kindle. Its single-purpose nature has been superior for reading than using my iPad, where distractions abound. I typically read two books at a time: one on the Kindle during my train commute, and a paper book at home during the evenings/weekends.
 
