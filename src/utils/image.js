@@ -15,5 +15,5 @@ module.exports = (image, altText, styleName) => {
     : styleObj["default"];
   const classMarkup = styleName ? ` class="${styleItem["classes"]}"` : "";
   let sizesMarkup = styleItem["sizes"];
-  return `<img ${classMarkup} src="${image}?nf_resize=fit&w=400" alt="${altText}" sizes="${sizesMarkup}"/>`;
+  return `<img ${classMarkup} src="${image}" alt="${altText}" sizes="${sizesMarkup}"/>`;
 };
