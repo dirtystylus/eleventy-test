@@ -33,7 +33,6 @@
   },
   "dependencies": {
     "eleventy-plugin-images-responsiver": "^1.5.3",
-    "images-responsiver": "https://github.com/dirtystylus/images-responsiver.git",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-footnote": "^3.0.2",
     "moment": "^2.26.0",

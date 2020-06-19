@@ -38,6 +38,7 @@ module.exports = {
     attributes: {
       loading: "lazy",
     },
+    resizedImageUrl: (src, width) => `${src}?nf_resize=fit&w=${width}`,
     runAfter: runAfterHook,
   },
   regular: {
