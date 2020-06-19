@@ -4,7 +4,7 @@ author: Tamsyn Muir
 date: 2020-05-21
 description: Tamsyn Muir’s galactic necromancy saga.
 publication_date: 2019-09-10
-cover_image: reading/gideon-the-ninth.jpg
+cover_image: /img/reading/gideon-the-ninth.jpg
 genre: Fiction
 format: Hardcover
 reading_start_date: 2020-05-16

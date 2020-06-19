@@ -122,90 +122,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // An image helper to generate figure markup
-  // eleventyConfig.addPairedShortcode(
-  //   "figurex",
-  //   (data, image, altText, styleName) => {
-  //     const styleObj = {
-  //       cinemascope: [
-  //         { width: 1200, breakwidth: 1000 },
-  //         { width: 850, breakwidth: 650 },
-  //       ],
-  //       book_thumb: [{ width: 300, breakwidth: 400 }],
-  //       default: [{ width: 850, breakwidth: 650 }],
-  //     };
-
-  //     const styleItem = styleObj[styleName]
-  //       ? styleObj[styleName]
-  //       : styleObj["default"];
-  //     const classMarkup = styleName ? ` class="${styleName}"` : "";
-  //     debug("figure data: ", data);
-  //     data = data.trim();
-  //     if (data !== undefined && data !== "") {
-  //       data = markdownLibrary.renderInline(data);
-  //       captionMarkup = `<figcaption>${data}</figcaption>`;
-  //     } else {
-  //       captionMarkup = "";
-  //     }
-  //     debug("captionMarkup: ", captionMarkup);
-  //     let srcsetMarkup = "";
-  //     styleItem.forEach((element) => {
-  //       srcsetMarkup += `<source srcset="/img/${image}?nf_resize=fit&w=${element.width}" media="(min-width: ${element.breakwidth}px)"></source>`;
-  //     });
-  //     return `<figure${classMarkup}><picture>${srcsetMarkup}<img src="/img/${image}?nf_resize=fit&w=400" alt="${altText}" /></picture>${captionMarkup}</figure>`;
-  //   }
-  // );
+  eleventyConfig.addShortcode("image", require("./src/utils/image.js"));
 
   // Images Responsiver
-  const runAfterHook = (image, document) => {
-    let imageUrl =
-      image.getAttribute("data-pristine") || image.getAttribute("src");
-    let caption = image.getAttribute("title");
-    if (caption !== null) {
-      caption = markdownLibrary.renderInline(caption.trim());
-      debug("runAfterHook::has caption", caption);
-    }
-
-    let zoom = [...image.classList].indexOf("zoom") !== -1;
-
-    if (caption || zoom) {
-      const figure = document.createElement("figure");
-      figure.classList.add(...image.classList);
-      // TODO: decide weither classes should be removed from the image or not
-      image.classList.remove(...image.classList);
-      let figCaption = document.createElement("figcaption");
-      figCaption.innerHTML =
-        (caption ? caption : "") +
-        (zoom
-          ? `<p class="zoom">&#128269; See <a href="${imageUrl}">full size</a></p>`
-          : "");
-      figure.appendChild(image.cloneNode(true));
-      figure.appendChild(figCaption);
-
-      image.replaceWith(figure);
-      debug("runAfterHook:: replaced", image.nodeName);
-    }
-  };
-
-  const responsiverPresets = {
-    default: {
-      sizes: "(min-width: 650px) 850px, 400px",
-      classes: ["default"],
-      attributes: {
-        loading: "lazy",
-      },
-      runAfter: runAfterHook,
-    },
-    cinemascope: {
-      sizes: "(min-width: 650px) 850px, (min-width: 1000px) 1200px, 400px",
-      classes: ["cinemascope"],
-      attributes: {
-        loading: "lazy",
-      },
-      runAfter: runAfterHook,
-    },
-  };
-
-  eleventyConfig.addPlugin(imagesResponsiver, responsiverPresets);
+  const imagesResponsiverConfig = require("./src/utils/images-responsiver-config.js");
+  eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({

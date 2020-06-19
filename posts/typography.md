@@ -25,7 +25,7 @@ This is an aside, a word.<br>It has multiple lines.
 
 There are no affordances to the taps. No edges to the active areas. Nothing to hint at what might happen. This creates what I call a “brittle” interface — where one wrong tap sends you careening in an unknown direction, without knowing why or how you got there.
 
-![Barn with distant trees barely visible in the fog](/img/DSCF1433.jpg "Caption with *Markdown* **content**")
+![Barn with distant trees barely visible in the fog](/img/DSCF1433.jpg "Caption with *Markdown* **content**"){data-responsiver=regular}
 
 Interface quibbles aside, my reading pace has definitely been helped by having a Kindle. Its single-purpose nature has been superior for reading than using my iPad, where distractions abound. I typically read two books at a time: one on the Kindle during my train commute, and a paper book at home during the evenings/weekends.
 

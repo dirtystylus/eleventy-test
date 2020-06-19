@@ -4,7 +4,7 @@ author: Hilary Mantel
 date: 2020-04-22
 description: The final book in the Wolf Hall trilogy.
 publication_date: 2018-09-20
-cover_image: reading/mirror-light.jpg
+cover_image: /img/reading/mirror-light.jpg
 genre: Fiction
 format: Hardcover
 reading_start_date: 2020-03-17

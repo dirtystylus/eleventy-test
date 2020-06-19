@@ -4,7 +4,7 @@ author: Homer (Emily Wilson translation)
 date: 2020-04-02
 description: Emily Wilson’s new translation of The Odyssey
 publication_date: 2018-09-20
-cover_image: reading/book-nk-jemisin-black-future-month.jpg
+cover_image: /img/reading/book-nk-jemisin-black-future-month.jpg
 genre: Fiction
 format: Hardcover
 reading_start_date: 2019-08-27

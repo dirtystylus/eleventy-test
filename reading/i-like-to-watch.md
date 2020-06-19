@@ -1,7 +1,7 @@
 ---
 title: I Like to Watch
 author: Emily Nussbaum
-cover_image: reading/i-like-to-watch.jpg
+cover_image: /img/reading/i-like-to-watch.jpg
 genre: Nonfiction
 format: Hardcover
 date: 2020-05-02
