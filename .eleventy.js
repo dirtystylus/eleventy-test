@@ -9,6 +9,8 @@ const markdownItFootnote = require("markdown-it-footnote");
 const moment = require("moment");
 const now = new Date();
 const debug = require("debug")("markllobrera");
+const imagesResponsiver = require("eleventy-plugin-images-responsiver");
+const markdownItAttrs = require("markdown-it-attrs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -105,7 +107,8 @@ module.exports = function (eleventyConfig) {
       permalinkClass: "direct-link",
       permalinkSymbol: "#",
     })
-    .use(markdownItFootnote);
+    .use(markdownItFootnote)
+    .use(markdownItAttrs);
 
   markdownLibrary.renderer.rules.footnote_caption = (tokens, idx) => {
     let n = Number(tokens[idx].meta.id + 1).toString();
@@ -119,38 +122,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // An image helper to generate figure markup
-  eleventyConfig.addPairedShortcode(
-    "figure",
-    (data, image, altText, styleName) => {
-      const styleObj = {
-        cinemascope: [
-          { width: 1200, breakwidth: 1000 },
-          { width: 850, breakwidth: 650 },
-        ],
-        book_thumb: [{ width: 300, breakwidth: 400 }],
-        default: [{ width: 850, breakwidth: 650 }],
-      };
+  eleventyConfig.addShortcode("image", require("./src/utils/image.js"));
 
-      const styleItem = styleObj[styleName]
-        ? styleObj[styleName]
-        : styleObj["default"];
-      const classMarkup = styleName ? ` class="${styleName}"` : "";
-      debug("figure data: ", data);
-      data = data.trim();
-      if (data !== undefined && data !== "") {
-        data = markdownLibrary.renderInline(data);
-        captionMarkup = `<figcaption>${data}</figcaption>`;
-      } else {
-        captionMarkup = "";
-      }
-      debug("captionMarkup: ", captionMarkup);
-      let srcsetMarkup = "";
-      styleItem.forEach((element) => {
-        srcsetMarkup += `<source srcset="/img/${image}?nf_resize=fit&w=${element.width}" media="(min-width: ${element.breakwidth}px)"></source>`;
-      });
-      return `<figure${classMarkup}><picture>${srcsetMarkup}<img src="/img/${image}?nf_resize=fit&w=400" alt="${altText}" /></picture>${captionMarkup}</figure>`;
-    }
-  );
+  // Images Responsiver
+  const imagesResponsiverConfig = require("./src/utils/images-responsiver-config.js");
+  eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
