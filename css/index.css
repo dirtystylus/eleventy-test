@@ -228,6 +228,13 @@ pre {
   background-color: #902f2f;
 }
 
+/* Citations w/in Blockquote */
+
+cite {
+  font-style: normal;
+  font-size: 0.8em;
+}
+
 /* Images */
 figure {
   margin: 0;
