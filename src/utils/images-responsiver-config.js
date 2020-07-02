@@ -8,7 +8,6 @@ const runAfterHook = (image, document) => {
   let caption = image.getAttribute("title");
   if (caption !== null) {
     caption = md.renderInline(caption.trim());
-    dbg("runAfterHook::has caption", caption);
   }
 
   let zoom = [...image.classList].indexOf("zoom") !== -1;
@@ -26,8 +25,9 @@ const runAfterHook = (image, document) => {
         : "");
     figure.appendChild(image.cloneNode(true));
     figure.appendChild(figCaption);
+    dbg("image.parentNode:", image.parentNode.nodeName);
+    image.parentNode.replaceWith(figure);
 
-    image.replaceWith(figure);
     dbg("runAfterHook:: replaced", image.nodeName);
   }
 };
