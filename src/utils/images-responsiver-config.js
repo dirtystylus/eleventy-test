@@ -15,7 +15,7 @@ const runAfterHook = (image, document) => {
   if (caption || zoom) {
     const figure = document.createElement("figure");
     figure.classList.add(...image.classList);
-    // TODO: decide weither classes should be removed from the image or not
+    // TODO: decide whether classes should be removed from the image or not
     image.classList.remove(...image.classList);
     let figCaption = document.createElement("figcaption");
     figCaption.innerHTML =
@@ -25,10 +25,12 @@ const runAfterHook = (image, document) => {
         : "");
     figure.appendChild(image.cloneNode(true));
     figure.appendChild(figCaption);
-    dbg("image.parentNode:", image.parentNode.nodeName);
-    image.parentNode.replaceWith(figure);
 
-    dbg("runAfterHook:: replaced", image.nodeName);
+    // Parent node of the image is a <p> because image is an inline element,
+    // and Markdown will wrap in a < p > tag
+    if (image.parentNode.nodeName === "p") {
+      image.parentNode.replaceWith(figure);
+    }
   }
 };
 
