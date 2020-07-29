@@ -1,14 +1,22 @@
 ---
 layout: layouts/home.njk
-permalink: /posts/
+templateClass: tmpl-posts-list
 eleventyNavigation:
   key: Posts
   order: 2
-templateClass: tmpl-posts-list
+permalink: 'posts{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
+paginationPrevText: 'Newer posts'
+paginationNextText: 'Older posts'
+paginationAnchor: '#post-list'
+pagination:
+  data: collections.posts
+  size: 4
+  alias: postslist
 ---
 <div class="content-main container">
 <h1>Posts</h1>
 
-{% set postslist = collections.posts %}
+{# {% set postslist = collections.posts %} #}
 {% include "postslist.njk" %}
 </div>
+{% include "pagination.njk" %}
