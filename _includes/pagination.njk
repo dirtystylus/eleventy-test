@@ -1,16 +1,20 @@
 {# Only renders this section if there are links to render #}
 {% if pagination.href.next or pagination.href.previous %}
-  <div class="wrapper">
+  <div class="wrapper post--next-previous-link">
     <nav class="pagination--inner" aria-label="Pagination links">
     {% if pagination.href.previous %}
+    <p>
       <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">
         <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
       </a>
+      </p>
     {% endif %}
     {% if pagination.href.next %}
+    <p>
       <a href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">
         <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
       </a>
+      </p>
     {% endif %}
     </nav>
   </div>
