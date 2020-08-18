@@ -289,11 +289,12 @@ figcaption {
   display: inline-block;
   margin-right: 1em;
 }
-.nav-item a[href]:not(:hover) {
+
+.nav-item a {
   text-decoration: none;
 }
-.nav-item-active {
-  font-weight: 700;
+
+.nav-item a[data-state="active"] {
   text-decoration: underline;
 }
 
