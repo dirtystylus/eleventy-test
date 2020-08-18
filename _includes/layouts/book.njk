@@ -27,5 +27,18 @@ templateClass: tmpl-book
 <div class="book-body">
 {{ content | safe }}
 </div>
-<div class="book--books-list-link"><a href="{{ '/reading' | url }}">← All Books</a></div>
+<div class="post--next-previous-link">
+{% if nextPost.url %}
+  <p class="ctr">
+    <strong>Next Book</strong>: 
+    <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+  </p>
+{% endif %}
+{% if prevPost.url %}
+  <p class="ctr">
+    <strong>Previous Book</strong>: 
+    <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+  </p>
+{% endif %}
+</div>
 </article>

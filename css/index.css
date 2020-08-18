@@ -641,7 +641,8 @@ body {
   margin-bottom: 1em;
 }
 
-.tmpl-post .post--next-previous-link {
+.tmpl-post .post--next-previous-link,
+.tmpl-book .post--next-previous-link {
   grid-column: 1;
   border-top: 1px dashed var(--lightgray);
   margin-top: 2em;
@@ -649,7 +650,8 @@ body {
 }
 
 @media (min-width: 45em) {
-  .tmpl-post .post--next-previous-link {
+  .tmpl-post .post--next-previous-link,
+  .tmpl-book .post--next-previous-link {
     grid-column: content-start / content-end;
   }
 }
