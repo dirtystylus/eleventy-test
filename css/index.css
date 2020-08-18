@@ -289,11 +289,12 @@ figcaption {
   display: inline-block;
   margin-right: 1em;
 }
-.nav-item a[href]:not(:hover) {
+
+.nav-item a {
   text-decoration: none;
 }
-.nav-item-active {
-  font-weight: 700;
+
+.nav-item a[data-state="active"] {
   text-decoration: underline;
 }
 
@@ -640,7 +641,8 @@ body {
   margin-bottom: 1em;
 }
 
-.tmpl-post .post--next-previous-link {
+.tmpl-post .post--next-previous-link,
+.tmpl-book .post--next-previous-link {
   grid-column: 1;
   border-top: 1px dashed var(--lightgray);
   margin-top: 2em;
@@ -648,7 +650,8 @@ body {
 }
 
 @media (min-width: 45em) {
-  .tmpl-post .post--next-previous-link {
+  .tmpl-post .post--next-previous-link,
+  .tmpl-book .post--next-previous-link {
     grid-column: content-start / content-end;
   }
 }

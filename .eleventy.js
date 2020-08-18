@@ -66,7 +66,7 @@ module.exports = function (eleventyConfig) {
 
   // Return books
   eleventyConfig.addCollection("reading", function (collection) {
-    return collection
+    const coll = collection
       .getAll()
       .filter(function (item) {
         return item.data.content_type == "book";
@@ -74,6 +74,15 @@ module.exports = function (eleventyConfig) {
       .sort(function (a, b) {
         return b.date - a.date;
       });
+
+    for (let i = 0; i < coll.length; i++) {
+      const prevPost = coll[i + 1];
+      const nextPost = coll[i - 1];
+
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
+    return coll;
   });
 
   eleventyConfig.addPassthroughCopy("img");
@@ -82,11 +91,11 @@ module.exports = function (eleventyConfig) {
   // Next/Previous navigation
   // See: https://brycewray.com/posts/2019/12/previous-next-eleventy/
   eleventyConfig.addCollection("posts", function (collection) {
-    const coll = collection.getFilteredByTag("posts");
+    const coll = collection.getFilteredByTag("posts").reverse();
 
     for (let i = 0; i < coll.length; i++) {
-      const prevPost = coll[i - 1];
-      const nextPost = coll[i + 1];
+      const prevPost = coll[i + 1];
+      const nextPost = coll[i - 1];
 
       coll[i].data["prevPost"] = prevPost;
       coll[i].data["nextPost"] = nextPost;

@@ -15,8 +15,8 @@
 
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+      {%- for item in navigation.items %}
+        <li class="nav-item"><a href="{{ item.url | url }}" {{helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
       {%- endfor %}
       </ul>
     </header>
