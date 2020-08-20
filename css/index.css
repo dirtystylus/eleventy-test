@@ -654,6 +654,12 @@ body {
   }
 }
 
+@media (min-width: 65em) {
+  .tmpl-books-list .post--next-previous-link {
+    grid-column: content-bleed-start / content-bleed-end;
+  }
+}
+
 @media (min-width: 45em) {
   .tmpl-post .aside-right-wrap {
     grid-column: content-start / content-gutter-end;
