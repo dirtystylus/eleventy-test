@@ -1,7 +1,7 @@
 {# Only renders this section if there are links to render #}
 {% if pagination.href.next or pagination.href.previous %}
   <div class="wrapper post--next-previous-link">
-    <nav class="pagination--inner" aria-label="Pagination links">
+    <nav class="pagination--inner{% if pagination.href.previous and not pagination.href.next %} pagination--previous-only{% endif %}{% if not pagination.href.previous and pagination.href.next %} pagination--next-only{% endif %}" aria-label="Pagination links">
     {% if pagination.href.previous %}
     <p>
       <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">
@@ -10,7 +10,7 @@
       </p>
     {% endif %}
     {% if pagination.href.next %}
-    <p>
+    <p class="right">
       <a href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">
         <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
       </a>

@@ -641,16 +641,34 @@ body {
   margin-bottom: 1em;
 }
 
-.post--next-previous-link {
+.pagination--inner {
   grid-column: 1;
   border-top: 1px dashed var(--lightgray);
   margin-top: 2em;
   padding-top: 1em;
+  font-size: 1rem;
 }
 
 @media (min-width: 45em) {
   .post--next-previous-link {
     grid-column: content-start / content-end;
+  }
+
+  .pagination--inner {
+    display: flex;
+  }
+
+  .pagination--next-only {
+    justify-content: flex-end;
+  }
+
+  .pagination--inner .left,
+  .pagination--inner .right {
+    flex-grow: 1;
+  }
+
+  .pagination--inner .right {
+    text-align: right;
   }
 }
 
