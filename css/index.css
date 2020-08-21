@@ -322,6 +322,16 @@ figcaption {
   }
 }
 
+.home--bio {
+  grid-column: 1;
+}
+
+@media (min-width: 45rem) {
+  .home--bio {
+    grid-column: content-start / content-end;
+  }
+}
+
 @media (min-width: 60rem) {
   .tmpl-home .bookslist {
     grid-column: content-start / content-end;
