@@ -1,11 +1,20 @@
 ---
 layout: layouts/home.njk
-permalink: /reading/
 templateClass: tmpl-books-list
+permalink: 'reading{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
+paginationPrevText: 'Newer books'
+paginationNextText: 'Older books'
+paginationAnchor: '#post-list'
+pagination:
+  data: collections.reading
+  size: 2
+  alias: bookslist
+
 ---
 <div class="content-main container">
 <h1 class="books-list-title">Reading</h1>
 
-{% set bookslist = collections.reading %}
+{# {% set bookslist = collections.reading %} #}
 {% include "bookslist.njk" %}
+{% include "partials/list-pagination.njk" %}
 </div>
