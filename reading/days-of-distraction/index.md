@@ -1,7 +1,7 @@
 ---
 title: Days of Distraction
 author: Alexandra Chang
-date: 2020-06-22
+date: 2020-06-25
 description: Alexandra Chang’s fictionalized memoir of writing, Ithaca, and Asian American identity.
 publication_date: 2020-03-21
 cover_image: /img/reading/gideon-the-ninth.jpg

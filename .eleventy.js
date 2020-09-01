@@ -86,6 +86,29 @@ module.exports = function (eleventyConfig) {
     return coll;
   });
 
+  // Return combined posts and books
+  eleventyConfig.addCollection("combined", function (collection) {
+    const coll = collection
+      .getAll()
+      .filter(function (item) {
+        return (
+          item.data.content_type == "book" || item.data.content_type == "post"
+        );
+      })
+      .sort(function (a, b) {
+        return b.date - a.date;
+      });
+
+    for (let i = 0; i < coll.length; i++) {
+      const prevPost = coll[i + 1];
+      const nextPost = coll[i - 1];
+
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
+    return coll;
+  });
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
 
