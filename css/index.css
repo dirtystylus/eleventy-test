@@ -33,6 +33,7 @@ body {
   font-family: Georgia, serif;
   color: var(--darkgray);
   background-color: var(--white);
+  height: 100vh;
 }
 
 /* @media (min-width: 60rem) {
@@ -87,9 +88,15 @@ hr {
   border: 0;
   height: 2px;
   background: var(--lightgray);
-  grid-column: content-start / content-end;
+  grid-column: 1;
   width: 100%;
   margin: 3em 0 2em 0;
+}
+
+@media (min-width: 45rem) {
+  hr {
+    grid-column: content-start / content-end;
+  }
 }
 
 main {
@@ -402,7 +409,7 @@ a[href].postlist-link:visited {
   font-size: 1.125em; /* 19px /16 */
 }
 
-/* Tags */
+/* Tags List */
 .tag {
   color: var(--red);
 }
@@ -427,6 +434,25 @@ a[href].tag:visited {
   border-bottom: none;
   padding-bottom: 0;
 }
+
+/* Tag Detail */
+
+.tmpl-tag-detail h1 {
+  grid-column: 1;
+  font-weight: 400;
+}
+
+@media (min-width: 45rem) {
+  .tmpl-tag-detail h1 {
+    grid-column: content-start / content-bleed-end;
+  }
+}
+
+/* .tmpl-tag-detail .postlist-item {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+} */
 
 /* Warning */
 .warning {
@@ -460,6 +486,8 @@ a[href].direct-link:focus:visited,
 body {
   font-family: Georgia, Times, serif;
   line-height: 1.4;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .container {
@@ -1049,6 +1077,7 @@ body {
   align-items: top;
   grid-column: 1;
   list-style: none;
+  padding: 0;
 }
 
 @media (min-width: 45em) {
