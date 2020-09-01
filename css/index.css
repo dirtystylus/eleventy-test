@@ -411,6 +411,23 @@ a[href].tag:visited {
   color: var(--red);
 }
 
+.tmpl-tags-list h1 {
+  grid-column: 1;
+  font-weight: 400;
+}
+
+@media (min-width: 45rem) {
+  .tmpl-tags-list h1 {
+    grid-column: content-start / content-bleed-end;
+  }
+}
+
+.tmpl-tags-list .postlist-item {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 /* Warning */
 .warning {
   background-color: #ffc;
