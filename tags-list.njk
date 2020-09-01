@@ -1,10 +1,15 @@
 ---
 permalink: /tags/
-layout: layouts/home.njk
+layout: layouts/base.njk
+templateClass: tmpl-tags-list
 ---
+<div class="content-main container">
 <h1>Tags</h1>
-
-{% for tag in collections.tagList %}
+<ul class="postlist">
+{% for tag in collections.tagList%}
   {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+  <li class="postlist-item">
+    <a href="{{ tagUrl | url }}" class="postlist-link">{{ tag }}</a> ({{ collections[tag].length }})
+  </li>
 {% endfor %}
+</ul>
