@@ -78,10 +78,10 @@ ol {
   line-height: 1.45;
 }
 a[href] {
-  color: var(--blue);
+  color: var(--red);
 }
 a[href]:visited {
-  color: var(--navy);
+  color: var(--red);
 }
 
 hr {
@@ -265,6 +265,12 @@ figcaption {
   margin: 1em 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
   grid-column: 1;
+}
+
+.home a[href],
+.home a[href]:visited {
+  text-decoration: none;
+  color: var(--red);
 }
 
 @media (min-width: 45em) {
