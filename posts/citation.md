@@ -1,7 +1,7 @@
 ---
 title: Citation
 description: Adding a citation to a block quote.
-date: 2020-06-22
+date: 2020-08-22
 layout: layouts/post.njk
 ---
 

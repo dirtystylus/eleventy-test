@@ -12,3 +12,5 @@ reading_end_date: 2020-05-23
 tags:
   - reading
 ---
+
+Intentionally blurs the line between fiction and memoir. I’m trying to figure out what it reminds me of — especially the sections where Chang brings history into the narrative as a counterpoint to her protagonist’s experience.
