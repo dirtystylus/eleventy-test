@@ -115,7 +115,14 @@ module.exports = function (eleventyConfig) {
   // Next/Previous navigation
   // See: https://brycewray.com/posts/2019/12/previous-next-eleventy/
   eleventyConfig.addCollection("posts", function (collection) {
-    const coll = collection.getFilteredByTag("posts");
+    const coll = collection
+      .getAll()
+      .filter(function (item) {
+        return item.data.content_type == "post";
+      })
+      .sort(function (a, b) {
+        return a.date - b.date;
+      });
 
     for (let i = 0; i < coll.length; i++) {
       const prevPost = coll[i - 1];
