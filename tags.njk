@@ -18,13 +18,13 @@ templateClass: tmpl-tag-detail
 ---
 <div class="content-main container">
 <h1>Tagged “{{ tag }}”</h1>
+<div class="post--meta">See <a href="{{ '/tags/' | url }}">all tags</a>.</div>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
 <div class="wrapper post--next-previous-link">
   <nav class="pagination--inner pagination--previous-only" aria-label="Pagination links">
-  <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
   </nav>
 </div>
 </div>

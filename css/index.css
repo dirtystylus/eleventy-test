@@ -392,7 +392,7 @@ figcaption {
   margin-bottom: 0;
 }
 
-.postlist-item .post-meta {
+.postlist-item .post--meta {
   font-style: italic;
   font-size: 0.9em;
 }
@@ -532,22 +532,19 @@ body {
   }
 }
 
-.tmpl-post .post--meta {
+.post--meta {
   grid-column: 1;
   margin-bottom: 2em;
-}
-
-@media (min-width: 45em) {
-  .tmpl-post .post--meta {
-    grid-column: content-start / span 9;
-    margin-bottom: 3em;
-  }
-}
-
-.tmpl-post time {
   font-family: sans-serif;
   font-size: 0.9em;
   color: var(--gray);
+}
+
+@media (min-width: 45em) {
+  .post--meta {
+    grid-column: content-start / span 9;
+    margin-bottom: 3em;
+  }
 }
 
 .tmpl-post h2 {
@@ -598,9 +595,7 @@ body {
   }
 }
 
-.tmpl-post .post-meta {
-  grid-column: content-start / content-end;
-}
+@media (min-width: 45em) {
 
 .tmpl-post figure {
   /* margin: 0 0 1em 0; */
