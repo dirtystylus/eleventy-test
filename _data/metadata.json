@@ -3,14 +3,14 @@
   "url": "https://dirtystylus-2020.netlify.app/",
   "description": "Personal site of Mark Llobrera.",
   "feed": {
-    "subtitle": "Personal site of Mark Llobrera: All Content",
+    "subtitle": "Personal site of Mark Llobrera",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "url": "https://dirtystylus-2020.netlify.app/feed/feed.xml",
     "id": "https://dirtystylus-2020.netlify.app"
   },
   "feed_reading": {
-    "subtitle": "Personal site of Mark Llobrera: Reading",
+    "subtitle": "Personal site of Mark Llobrera",
     "filename": "reading.xml",
     "path": "/feed/reading.xml",
     "url": "https://dirtystylus-2020.netlify.app/feed/reading.xml",
