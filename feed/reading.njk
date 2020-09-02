@@ -22,7 +22,8 @@ eleventyExcludeFromCollections: true
 		<link href="{{ absolutePostUrl }}"/>
 		<updated>{{ post.date | rssDate }}</updated>
 		<id>{{ absolutePostUrl }}</id>
-		<content type="html">&lt;p&gt;{% image metadata.feed_reading.img_base_url + post.data.cover_image, post.data.title + " cover image" , "book_thumb" %}&lt;/p&gt;&lt;p&gt;Started Reading: {{post.data.reading_start_date | readableDate }}&lt;/p&gt;&lt;p&gt;Finished Reading: {{post.data.reading_end_date | readableDate }}&lt;/p&gt;{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+		{% set book_metadata %}<p>{% image metadata.feed_reading.img_base_url + post.data.cover_image, post.data.title + " cover image" , "book_thumb" %}</p><p>Started Reading: {{post.data.reading_start_date | readableDate }}</p><p>Finished Reading: {{post.data.reading_end_date | readableDate }}</p>{% endset %}
+		<content type="html"><![CDATA[{{book_metadata | htmlToAbsoluteUrls(absolutePostUrl)}}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}]]></content>
 	</entry>
 	{%- endfor %}
 </feed>
