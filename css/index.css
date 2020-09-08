@@ -311,6 +311,10 @@ figcaption {
   text-decoration: underline;
 }
 
+.footer--copyright .nav-item a {
+  text-decoration: underline;
+}
+
 /* Homepage */
 
 .tmpl-home h1 {

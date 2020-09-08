@@ -8,5 +8,19 @@
       "text": "Reading",
       "url": "/reading"
     }
+  ],
+  "footer_items": [
+    {
+      "text": "RSS (All Content)",
+      "url": "/feed/feed.xml"
+    },
+    {
+      "text": "RSS (Reading Only)",
+      "url": "/feed/reading.xml"
+    },
+    {
+      "text": "@dirtystylus",
+      "url": "https://twitter.com/dirtystylus"
+    }
   ]
 }

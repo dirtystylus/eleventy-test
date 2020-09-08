@@ -58,9 +58,7 @@ This gets rendered in my **book.njk** Nunjucks template, in this snippet:
 Moving on tho RSS. The starter RSS template I am using uses this snippet to render out the post content:
 
 ```js
-{% raw %}
 <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-{% endraw %}
 ```
 
 Which is fine, except that `post.templateContent` does not include anything from the wrapper template. It’s basically the body of the post, but if you’re rendering YAML front matter like I am that won’t be included.
