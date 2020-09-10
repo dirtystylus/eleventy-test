@@ -11,16 +11,14 @@ templateClass: tmpl-book
     <h1>{{ title }}</h1>
     <h2>{{author}}</h2>
     <dl>
-      <dt>Publication Date</dt>
-      <dd>{{ publication_date | dateStringToObj | readableDate }}</dd>
       <dt>Genre</dt>
       <dd>{{ genre }}</dd>
       <dt>Format</dt>
       <dd>{{ format }}</dd>
       <dt>Started Reading</dt>
-      <dd>{{ start_date | dateStringToObj | readableDate }}</dd>
+      <dd>{{ start_date | readableDate }}</dd>
       <dt>Finished Reading</dt>
-      <dd>{{ end_date | dateStringToObj | readableDate }}</dd>
+      <dd>{{ end_date | readableDate }}</dd>
     </dl>
   </div>
 </div>
