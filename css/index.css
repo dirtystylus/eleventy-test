@@ -17,7 +17,8 @@
     [content-gutter-start] 100px [content-start] repeat(6, [col-start] 1fr)
     [content-end] 100px [content-gutter-end] 1fr [content-bleed-end]
     calc(50vw - 31.25rem);
-  --grid--books--list: repeat(auto-fit, minmax(125px, 1fr));
+  --grid--books--list--narrow: repeat(auto-fit, minmax(100px, 1fr));
+  --grid--books--list--wide: repeat(auto-fit, minmax(125px, 1fr));
 }
 * {
   box-sizing: border-box;
@@ -100,7 +101,7 @@ hr {
 }
 
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-bottom: 1px dotted var(--lightgray);
   display: grid;
   grid-template-columns: var(--grid--header--narrow);
 }
@@ -120,9 +121,9 @@ header {
 footer {
   display: grid;
   grid-template-columns: var(--grid--narrow);
-  background: lightgrey;
   padding: 2rem 0;
   margin-top: 2em;
+  border-top: 1px dotted var(--lightgray);
 }
 
 .footer--copyright {
@@ -1085,7 +1086,7 @@ blockquote {
 
 .bookslist {
   display: grid;
-  grid-template-columns: var(--grid--books--list);
+  grid-template-columns: var(--grid--books--list--narrow);
   grid-auto-rows: 1fr;
   grid-gap: 1em;
   justify-items: left;
@@ -1096,16 +1097,17 @@ blockquote {
 
 @media (min-width: 45em) {
   .bookslist {
+    grid-template-columns: var(--grid--books--list--wide);
     grid-column: content-start / content-end;
-    grid-gap: 2em;
   }
 }
 
 @media (min-width: 65em) {
-  .books-list-title {
-    grid-column: content-bleed-start / content-bleed-end;
-  }
   .bookslist {
+    grid-column: content-bleed-start / content-bleed-end;
+    grid-gap: 2em;
+  }
+  .books-list-title {
     grid-column: content-bleed-start / content-bleed-end;
   }
 }
@@ -1160,6 +1162,30 @@ blockquote {
   min-height: 220px;
   object-fit: cover;
   object-position: top;
+}
+
+@media (min-width: 25em) {
+  .bookslist-item .book-thumb {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: unset;
+    min-height: 220px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+@media (min-width: 45em) {
+  .bookslist-item .book-thumb {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: unset;
+    min-height: 220px;
+    object-fit: cover;
+    object-position: top;
+  }
 }
 
 @media (min-width: 65em) {
