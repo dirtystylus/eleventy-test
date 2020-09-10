@@ -12,20 +12,22 @@ templateClass: tmpl-book
     <h2>{{author}}</h2>
     <dl>
       <dt>Publication Date</dt>
-      <dd>{{ publication_date | readableDate }}</dd>
+      <dd>{{ publication_date | dateStringToObj | readableDate }}</dd>
       <dt>Genre</dt>
       <dd>{{ genre }}</dd>
       <dt>Format</dt>
       <dd>{{ format }}</dd>
       <dt>Started Reading</dt>
-      <dd>{{ reading_start_date | readableDate }}</dd>
+      <dd>{{ start_date | dateStringToObj | readableDate }}</dd>
       <dt>Finished Reading</dt>
-      <dd>{{ reading_end_date | readableDate }}</dd>
+      <dd>{{ end_date | dateStringToObj | readableDate }}</dd>
     </dl>
   </div>
 </div>
 <div class="book-body">
 {{ content | safe }}
 </div>
+{% set prevPost = prevBook %}
+{% set nextPost = nextBook %}
 {% include "partials/single-pagination.njk" %}
 </article>

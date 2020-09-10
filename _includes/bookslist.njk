@@ -9,7 +9,9 @@
     <div class="book-meta">
       <h1 class="book-meta-title">{{ book.data.title }}</h1>
       <h2 class="book-meta-author">{{book.data.author}}</h2>
-      <div class="book-meta-finished">Finished {{ book.data.reading_end_date | readableDate }}</div>
+      {% if book.data.end_date %}
+      <div class="book-meta-finished">Finished {{ book.data.end_date | dateStringToObj | readableDate }}</div>
+      {% endif %}
     </div>
 </div>
   </article>

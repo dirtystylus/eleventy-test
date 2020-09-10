@@ -99,21 +99,10 @@ hr {
   }
 }
 
-main {
-  /* padding: 1rem; */
-}
-/* main :first-child {
-  margin-top: 0;
-} */
 header {
   border-bottom: 1px dashed var(--lightgray);
   display: grid;
   grid-template-columns: var(--grid--header--narrow);
-}
-header:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 @media (min-width: 45rem) {
@@ -261,7 +250,8 @@ figcaption {
 /* Header */
 .home {
   padding: 0 1em;
-  /* float: left; */
+  font-family: sans-serif;
+  font-weight: 400;
   margin: 1em 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
   grid-column: 1;
@@ -599,8 +589,6 @@ body {
   }
 }
 
-@media (min-width: 45em) {
-
 .tmpl-post figure {
   /* margin: 0 0 1em 0; */
   grid-column: 1;
@@ -650,7 +638,7 @@ body {
   }
 }
 
-.tmpl-post .container blockquote {
+blockquote {
   border-left: 2px solid #e2e2e2;
   grid-column: 1;
   margin: 1em 0;
@@ -659,14 +647,14 @@ body {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
-    .tmpl-post .container blockquote {
+    blockquote {
       padding-left: 1.4em;
     }
   }
 }
 
 @media (min-width: 45em) {
-  .tmpl-post .container blockquote {
+  blockquote {
     grid-column: content-start / content-end;
     margin: 2em 0 2em -1.1em;
     padding-left: 1em;
@@ -707,6 +695,10 @@ body {
   margin-top: 2em;
   padding-top: 1em;
   font-size: 1rem;
+}
+
+.post--next-previous-link {
+  grid-column: 1;
 }
 
 @media (min-width: 45em) {
@@ -891,17 +883,31 @@ body {
 
 /* Book Detail */
 .tmpl-book .book-details {
-  grid-column: content-bleed-start / content-bleed-end;
-  /* background: #ededed; */
-  display: grid;
-  grid-template-columns: 40% 60%;
-  /* justify-items: center; */
-  /* padding: 1em; */
+  grid-column: 1;
+}
+
+@media (min-width: 25em) {
+  .tmpl-book .book-details {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 45rem) {
+  .tmpl-book .book-details {
+    grid-column: content-bleed-start / content-bleed-end;
+  }
 }
 
 .tmpl-book .book-cover {
-  /* width: 90%; */
-  padding: 1em;
+  padding: 0 1em 1em 0;
+}
+
+@media (min-width: 25rem) {
+  .tmpl-book .book-cover {
+    padding: 0 1em 0 0;
+  }
 }
 
 .tmpl-book .book-details h1 {
@@ -917,11 +923,20 @@ body {
   margin: 0.25em 0 0 0;
 }
 
+.tmpl-book .book-thumb {
+  max-width: 100%;
+  width: 100%;
+}
+
 .tmpl-book .book-meta {
-  /* border-top: 1px solid #999;
-  border-bottom: 1px solid #999; */
   margin: 0;
-  padding: 1em;
+  padding: 0;
+}
+
+@media (min-width: 25rem) {
+  .tmpl-book .book-meta {
+    padding: 0 0 0 1em;
+  }
 }
 
 .tmpl-book .book-meta dl {
@@ -947,9 +962,11 @@ body {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-.tmpl-book .book-body {
-  grid-column: content-start;
-  margin-top: 1em;
+@media (min-width: 45em) {
+  .tmpl-book .book-body {
+    grid-column: content-start;
+    margin-top: 1em;
+  }
 }
 
 .tmpl-book .book--books-list-link {
@@ -967,12 +984,9 @@ body {
   }
 
   .tmpl-book .book-details h1 {
-    /* font-size: 2em;
-    font-style: italic; */
     margin: 0;
   }
   .tmpl-book .book-details h2 {
-    /* font-size: 1.5em; */
     margin: 0;
   }
   .tmpl-book .book-details {
@@ -990,17 +1004,13 @@ body {
 
   .tmpl-book .book-cover {
     grid-column: book-detail-start;
-    /* flex: 1 50%; */
-    /* align-self: center; */
     padding: 0;
   }
 
   .tmpl-book .book-meta {
-    /* flex: 2 50%; */
-    margin: 0;
+    margin: -0.5em 0 0 0;
     padding: 0 0 0 3em;
     border: none;
-    /* align-self: center; */
   }
 
   .tmpl-book .book-meta dd {
@@ -1079,7 +1089,6 @@ body {
   grid-auto-rows: 1fr;
   grid-gap: 1em;
   justify-items: left;
-  align-items: top;
   grid-column: 1;
   list-style: none;
   padding: 0;
@@ -1088,15 +1097,11 @@ body {
 @media (min-width: 45em) {
   .bookslist {
     grid-column: content-start / content-end;
+    grid-gap: 2em;
   }
 }
 
-@media (min-width: 65rem) {
-  .home {
-    padding: 0;
-    font-family: sans-serif;
-    font-weight: 400;
-  }
+@media (min-width: 65em) {
   .books-list-title {
     grid-column: content-bleed-start / content-bleed-end;
   }
@@ -1108,15 +1113,11 @@ body {
 .bookslist-item {
   /* background: #ededed; */
   border: 0;
+  display: flex;
   margin: 0;
   padding: 0;
   width: 100%;
-  /* height: 100%; */
-  max-width: 190px;
-}
-
-.tmpl-books-list .book-details {
-  /* padding: 1em; */
+  font-size: 1rem;
 }
 
 .bookslist-item a[href].postlist-link {
@@ -1124,6 +1125,7 @@ body {
   color: var(--darkgray);
   margin: 0;
   padding: 0;
+  flex-grow: 1;
 }
 
 .bookslist-item a[href].postlist-link:visited {
@@ -1132,23 +1134,81 @@ body {
 }
 
 .bookslist-item .book-meta-title {
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-style: italic;
   font-weight: 400;
   margin: 0.5em 0 0 0;
 }
 
 .bookslist-item .book-meta-author {
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 400;
   margin: 0.25em 0 0 0;
 }
 
-.bookslist-item .book-cover {
-  max-width: 160px;
+.bookslist-item .book-meta-finished {
+  font-size: 0.75em;
+  font-family: sans-serif;
+  margin-top: 1em;
 }
 
-.bookslist-item .book-meta-finished {
-  font-size: 0.8em;
-  margin-top: 1em;
+.bookslist-item .book-thumb {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  max-height: 245px;
+  min-height: 220px;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (min-width: 65em) {
+  .bookslist-item .book-thumb {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    min-height: 220px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+/* Image Grid */
+
+/* set a max width, and center */
+.gallery {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: content-start / content-end;
+}
+
+.gallery > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(6, 200px);
+  grid-gap: 1em;
+  grid-auto-flow: dense;
+  padding: 0;
+}
+
+.gallery > ul > li {
+  list-style: none;
+}
+
+.gallery > ul > li:nth-child(4n) {
+  grid-column: span 2; /* Spans two columns */
+  grid-row: span 2; /* Spans two rows */
+}
+
+/* This will create 3x images every 8 elements */
+.gallery > ul > li:nth-child(8n) {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+.gallery > ul > li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

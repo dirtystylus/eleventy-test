@@ -31,6 +31,10 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addFilter("dateStringToObj", function (dateIn) {
+    return moment(dateIn).toDate();
+  });
+
   // limit filter
   eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
     return array.slice(0, limit);
@@ -67,23 +71,24 @@ module.exports = function (eleventyConfig) {
 
   // Return books
   eleventyConfig.addCollection("reading", function (collection) {
-    const coll = collection
+    const books = collection
       .getAll()
       .filter(function (item) {
         return item.data.content_type == "book";
       })
       .sort(function (a, b) {
-        return b.date - a.date;
+        return (
+          moment(a.data.end_date).toDate() - moment(b.data.end_date).toDate()
+        );
       });
+    for (let i = 0; i < books.length; i++) {
+      const prevPost = books[i - 1];
+      const nextPost = books[i + 1];
 
-    for (let i = 0; i < coll.length; i++) {
-      const prevPost = coll[i + 1];
-      const nextPost = coll[i - 1];
-
-      coll[i].data["prevPost"] = prevPost;
-      coll[i].data["nextPost"] = nextPost;
+      books[i].data["prevBook"] = prevPost;
+      books[i].data["nextBook"] = nextPost;
     }
-    return coll;
+    return [...books].reverse();
   });
 
   // Return combined posts and books
@@ -96,7 +101,7 @@ module.exports = function (eleventyConfig) {
         );
       })
       .sort(function (a, b) {
-        return b.date - a.date;
+        return a.date - b.date;
       });
 
     for (let i = 0; i < coll.length; i++) {
@@ -106,7 +111,7 @@ module.exports = function (eleventyConfig) {
       coll[i].data["prevPost"] = prevPost;
       coll[i].data["nextPost"] = nextPost;
     }
-    return coll;
+    return [...coll].reverse();
   });
 
   eleventyConfig.addPassthroughCopy("img");
