@@ -17,9 +17,6 @@ genre: Fiction
 format: Hardcover
 reading_start_date: 2020-05-16
 reading_end_date: 2020-05-16
-tags:
-  - reading
-
 ---
 
 ```
@@ -36,8 +33,6 @@ This gets rendered in my **book.njk** Nunjucks template, in this snippet:
     <h1>{{ title }}</h1>
     <h2>{{author}}</h2>
     <dl>
-      <dt>Publication Date</dt>
-      <dd>{{ publication_date | readableDate }}</dd>
       <dt>Genre</dt>
       <dd>{{ genre }}</dd>
       <dt>Format</dt>

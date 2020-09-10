@@ -1,16 +1,13 @@
 ---
 title: The Odyssey
-author: Homer (Emily Wilson translation)
-date: 2020-04-02
-description: Emily Wilson’s new translation of The Odyssey
-publication_date: 2018-09-20
-cover_image: /img/reading/book-nk-jemisin-black-future-month.jpg
+display_title: The Odyssey
+author: Homer (trans. Emily Wilson)
+cover_image: /reading/the-odyssey/the-odyssey.jpg
 genre: Fiction
 format: Hardcover
-reading_start_date: 2019-08-27
-reading_end_date: 2019-08-30
-tags:
-  - reading
+date: 2020-01-12
+start_date: 2019-12-30
+end_date: 2020-01-12
 ---
 
 I’m now reading the Emily Wilson translation of _The Odyssey_ by Homer. I found it comforting, and not at all alien. Sometimes I would ponder a small section of text, and flip back and forth to the glossary to figure out how Emily Wilson had translated things.
