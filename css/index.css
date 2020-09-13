@@ -17,8 +17,8 @@
     [content-gutter-start] 100px [content-start] repeat(6, [col-start] 1fr)
     [content-end] 100px [content-gutter-end] 1fr [content-bleed-end]
     calc(50vw - 31.25rem);
-  --grid--books--list--narrow: repeat(auto-fit, minmax(100px, 1fr));
-  --grid--books--list--wide: repeat(auto-fit, minmax(125px, 1fr));
+  --grid--books--list--narrow: repeat(auto-fit, minmax(110px, 1fr));
+  --grid--books--list--wide: repeat(auto-fit, minmax(120px, 1fr));
 }
 * {
   box-sizing: border-box;
@@ -1120,6 +1120,7 @@ blockquote {
   padding: 0;
   width: 100%;
   font-size: 1rem;
+  max-width: 130px;
 }
 
 .bookslist-item a[href].postlist-link {

@@ -5,7 +5,7 @@ author: Hilary Mantel
 description: The final book in the Wolf Hall trilogy.
 cover_image: /reading/the-mirror-and-the-light/the-mirror-and-the-light.jpg
 genre: Fiction
-format: Hardcover
+format: Ebook
 date: 2020-04-22
 start_date: 2020-03-17
 end_date: 2020-04-22
