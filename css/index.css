@@ -270,6 +270,12 @@ figcaption {
   }
 }
 
+@media (min-width: 65em) {
+  .home {
+    padding: 0;
+  }
+}
+
 .home :link:not(:hover) {
   text-decoration: none;
 }
