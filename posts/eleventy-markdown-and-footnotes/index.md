@@ -4,7 +4,7 @@ description: Adding footnote support to markdown-it in Eleventy.
 date: 2020-06-15
 tags:
   - eleventy
-  - web development
+  - web_development
 ---
 
 The default Markdown plugin in the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo that I’m using as a basis doesn’t parse footnotes by default, so here’s a few notes on how I added support:

@@ -4,7 +4,7 @@ description: Tweaking Images Responsiver for figure element markup.
 date: 2020-07-21
 tags:
   - eleventy
-  - web development
+  - web_development
 ---
 
 A quick follow-up on my [previous post on Nicolas Hoizey’s Images Responsiver plugin](http://dirtystylus.com/2020/06/29/eleventy-images-responsiver/): I noticed that the markup it generated was wrapping a `<p>` tag around `<figure>` elements. For example:

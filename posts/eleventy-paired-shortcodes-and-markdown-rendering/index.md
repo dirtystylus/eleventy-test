@@ -4,7 +4,7 @@ description: Implementing figure markup with a Paired Shortcode, plus adventures
 date: 2020-06-16
 tags:
   - eleventy
-  - web development
+  - web_development
 ---
 
 The first time I read the documentation on Eleventy’s [Paired Shortcodes](https://www.11ty.dev/docs/shortcodes/#paired-shortcodes) I couldn’t quite figure out how I would use one, so I stuck to a regular shortcode for [generating figure/image output](http://dirtystylus.com/2019/11/19/ternary-operators-in-template-literals/). Here’s what my original shortcode looked like:
