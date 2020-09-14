@@ -4,7 +4,7 @@ description: I belatedly figure out how to get debug output in Eleventy.
 date: 2020-06-17
 tags:
   - eleventy
-  - web development
+  - web_development
 ---
 
 While working on my [Paired Shortcode for images](http://dirtystylus.com/2020/06/16/eleventy-paired-shortcodes-and-markdown-rendering/) I finally ran into a situation where trial-and-error wasn’t getting me anywhere, and I finally had to dive into the [debugging hooks in Eleventy](https://www.11ty.dev/docs/debugging/)[^1].

@@ -1,10 +1,9 @@
-<!doctype html>
-<html lang="en">
+<!doctype html><html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism-a11y-dark.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
@@ -14,8 +13,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="{{ metadata.profile_image }}" />
     <meta property="og:url" content="{{ metadata.url + page.url }}" />
-    <meta property="og:title" content="{{ renderData.title or title or metadata.title }} - {{ metadata.domain }}" />
-    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
+    <meta property="og:title" content="{{ title or metadata.title }} - {{ metadata.domain }}" />
+    <meta property="og:description" content="{{ description or metadata.description }}" />
 
     <!-- Twitter Card tags-->
     <meta name="twitter:card" content="summary">

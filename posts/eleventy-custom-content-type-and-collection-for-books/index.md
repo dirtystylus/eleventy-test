@@ -4,7 +4,7 @@ description: Building a custom content type, collection, and templates for loggi
 date: 2020-05-27
 tags:
   - eleventy
-  - web development
+  - web_development
 ---
 
 Continuing my adventures in [Eleventy](http://11ty.dev): I wanted to create a collection for books that I’ve read, separate from the default **Post** type. But I didn’t want to have the collection called **Books**, because that would imply that I had written the books.

@@ -4,7 +4,7 @@ description: Getting front matter data into my Nunjucks RSS feed templates.
 date: 2020-09-04
 tags:
   - eleventy
-  - web development
+  - web_development
 ---
 
 I’ve been setting up the RSS feeds for my posts, as well as a separate feed just for my custom post type Book. It has quite a bit of YAML front matter, some of which I want to include in the feed:

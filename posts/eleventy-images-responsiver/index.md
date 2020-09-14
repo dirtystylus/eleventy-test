@@ -4,7 +4,7 @@ description: Refining my responsive images approach with Nicolas Hoisey’s Imag
 date: 2020-06-29
 tags:
   - eleventy
-  - web development
+  - web_development
 ---
 
 One of my favorite things is writing and sharing things, and getting feedback from folks. I tweeted out the [last post on Paired Shortcodes and responsive images](http://dirtystylus.com/2020/06/16/eleventy-paired-shortcodes-and-markdown-rendering/), and heard back from [Nicolas Hoisey](https://nicolas-hoizey.com), who mentioned the work he’s been doing on the [Eleventy Images Responsiver](https://nhoizey.github.io/eleventy-plugin-images-responsiver/) plugin. I liked some of the design decisions behind the plugin, so I decided to give it a shot on my in-progress site.
