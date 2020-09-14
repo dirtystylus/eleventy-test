@@ -318,6 +318,10 @@ figcaption {
   text-decoration: underline;
 }
 
+.footer--copyright .nav-item {
+  margin: 0 1em 2em 0;
+}
+
 .footer--copyright .nav-item a {
   text-decoration: underline;
 }
