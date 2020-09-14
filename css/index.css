@@ -1,12 +1,14 @@
 :root {
   --red: #c5004a;
   --darkred: #7f0036;
+  --lightpink: #fed5e5;
   --lightgray: #c0c0c0;
   --gray: #666;
   --darkgray: #333;
   --navy: #17050f;
   --blue: #082840;
   --white: #fff;
+  --offwhite: #fafafa;
   --grid--header--narrow: 160px 1fr;
   --grid--narrow: 1fr;
   --grid--base: calc(50vw - 37.25rem) [content-bleed-start] 1fr
@@ -33,7 +35,7 @@ body {
   margin: 0;
   font-family: Georgia, serif;
   color: var(--darkgray);
-  background-color: var(--white);
+  background-color: var(--offwhite);
   height: 100vh;
 }
 
@@ -164,10 +166,9 @@ code {
     "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
     "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
     "Courier New", Courier, monospace;
-  line-height: 1.5;
 }
 pre {
-  font-size: 14px;
+  font-size: 0.8em;
   line-height: 1.375;
   direction: ltr;
   text-align: left;
@@ -184,6 +185,15 @@ pre {
   padding: 1em;
   margin: 1em 0 1em 1em;
   background-color: #f6f6f6;
+}
+
+code {
+  font-size: 0.8em;
+  background-color: var(--lightpink);
+}
+
+pre code {
+  font-size: 1em;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -529,7 +539,7 @@ body {
 
 @media (min-width: 45em) {
   .tmpl-post h1 {
-    grid-column: content-start / span 9;
+    grid-column: content-start / content-end;
   }
 }
 
@@ -543,7 +553,7 @@ body {
 
 @media (min-width: 45em) {
   .post--meta {
-    grid-column: content-start / span 9;
+    grid-column: content-start / content-end;
     margin-bottom: 3em;
   }
 }
@@ -836,17 +846,26 @@ blockquote {
   }
 }
 
+.footnotes-sep {
+  margin: 3em 0 1em 0;
+}
+
+.footnotes {
+  grid-column: 1;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 45rem) {
+  .footnotes {
+    grid-column: content-start / content-end;
+  }
+}
+
 .footnote-ref a[href],
 .footnote-ref a[href]:visited {
   text-decoration: none;
   color: var(--red);
   margin: 0 0 0 0.1em;
-}
-
-@media (min-width: 45rem) {
-  .tmpl-post .footnotes {
-    grid-column: content-start / content-end;
-  }
 }
 
 /* Image Grid */

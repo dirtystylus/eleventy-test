@@ -2,6 +2,9 @@
 title: "Eleventy: RSS Feeds and Front Matter Data"
 description: Getting front matter data into my Nunjucks RSS feed templates.
 date: 2020-09-04
+tags:
+  - eleventy
+  - web development
 ---
 
 I’ve been setting up the RSS feeds for my posts, as well as a separate feed just for my custom post type Book. It has quite a bit of YAML front matter, some of which I want to include in the feed:
@@ -23,7 +26,7 @@ reading_end_date: 2020-05-16
 
 This gets rendered in my **book.njk** Nunjucks template, in this snippet:
 
-```liquid
+```twig
 {% raw %}
 <div class="book-details">
   <div class="book-cover book-shadow">
@@ -62,7 +65,7 @@ Which is fine, except that `post.templateContent` does not include anything from
 
 So. I spent some time figuring out how to add that markup into my feed template. I ended up with this snippet:
 
-```liquid
+```twig
 {% raw %}
 {% set book_metadata %}<p></p></p>{% image metadata.feed_reading.img_base_url + post.data.cover_image, post.data.title + " cover image" , "book_thumb" %}</p><p>Started Reading: {{post.data.reading_start_date | readableDate }}</p><p>Finished Reading: {{post.data.reading_end_date | readableDate }}</p>{% endset %}<content type="html">{{ book_metadata | htmlToAbsoluteUrls(absolutePostUrl) }}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 {% endraw %}
@@ -74,7 +77,7 @@ Line one sets a new variable, `book_metadata`, containing my markup with some of
 
 Alternatively, something gleaned from Andy Bell’s excellent [Learn Eleventy From Scratch](https://piccalil.li/course/learn-eleventy-from-scratch/) course: you _could_ wrap the whole thing in CDATA tags, like this:
 
-```liquid
+```twig
 {% raw %}
 <content type="html"><![CDATA[<p>{% image metadata.feed_reading.img_base_url + post.data.cover_image, post.data.title + " cover image" , "book_thumb" %}</p><p>Started Reading: {{post.data.reading_start_date | readableDate }}</p><p>Finished Reading: {{ post.data.reading_end_date | readableDate }}</p>{{ post.templateContent | safe }}]]></content>
 {% endraw %}
