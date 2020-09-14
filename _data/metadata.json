@@ -1,6 +1,6 @@
 {
   "title": "Mark Llobrera",
-  "url": "https://markllobrera.com",
+  "url": "https://www.markllobrera.com/",
   "domain": "markllobrera.com",
   "description": "This is the online home for Mark Llobrera, housing his blog and reading log.",
   "profile_image": "https://markllobrera.com/img/meta/mark-llobrera-thumb.jpg",
@@ -8,16 +8,16 @@
     "subtitle": "This is the online home for Mark Llobrera, housing his blog and reading log.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "url": "https://markllobrera.com/feed/feed.xml",
-    "id": "https://markllobrera.com/"
+    "url": "https://www.markllobrera.com/feed/feed.xml",
+    "id": "https://www.markllobrera.com/"
   },
   "feed_reading": {
     "subtitle": "This is the online home for Mark Llobrera, housing his blog and reading log.",
     "filename": "reading.xml",
     "path": "/feed/reading.xml",
-    "url": "https://markllobrera.com/feed/reading.xml",
-    "img_base_url": "https://markllobrera.com",
-    "id": "https://markllobrera.com/"
+    "url": "https://www.markllobrera.com/feed/reading.xml",
+    "img_base_url": "https://www.markllobrera.com",
+    "id": "https://www.markllobrera.com/"
   },
   "author": {
     "name": "Mark Llobrera",
