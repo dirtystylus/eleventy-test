@@ -4,7 +4,7 @@ description: "Link to Ethan Marcotte’s post about teamwork, communication, des
 date: 2020-07-01
 tags:
   - link
-  - web design
+  - web-design
 ---
 
 Ethan Marcotte has written about [seams and edges](https://ethanmarcotte.com/wrote/responsive-design-seams-edges/) being a defining part of his work, and in his [latest post](https://ethanmarcotte.com/wrote/the-design-systems-between-us/)[^1] he applies that same lens to the theme of organizational structure and collaboration, and how design system success stories haven’t been easily replicated. He writes:

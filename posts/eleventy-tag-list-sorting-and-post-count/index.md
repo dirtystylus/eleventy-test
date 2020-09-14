@@ -4,7 +4,7 @@ description: "Getting front matter data into my Nunjucks RSS feed templates."
 date: 2020-08-17
 tags:
   - eleventy
-  - web_development
+  - web-development
 ---
 
 This week I’m focusing on building out the tag-related pages for my new site, and I had two straightforward requirements for the tag list:

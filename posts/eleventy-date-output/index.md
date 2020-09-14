@@ -4,7 +4,7 @@ description: Dates, Data files, and Custom Filters in Eleventy.
 date: 2020-06-05
 tags:
   - eleventy
-  - web_development
+  - web-development
 ---
 
 Now that I’ve hit the front end phase of my website rebuild in [Eleventy](https://11ty.dev), I’ve had to figure out a few data output challenges. Here’s something that seemed like it would be simple: printing out the current year for my footer copyright.

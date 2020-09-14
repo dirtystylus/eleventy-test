@@ -4,7 +4,7 @@ description: "Making code blocks with Nunjucks statements safe for Nunjucks temp
 date: 2020-09-08
 tags:
   - eleventy
-  - web_development
+  - web-development
 ---
 
 A fun little wrinkle, but one with a very quick solution: if you have a code block containing any Nunjucks templates (and you’re using Nunjucks as your templating engine), you could end up with a `TemplateContentRenderError`. To get around it you can wrap the entire block in a `{% raw %}{% raw %}{% endraw %}` block:
