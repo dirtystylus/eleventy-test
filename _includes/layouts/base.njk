@@ -11,9 +11,10 @@
     <link rel="icon" type="image/png" href="/touchicon-196.png" sizes="196x196" />
 
     <!-- Open Graph tags -->
+    {% set ogUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
     <meta property="og:type" content="website" />
     <meta property="og:image" content="{{ metadata.profile_image }}" />
-    <meta property="og:url" content="{{ metadata.url + page.url }}" />
+    <meta property="og:url" content="{{ ogUrl }}" />
     <meta property="og:title" content="{{ title or metadata.title }} - {{ metadata.domain }}" />
     <meta property="og:description" content="{{ description or metadata.description }}" />
 
