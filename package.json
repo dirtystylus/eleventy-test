@@ -32,7 +32,7 @@
     "markdown-it-anchor": "^5.2.5"
   },
   "dependencies": {
-    "eleventy-plugin-images-responsiver": "^1.8.1",
+    "eleventy-plugin-images-responsiver": "^1.8.2",
     "markdown-it-attrs": "^3.0.3",
     "markdown-it-footnote": "^3.0.2",
     "moment": "^2.28.0",
