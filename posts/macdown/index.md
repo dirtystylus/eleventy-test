@@ -7,7 +7,7 @@ tags:
   - text-editors
 ---
 
-Following up on my text editor musings from [my website launch post](/posts/a-new-home/), [Nicolas Hoizey recommended](https://twitter.com/nhoizey/status/1305880074974101504) [MacDown](https://macdown.uranusjr.com), an open-source Markdown editor from [Tzu-ping Chung](https://uranusjr.com). I’ve been evaluating IA Writer this week after running into some constraints with Ulysses, but I’m also quite partial to projects that are labors of love—MacDown apparently came to life after [Mou](http://25.io/mou/) ceased development. (For context: I also use nvALT and Byword a lot for quick, single-file Markdown edits.)
+Following up on my text editor musings from [my website launch post](/posts/a-new-home/), [Nicolas Hoizey recommended](https://twitter.com/nhoizey/status/1305880074974101504) [MacDown](https://macdown.uranusjr.com), an open-source Markdown editor from [Tzu-ping Chung](https://uranusjr.com). I’ve been evaluating [IA Writer](https://ia.net/writer) this week after running into some constraints with Ulysses, but I’m also quite partial to projects that are labors of love—MacDown apparently came to life after [Mou](http://25.io/mou/) ceased development. (For context: I also use nvALT and Byword a lot for quick, single-file Markdown edits.)
 
 ## Initial observations
 
