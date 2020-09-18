@@ -5,6 +5,7 @@ description: The Ringer takes a look at Letterboxd, the social film discovery ne
 date: 2020-09-18
 tags:
   - film
+  - link
   - social-media
 ---
 
