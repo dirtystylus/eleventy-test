@@ -8,7 +8,7 @@ tags:
   - social-media
 ---
 
-I haven’t tried [Letterboxd](https://letterboxd.com) so far, mostly because I’m wary about building a deep corpus of data on someone else’s platform[^1]. But I enjoyed Scott Tobias’ piece on Letterboxd, starting with this observation from Demi Adejuyigbe:
+I haven’t tried [Letterboxd](https://letterboxd.com) so far, mostly because I’m wary about building a deep corpus of data on someone else’s platform[^1]. But I enjoyed Scott Tobias’ [piece on Letterboxd](https://www.theringer.com/movies/2020/9/18/21444082/letterboxd-film-discussion-site-streaming-movies), starting with this observation from Demi Adejuyigbe:
 
 > “One thing I’ve always not liked about watching old TV,” says Adejuyigbe, “is that it feels like the discussion aspect around it is done. It’s like the day a show drops, you have *that day* to discuss it with people on the internet. Whereas with Letterboxd, it feels like I can watch a movie whenever and luckily there will be a forum around it right there if people want to discuss it with me.”
 
