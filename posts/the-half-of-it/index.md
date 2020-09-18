@@ -1,5 +1,6 @@
 ---
 title: The Half of It
+display_title: "*The Half of It*"
 description: Alice Wu’s follow up to Saving Face.
 date: 2020-05-25
 tags:

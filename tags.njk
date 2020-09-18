@@ -11,7 +11,7 @@ pagination:
     - tagList
   addAllPagesToCollections: true
 layout: layouts/base.njk
-renderData:
+eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 templateClass: tmpl-tag-detail

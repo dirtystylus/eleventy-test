@@ -1,11 +1,11 @@
 ---
 title: "Sally Rooney: At the Clinic"
+display_title: "Sally Rooney: *At the Clinic*"
 description: Sally Rooney’s short story prequel for *Normal People*.
 date: 2020-05-26
 tags:
   - link
   - books
-templateEngineOverride: njk,md
 ---
 
 Sally Rooney’s short story _At the Clinic_ was [recently released online](https://www.thewhitereview.org/fiction/at-the-clinic/) for the first time by The White Review, and while reading it I had a lot of questions: is this canon? Where did it fall in the timeline of writing _Normal People_?

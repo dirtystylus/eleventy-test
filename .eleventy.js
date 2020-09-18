@@ -169,6 +169,13 @@ module.exports = function (eleventyConfig) {
   // An image helper to generate figure markup
   eleventyConfig.addShortcode("image", require("./src/utils/image.js"));
 
+  eleventyConfig.addPairedShortcode(
+    "markdown",
+    (data) => {
+      return markdownLibrary.renderInline(data);
+    }
+  );
+
   // Images Responsiver
   const imagesResponsiverConfig = require("./src/utils/images-responsiver-config.js");
   eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
