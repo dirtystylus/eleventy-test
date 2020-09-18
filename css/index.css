@@ -868,9 +868,10 @@ blockquote {
 
 .footnote-ref a[href],
 .footnote-ref a[href]:visited {
-  text-decoration: none;
   color: var(--red);
+  font-size: 1em;
   margin: 0 0 0 0.1em;
+  text-decoration: none;
 }
 
 /* Image Grid */
