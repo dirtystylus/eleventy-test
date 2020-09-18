@@ -4,13 +4,13 @@
 {% if nextPost.url %}
   <p class="left">
     <strong>Next</strong>: 
-    <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+    <a class="next" href="{{ nextPost.url }}">{% markdown %}{{ nextPost.data.display_title or nextPost.data.title }}{% endmarkdown %}</a>
   </p>
 {% endif %}
 {% if prevPost.url %}
   <p class="right">
     <strong>Previous</strong>: 
-    <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+    <a class="previous" href="{{ prevPost.url }}">{% markdown %}{{ prevPost.data.display_title or prevPost.data.title }}{% endmarkdown %}</a>
   </p>
 {% endif %}
 </nav>
