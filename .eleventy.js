@@ -24,15 +24,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("book", "layouts/book.njk");
 
   // Date filters
-
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "LLL dd, yyyy"
     );
-  });
-
-  eleventyConfig.addFilter("dateStringToObj", function (dateIn) {
-    return moment(dateIn).toDate();
   });
 
   // limit filter
@@ -42,7 +37,7 @@ module.exports = function (eleventyConfig) {
 
   // date filter
   eleventyConfig.addNunjucksFilter("date", function (date, format) {
-    return moment(date).format(format);
+    return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format);
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -78,7 +73,7 @@ module.exports = function (eleventyConfig) {
       })
       .sort(function (a, b) {
         return (
-          moment(a.data.end_date).toDate() - moment(b.data.end_date).toDate()
+          new Date(a.data.end_date) - new Date(b.data.end_date)
         );
       });
     for (let i = 0; i < books.length; i++) {

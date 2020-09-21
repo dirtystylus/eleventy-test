@@ -1,8 +1,8 @@
 ---
-title: Book Grid Variations
+title: Book Grid Iterations
 display_title:
 description: Fine-tuning the grid in my Reading log.
-date: 2020-09-21
+date: 2020-09-21T09:00:00-04:00
 tags:
   - css
   - eleventy

@@ -41,7 +41,7 @@
     </main>
 
     <footer>
-      <div class="footer--copyright">Copyright © {{ site.buildTime | date("Y") }} Mark Llobrera.
+      <div class="footer--copyright">Copyright © {{ site.buildTime | date("yyyy") }} Mark Llobrera.
       <ul class="nav">
       {%- for item in navigation.footer_items %}
         <li class="nav-item"><a href="{{ item.url | url }}" {{helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
