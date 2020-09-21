@@ -7,7 +7,6 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAttrs = require("markdown-it-attrs");
-const moment = require("moment");
 const now = new Date();
 const debug = require("debug")("markllobrera");
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
