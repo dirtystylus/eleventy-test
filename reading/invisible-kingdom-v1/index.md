@@ -5,7 +5,7 @@ author: G. Willow Wilson and Christian Ward
 cover_image: /reading/invisible-kingdom-v1/invisible-kingdom-v1.jpg
 genre: Comic
 format: Ebook 
-date: 2020-09-20T09:00:00-04:00
+date: 2020-09-22T09:00:00-04:00
 start_date: 2020-09-18
 end_date: 2020-09-20
 ---
