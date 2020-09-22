@@ -1,6 +1,6 @@
 ---
 title: "Uncanny X-Force vol. 1: The Apocalypse Solution"
-display_title: "Uncanny X-Force vol. 1: The Apocalypse Solution"
+display_title: "Uncanny X-Force Vol. 1: The Apocalypse Solution"
 author: Rick Remender, Jerome Opena, and Leonardo Manco
 cover_image: /reading/uncanny-x-force-v1-the-apocalypse-solution/uncanny-x-force-v1-the-apocalypse-solution.jpg
 genre: Comic

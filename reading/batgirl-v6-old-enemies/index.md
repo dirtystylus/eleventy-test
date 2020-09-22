@@ -1,6 +1,6 @@
 ---
-title: "Batgirl vol. 6: Old Enemies"
-display_title: "Batgirl vol. 6: Old Enemies"
+title: "Batgirl Vol. 6: Old Enemies"
+display_title: "Batgirl Vol. 6: Old Enemies"
 author: Mairghread Scott and Paul Pelettier
 cover_image: /reading/batgirl-v6-old-enemies/batgirl-v6-old-enemies.jpg
 genre: Comic
