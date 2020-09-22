@@ -13,7 +13,7 @@ For the past fourteen-plus years my personal site has lived at [dirtystylus.com]
 
 ## Building the thing
 
-The genesis of this rebuild was a desire to track my reading at a deeper level. I took the [first steps towards this last year](http://dirtystylus.com/2020/04/17/visualizing-my-reading-with-semiotic/) that resulted in a [small dataviz project](https://reading-2019.markllobrera.com), but I wanted to actually give that content a [home on my site](/reading). I could have simply created a custom post type in WordPress, patched a few things, and kept going. But it also felt like a good moment to reflect on *how* I wanted to write. And frankly, the previous workflow was so full of friction:
+The genesis of this rebuild was a desire to track my reading at a deeper level. I took the [first steps towards this last year](/posts/visualizing-my-reading-with-semiotic/) that resulted in a [small dataviz project](https://reading-2019.markllobrera.com), but I wanted to actually give that content a [home on my site](/reading). I could have simply created a custom post type in WordPress, patched a few things, and kept going. But it also felt like a good moment to reflect on *how* I wanted to write. And frankly, the previous workflow was so full of friction:
 
 * Draft a post in [Ulysses](https://ulysses.app)
 * Push that to WordPress using Ulysses’ built-in functionality
