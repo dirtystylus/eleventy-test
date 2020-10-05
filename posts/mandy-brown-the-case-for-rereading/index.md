@@ -1,7 +1,7 @@
 ---
 title: "Mandy Brown: “The case for rereading”"
 display_title: "Mandy Brown: “The case for rereading”"
-description: 
+description: A meditation on how books rewire our brains and give us shelter so we can flourish.
 date: 2020-10-05T17:08:00-04:00
 tags:
   - books
