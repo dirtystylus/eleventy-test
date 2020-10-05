@@ -6,7 +6,7 @@ date: 2020-09-22T14:30:00-04:00
 tags:
   - books
   - dataviz
-  - link
+  - links
 ---
 
 I very much enjoyed [this piece by Nimit Shah](https://nimitnshah.com/adventures-in-design/landscape-of-literature.html) on how they put together visualizations of their reading using [The StoryGraph](https://beta.thestorygraph.com) and D3.js. Lots of inspiration for me as I think about future ways to visualize my own reading—I especially liked Shah’s topographical representation of genre.

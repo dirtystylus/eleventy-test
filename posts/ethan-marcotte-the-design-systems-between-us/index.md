@@ -3,7 +3,7 @@ title: "Ethan Marcotte: “The design systems between us”"
 description: "Link to Ethan Marcotte’s post about teamwork, communication, design systems, and gaps in process."
 date: 2020-07-01
 tags:
-  - link
+  - links
   - web-design
 ---
 

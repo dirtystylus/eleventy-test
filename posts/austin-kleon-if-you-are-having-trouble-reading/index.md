@@ -3,7 +3,7 @@ title: "Austin Kleon: “If you are having trouble reading…”"
 description: Austin Kleon’s advice for reading during this pandemic.
 date: 2020-05-18
 tags:
-  - link
+  - links
   - books
 ---
 

@@ -5,7 +5,7 @@ description: A story about the toxic work culture at luggage/lifestyle startup A
 date: 2019-12-06T14:37:00-04:00
 tags:
   - labor
-  - link
+  - links
   - tech-culture
 ---
 

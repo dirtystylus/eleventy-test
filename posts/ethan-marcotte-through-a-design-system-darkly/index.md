@@ -5,7 +5,7 @@ description: Ethan Marcotte on pattern-led and process-led approaches to design 
 date: 2020-04-03T19:58:00-04:00
 tags:
   - design-systems
-  - link
+  - links
   - web-design
 ---
 

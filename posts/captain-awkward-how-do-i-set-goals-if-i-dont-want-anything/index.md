@@ -3,7 +3,7 @@ title: "Captain Awkward: “How do I set goals if I don’t want anything?”"
 description: Grappling with career goals in the midst of a pandemic.
 date: 2020-05-13
 tags:
-  - link
+  - links
 ---
 
 I was just in the process of setting goals with one of my teammates when I read [this](https://captainawkward.com/2020/05/11/1267-how-do-i-set-goals-if-i-dont-want-anything/), and wow does it capture the cognitive dissonance of managing folks in the middle of an escalating global crisis:

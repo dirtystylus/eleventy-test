@@ -3,7 +3,7 @@ title: "The Sweet Setup: “Using an iPad for Photography Workflows”"
 description: The Sweet Setup updates their look at turning the iPad into your go-anywhere photography workstation. 
 date: 2020-05-06
 tags:
-  - link
+  - links
   - photography
 ---
 

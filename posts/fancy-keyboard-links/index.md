@@ -4,7 +4,7 @@ display_title: Fancy Keyboard Links
 description: Ben Brooks’ review of the ALT keyboard, and links to features on custom keyboard builder Tae Ha Kim.
 date: 2020-03-27T18:51:00-04:00
 tags:
-  - link
+  - links
   - keyboards
 ---
 

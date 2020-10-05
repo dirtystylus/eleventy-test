@@ -4,7 +4,7 @@ display_title: "Laura Kalbag: “How to Read RSS in 2020”"
 description: Laura Kalbag’s quick overview of RSS, its benefits, and some RSS clients.
 date: 2020-03-25T14:50:00-04:00
 tags:
-  - link
+  - links
   - rss
 ---
 

@@ -4,7 +4,7 @@ display_title: "Sally Rooney: *At the Clinic*"
 description: Sally Rooney’s short story prequel for *Normal People*.
 date: 2020-05-26
 tags:
-  - link
+  - links
   - books
 ---
 

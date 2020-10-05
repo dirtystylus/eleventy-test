@@ -4,7 +4,7 @@ display_title: 'Guido van Rossum on “Cryptic Code”'
 description: 'Some quotes on clever code and maintainability by Guido van Rossum'
 date: '2019-11-18T16:25:37-05:00'
 tags:
-  - link
+  - links
   - programming
 ---
 [This farewell to Guido van Rossum (creator of Python) on the Dropbox blog](https://blog.dropbox.com/topics/company/thank-you--guido) has some notes and quotes on code style and maintainability that resonated with me:

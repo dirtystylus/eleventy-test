@@ -4,7 +4,7 @@ display_title: "Mandy Brown: “The Hard Way”"
 description: Mandy Brown on leading remote teams in a pandemic.
 date: 2020-04-13T15:14:00-04:00
 tags:
-  - link
+  - links
   - management
 ---
 

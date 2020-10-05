@@ -4,7 +4,7 @@ description: "Mad Max: Fury Road, in the words of those who created it."
 date: 2020-05-15
 tags:
   - film
-  - link
+  - links
 --- 
 
 This [retelling of the Fury Road production](https://www.nytimes.com/2020/05/12/movies/mad-max-fury-road-oral-history.html) has been making the rounds in my various friend circles; has it really been five years? It’s wild to hear how the film almost didn’t have the Citadel scenes:

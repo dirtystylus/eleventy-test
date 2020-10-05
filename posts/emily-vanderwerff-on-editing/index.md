@@ -3,7 +3,7 @@ title: "Emily VanDerWerff: “On editing”"
 description: Notes on editing mixed in with a meditation on narration in Susan Choi’s “Trust Exercise”
 date: 2020-04-27
 tags:
-  - link
+  - links
   - writing
 ---
 

@@ -4,7 +4,7 @@ display_title: "Robin Rendle: “Friendship Homework”"
 description: Robin Rendle on friendship, books, and links.
 date: 2020-04-15T14:20:00-04:00
 tags:
-  - link
+  - links
   - friendship
 ---
 

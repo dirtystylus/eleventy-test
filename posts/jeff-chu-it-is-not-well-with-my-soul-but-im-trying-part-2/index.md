@@ -3,7 +3,7 @@ title: "Jeff Chu: “It Is Not Well with My Soul, But I'm Trying (Part 2)”"
 description: Jeff Chu remembers Rachel Held Evans, one year after her death.
 date: 2020-04-30
 tags:
-  - link
+  - links
 ---
 [This piece by Jeff Chu](https://jeffchu.substack.com/p/it-is-not-well-with-my-soul-but-im-ed7) — remembering his friend Rachel Held Evans — brought me to tears. Grief is never easy, but I’m glad he shared these words with the world:
 
