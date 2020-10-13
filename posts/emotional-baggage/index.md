@@ -4,6 +4,7 @@ display_title: "The Verge: “Emotional Baggage”"
 description: A story about the toxic work culture at luggage/lifestyle startup Away.
 date: 2019-12-06T14:37:00-04:00
 tags:
+  - ethics
   - labor
   - links
   - tech-culture
