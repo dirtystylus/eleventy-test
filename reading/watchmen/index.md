@@ -5,7 +5,7 @@ author: Alan Moore and Dave Gibbons
 cover_image: /reading/watchmen/watchmen.jpg
 genre: Comic
 format: Ebook
-date: 2020-10-08T09:00:00-04:00
+date: 2020-10-13T22:32:00-04:00
 start_date: 2020-10-06
 end_date: 2020-10-08
 ---
