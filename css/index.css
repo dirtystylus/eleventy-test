@@ -1063,6 +1063,7 @@ blockquote {
   .tmpl-book .book-details h1 {
     font-size: 2em;
     font-style: italic;
+    line-height: 1.2;
     margin: 0;
   }
   .tmpl-book .book-details h2 {
