@@ -7,7 +7,7 @@
     {% image book.data.cover_image, book.data.title, "book_thumb" %}
     </div>
     <div class="book-meta">
-      <h1 class="book-meta-title">{{ book.data.title }}</h1>
+      <h1 class="book-meta-title">{% markdown %}{{ book.data.display_title or book.data.title }}{% endmarkdown %}</h1>
       <h2 class="book-meta-author">{{book.data.author}}</h2>
       {% if book.data.end_date %}
       <div class="book-meta-finished">Finished {{ book.data.end_date | readableDate }}</div>
