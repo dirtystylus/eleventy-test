@@ -662,7 +662,7 @@ body {
 }
 
 blockquote {
-  border-left: 2px solid #e2e2e2;
+  border-left: 4px solid #e2e2e2;
   grid-column: 1;
   margin: 1em 0;
   padding-left: 1em;
@@ -679,8 +679,8 @@ blockquote {
 @media (min-width: 45em) {
   blockquote {
     grid-column: content-start / content-end;
-    margin: 2em 0 2em -1.1em;
-    padding-left: 1em;
+    margin: 2em 0 2em -1.5em;
+    padding-left: 1.5em;
   }
 }
 
