@@ -11,6 +11,44 @@ const now = new Date();
 const debug = require("debug")("markllobrera");
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 
+// Month Archives
+function generateDateSet(collection,format) {
+  let dateSet = new Set();
+  const col1 = collection.getAll()
+  .filter(function (item) {
+    return item.data.content_type == "post";
+  }).forEach(function (item) {
+    if ("date" in item.data) {
+      let itemDate = item.data.date;
+      var date = DateTime.fromJSDate(itemDate, { zone: "utc" }).toFormat(format);
+      dateSet.add(date);
+    }
+  }); 
+  return Array.from(dateSet).sort(function (a, b) {
+    return ('' + b).localeCompare(a);
+  });
+}
+
+function getItemsByDate(collection, date, format) {
+  var result = {};
+  result = collection.getAll()
+  .filter(function (item) {
+    return item.data.content_type == "post";
+  }).filter(function (item) {
+    if (!item.data.date) {
+      return false;
+    }
+
+    var itemDate = item.data.date;
+    var itemShortDate = DateTime.fromJSDate(itemDate, { zone: "utc" }).toFormat(format);
+    return (itemShortDate == date);
+  });
+  result = result.sort(function(a, b) {
+    return b.date - a.date;
+  });  
+  return result;
+}
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -173,6 +211,30 @@ module.exports = function (eleventyConfig) {
   // Images Responsiver
   const imagesResponsiverConfig = require("./src/utils/images-responsiver-config.js");
   eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
+
+  const contentByDateString = (collection, format) => {
+    var dateSet = {};
+    var newSet = new Set();
+
+    dateSet = generateDateSet(collection, format);
+    dateSet.forEach(function(date) {
+      var result = getItemsByDate(collection, date, format);
+      newSet[date] = result;
+    });
+    // debug("itemDate: ", newSet);  
+    return [{...newSet}];
+  }
+
+  eleventyConfig.addCollection("contentByMonth", function(collection){
+    const monthCollection = contentByDateString(collection, "yyyy/MM");
+    return monthCollection;
+  });
+
+  eleventyConfig.addCollection("contentByYear", function(collection){
+    const yearCollection = contentByDateString(collection, "yyyy");
+    // debug("years: ", yearCollection); 
+    return yearCollection;
+  });
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
