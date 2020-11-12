@@ -5,7 +5,7 @@ author: Lauren Beukes
 cover_image: /reading/afterland/afterland.jpg
 genre: Fiction
 format: Hardcover
-date: 2020-11-12T22:00:00-05:00
+date: 2020-11-12T16:45:00-05:00
 start_date: 2020-11-03
 end_date: 2020-11-07
 ---
