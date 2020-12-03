@@ -221,8 +221,8 @@ module.exports = function (eleventyConfig) {
       var result = getItemsByDate(collection, date, format);
       newSet[date] = result;
     });
-    // debug("itemDate: ", newSet);  
-    return [{...newSet}];
+    // debug("itemDate: ", newSet);
+    return {...newSet};
   }
 
   eleventyConfig.addCollection("contentByMonth", function(collection){
@@ -232,8 +232,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("contentByYear", function(collection){
     const yearCollection = contentByDateString(collection, "yyyy");
-    // debug("years: ", yearCollection); 
-    return yearCollection;
+    let yearCollectionDescending = new Map();
+    const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});    
+    keysSorted.forEach((key) => {
+      yearCollectionDescending.set(key, yearCollection[key]);
+    });
+    return yearCollectionDescending;
   });
 
   // Browsersync Overrides

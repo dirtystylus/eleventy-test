@@ -1,0 +1,19 @@
+---
+title: Tag List
+description: Tags used on posts.
+permalink: /years/
+layout: layouts/base.njk
+templateClass: tmpl-tags-list
+---
+<div class="content-main container">
+<h1>Posts by Year</h1>
+<ul class="postlist">
+{% set years = collections.contentByYear %}
+{# Years {{ years['2019']}} #}
+{% for year, yearArr in years %}
+  {% set yearUrl %}/years/{{ year }}/{% endset %}
+  <li class="postlist-item">
+    <a href="{{ yearUrl | url }}" class="postlist-link">{{ year }}</a> ({{ yearArr.length }})
+  </li>
+{% endfor %}
+</ul>
