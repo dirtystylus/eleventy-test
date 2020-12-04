@@ -49,12 +49,15 @@ module.exports = function (eleventyConfig) {
     return yearCollectionDescending;
   });
 
-  // limit filter
+  // Limit filter
   eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
     return array.slice(0, limit);
   });
 
-  // date filter
+  // Logging within Nunjucks files filter
+  eleventyConfig.addNunjucksFilter("njkLog", function (message) {
+    debug('njkLog: ', message);
+  });
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {

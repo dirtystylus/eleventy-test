@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
 templateClass: tmpl-posts-list
 ---
 <div class="content-main container">
-<h1>Year {{ year }}</h1>
+<h1>Year {{ year | njkLog }}</h1>
 
 {% set postslist = collections.postsByYear[ year ] | reverse %}
 {% include "postslist.njk" %}
