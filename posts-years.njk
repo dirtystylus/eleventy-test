@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.postsByYear
+  size: 1
+  alias: year
+permalink: "posts/years/{{ year }}/"
+eleventyComputed:
+  title: Posts published in {{ year }}
+  description: Posts archive for {{ year }}.
+eleventyExcludeFromCollections: true
+templateClass: tmpl-posts-list
+---
+<div class="content-main container">
+<h1>Year {{ year }}</h1>
+
+{% set postslist = collections.postsByYear[ year ] | reverse %}
+{% include "postslist.njk" %}
+</div>

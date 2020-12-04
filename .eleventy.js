@@ -11,44 +11,6 @@ const now = new Date();
 const debug = require("debug")("markllobrera");
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 
-// Month Archives
-function generateDateSet(collection,format) {
-  let dateSet = new Set();
-  const col1 = collection.getAll()
-  .filter(function (item) {
-    return item.data.content_type == "post";
-  }).forEach(function (item) {
-    if ("date" in item.data) {
-      let itemDate = item.data.date;
-      var date = DateTime.fromJSDate(itemDate, { zone: "utc" }).toFormat(format);
-      dateSet.add(date);
-    }
-  }); 
-  return Array.from(dateSet).sort(function (a, b) {
-    return ('' + b).localeCompare(a);
-  });
-}
-
-function getItemsByDate(collection, date, format) {
-  var result = {};
-  result = collection.getAll()
-  .filter(function (item) {
-    return item.data.content_type == "post";
-  }).filter(function (item) {
-    if (!item.data.date) {
-      return false;
-    }
-
-    var itemDate = item.data.date;
-    var itemShortDate = DateTime.fromJSDate(itemDate, { zone: "utc" }).toFormat(format);
-    return (itemShortDate == date);
-  });
-  result = result.sort(function(a, b) {
-    return b.date - a.date;
-  });  
-  return result;
-}
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -64,15 +26,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "LLL dd, yyyy"
-    );
-  });
-
-  // limit filter
-  eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
-    return array.slice(0, limit);
-  });
-
-  // date filter
+      );
+    });
+    
   eleventyConfig.addNunjucksFilter("date", function (date, format) {
     return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format);
   });
@@ -81,6 +37,24 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
+
+  // Map from Object filter
+  eleventyConfig.addNunjucksFilter("createMapFromObject", function (obj) {
+    const yearCollection = obj;
+    let yearCollectionDescending = new Map();
+    const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});    
+    keysSorted.forEach((key) => {
+      yearCollectionDescending.set(key, yearCollection[key]);
+    });
+    return yearCollectionDescending;
+  });
+
+  // limit filter
+  eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
+    return array.slice(0, limit);
+  });
+
+  // date filter
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
@@ -172,6 +146,75 @@ module.exports = function (eleventyConfig) {
     return [...coll].reverse();
   });
 
+  function makeDateFormatter(dateFormat) {
+    return function (date) {
+      // return moment(date).format(datePattern);
+      return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(dateFormat);
+    };
+  }
+  
+  function generateItemsDateSet(items, dateFormatter) {
+    const formattedDates = items.map((item) => {
+      return dateFormatter(item.data.page.date);
+    });
+    return [...new Set(formattedDates)];
+  }
+  
+  function getItemsByDate(items, date, dateFormatter) {
+    return items.filter((item) => {
+      return dateFormatter(item.data.page.date) === date;
+    });
+  }
+  
+  const contentByDateString = (items, dateFormatter) => {
+    return generateItemsDateSet(items, dateFormatter).reduce(function (
+      collected,
+      formattedDate
+    ) {
+      return Object.assign({}, collected, {
+        // lowercase to match month directory page.url
+        [formattedDate.toLowerCase()]: getItemsByDate(
+          items,
+          formattedDate,
+          dateFormatter
+        ),
+      });
+    },
+    {});
+  };
+
+  const contentsByYear = (collection) => {
+    return contentByDateString(collection, makeDateFormatter('yyyy'));
+  };
+
+  eleventyConfig.addCollection("postsByYear", function (collection) {
+    const coll = collection
+      .getAll()
+      .filter(function (item) {
+        return item.data.content_type == "post";
+      })
+      .sort(function (a, b) {
+        return a.date - b.date;
+      });
+
+    for (let i = 0; i < coll.length; i++) {
+      const prevPost = coll[i - 1];
+      const nextPost = coll[i + 1];
+
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
+    // const yearCollection = contentsByYear(coll);
+    // let yearCollectionDescending = new Map();
+    // const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});    
+    // keysSorted.forEach((key) => {
+    //   yearCollectionDescending.set(key, yearCollection[key]);
+    // });
+    // return yearCollectionDescending;
+
+    return contentsByYear(coll);
+  });
+
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,
@@ -211,34 +254,6 @@ module.exports = function (eleventyConfig) {
   // Images Responsiver
   const imagesResponsiverConfig = require("./src/utils/images-responsiver-config.js");
   eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
-
-  const contentByDateString = (collection, format) => {
-    var dateSet = {};
-    var newSet = new Set();
-
-    dateSet = generateDateSet(collection, format);
-    dateSet.forEach(function(date) {
-      var result = getItemsByDate(collection, date, format);
-      newSet[date] = result;
-    });
-    // debug("itemDate: ", newSet);
-    return {...newSet};
-  }
-
-  eleventyConfig.addCollection("contentByMonth", function(collection){
-    const monthCollection = contentByDateString(collection, "yyyy/MM");
-    return monthCollection;
-  });
-
-  eleventyConfig.addCollection("contentByYear", function(collection){
-    const yearCollection = contentByDateString(collection, "yyyy");
-    let yearCollectionDescending = new Map();
-    const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});    
-    keysSorted.forEach((key) => {
-      yearCollectionDescending.set(key, yearCollection[key]);
-    });
-    return yearCollectionDescending;
-  });
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
