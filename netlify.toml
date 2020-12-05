@@ -5,4 +5,4 @@
 [[redirects]]
   from = "/:year/:month/:date/:slug"
   to = "/posts/:slug"
-  status = 302
+  status = 301

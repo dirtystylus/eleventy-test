@@ -110,6 +110,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("_redirects");
 
   // Next/Previous navigation
   // See: https://brycewray.com/posts/2019/12/previous-next-eleventy/
