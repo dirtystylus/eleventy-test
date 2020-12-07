@@ -1,7 +1,7 @@
 ---
 title: "Eleventy: Netlify Redirects"
 display_title: "Eleventy: Netlify Redirects"
-description: Two different flavors of Netlify redirects, in an Eleventy context
+description: Two different flavors of Netlify redirects, in an Eleventy context.
 date: 2020-12-07T13:40:00-05:00
 tags:
   - eleventy
