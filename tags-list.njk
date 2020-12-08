@@ -6,7 +6,8 @@ layout: layouts/base.njk
 templateClass: tmpl-tags-list
 ---
 <div class="content-main container">
-<h1>Tags</h1>
+<h1>Tag Archives</h1>
+<div class="post--meta">You can also browse all posts by <a href="{{ '/posts/years/' | url }}">year</a>.</div>
 <ul class="postlist">
 {% for tag in collections.tagList%}
   {% set tagUrl %}/tags/{{ tag }}/{% endset %}

@@ -1,14 +1,15 @@
 ---
-title: Posts by Year
-description: Tags used on posts.
+title: All Posts by Year
+description: Year-based archives of posts.
 permalink: /posts/years/
 layout: layouts/base.njk
 templateClass: tmpl-tags-list
 ---
 <div class="content-main container">
-<h1>Posts by Year</h1>
+<h1>Year Archives</h1>
+<div class="post--meta">You can also browse all posts by <a href="{{ '/tags/' | url }}">tag</a>.</div>
 <ul class="postlist">
-{% set years = collections.postsByYear | createMapFromObject %}
+{% set years = collections.postsByYear | createReverseYearsMapFromObject %}
 {% for year, yearArr in years %}
   {% set yearUrl %}/posts/years/{{ year }}/{% endset %}
   <li class="postlist-item">

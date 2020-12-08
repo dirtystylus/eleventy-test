@@ -38,8 +38,8 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
-  // Map from Object filter
-  eleventyConfig.addNunjucksFilter("createMapFromObject", function (obj) {
+  // Map from Object filter, for Year-based custom collections
+  eleventyConfig.addNunjucksFilter("createReverseYearsMapFromObject", function (obj) {
     const yearCollection = obj;
     let yearCollectionDescending = new Map();
     const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});    
@@ -54,11 +54,6 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, limit);
   });
 
-  // Logging within Nunjucks files filter
-  eleventyConfig.addNunjucksFilter("njkLog", function (message) {
-    debug('njkLog: ', message);
-  });
-
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if (n < 0) {
@@ -68,7 +63,7 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
 
-  // eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+  // Override original declaration: eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
   eleventyConfig.addCollection("tagList", require("./src/utils/getTagList.js"));
 
   // Return projects
@@ -208,13 +203,6 @@ module.exports = function (eleventyConfig) {
       coll[i].data["prevPost"] = prevPost;
       coll[i].data["nextPost"] = nextPost;
     }
-    // const yearCollection = contentsByYear(coll);
-    // let yearCollectionDescending = new Map();
-    // const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});    
-    // keysSorted.forEach((key) => {
-    //   yearCollectionDescending.set(key, yearCollection[key]);
-    // });
-    // return yearCollectionDescending;
 
     return contentsByYear(coll);
   });
