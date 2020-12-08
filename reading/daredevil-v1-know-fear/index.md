@@ -1,8 +1,8 @@
 ---
-title: "Daredevil: Know Fear, Vol. 1"
-display_title: "Daredevil: Know Fear, Vol. 1"
+title: "Daredevil Vol. 1: Know Fear"
+display_title: "Daredevil Vol. 1: Know Fear"
 author: Chip Zdarsky
-cover_image: /reading/daredevil-know-fear-v1/daredevil-know-fear-v1.jpg
+cover_image: /reading/daredevil-v1-know-fear/daredevil-v1-know-fear.jpg
 genre: Comic
 format: Ebook
 date: 2020-10-05T17:52:00-04:00
