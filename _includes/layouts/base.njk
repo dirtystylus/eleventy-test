@@ -13,12 +13,20 @@
     <link rel="icon" type="image/png" href="/touchicon-196.png" sizes="196x196" />
 
     <!-- Open Graph tags -->
+    {{ content_type | log }}
     {% set ogUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="{{ metadata.profile_image }}" />
     <meta property="og:url" content="{{ ogUrl }}" />
     <meta property="og:title" content="{{ title or metadata.title }}" />
+    {% if content_type == "book" %}
+    {% set bookThumbnail = metadata.feed_reading.img_base_url + cover_image %}
+    <meta property="og:image" content="{{ bookThumbnail }}" />
+    <meta property="og:description" content="by {{ author }}" />
+    {% else %}
+    <meta property="og:image" content="{{ metadata.profile_image }}" />
     <meta property="og:description" content="{{ description or metadata.description }}" />
+    {% endif %}
+
 
     <!-- Twitter Card tags-->
     <meta name="twitter:card" content="summary">
