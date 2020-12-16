@@ -13,7 +13,6 @@
     <link rel="icon" type="image/png" href="/touchicon-196.png" sizes="196x196" />
 
     <!-- Open Graph tags -->
-    {{ content_type | log }}
     {% set ogUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ ogUrl }}" />
