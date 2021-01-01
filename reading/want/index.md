@@ -5,7 +5,7 @@ author: Lynne Steger Strong
 cover_image: /reading/want/want.jpg
 genre: Fiction
 format: Hardcover
-date: 2020-12-31T00:25:00-05:00
+date: 2020-12-20T09:00:00-05:00
 start_date: 2020-12-19
 end_date: 2020-12-20
 ---
