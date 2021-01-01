@@ -5,7 +5,7 @@ author: Chip Zdarsky
 cover_image: /reading/daredevil-v1-know-fear/daredevil-v1-know-fear.jpg
 genre: Comic
 format: Ebook
-date: 2020-10-05T17:52:00-04:00
+date: 2020-09-30T17:52:00-04:00
 start_date: 2020-09-30
 end_date: 2020-09-30
 ---
