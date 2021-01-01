@@ -1109,6 +1109,12 @@ blockquote {
   }
 }
 
+@media (min-width: 65em) {
+  .tmpl-books-list .post--meta {
+    grid-column: content-bleed-start / content-bleed-end;
+  }
+}
+
 .bookslist {
   display: grid;
   grid-template-columns: var(--grid--books--list--narrow);

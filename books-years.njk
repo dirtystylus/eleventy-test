@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.booksByYear
+  size: 1
+  alias: year
+permalink: "reading/years/{{ year }}/"
+eleventyComputed:
+  title: Books I read in {{ year }}
+  description: Reading log for {{ year }}.
+eleventyExcludeFromCollections: true
+templateClass: tmpl-books-list
+---
+<div class="content-main container">
+<h1 class="books-list-title">Reading Log for {{ year }}</h1>
+<div class="post--meta">Browse all <a href="{{ '/reading/years/' | url }}">years</a>.</div>
+
+{% set bookslist = collections.booksByYear[ year ] | reverse %}
+{% include "bookslist.njk" %}
+</div>

@@ -1,0 +1,18 @@
+---
+title: All Books by Year
+description: Year-based archives of posts.
+permalink: /reading/years/
+layout: layouts/base.njk
+templateClass: tmpl-tags-list
+---
+<div class="content-main container">
+<h1>Reading Log Archives</h1>
+<ul class="postlist">
+{% set years = collections.booksByYear | createReverseYearsMapFromObject %}
+{% for year, yearArr in years %}
+  {% set yearUrl %}/reading/years/{{ year }}/{% endset %}
+  <li class="postlist-item">
+    <a href="{{ yearUrl | url }}" class="postlist-link">{{ year }}</a> ({{ yearArr.length }})
+  </li>
+{% endfor %}
+</ul>
