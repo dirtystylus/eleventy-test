@@ -5,7 +5,7 @@ author: Nick Hornby
 cover_image: /reading/just-like-you/just-like-you.jpg
 genre: Fiction
 format: Hardcover
-date: 2020-11-28T19:00:00-05:00
+date: 2020-11-23T19:00:00-05:00
 start_date: 2020-11-22
 end_date: 2020-11-23
 ---

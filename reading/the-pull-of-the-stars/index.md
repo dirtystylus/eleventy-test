@@ -5,7 +5,7 @@ author: Emma Donoghue
 cover_image: /reading/the-pull-of-the-stars/the-pull-of-the-stars.jpg
 genre: Fiction
 format: Hardcover
-date: 2020-11-28T19:45:00-05:00
+date: 2020-11-24T19:45:00-05:00
 start_date: 2020-11-23
 end_date: 2020-11-24
 ---

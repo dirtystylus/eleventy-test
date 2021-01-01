@@ -5,7 +5,7 @@ author: Matt Fraction and Fabio Moon, with Michael Chabon and Gabriel Bá
 cover_image: /reading/casanova-acedia-v2/casanova-acedia-v2.jpg
 genre: Comic
 format: Ebook 
-date: 2020-11-28T19:40:00-05:00
+date: 2020-11-24T19:40:00-05:00
 start_date: 2020-11-23
 end_date: 2020-11-24
 ---

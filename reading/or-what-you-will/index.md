@@ -5,7 +5,7 @@ author: Jo Walton
 cover_image: /reading/or-what-you-will/or-what-you-will.jpg
 genre: Fiction
 format: Hardcover
-date: 2020-11-28T18:30:00-05:00
+date: 2020-11-22T18:30:00-05:00
 start_date: 2020-11-15
 end_date: 2020-11-22
 ---
