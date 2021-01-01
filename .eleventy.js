@@ -207,6 +207,27 @@ module.exports = function (eleventyConfig) {
     return contentsByYear(coll);
   });
 
+  eleventyConfig.addCollection("booksByYear", function (collection) {
+    const coll = collection
+      .getAll()
+      .filter(function (item) {
+        return item.data.content_type == "book";
+      })
+      .sort(function (a, b) {
+        return a.date - b.date;
+      });
+
+    for (let i = 0; i < coll.length; i++) {
+      const prevPost = coll[i - 1];
+      const nextPost = coll[i + 1];
+
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
+
+    return contentsByYear(coll);
+  });
+
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,
