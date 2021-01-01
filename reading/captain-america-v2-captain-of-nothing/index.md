@@ -5,7 +5,7 @@ author: Ta-Nehisi Coates and Adam Kubert
 cover_image: /reading/captain-america-v2-captain-of-nothing/captain-america-v2-captain-of-nothing.jpg
 genre: Comic
 format: Ebook
-date: 2020-11-28T20:35:00-05:00
+date: 2020-11-26T09:00:00-05:00
 start_date: 2020-11-26
 end_date: 2020-11-26
 ---
