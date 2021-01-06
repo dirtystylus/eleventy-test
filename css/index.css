@@ -655,6 +655,10 @@ body {
   hanging-punctuation: first;
 }
 
+.tmpl-post .container img {
+  width: 100%;
+}
+
 @media (min-width: 45em) {
   .tmpl-post .container > p {
     grid-column: content-start / content-end;
