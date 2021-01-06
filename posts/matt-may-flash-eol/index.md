@@ -1,7 +1,7 @@
 ---
 title: Adobe’s Matt May on Flash and Accessibility
 display_title: Adobe’s Matt May on Flash and Accessibility
-description: Matt May looks back at Flash and its accessibility problems
+description: Matt May looks back at Flash and its accessibility problems.
 date: 2021-01-06T14:02:00-05:00
 tags:
   - web-design
