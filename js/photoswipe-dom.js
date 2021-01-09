@@ -1,4 +1,22 @@
-var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+var initPhotoSwipeFromDOM = function (gallerySelector) {
+
+    const imageSizes = {
+        "gallery-3x2": {
+            small: {
+                width: 600,
+                height: 400
+            },
+            medium: {
+                width: 900,
+                height: 600
+            },
+            large: {
+                width: 1200,
+                height: 800
+            }
+        }
+    };
 
   // parse slide data (url, title, size ...) from DOM elements 
   // (children of gallerySelector)
@@ -22,16 +40,17 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
           linkEl = figureEl.children[0]; // <a> element
 
-          size = linkEl.getAttribute('data-size').split('x');
+        //   size = linkEl.getAttribute('data-size').split('x');
+          var sizeId = linkEl.getAttribute('data-size');
+          size = imageSizes[sizeId];
 
           // create slide object
           item = {
               src: linkEl.getAttribute('href'),
-              w: parseInt(size[0], 10),
-              h: parseInt(size[1], 10)
+              small: size.small,
+              medium: size.medium,
+              large: size.large
           };
-
-
 
           if(figureEl.children.length > 1) {
               // <figcaption> content
@@ -133,7 +152,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
           gallery,
           options,
           items;
-
       items = parseThumbnailElements(galleryElement);
 
       // define options (if needed)
@@ -183,6 +201,76 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
       // Pass data to PhotoSwipe and initialize it
       gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+
+      // responsive images
+      // create variable that will store real size of viewport
+        var realViewportWidth,
+            imageSize = "small",
+            firstResize = true,
+            imageSrcWillChange;
+
+        // beforeResize event fires each time size of gallery viewport updates
+        gallery.listen('beforeResize', function() {
+            // gallery.viewportSize.x - width of PhotoSwipe viewport
+            // gallery.viewportSize.y - height of PhotoSwipe viewport
+            // window.devicePixelRatio - ratio between physical pixels and device independent pixels (Number)
+            //                          1 (regular display), 2 (@2x, retina) ...
+
+
+            // calculate real pixels when size changes
+            // realViewportWidth = gallery.viewportSize.x * window.devicePixelRatio;
+            realViewportWidth = gallery.viewportSize.x;
+
+            // Code below is needed if you want image to switch dynamically on window.resize
+
+            // Find out if current images need to be changed
+            if (realViewportWidth <= 720) {
+                if (imageSize != "small") {
+                    imageSize = "small"
+                    imageSrcWillChange = true;
+                } 
+            } else if (realViewportWidth > 720 && realViewportWidth <= 1040) {
+                if (imageSize != "medium") {
+                    imageSize = "medium"
+                    imageSrcWillChange = true;
+                } 
+            } else {
+                if (imageSize != "large") {
+                    imageSize = "large"
+                    imageSrcWillChange = true;
+                } 
+            }
+
+            // Invalidate items only when source is changed and when it's not the first update
+            if(imageSrcWillChange && !firstResize) {
+                // invalidateCurrItems sets a flag on slides that are in DOM,
+                // which will force update of content (image) on window.resize.
+                gallery.invalidateCurrItems();
+            }
+
+            if(firstResize) {
+                firstResize = false;
+            }
+
+            imageSrcWillChange = false;
+
+        });
+
+
+        // gettingData event fires each time PhotoSwipe retrieves image source & size
+        gallery.listen('gettingData', function(index, item) {
+            // Set image source & size based on real viewport width
+            item.src = `${item.src}?nf_resize=fit&w=${item[imageSize].width}`;
+            item.w = item[imageSize].width;
+            item.h = item[imageSize].height;
+
+            // It doesn't really matter what will you do here, 
+            // as long as item.src, item.w and item.h have valid values.
+            // 
+            // Just avoid http requests in this listener, as it fires quite often
+
+        });  
+        
       gallery.init();
   };
 
