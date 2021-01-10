@@ -5,9 +5,9 @@ author: Maria Dahvana Headley
 cover_image: /reading/beowulf/beowulf.jpg
 genre: Fiction
 format: Paperback
-date: 2021-01-09T14:00:00-05:00
-start_date: 2021-01-08
-end_date: 2021-01-09
+date: 2021-01-07T14:00:00-05:00
+start_date: 2021-01-06
+end_date: 2021-01-07
 ---
 
 *Bro!*
