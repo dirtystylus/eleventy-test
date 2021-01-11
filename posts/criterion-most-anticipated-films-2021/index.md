@@ -1,6 +1,6 @@
 ---
-title: Criterion’s Most Anticpated Films of 2021
-display_title: Criterion’s Most Anticpated Films of 2021
+title: Criterion’s Most Anticipated Films of 2021
+display_title: Criterion’s Most Anticipated Films of 2021
 description: Upcoming projects for 2021, featuring some of my favorite filmmakers.
 date: 2021-01-04T13:50:00-05:00
 tags:
