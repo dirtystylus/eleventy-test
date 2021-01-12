@@ -330,6 +330,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
         // gettingData event fires each time PhotoSwipe retrieves image source & size
         gallery.listen('gettingData', function(index, item) {
             // Set image source & size based on real viewport width
+            // feed the Neltify resize parameter the same small/medium/large width that will be assigned in the dimensions
             item.src = `${item.src}?nf_resize=fit&w=${item[imageSize].width}`;
             item.w = item[imageSize].width;
             item.h = item[imageSize].height;

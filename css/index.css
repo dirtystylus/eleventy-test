@@ -1240,3 +1240,26 @@ blockquote {
   height: 100%;
   object-fit: cover;
 }
+
+@supports (grid-template-rows: masonry) {
+  .gallery > ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: masonry;
+  }
+
+  .gallery > ul > li:nth-child(4n) {
+    grid-column: unset; /* Spans two columns */
+    grid-row: unset; /* Spans two rows */
+  }
+
+  /* This will create 3x images every 8 elements */
+  .gallery > ul > li:nth-child(8n) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .gallery > ul > li > img {
+    width: unset;
+    height: unset;
+    object-fit: unset;
+  }
+}
