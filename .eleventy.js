@@ -265,6 +265,13 @@ module.exports = function (eleventyConfig) {
     }
   );
 
+  eleventyConfig.addPairedShortcode(
+    "gallery", (data) => {
+      const galleryContent = markdownLibrary.render(data);
+      return `<div class="gallery">${galleryContent}</div>`;
+    }
+  );
+
   // Images Responsiver
   const imagesResponsiverConfig = require("./src/utils/images-responsiver-config.js");
   eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);

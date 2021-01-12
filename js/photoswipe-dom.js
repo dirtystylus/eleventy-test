@@ -117,6 +117,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
           // create slide object
           item = {
               src: linkEl.getAttribute('href'),
+              orig_src: linkEl.getAttribute('href'),
               small: size.small,
               medium: size.medium,
               large: size.large
@@ -331,7 +332,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
         gallery.listen('gettingData', function(index, item) {
             // Set image source & size based on real viewport width
             // feed the Neltify resize parameter the same small/medium/large width that will be assigned in the dimensions
-            item.src = `${item.src}?nf_resize=fit&w=${item[imageSize].width}`;
+            item.src = `${item.orig_src}?nf_resize=fit&w=${item[imageSize].width}`;
             item.w = item[imageSize].width;
             item.h = item[imageSize].height;
 

@@ -19,7 +19,7 @@ Changing up the switches and keycaps took about an hour. Drop includes keycap an
 
 ![Foggy tree](DSCF1433.jpg "more horizontal"){data-responsiver=regular}
 
-<div class="gallery">
+{% gallery %}
 
 - ![Foggy tree](DSCF1432.jpg "vertically"){data-responsiver=gallery_2x3}
 - ![Foggy tree](DSCF1431.jpg "more horizontal"){data-responsiver=gallery_3x2}
@@ -28,4 +28,4 @@ Changing up the switches and keycaps took about an hour. Drop includes keycap an
 - ![Foggy tree](opa-soph.jpg "beach day"){data-responsiver=gallery_3x4}
 - ![Foggy tree](square.jpg "square"){data-responsiver=gallery_1x1}
 
-</div>
+  {% endgallery %}
