@@ -37,11 +37,11 @@ const runAfterHook = (image, document) => {
 const runAfterHookGallery = (image, document) => {
   let imageUrl =
     image.getAttribute("data-pristine") || image.getAttribute("src");
-  let caption = image.getAttribute("title");
-  if (caption !== null) {
-    caption = md.renderInline(caption.trim());
-  }
-
+    let caption = image.getAttribute("title");
+    if (caption !== null) {
+      caption = md.renderInline(caption.trim());
+    }
+    
   if (caption) {
     const link = document.createElement("a");
     link.setAttribute("href", imageUrl);
@@ -61,6 +61,8 @@ const runAfterHookGallery = (image, document) => {
     // and Markdown will wrap in a < p > tag
     if (image.parentNode.nodeName === "p") {
       image.parentNode.replaceWith(figure);
+    } else {
+      image.replaceWith(figure);
     }
   }
 };

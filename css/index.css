@@ -39,12 +39,15 @@ body {
   height: 100vh;
 }
 
-/* @media (min-width: 60rem) {
-  html,
-  body {
-    font-size: 112.5%;
-  }
-} */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
 p:last-child {
   margin-bottom: 0;
@@ -1206,6 +1209,11 @@ blockquote {
   grid-column: 1;
 }
 
+.tmpl-post .gallery figure {
+  grid-column: unset;
+  margin: 0;
+}
+
 @media (min-width: 45rem) {
   .gallery {
     grid-column: content-start / content-end;
@@ -1225,6 +1233,11 @@ blockquote {
   list-style: none;
 }
 
+.gallery li a {
+  display: block;
+  line-height: 0;
+}
+
 .gallery > ul > li:nth-child(4n) {
   grid-column: span 2; /* Spans two columns */
   grid-row: span 2; /* Spans two rows */
@@ -1239,6 +1252,7 @@ blockquote {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
 }
 
 @supports (grid-template-rows: masonry) {
@@ -1261,5 +1275,6 @@ blockquote {
     width: unset;
     height: unset;
     object-fit: unset;
+    object-position: unset;
   }
 }

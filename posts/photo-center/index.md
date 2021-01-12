@@ -21,11 +21,11 @@ Changing up the switches and keycaps took about an hour. Drop includes keycap an
 
 <div class="gallery">
 
-- ![Foggy tree](DSCF1431.jpg "more horizontal"){data-responsiver=gallery_3x2}
 - ![Foggy tree](DSCF1432.jpg "vertically"){data-responsiver=gallery_2x3}
+- ![Foggy tree](DSCF1431.jpg "more horizontal"){data-responsiver=gallery_3x2}
+- ![Foggy tree](christmas.jpg "family"){data-responsiver=gallery_16x9}
 - ![Foggy tree](lobster-kids.jpg "grandkids"){data-responsiver=gallery_4x3}
 - ![Foggy tree](opa-soph.jpg "beach day"){data-responsiver=gallery_3x4}
-- ![Foggy tree](christmas.jpg "family"){data-responsiver=gallery_16x9}
 - ![Foggy tree](square.jpg "square"){data-responsiver=gallery_1x1}
 
 </div>

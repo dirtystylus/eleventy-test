@@ -91,7 +91,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
   // parse slide data (url, title, size ...) from DOM elements 
   // (children of gallerySelector)
   var parseThumbnailElements = function(el) {
-      var thumbElements = el.childNodes,
+      var thumbElements = el.querySelectorAll('figure'),
           numNodes = thumbElements.length,
           items = [],
           figureEl,
@@ -162,8 +162,8 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
       // find index of clicked item by looping through all child nodes
       // alternatively, you may define index via data- attribute
-      var clickedGallery = clickedListItem.parentNode,
-          childNodes = clickedListItem.parentNode.childNodes,
+      var clickedGallery = clickedListItem.parentNode.parentNode, // we need to make our way back to the top of the ul > li > figure chain
+          childNodes = clickedListItem.parentNode.parentNode.querySelectorAll('figure'),
           numChildNodes = childNodes.length,
           nodeIndex = 0,
           index;
@@ -352,6 +352,12 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
       galleryElements[i].setAttribute('data-pswp-uid', i+1);
       galleryElements[i].onclick = onThumbnailsClick;
   }
+    
+    // find all figcaptions within a gallery, and hide them visually
+    var imageElements = document.querySelectorAll('.gallery figure figcaption');
+    for(var i = 0, l = imageElements.length; i < l; i++) {
+        imageElements[i].classList.add('visually-hidden');
+    }
 
   // Parse URL and open gallery if it contains #&pid=3&gid=1
   var hashData = photoswipeParseHash();
@@ -361,4 +367,4 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 };
 
 // execute above function
-initPhotoSwipeFromDOM('.gallery');
+initPhotoSwipeFromDOM('.gallery ul');
