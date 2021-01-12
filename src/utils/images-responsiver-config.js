@@ -45,7 +45,7 @@ const runAfterHookGallery = (image, document) => {
   if (caption) {
     const link = document.createElement("a");
     link.setAttribute("href", imageUrl);
-    link.setAttribute("data-size", "gallery-3x2");
+    link.setAttribute("data-size", image.classList[0]);
     const figure = document.createElement("figure");
     figure.classList.add(...image.classList);
     // TODO: decide whether classes should be removed from the image or not
@@ -81,14 +81,40 @@ module.exports = {
     sizes: "(min-width: 65em) 1280px, (min-width: 45em) 800px, 100vw",
     classes: ["cinemascope"],
   },
-  gallery_3x2: {
-    sizes: "(min-width: 45em) 800px, 100vw",
-    classes: ["gallery-3x2"],
-    runAfter: runAfterHookGallery,
-  },
   book_thumb: {
     sizes: "400px, 100vw",
     classes: ["book-thumb"],
     figure: "never",
   },
+  gallery_3x2: {
+    sizes: "(min-width: 45em) 800px, 100vw",
+    classes: ["gallery-3x2"],
+    runAfter: runAfterHookGallery,
+  },
+  gallery_2x3: {
+    sizes: "(min-width: 45em) 800px, 100vw",
+    classes: ["gallery-2x3"],
+    runAfter: runAfterHookGallery,
+  },
+  gallery_4x3: {
+    sizes: "(min-width: 45em) 800px, 100vw",
+    classes: ["gallery-4x3"],
+    runAfter: runAfterHookGallery,
+  },
+  gallery_3x4: {
+    sizes: "(min-width: 45em) 800px, 100vw",
+    classes: ["gallery-3x4"],
+    runAfter: runAfterHookGallery,
+  },
+  gallery_16x9: {
+    sizes: "(min-width: 45em) 800px, 100vw",
+    classes: ["gallery-16x9"],
+    runAfter: runAfterHookGallery,
+  },
+  gallery_1x1: {
+    sizes: "(min-width: 45em) 800px, 100vw",
+    classes: ["gallery-1x1"],
+    runAfter: runAfterHookGallery,
+  },
+  
 };

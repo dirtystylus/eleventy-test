@@ -15,7 +15,77 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
                 width: 1200,
                 height: 800
             }
-        }
+        },
+        "gallery-2x3": {
+            small: {
+                width: 400,
+                height: 600
+            },
+            medium: {
+                width: 600,
+                height: 900
+            },
+            large: {
+                width: 800,
+                height: 1200
+            }
+        },
+        "gallery-4x3": {
+            small: {
+                width: 400,
+                height: 300
+            },
+            medium: {
+                width: 800,
+                height: 600
+            },
+            large: {
+                width: 1200,
+                height: 900
+            }
+        },
+        "gallery-3x4": {
+            small: {
+                width: 300,
+                height: 400
+            },
+            medium: {
+                width: 600,
+                height: 800
+            },
+            large: {
+                width: 900,
+                height: 1200
+            }
+        },
+        "gallery-16x9": {
+            small: {
+                width: 400,
+                height: 225
+            },
+            medium: {
+                width: 800,
+                height: 450
+            },
+            large: {
+                width: 1200,
+                height: 675
+            }
+        },
+        "gallery-1x1": {
+            small: {
+                width: 400,
+                height: 400
+            },
+            medium: {
+                width: 800,
+                height: 800
+            },
+            large: {
+                width: 1000,
+                height: 1000
+            }
+        },
     };
 
   // parse slide data (url, title, size ...) from DOM elements 
@@ -41,7 +111,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
           linkEl = figureEl.children[0]; // <a> element
 
         //   size = linkEl.getAttribute('data-size').split('x');
-          var sizeId = linkEl.getAttribute('data-size');
+          let sizeId = linkEl.getAttribute('data-size');
           size = imageSizes[sizeId];
 
           // create slide object
