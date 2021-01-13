@@ -1200,12 +1200,7 @@ blockquote {
 }
 
 /* Image Grid */
-
-/* set a max width, and center */
 .gallery {
-  /* max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; */
   grid-column: 1;
 }
 
@@ -1216,7 +1211,7 @@ blockquote {
 
 @media (min-width: 45rem) {
   .gallery {
-    grid-column: content-start / content-end;
+    grid-column: content-gutter-start / content-gutter-end;
   }
 }
 
