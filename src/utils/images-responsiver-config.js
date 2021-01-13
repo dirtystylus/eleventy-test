@@ -34,9 +34,42 @@ const runAfterHook = (image, document) => {
   }
 };
 
+const runAfterHookGallery = (image, document) => {
+  let imageUrl =
+    image.getAttribute("data-pristine") || image.getAttribute("src");
+    let caption = image.getAttribute("title");
+    if (caption !== null) {
+      caption = md.renderInline(caption.trim());
+    }
+    
+  if (caption) {
+    const link = document.createElement("a");
+    link.setAttribute("href", imageUrl);
+    link.setAttribute("data-size", image.classList[0]);
+    const figure = document.createElement("figure");
+    figure.classList.add(...image.classList);
+    // TODO: decide whether classes should be removed from the image or not
+    image.classList.remove(...image.classList);
+    let figCaption = document.createElement("figcaption");
+    figCaption.innerHTML =
+      (caption ? caption : "");
+    link.appendChild(image.cloneNode(true));
+    figure.appendChild(link);
+    figure.appendChild(figCaption);
+
+    // Parent node of the image is a <p> because image is an inline element,
+    // and Markdown will wrap in a < p > tag
+    if (image.parentNode.nodeName === "p") {
+      image.parentNode.replaceWith(figure);
+    } else {
+      image.replaceWith(figure);
+    }
+  }
+};
+
 module.exports = {
   default: {
-    sizes: "(min-width: 650px) 850px, 400px",
+    sizes: "(min-width: 65em) 1040px, (min-width: 45em) 800px, 100vw",
     attributes: {
       loading: "lazy",
     },
@@ -44,16 +77,70 @@ module.exports = {
     runAfter: runAfterHook,
   },
   regular: {
-    sizes: "(min-width: 650px) 850px, 400px",
     classes: ["regular"],
   },
   cinemascope: {
-    sizes: "(min-width: 650px) 850px, (min-width: 1000px) 1200px, 400px",
+    sizes: "(min-width: 65em) 1280px, (min-width: 45em) 800px, 100vw",
     classes: ["cinemascope"],
   },
   book_thumb: {
-    sizes: "(min-width: 650px) 850px, 400px",
+    sizes: "400px, 100vw",
     classes: ["book-thumb"],
     figure: "never",
   },
+  gallery_3x2: {
+    sizes: "(min-width: 45em) 400px, 100vw",
+    classes: ["gallery-3x2"],
+    fallbackWidth: 400,
+    minWidth: 320,
+    maxWidth: 640,
+    steps: 3,
+    runAfter: runAfterHookGallery,
+  },
+  gallery_2x3: {
+    sizes: "(min-width: 45em) 400px, 100vw",
+    classes: ["gallery-2x3"],
+    fallbackWidth: 400,
+    minWidth: 320,
+    maxWidth: 640,
+    steps: 3,
+    runAfter: runAfterHookGallery,
+  },
+  gallery_4x3: {
+    sizes: "(min-width: 45em) 400px, 100vw",
+    classes: ["gallery-4x3"],
+    fallbackWidth: 400,
+    minWidth: 320,
+    maxWidth: 640,
+    steps: 3,
+    runAfter: runAfterHookGallery,
+  },
+  gallery_3x4: {
+    sizes: "(min-width: 45em) 400px, 100vw",
+    classes: ["gallery-3x4"],
+    fallbackWidth: 400,
+    minWidth: 320,
+    maxWidth: 640,
+    steps: 3,
+    runAfter: runAfterHookGallery,
+  },
+  gallery_16x9: {
+    sizes: "(min-width: 45em) 400px, 100vw",
+    classes: ["gallery-16x9"],
+    fallbackWidth: 400,
+    minWidth: 320,
+    maxWidth: 640,
+    steps: 3,
+    runAfter: runAfterHookGallery,
+  },
+  gallery_1x1: {
+    sizes: "(min-width: 45em) 400px, 100vw",
+    classes: ["gallery-1x1"],
+    fallbackWidth: 400,
+    minWidth: 320,
+    maxWidth: 640,
+    steps: 3,
+    runAfter: runAfterHookGallery,
+  },
+  
 };
