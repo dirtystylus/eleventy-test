@@ -48,7 +48,7 @@ const runAfterHookGallery = (image, document) => {
 		image.classList.remove(...image.classList);
 		
 		const link = document.createElement("a");
-	link.setAttribute("href", imageUrl);
+		link.setAttribute("href", imageUrl);
 		link.setAttribute("data-size", figure.classList[0]);
 		link.appendChild(image.cloneNode(true));
 		
