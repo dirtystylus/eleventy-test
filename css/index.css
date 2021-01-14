@@ -668,6 +668,26 @@ body {
   }
 }
 
+/* Video Embed */
+.cinemascope.video {
+  justify-self: auto;
+}
+
+.video-embed > div {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video-embed object,
+.video-embed iframe,
+.video-embed video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 blockquote {
   border-left: 4px solid #e2e2e2;
   grid-column: 1;
