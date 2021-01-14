@@ -272,6 +272,13 @@ module.exports = function (eleventyConfig) {
     }
   );
 
+  eleventyConfig.addPairedShortcode(
+    "vimeo", (data) => {
+      const videoURL = markdownLibrary.renderInline(data.trim());
+      return `<figure class="cinemascope video"><div class="video-embed"><div><iframe src="${videoURL}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></figure>`;
+    }
+  );
+
   // Images Responsiver
   const imagesResponsiverConfig = require("./src/utils/images-responsiver-config.js");
   eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
