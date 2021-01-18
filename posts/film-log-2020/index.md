@@ -22,7 +22,7 @@ For 2021 I’ve shifted to doing this on [Letterboxd](https://letterboxd.com/dir
 * *The Souvenir* (2019), Joanna Hogg
 * *Portrait of a Lady on Fire* (2019), Céline Sciamma
 * *Carol* (2015), Todd Haynes
-* *Storm the Gates* (2018), Daniele Anastasion, Josie Swantek & Catherine Yrisarri
+* *Storm the Gates* (2018), Daniele Anastasion, Josie Swantek, and Catherine Yrisarri
 * *Arrival* (2016), Denis Villeneuve
 * *Crimson Peak* (2015), Guillermo del Toro
 * *Downton Abbey* (2019), Michael Engler
