@@ -570,6 +570,7 @@ body {
   font-weight: 400;
   grid-column: 1;
   line-height: 1.2;
+  margin: 1.5em 0 1em 0;
 }
 
 @media (min-width: 45em) {
@@ -582,6 +583,7 @@ body {
   font-size: 1.125em;
   font-weight: 400;
   grid-column: 1;
+  margin: 1em 0 0.5em 0;
 }
 
 @media (min-width: 45em) {
@@ -594,6 +596,7 @@ body {
   font-size: 1em;
   font-weight: 700;
   grid-column: 1;
+  margin: 1em 0 0.5em 0;
 }
 
 @media (min-width: 45em) {
@@ -605,6 +608,7 @@ body {
 .tmpl-post ul,
 .tmpl-post ol {
   grid-column: 1;
+  margin-top: 0;
 }
 
 @media (min-width: 45em) {
@@ -617,7 +621,7 @@ body {
 .tmpl-post figure {
   /* margin: 0 0 1em 0; */
   grid-column: 1;
-  margin: 1em 0 1em 0;
+  margin: 1em 0 2em 0;
 }
 
 @media (min-width: 45em) {
@@ -655,6 +659,7 @@ body {
   /* grid-column: content-start / content-end; */
   grid-column: 1;
   hanging-punctuation: first;
+  margin-top: 0;
 }
 
 .tmpl-post .container img {
@@ -867,12 +872,15 @@ blockquote {
   grid-column: content-start / content-end;
 } */
 
-.tmpl-post pre {
+.tmpl-post pre,
+.tmpl-post pre[class*="language-"] {
   grid-column: 1;
+  margin-bottom: 1.375rem;
 }
 
 @media (min-width: 45em) {
-  .tmpl-post pre {
+  .tmpl-post pre,
+  .tmpl-post pre[class*="language-"] {
     grid-column: content-start / content-end;
     margin-left: 0;
   }
