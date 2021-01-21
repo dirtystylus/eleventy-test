@@ -14,7 +14,7 @@ tags:
 
 ![Image lightbox modal with black and white photo of a stump in a frozen canal](lightbox.jpg "PhotoSwipe lightbox modal"){data-responsiver=cinemascope}
 
-*TL;DR*: I’ve set up a [CodePen project](https://codepen.io/dirtystylus/project/full/ZgePbo) that you can dig through.
+**TL;DR**: I’ve set up a [CodePen project](https://codepen.io/dirtystylus/project/full/ZgePbo) that you can dig through.
 
 For as long as I’ve been blogging I’ve wanted to have a photo gallery solution, so that I could mix in batches of photos without necessarily creating a super-long scroll on a post. Earlier versions of my blog linked to galleries that I managed in [Flickr](https://www.flickr.com/photos/dirtystylus/), and that remains an option. However, one of my design principles for this site was to keep as much of the content within the site as possible.[^1]
 
@@ -370,6 +370,19 @@ eleventyConfig.addPairedShortcode(
 );
 ```
 
+The example gallery that closes out this post has this Markdown snippet to generate the gallery:
+
+```md
+{% raw %}{% gallery %}
+- ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand"){data-responsiver=gallery_2x3}
+- ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance"){data-responsiver=gallery_3x2}
+- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care"){data-responsiver=gallery_2x3}
+- ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper"){data-responsiver=gallery_2x3}
+- ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette"){data-responsiver=gallery_3x2}
+{% endgallery %}
+{% endraw %}
+```   
+
 ## What’s left? 
 
 The lightbox modal is keyboard-friendly but could use some screen reader improvements. Whether I can do that without hacking core PhotoSwipe code is to be determined. (If you know your way around ARIA enhancements and have some time to look at code with me, I’d appreciate it.)
@@ -381,13 +394,11 @@ I hope this has been helpful. If you’re curious about anything here, my [Twitt
 What does this all look like put together? Here’s a small batch of photos taken around City Hall in downtown Philadelphia, just before Christmas Day:
 
 {% gallery %}
-
 - ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand"){data-responsiver=gallery_2x3}
 - ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance"){data-responsiver=gallery_3x2}
 - ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care"){data-responsiver=gallery_2x3}
 - ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper"){data-responsiver=gallery_2x3}
 - ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette"){data-responsiver=gallery_3x2}
-
 {% endgallery %}
 
 
