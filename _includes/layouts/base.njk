@@ -7,8 +7,10 @@
     <meta name="description" content="{{ description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism-a11y-dark.css' | url }}" media="print" onload="this.media='all'">
+    {% if layout === "layouts/post-gallery" %}
     <link rel="stylesheet" href="{{ '/css/photoswipe/photoswipe.css' | url }}" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="{{ '/css/photoswipe/skin/skin.css' | url }}" media="print" onload="this.media='all'">
+    {% endif %}
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="icon" href="/img/meta/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon-152x152.png" />

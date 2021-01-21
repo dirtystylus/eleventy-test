@@ -570,7 +570,6 @@ body {
   font-weight: 400;
   grid-column: 1;
   line-height: 1.2;
-  margin-bottom: 0;
 }
 
 @media (min-width: 45em) {
@@ -580,7 +579,7 @@ body {
 }
 
 .tmpl-post h3 {
-  font-size: 1.25em;
+  font-size: 1.125em;
   font-weight: 400;
   grid-column: 1;
 }

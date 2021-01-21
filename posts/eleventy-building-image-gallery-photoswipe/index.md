@@ -14,45 +14,31 @@ tags:
 
 ![Image lightbox modal with black and white photo of a stump in a frozen canal](lightbox.jpg "PhotoSwipe lightbox modal"){data-responsiver=cinemascope}
 
-## The problem
+*TL;DR*: I’ve set up a [CodePen project](https://codepen.io/dirtystylus/project/full/ZgePbo) that you can dig through.
 
-* I had worked out styling for block-level images in a post
-* I wanted to have support for galleries
-* Thought about just linking to Flickr, but wanted to have everything in the site
-* There are an astounding number of JavaScript image galleries and lightboxes
-* I wanted one that didn’t rely on jQuery, mostly because I didn’t want the library dependency (this feels pretty flimsy, jQuery works, just use it instead of having puritanical objections like I did)
+For as long as I’ve been blogging I’ve wanted to have a photo gallery solution, so that I could mix in batches of photos without necessarily creating a super-long scroll on a post. Earlier versions of my blog linked to galleries that I managed in Flickr, and that remains an option. However, one of my design principles for this site was to keep as much of the content within the site as possible.[^1]
 
-For as long as I’ve been blogging I’ve also wanted to have a photo gallery solution. Earlier versions of my blog linked to galleries that I managed in Flickr, and that remains an option for this site. However, one of my design principles for this site was to keep as much of the content within the site as possible.[^1]
-
-So I started looking for a solution, and let me tell you: there are a lot of JavaScript image gallery/lightbox solutions out there. My requirements were:
+So I started looking for a solution, and let me tell you: there are a *lot* of JavaScript image gallery/lightbox solutions out there. My list of requirements was fairly short:
 
 * Touch and keyboard support
 * Minimal UI
 * Vanilla JavaScript
 
-That last requirement is more of personal preference: jQuery works, and if you’re using other jQuery plugins it’s a no-brainer. The ecosystem is vast, which is an advantage.
+(That last requirement is more of personal preference. If I had existing jQuery plugins that I wanted to use I would have searched in the deeper pool of jQuery-based options.)
 
-I ended up testing three:
+I ended up testing three solutions:
 
 * [Medium Zoom](https://medium-zoom.francoischalifour.com): this has a pretty nice execution but lacked keyboard support
 * [SmartPhoto](https://github.com/appleple/SmartPhoto): I like this one but the display falls apart on very small viewports, like my first-generation iPhone SE
 * [PhotoSwipe](https://photoswipe.com): This is what I ended up using
 
-## The Lightbox
-
-* PhotoSwipe supported touch, keyboard, and had a minimal UI.
-* The responsive torture test where other galleries had failed: rendering on my original iPhone SE
-* PhotoSwipe is not plug and play, it wants you to code an array, or create a markup structure that it can process
-* There are examples but I ended up writing my own handler
-* A dealbreaker might be [PhotoSwipe’s requirements for image dimensions](https://photoswipe.com/documentation/faq.html#image-size)
-
 I heard about PhotoSwipe through this [Twitter thread](https://twitter.com/TatianaTMac/status/1205924261862334465) from Tatiana Mac, specifically [this reply from Rich Holman](https://twitter.com/dogwonder/status/1205925479414452224). Rich’s example was more of a standalone gallery, not one tied to a post, but it had the seeds of what I needed.
 
-PhotoSwipe managed to check off my requirements, and more importantly the experience *felt* nice when I was testing on different devices. The documentation is very up front about it requiring some work to set up. There are pretty good examples in the [documentation](https://photoswipe.com/documentation/getting-started.html). What follows is very specific to my implementation, but I hope it’s helpful for others with a similar scenario in mind.
+PhotoSwipe managed to check off my requirements, and more importantly the experience *felt* nice when I was testing on different devices. That said, it’s not an automated solution where you just point it at a folder of images. The documentation is very clear about it requiring some work to set up. There are pretty good examples in the [documentation](https://photoswipe.com/documentation/getting-started.html). What follows is very specific to my implementation within Eleventy, but I hope it’s helpful for others with a similar scenario in mind.
 
 I have a few dependencies that may not match your setup: I use Nicolas Hoizey’s [Images Responsiver](https://github.com/nhoizey/images-responsiver/tree/main/packages/eleventy-plugin-images-responsiver) plugin,[^2] and [I use Netlify Large Media](/posts/netlify-large-media-and-eleventy/) to scale images on the server side, instead of pre-processing images as a build step.
 
-### Markup
+## Generating the Gallery Markup
 
 Here’s an example of the markup pattern I wanted to generate:
 
@@ -95,7 +81,7 @@ gallery_3x2: {
 },
 ```
 
-This means that any image using the `gallery_3x2` attribute in Markdown will get the `gallery-3x2` CSS class applied to its `<figure>` markup, and the srcset
+This means that any image using the `gallery_3x2` attribute in Markdown will get the `gallery-3x2` CSS class applied to its `<figure>` markup (as well as an attribute on the `<a>` tag).
 
 So this Markdown:
 
@@ -122,7 +108,7 @@ results in this markup:
 </figure>
 ```
 
-The below lines define the default width for the `<image>` `src` attribute, and the `srcset` widths (240–400 range with three steps results in `240w`, `320w`, `400w`).
+The highlighted lines below define the default width for the image `src` attribute, and the `srcset` widths (240–400 range with three steps results in `240w`, `320w`, `400w`).
 
 ```json/3-6
 gallery_3x2: {
@@ -176,13 +162,17 @@ const runAfterHookGallery = (image, document) => {
 };
 ```
 
-### PhotoSwipe configuration
+There’s a lot in there, but basically it finds the image created from the initial Markdown rendering pass, wraps it in figure and link markup, injects the appropriate classes/attributes from the Images Responsiver config declaration, and then replaces the original image with the new markup. 
 
-I have a **`photoswipe-dom.js`** file included on image gallery posts. It’s a long file, so I’ll just highlight a few things.
+## PhotoSwipe configuration
+
+With the markup done, I shifted focus to the PhotoSwipe JavaScript that would scan the list of images and create an array for the gallery.
+
+All of my code to set up PhotoSwipe is in a **`photoswipe-dom.js`** file, included on image gallery posts. It’s a long file, so I’ll just highlight a few things.
 
 ### Image dimensions
 
-I defined an object with some width/height dimensions for three broad sizes:
+I defined an object with entries for each of the aspect ratios I declared in my Images Responsiver config. Each of these entries has width and height dimensions for three broad sizes (small, medium, and large):
 
 ```js
 const imageSizes = {
@@ -201,12 +191,12 @@ const imageSizes = {
       }
   },
   
-  …
+  // more presets here
   
 }
 ```
 
-The key for the object matches the CSS class in the `<figure>` markup. So for an image. So for an image with the CSS class `gallery-3x2` I now have small/medium/large dimensions that I can feed into the PhotoSwipe code.
+The key for the object matches the `data-size` attribute in the wrapper link around the image markup. So for an image with a `data-size` link attribute `gallery-3x2` I now have small/medium/large dimensions that I can feed into the PhotoSwipe code.
 
 ### Parsing DOM Elements for PhotoSwipe
 
@@ -278,7 +268,7 @@ gallery.listen('gettingData', function(index, item) {
 });
 ```
 
-Whew. Ok. We now have a system of aspect ratios in our Images Responsiver config, and the code to take that aspect ratio and turn it into the image URL with width and height dimensions so that PhotoSwipe can do its work.
+Whew. Ok. We now have a system of aspect ratios in our Images Responsiver config, and the code to take that aspect ratio ID and turn it into the image URL and width/height dimensions so that PhotoSwipe can do its work when it opens the lightbox for display.
 
 ## Styling the gallery itself
 
@@ -288,7 +278,7 @@ What about the actual gallery images that launch the lightbox? I’d been doing 
 grid-template-rows: masonry;
 ```
 
-### Masonry is here-ish
+### Masonry is here(ish)
 
 Ok so masonry support is only in Firefox for now, and you have to enable it with a flag. So I still needed a basic grid for other CSS Grid-supporting browsers, and then I could use a `@supports` at-rule to implement my masonry code. I use a simple two-column grid, and set the images to use `object-fit: cover` so that the grid stays even with both horizontal and vertical images.
 
@@ -333,6 +323,8 @@ And for the browsers who have masonry:
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: masonry;
   }
+  
+  // Unset any properties that constrain the grid elements
 }
 ```
 
@@ -348,22 +340,34 @@ After my first implementation I decided that I didn’t want to have the lightbo
 layout: layouts/post-gallery
 ```
 
-## Example Gallery
+In my base Nunjucks file I check for that layout type and include the PhotoSwipe CSS files:
 
-Here’s a quick batch of photos taken in downtown Philadelphia, just before Christmas Day:
+```twig
+{% raw %}{% if layout === "layouts/post-gallery" %}
+    <link rel="stylesheet" href="{{ '/css/photoswipe/photoswipe.css' | url }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ '/css/photoswipe/skin/skin.css' | url }}" media="print" onload="this.media='all'">
+{% endif %}
+{% endraw %}
+```
+
+---
+
+## A small example
+
+What does this all look like put together? Here’s a quick batch of photos taken in downtown Philadelphia, just before Christmas Day:
 
 {% gallery %}
 
 - ![Repurposed sink holds up a Vellum Soap Company sign](philly-christmas-market-1.jpg "Soap stand"){data-responsiver=gallery_2x3}
-- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care"){data-responsiver=gallery_2x3}
 - ![Class entryway to the City Hall El train entrance](philly-christmas-market-3.jpg "City Hall subway entrance"){data-responsiver=gallery_3x2}
+- ![Kitchen towel with “Cat Hair is my glitter” illustration and lettering](philly-christmas-market-2.jpg "Cat hair don’t care"){data-responsiver=gallery_2x3}
 - ![City Hall Christmas tree](philly-christmas-market-4.jpg "Liberty Bell tree topper"){data-responsiver=gallery_2x3}
 - ![A man prepares a raclette sandwich](philly-christmas-market-5.jpg "Raclette"){data-responsiver=gallery_3x2}
 
 {% endgallery %}
 
 
-[^1]: Wow, photo-sharing social networks are a mess right now. Instagram is bloated with features yet doesn’t even have a good model for galleries. Flickr is still around, but hasn’t done much to update its galleries for more storytelling. Exposure is very nice but I wanted to keep the post anchored within my own site.
+[^1]: Wow, photo-sharing social networks are a mess right now. Instagram is bloated with features yet doesn’t even have a good model for galleries. Flickr is still around, but I don’t quite like how they’re presented. [Exposure](https://exposure.co/) is very nice but I wanted to keep the post anchored within my own site.
 
 [^2]: My notes are [here](/posts/eleventy-images-responsiver/), and [here](/posts/eleventy-images-responsiver-markup/).
 
