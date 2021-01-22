@@ -1,13 +1,13 @@
 ---
 title: "Eleventy: Images Responsiver"
-description: Refining my responsive images approach with Nicolas Hoisey’s Images Responsiver plugin.
+description: Refining my responsive images approach with Nicolas Hoizey’s Images Responsiver plugin.
 date: 2020-06-29
 tags:
   - eleventy
   - web-development
 ---
 
-One of my favorite things is writing and sharing things, and getting feedback from folks. I tweeted out the [last post on Paired Shortcodes and responsive images](http://dirtystylus.com/2020/06/16/eleventy-paired-shortcodes-and-markdown-rendering/), and heard back from [Nicolas Hoisey](https://nicolas-hoizey.com), who mentioned the work he’s been doing on the [Eleventy Images Responsiver](https://nhoizey.github.io/eleventy-plugin-images-responsiver/) plugin. I liked some of the design decisions behind the plugin, so I decided to give it a shot on my in-progress site.
+One of my favorite things is writing and sharing things, and getting feedback from folks. I tweeted out the [last post on Paired Shortcodes and responsive images](/posts/eleventy-paired-shortcodes-and-markdown-rendering/), and heard back from [Nicolas Hoizey](https://nicolas-hoizey.com), who mentioned the work he’s been doing on the [Eleventy Images Responsiver](https://nhoizey.github.io/eleventy-plugin-images-responsiver/) plugin. I liked some of the design decisions behind the plugin, so I decided to give it a shot on my in-progress site.
 
 Here’s some things I learned in short order:
 
@@ -135,4 +135,4 @@ Which generates this markup:
 
 So: I’ve got support for alt text, Markdown captions, and Netlify Large Media, using syntax that is mostly standard Markdown (save for the extended data attribute). Not bad.
 
-Many thanks (again) to Nicolas Hoisey, who created the plugin and was super generous with helping me through these implementation questions.
+Many thanks (again) to Nicolas Hoizey, who created the plugin and was super generous with helping me through these implementation questions.
