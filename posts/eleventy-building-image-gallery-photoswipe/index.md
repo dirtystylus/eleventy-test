@@ -2,7 +2,7 @@
 title: "Eleventy: Building an Image Gallery with CSS Grid and PhotoSwipe"
 display_title: "Eleventy: Building an Image Gallery with CSS Grid and PhotoSwipe"
 description: Trying out CSS Grid’s new Masonry Layout, with a PhotoSwipe lightbox
-date: 2021-01-20T15:00:00-05:00
+date: 2021-01-22T14:00:00-05:00
 layout: layouts/post-gallery
 tags:
   - eleventy
@@ -386,6 +386,8 @@ The example gallery that closes out this post has this Markdown snippet to gener
 ## What’s left? 
 
 The lightbox modal is keyboard-friendly but could use some screen reader improvements. Whether I can do that without hacking core PhotoSwipe code is to be determined. (If you know your way around ARIA enhancements and have some time to look at code with me, I’d appreciate it.)
+
+I’ve been sketching out a few ideas for boilerplate versions of content: regular posts, book posts—one for galleries that reads images in a directory and stubs out the gallery Markdown code might be a time-saver.
 
 I hope this has been helpful. If you’re curious about anything here, my [Twitter](https://twitter.com/dirtystylus) DMs are open.
 
