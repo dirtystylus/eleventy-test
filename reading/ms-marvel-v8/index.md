@@ -1,6 +1,6 @@
 ---
-title: "Ms. Marvel vol. 8: Mecca"
-display_title: "Ms. Marvel vol. 8: Mecca"
+title: "Ms. Marvel Vol. 8: Mecca"
+display_title: "Ms. Marvel Vol. 8: Mecca"
 author: G. Willow Wilson
 cover_image: /reading/ms-marvel-v8/ms-marvel-v8-mecca.jpg
 genre: Comic
