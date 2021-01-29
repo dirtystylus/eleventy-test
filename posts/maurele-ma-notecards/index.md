@@ -1,7 +1,7 @@
 ---
 title: Maurèle MA Notecards
 display_title: Maurèle MA Notecards
-description: Fresh stationery for 2021
+description: Fresh stationery for 2021.
 date: 2021-01-29T22:00:00-05:00
 layout: layouts/post-gallery
 tags:
