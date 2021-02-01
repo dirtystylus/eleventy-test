@@ -81,9 +81,10 @@ module.exports = function (eleventyConfig) {
         return item.data.content_type == "book";
       })
       .sort(function (a, b) {
-        return (
-          new Date(a.data.end_date) - new Date(b.data.end_date)
-        );
+        return a.date - b.date;
+        // return (
+        //   new Date(a.data.end_date) - new Date(b.data.end_date);
+        // );
       });
     for (let i = 0; i < books.length; i++) {
       const prevPost = books[i - 1];
