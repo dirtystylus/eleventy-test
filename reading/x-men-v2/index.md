@@ -5,7 +5,7 @@ author: Jonathan Hickman
 cover_image: /reading/x-men-v2/x-men-v2.jpg
 genre: Comic
 format: Ebook
-date: 2021-01-31T14:00:00-05:00
+date: 2021-02-08T14:00:00-05:00
 start_date: 2021-01-31
 end_date: 2021-01-31
 ---
