@@ -10,4 +10,4 @@ start_date: 2020-12-23
 end_date: 2020-12-26
 ---
 
-I’d forgotten a lot of the events preceding this volume, but I was happy to be back in Ms. Marvel’s Jersey City."
+I’d forgotten a lot of the events preceding this volume, but I was happy to be back in Ms. Marvel’s Jersey City.
