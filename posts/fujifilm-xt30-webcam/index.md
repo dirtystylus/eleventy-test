@@ -36,6 +36,14 @@ I experimented with both manual focus and continuous autofocus with face detecti
 
 As for positioning the camera, I purchased a [plastic mount with a screw-mount ball head attachment](https://www.amazon.com/gp/product/B08JHS8YF5/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1). It’s a little bit fiddly if I ever want to get my camera off to go shoot with it, but that’s usually a weekend activity anyway.
 
+Most of the major camera companies have some sort of webcam support:
+
+* [Canon](https://www.usa.canon.com/internet/portal/us/home/support/self-help-center/eos-webcam-utility/)
+* [Nikon](https://www.nikonusa.com/en/learn-and-explore/webcam-utility.page)
+* [Sony](https://support.d-imaging.sony.co.jp/app/webcam/en/)
+* [Panasonic](https://www.panasonic.com/global/consumer/lumix/lumix_webcam_software.html)
+* [Olympus](https://learnandsupport.getolympus.com/olympus-om-d-webcam-beta)
+
 [^1]: When Fuji was launching the X-series cameras they made a big deal about their firmware updates, which often brought big feature upgrades to existing cameras. In recent years they haven’t been as generous—I don’t think my X-T30 will receive the newer film simulations from the latest cameras, despite using the same sensor/processor—but webcam support is appreciated.
 
 [^2]: There have been a few jokes about me launching a keyboard ASMR YouTube channel.
