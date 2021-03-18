@@ -1,5 +1,6 @@
 ---
 title: R.O. Kwon on the Strong Feelings Podcast
+display_title: R.O. Kwon on the Strong Feelings Podcast
 description: The Strong Feelings folks interview author R.O. Kwon.
 date: 2019-08-07T16:30:12-04:00
 tags:

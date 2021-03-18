@@ -1,5 +1,6 @@
 ---
 title: Kottke.org’s Best Books of 2019 List of Lists
+display_title: Kottke.org’s Best Books of 2019 List of Lists
 description: ''
 date: 2019-06-17T11:03:47-04:00
 tags:

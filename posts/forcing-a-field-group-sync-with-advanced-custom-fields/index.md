@@ -1,5 +1,6 @@
 ---
 title: Forcing a Field Group Sync with Advanced Custom Fields
+display_title: Forcing a Field Group Sync with Advanced Custom Fields
 description: Kicking WordPress ACF fields in the pants to force a sync.
 date: 2019-04-30T16:40:06-04:00
 tags:

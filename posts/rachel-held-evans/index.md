@@ -1,5 +1,6 @@
 ---
 title: Rachel Held Evans
+display_title: Rachel Held Evans
 description: RIP, Rachel Held Evans.
 date: 2019-06-10T19:54:43-04:00
 tags:

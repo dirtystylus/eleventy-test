@@ -1,5 +1,6 @@
 ---
 title: Liz Phair Looks Back
+display_title: Liz Phair Looks Back
 description: Liz Phair releases a memoir, Horror Stories.
 date: 2019-09-16T13:25:45-04:00
 tags:

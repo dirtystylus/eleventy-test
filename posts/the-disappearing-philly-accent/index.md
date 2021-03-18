@@ -1,5 +1,6 @@
 ---
 title: The Disappearing Philly Accent
+display_title: The Disappearing Philly Accent
 description: WHYY’s “The WHY” examines the changing Philadelphia accent.
 date: 2019-09-06T07:03:59-04:00
 tags:

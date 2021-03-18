@@ -1,5 +1,6 @@
 ---
 title: MacOS Mojave Screen Recording and CloudApp
+display_title: MacOS Mojave Screen Recording and CloudApp
 description: CloudApp hijacks the default screenshot behavior on MacOS Mojave.
 date: 2019-06-19T15:13:03-04:00
 tags:

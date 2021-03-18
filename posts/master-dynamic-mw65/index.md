@@ -1,5 +1,6 @@
 ---
 title: Master & Dynamic MW65
+display_title: Master & Dynamic MW65
 description: M & D finally release a noise-canceling headphone.
 date: 2019-06-14T10:12:42-04:00
 tags:

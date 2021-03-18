@@ -1,5 +1,6 @@
 ---
 title: Bristol teenager loses sight and hearing due to processed food diet
+display_title: Bristol teenager loses sight and hearing due to processed food diet
 description: 
 date: 2019-09-03T15:32:45-04:00
 tags:

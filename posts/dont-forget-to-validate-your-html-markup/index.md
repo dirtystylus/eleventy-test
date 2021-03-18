@@ -1,5 +1,6 @@
 ---
 title: Don’t Forget to Validate Your HTML Markup
+display_title: Don’t Forget to Validate Your HTML Markup
 description: Validate to save a life.
 date: 2019-09-05T16:54:57-04:00
 tags:

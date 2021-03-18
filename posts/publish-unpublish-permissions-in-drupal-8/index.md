@@ -1,5 +1,6 @@
 ---
 title: Publish/Unpublish Permissions in Drupal 8
+display_title: Publish/Unpublish Permissions in Drupal 8
 description: Override Node Options module for Drupal 8.
 date: 2019-06-04T10:22:10-04:00
 tags:

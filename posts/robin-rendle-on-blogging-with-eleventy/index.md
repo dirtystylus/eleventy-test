@@ -1,5 +1,6 @@
 ---
 title: Robin Rendle on Blogging with Eleventy
+display_title: Robin Rendle on Blogging with Eleventy
 description: Robin Rendle writes about his journey from WordPress to Jekyll to Eleventy.
 date: 2019-06-04T21:58:29-04:00
 tags:

@@ -1,5 +1,6 @@
 ---
 title: nvUltra
+display_title: nvUltra
 description: 'Brett Terpstra teases nvUltra, a successor to nvALT.'
 date: 2019-06-24T15:14:34-04:00
 tags:
