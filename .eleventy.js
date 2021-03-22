@@ -24,10 +24,16 @@ module.exports = function (eleventyConfig) {
 
   // Date filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "LLL dd, yyyy"
+    if (typeof dateObj === 'string') {
+      return DateTime.fromISO(dateObj, { zone: "utc" }).toFormat(
+        "LLL dd, yyyy"
       );
-    });
+    } else {
+      return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+        "LLL dd, yyyy"
+      );
+    }
+  });
     
   eleventyConfig.addNunjucksFilter("date", function (date, format) {
     return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format);
