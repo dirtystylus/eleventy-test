@@ -6,6 +6,8 @@ date: '2019-03-09T16:28:26-05:00'
 tags:
   - family
   - food
+  - philadelphia
+  - photos
 ---
 
 For Jordan’s birthday last weekend we took a quick trip into the city and had dinner at [Sarvida](https://www.sarvidaphilly.com/), from the same folks behind [Perla](http://www.perlaphilly.com/) in Passyunk.
