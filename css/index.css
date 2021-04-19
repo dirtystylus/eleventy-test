@@ -662,9 +662,9 @@ body {
   margin-top: 0;
 }
 
-.tmpl-post .container img {
+/* .tmpl-post .container img {
   width: 100%;
-}
+} */
 
 @media (min-width: 45em) {
   .tmpl-post .container > p {
