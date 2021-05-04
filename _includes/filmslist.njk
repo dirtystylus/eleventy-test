@@ -1,0 +1,18 @@
+{# filmslist passed in by outer template #}
+<ul class="filmslist">
+{% for item in filmslist %}
+  <li class="filmslist-item">
+    <a href="{{ item.uri | url }}" class="postlist-link">
+      <div class="film-details">
+        <div class="film-cover film-shadow">
+          {% image item.film.image.large, item.film.title, "film_thumb" %}
+        </div>
+        <div class="film-meta">
+          <h1 class="film-meta-title">{% markdown %}*{{ item.film.title }}*{% endmarkdown %}</h1>
+          <div class="film-meta-watched">Watched {{ item.date.watched | convertTimestampToDate | readableDate }}</div>
+        </div>
+        </div>
+    </a>
+  </li>
+{% endfor %}
+</ul>

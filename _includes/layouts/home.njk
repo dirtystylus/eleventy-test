@@ -20,4 +20,12 @@ templateClass: tmpl-home
 {% set bookslist = collections.reading | head(3) %}
 {% include "bookslist.njk" %}
 
+<hr>
+
+<h2>Films I’ve Watched Recently</h2>
+
+{% set filmslist = letterboxd | head(3) %}
+{% include "filmslist.njk" %}
+
+
 </div>

@@ -34,9 +34,13 @@ module.exports = function (eleventyConfig) {
       );
     }
   });
-    
+
   eleventyConfig.addNunjucksFilter("date", function (date, format) {
-    return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format);
+    return DateTime.fromJSDate(date, { zone: "utc" });
+  });
+
+  eleventyConfig.addNunjucksFilter("convertTimestampToDate", function (date) {
+    return DateTime.fromMillis(date, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
