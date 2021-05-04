@@ -1,21 +1,22 @@
 <ul class="bookslist">
 {% for book in bookslist %}
   <li class="bookslist-item">
-  <a href="{{ book.url | url }}" class="postlist-link">
-  <div class="book-details">
-  <div class="book-cover book-shadow">
-    {% image book.data.cover_image, book.data.title, "book_thumb" %}
+    <article>
+    <a href="{{ book.url | url }}" class="postlist-link">
+    <div class="book-details">
+      <div class="book-cover book-shadow">
+      {% image book.data.cover_image, book.data.title, "book_thumb" %}
+      </div>
+      <div class="book-meta">
+        <h2 class="book-meta-title">{% markdown %}{{ book.data.display_title or book.data.title }}{% endmarkdown %}</h2>
+        <h3 class="book-meta-author">{{book.data.author}}</h3>
+        {% if book.data.end_date %}
+        <div class="book-meta-finished">Finished {{ book.data.end_date | readableDate }}</div>
+        {% endif %}
+      </div>
     </div>
-    <div class="book-meta">
-      <h1 class="book-meta-title">{% markdown %}{{ book.data.display_title or book.data.title }}{% endmarkdown %}</h1>
-      <h2 class="book-meta-author">{{book.data.author}}</h2>
-      {% if book.data.end_date %}
-      <div class="book-meta-finished">Finished {{ book.data.end_date | readableDate }}</div>
-      {% endif %}
-    </div>
-</div>
-  </article>
   </a>
+    </article>
   </li>
 {% endfor %}
 </ul>

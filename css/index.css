@@ -434,6 +434,12 @@ a[href].postlist-link:visited {
   font-size: 1.125em; /* 19px /16 */
 }
 
+.postlist-item-title {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+}
+
 /* Tags List */
 .tag {
   color: var(--red);
@@ -1236,9 +1242,6 @@ blockquote {
     grid-column: content-bleed-start / content-bleed-end;
     grid-gap: 2em;
   }
-  /* .films-list-title {
-    grid-column: content-bleed-start / content-bleed-end;
-  } */
 }
 
 .filmslist-item {
@@ -1271,18 +1274,6 @@ blockquote {
   margin: 0.5em 0 0 0;
 }
 
-/* .filmslist-item .film-meta-author {
-  font-size: 0.7em;
-  font-weight: 400;
-  margin: 0.25em 0 0 0;
-}
-
-@media (min-width: 65em) {
-  .filmslist-item .film-meta-author {
-    margin: 0.5em 0 0 0;
-  }
-} */
-
 .filmslist-item .film-meta-watched {
   font-size: 0.65em;
   font-family: sans-serif;
@@ -1312,6 +1303,20 @@ blockquote {
 @media (min-width: 65em) {
   .filmslist-item .film-thumb {
     height: 280px;
+  }
+}
+
+.filmslist--meta {
+  grid-column: 1;
+  margin-top: 2em;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  color: var(--gray);
+}
+
+@media (min-width: 45em) {
+  .filmslist--meta {
+    grid-column: content-start / content-end;
   }
 }
 

@@ -34,9 +34,9 @@ module.exports = function (eleventyConfig) {
       );
     }
   });
-
+    
   eleventyConfig.addNunjucksFilter("date", function (date, format) {
-    return DateTime.fromJSDate(date, { zone: "utc" });
+    return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format);
   });
 
   eleventyConfig.addNunjucksFilter("convertTimestampToDate", function (date) {

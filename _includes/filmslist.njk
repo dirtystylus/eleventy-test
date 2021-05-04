@@ -2,17 +2,21 @@
 <ul class="filmslist">
 {% for item in filmslist %}
   <li class="filmslist-item">
+  <article>
     <a href="{{ item.uri | url }}" class="postlist-link">
       <div class="film-details">
         <div class="film-cover film-shadow">
           {% image item.film.image.large, item.film.title, "film_thumb" %}
         </div>
         <div class="film-meta">
-          <h1 class="film-meta-title">{% markdown %}*{{ item.film.title }}*{% endmarkdown %}</h1>
+          <h2 class="film-meta-title">{% markdown %}*{{ item.film.title }}*{% endmarkdown %}</h2>
           <div class="film-meta-watched">Watched {{ item.date.watched | convertTimestampToDate | readableDate }}</div>
         </div>
         </div>
     </a>
+    </article>
   </li>
 {% endfor %}
 </ul>
+
+<div class="filmslist--meta">See my full viewing log at <a href="https://letterboxd.com/dirtystylus/">Letterboxd</a>.</div>
