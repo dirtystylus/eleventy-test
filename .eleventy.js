@@ -39,6 +39,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format);
   });
 
+  eleventyConfig.addNunjucksFilter("convertTimestampToDate", function (date) {
+    return DateTime.fromMillis(date, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
