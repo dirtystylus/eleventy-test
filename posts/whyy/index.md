@@ -5,6 +5,7 @@ description: Notes from Bluecadet’s recent redesign for WHYY.
 date: '2017-11-30T14:58:04-05:00'
 tags:
   - web-development
+  - wordpress
   - portfolio
 ---
 In October WHYY unveiled their [new website](https://whyy.org), which Bluecadet helped them design and develop. It brought their news wing (formerly NewsWorks.org) under the unified banner of WHYY, an effort that required a lot of up-front strategy about how to serve multiple audiences.
