@@ -74,6 +74,11 @@ ol {
     padding: 0;
     list-style-position: outside;
   }
+
+  ul li ul,
+  ol li ol {
+    padding: 0 0 0 1em;
+  }
 }
 
 .tmpl-post li {
