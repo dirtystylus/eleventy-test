@@ -74,6 +74,11 @@ ol {
     padding: 0;
     list-style-position: outside;
   }
+
+  ul li ul,
+  ol li ol {
+    padding: 0 0 0 1em;
+  }
 }
 
 .tmpl-post li {
@@ -364,7 +369,8 @@ figcaption {
 }
 
 @media (min-width: 60rem) {
-  .tmpl-home .bookslist {
+  .tmpl-home .bookslist,
+  .tmpl-home .filmslist {
     grid-column: content-start / content-end;
   }
 }
@@ -431,6 +437,12 @@ a[href].postlist-link:visited {
 
 .postlist-link {
   font-size: 1.125em; /* 19px /16 */
+}
+
+.postlist-item-title {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
 }
 
 /* Tags List */
@@ -1113,7 +1125,6 @@ blockquote {
 .bookslist {
   display: grid;
   grid-template-columns: var(--grid--books--list--narrow);
-  /* grid-auto-rows: 1fr; */
   grid-gap: 1em;
   justify-items: left;
   grid-column: 1;
@@ -1146,19 +1157,6 @@ blockquote {
   padding: 0;
   width: 100%;
   font-size: 1rem;
-  /* max-width: 130px; */
-}
-
-@media (min-width: 45em) {
-  .bookslist-item {
-    /* max-width: 130px; */
-  }
-}
-
-@media (min-width: 65em) {
-  .bookslist-item {
-    /* max-width: 170px; */
-  }
 }
 
 .bookslist-item a[href].postlist-link {
@@ -1223,6 +1221,107 @@ blockquote {
 @media (min-width: 65em) {
   .bookslist-item .book-thumb {
     height: 280px;
+  }
+}
+
+/* Films List */
+.filmslist {
+  display: grid;
+  grid-template-columns: var(--grid--books--list--narrow);
+  grid-gap: 1em;
+  justify-items: left;
+  grid-column: 1;
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 45em) {
+  .filmslist {
+    grid-column: content-start / content-end;
+  }
+}
+
+@media (min-width: 65em) {
+  .filmslist {
+    grid-template-columns: var(--grid--books--list--wide);
+    grid-column: content-bleed-start / content-bleed-end;
+    grid-gap: 2em;
+  }
+}
+
+.filmslist-item {
+  border: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.filmslist-item a[href].postlist-link {
+  text-decoration: none;
+  color: var(--darkgray);
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.filmslist-item a[href].postlist-link:visited {
+  text-decoration: none;
+  color: var(--darkgray);
+}
+
+.filmslist-item .film-meta-title {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0.5em 0 0 0;
+}
+
+.filmslist-item .film-meta-watched {
+  font-size: 0.65em;
+  font-family: sans-serif;
+  margin-top: 1em;
+}
+
+@media (min-width: 65em) {
+  .filmslist-item .film-meta-watched {
+    margin-top: 2em;
+  }
+}
+
+.filmslist-item .film-thumb {
+  max-width: 100%;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  object-position: left bottom;
+}
+
+@media (min-width: 45em) {
+  .filmslist-item .film-thumb {
+    height: 250px;
+  }
+}
+
+@media (min-width: 65em) {
+  .filmslist-item .film-thumb {
+    height: 280px;
+  }
+}
+
+.filmslist--meta {
+  grid-column: 1;
+  margin-top: 2em;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  color: var(--gray);
+}
+
+@media (min-width: 45em) {
+  .filmslist--meta {
+    grid-column: content-start / content-end;
   }
 }
 

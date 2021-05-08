@@ -4,6 +4,10 @@ module.exports = (image, altText, styleName) => {
       sizes: "(min-width: 300px) 400px, 400px",
       classes: ["book-thumb"],
     },
+    film_thumb: {
+      sizes: "(min-width: 300px) 400px, 400px",
+      classes: ["film-thumb"],
+    },
     default: {
       sizes: "(min - width: 650px) 850px, 400px",
       classes: ["default"],
