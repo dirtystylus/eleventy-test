@@ -7,6 +7,8 @@ tags:
   - philadelphia
   - photos
 ---
-![Left view of sign saying “Entrance via Master Street” cuto ff by hand rail](cs-design-dev-1.jpg)  
-![Center view of sign saying “Entrance via Master Street” cuto ff by hand rail](cs-design-dev-2.jpg)  
-![Right view of sign saying “Entrance via Master Street” cuto ff by hand rail](cs-design-dev-3.jpg)
+![Left view of sign saying “Entrance via Master Street” cut off by hand rail](cs-design-dev-1.jpg)  
+
+![Center view of sign saying “Entrance via Master Street” cut off by hand rail](cs-design-dev-2.jpg)  
+
+![Right view of sign saying “Entrance via Master Street” cut off by hand rail](cs-design-dev-3.jpg)
