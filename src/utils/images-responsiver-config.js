@@ -12,11 +12,11 @@ const runAfterHook = (image, document) => {
 
 	let zoom = [...image.classList].indexOf("zoom") !== -1;
 
+	const figure = document.createElement("figure");
+	figure.classList.add(...image.classList);
+	// TODO: decide whether classes should be removed from the image or not
+	image.classList.remove(...image.classList);
 	if (caption || zoom) {
-		const figure = document.createElement("figure");
-		figure.classList.add(...image.classList);
-		// TODO: decide whether classes should be removed from the image or not
-		image.classList.remove(...image.classList);
 		let figCaption = document.createElement("figcaption");
 		figCaption.innerHTML =
 			(caption ? caption : "") +
@@ -25,12 +25,14 @@ const runAfterHook = (image, document) => {
 				: "");
 		figure.appendChild(image.cloneNode(true));
 		figure.appendChild(figCaption);
+	} else {
+		figure.appendChild(image.cloneNode(true));
+	}
 
-		// Parent node of the image is a <p> because image is an inline element,
-		// and Markdown will wrap in a < p > tag
-		if (image.parentNode.nodeName === "p") {
-			image.parentNode.replaceWith(figure);
-		}
+	// Parent node of the image is a <p> because image is an inline element,
+	// and Markdown will wrap in a < p > tag
+	if (image.parentNode.nodeName === "p") {
+		image.parentNode.replaceWith(figure);
 	}
 };
 
