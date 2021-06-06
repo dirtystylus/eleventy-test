@@ -11,5 +11,5 @@ start_date: '2021-05-31'
 end_date: '2021-06-03'
 ---
 
-Picked this up because I’ve been meaning to watch the film adaptation. The story is weird, and enigmatic, and actively resists the urge to explain everything. It was a quick read, and I’m wondering how tightly-coupled it will end up being to the other books in the Southern Reach trilogy.  
+Borrowed this from the library because I’ve been meaning to watch the film adaptation. The story is weird, and enigmatic, and ultimately refrains from explaining too much. It was a quick read, and I’m wondering how tightly-coupled it will end up being to the other books in the Southern Reach trilogy.  
 
