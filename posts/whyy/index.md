@@ -4,6 +4,7 @@ display_title: WHYY
 description: Notes from Bluecadet’s recent redesign for WHYY.
 date: '2017-11-30T14:58:04-05:00'
 tags:
+  - bluecadet
   - web-development
   - wordpress
   - portfolio
