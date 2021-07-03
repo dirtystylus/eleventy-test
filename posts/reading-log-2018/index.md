@@ -7,7 +7,7 @@ tags:
   - books
   - reading-log
 ---
-For the last couple of years I’ve kept a record of the books I finished in a year ([you can see 2017 here](http://dirtystylus.com/2017/12/31/reading-log-2017/)). For 2018 I had a few simple goals in mind:
+For the last couple of years I’ve kept a record of the books I finished in a year ([you can see 2017 here](/posts/reading-log-2017/)). For 2018 I had a few simple goals in mind:
 
 - Read 52 books, averaging out to one per week.
 - Read more books by women and people of color, or folks at the intersection of those two very broad groups. I wanted at least half of the books I read to meet those criteria.
