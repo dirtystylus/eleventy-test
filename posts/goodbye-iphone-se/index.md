@@ -9,7 +9,7 @@ tags:
 
 I had hoped to [ride out one more year with my iPhone SE v1](https://twitter.com/dirtystylus/status/1402053532233220096), but on my recent trip to Maine it took a trip through a full washing machine cycle and died.[^1] I spent most of the last week in Maine phone-free, and I have to say: my stress level went down quite a bit as a result.
 
-The SIM card was still working when I tested it in a backup phone, though, so I found a used iPhone 11 on Swappa and it arrived today.
+The SIM card was still working when I tested it in a backup phone, though, so I found a used iPhone 11 on Swappa and it arrived today.[^2]
 
 ![Two mobile phones, side by side.](iphone-se-iphone-11.jpg "Little, Big"){data-responsiver=cinemascope}
 
@@ -21,5 +21,6 @@ The process made me also reflect on how utilitarian these devices have become—
 
 ![Sunflower.](sunflower.jpg "Yellow periscope")
 
-
 [^1]: Its size and weight are what I love about it; unfortunately they’re also why I didn’t notice they were still in the pants I tossed into the wash.
+
+[^2]: I use a great, low-cost carrier ([Ting](https://ting.com)) and funnel the money I save on my cellphone bill into a savings account just for electronics—it’s still a fair chunk of change even for used phones, but it’s nice to have a dedicated fund to dip into without disrupting my normal monthly expenses.
