@@ -1,6 +1,6 @@
 ---
-title: Thirty Eight
-display_title: Thirty Eight
+title: Thirty-eight
+display_title: Thirty-eight
 description: A reflection on the past year.
 date: '2015-08-14T11:05:06-04:00'
 tags:
