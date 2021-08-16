@@ -1,6 +1,6 @@
 ---
 title: 'Responsive Web Design: Patterns &#038; Principles'
-display_title: 'Responsive Web Design: Patterns & Principles'
+display_title: '*Responsive Web Design: Patterns & Principles*'
 description: My thoughts on Ethan Marcotte’s new book.
 date: '2016-01-06T14:23:00-05:00'
 tags:

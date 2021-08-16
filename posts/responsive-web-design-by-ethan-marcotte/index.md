@@ -1,6 +1,6 @@
 ---
 title: Responsive Web Design by Ethan Marcotte
-display_title: Responsive Web Design by Ethan Marcotte
+display_title: '*Responsive Web Design* by Ethan Marcotte'
 description: My notes on Ethan Marcotte’s new book.
 date: '2011-06-07T20:55:43-04:00'
 tags:
@@ -10,7 +10,7 @@ tags:
 ---
 ![Crop of cover of Responsive Web Design.](responsive_web_design.gif)
 
-A Book Apart just released volume 4 in its ongoing series of books, [Responsive Web Design by Ethan Marcotte](http://www.abookapart.com/products/responsive-web-design "Responsive Web Design by Ethan Marcotte"). Words like “essential” get tossed around far too easily these days, but this book deserves that and every other accolade it’s racked up. So instead of trying to pile on with the superlatives I’ll put it this way: this is the book I’ve needed for the last few months, but not exactly for the reasons I expected.
+A Book Apart just released volume 4 in its ongoing series of books, [*Responsive Web Design* by Ethan Marcotte](http://www.abookapart.com/products/responsive-web-design "Responsive Web Design by Ethan Marcotte"). Words like “essential” get tossed around far too easily these days, but this book deserves that and every other accolade it’s racked up. So instead of trying to pile on with the superlatives I’ll put it this way: this is the book I’ve needed for the last few months, but not exactly for the reasons I expected.
 
 I’d read the [original Responsive Web Design article](http://www.alistapart.com/articles/responsive-web-design/, "Responsive Web Design") and heard Ethan speak at [An Event Apart Boston](http://aneventapart.com/2011/boston/ "An Event Apart Boston"), so I’d already cobbled together an ad-hoc workflow based on what I gleaned from those sources. Still, there were gaps. I felt like I had been given the pieces of a very powerful machine (or robot!), but with only a napkin sketch on how to assemble it.
 
