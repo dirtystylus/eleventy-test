@@ -7,7 +7,7 @@ tags:
   - keyboards
   - tech
 ---
-![Close-up shot of the LED lights on a Filco keyboard.](filco-majestouch.jpg?w=1300 "Filco Majestouch")
+![Close-up shot of the LED lights on a Filco keyboard.](filco-majestouch.jpg "Filco Majestouch")
 
 This just in, after clearing customs from Japan: a [Filco Majestouch FKB104M/EB](http://diatec.co.jp/en/det.php?prod_c=371).
 
