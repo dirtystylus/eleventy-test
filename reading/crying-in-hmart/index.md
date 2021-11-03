@@ -6,7 +6,7 @@ isbn: '0525657746'
 cover_image: /reading/crying-in-hmart/crying-in-hmart.jpg
 genre: Nonfiction
 format: Hardcover
-date: '2021-11-03T11:33:05.394-04:00'
+date: '2021-11-03T11:52:06.545-04:00'
 start_date: '2021-10-18'
 end_date: '2021-10-31'
 ---
