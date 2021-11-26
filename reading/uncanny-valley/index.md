@@ -8,6 +8,6 @@ genre: Nonfiction
 format: Ebook
 date: '2021-11-03T11:48:47.964-04:00'
 start_date: '2021-11-01'
-end_date: '2021-11-03'
+end_date: '2021-11-26'
 ---
 
