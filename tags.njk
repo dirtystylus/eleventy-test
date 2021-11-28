@@ -13,7 +13,7 @@ pagination:
 layout: layouts/base.njk
 eleventyComputed:
   title: Tagged “{{ tag }}”
-permalink: /tags/{{ tag }}/
+permalink: /tags/{{ tag | slug }}/
 templateClass: tmpl-tag-detail
 ---
 <div class="content-main container">

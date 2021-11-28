@@ -1,3 +1,4 @@
+/* Colors */
 :root {
   --red: #c5004a;
   --darkred: #7f0036;
@@ -22,6 +23,8 @@
   --grid--books--list--narrow: repeat(auto-fit, minmax(110px, 1fr));
   --grid--books--list--wide: repeat(auto-fit, minmax(160px, 1fr));
 }
+
+/* Global stylesheet */
 * {
   box-sizing: border-box;
 }
