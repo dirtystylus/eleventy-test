@@ -8,7 +8,7 @@ tags:
   - reading-log
 ---
 
-[Fifty-five](/reading/years/2021/) books this past year. What was different from 2020, when I read 99? It was mostly an intentional shift to watching more films ([150 last year](https://letterboxd.com/dirtystylus/films/diary/for/2021/by/diary-count/)). 
+[Fifty-five](/reading/years/2021/) books this past year. What was different from [2020](/reading/years/2020/), when I read 99? It was mostly an intentional shift to watching more films ([150 last year](https://letterboxd.com/dirtystylus/films/diary/for/2021/by/diary-count/)). 
 
 Highlights? I finished a reread of Elizabeth Hand’s Cass Neary novels. [*Work Won’t Love You Back*](/reading/work-wont-love-you-back/) and [*Uncanny Valley*](/reading/uncanny-valley/) had me thinking deeply about my connection to work, and my long-term relationship to the tech industry. Arkady Martine’s Teixcalaan books were probably the most fun I had reading SF all year. [*A Children’s Bible*](/reading/a-childrens-bible/), [*Hamnet*](/reading/hamnet/), and [*No One is Talking About This*](/reading/no-one-is-talking-about-this/) have stuck with me, in different ways and for different reasons.
 
