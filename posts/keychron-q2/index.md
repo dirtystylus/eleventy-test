@@ -47,5 +47,5 @@ It’s been exciting to see the mechanical keyboard hobby explode in the last de
 
 [^4]: Ironic, given that my former Domani Studios teammates dubbed me “Thunderkeys” after I brought a mechanical keyboard in and hammered away on it.
 
-[^5]: All of those options are nicer but also require a wait, or are unavailable. There’s something to be said for Keychron producing enough quantities for immediate shipping.
+[^5]: All of those options are nicer but also require a wait (if they’re even available). There’s something to be said for Keychron producing enough quantities for immediate shipping. You also have to build those boards (the Q2 comes pre-assembled) but that might be part of the appeal for most folks.
 
