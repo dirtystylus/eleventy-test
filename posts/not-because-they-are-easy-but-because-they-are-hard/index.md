@@ -4,7 +4,8 @@ display_title: '“Not because they are easy, but because they are hard”'
 description: ''
 date: '2012-09-12T11:26:22-04:00'
 tags:
-  - uncategorized
+  - climate-change
+  - history
 ---
 Today is the anniversary of JFK’s famous “moon” speech. As I write this, NASA TV is re-broadcasting the speech, 50 years to the day (and minute) of the original address. [Re-reading the transcript here](http://www.space-video.info/speech/19620912-jfk-rice-text.html), I’m thinking about how that same spirit can (and should) be applied to some of the big problems of our day—education, climate change, and income inequality:
 
