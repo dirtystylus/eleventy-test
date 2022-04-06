@@ -1,6 +1,6 @@
 ---
-title: Using mkvmerge to split/combine video files
-display_title: Using `mkvmerge` to split/combine video files
+title: Using mkvmerge to Split/Combine Video Files
+display_title: Using `mkvmerge` to Split/Combine Video Files
 description: Some handy `mkvmerge` examples for archiving video files.
 date: '2022-04-06T16:50:55.653-04:00'
 tags:
