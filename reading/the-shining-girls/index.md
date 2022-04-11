@@ -11,4 +11,4 @@ start_date: '2022-04-09'
 end_date: '2022-04-10'
 ---
 
-A fast and fun (if creepy) read; I expected it to go a bit harder on the sci-fi elements. I’m very curious how the upcoming adaptation—with Elizabeth Moss as Kirby—deals with the story. 
+A fast and fun (if creepy) read; I expected it to go a bit harder on the sci-fi elements. I’m very curious how the upcoming tv adaptation—with Elizabeth Moss as Kirby—deals with the story. 
