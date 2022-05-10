@@ -56,7 +56,7 @@ This was a little bit hard to understand, but here’s what I think is happening
 
 I’ve [written about this before](/posts/eleventy-netlify-redirects/), but WordPress by default goes with a year/month/day/slug arrangement for permalinks. With the new blog we simplified that to be simply `/blog/[slug]`. So part of the redirect pattern used Netlify’s redirect tokens to transform the URLs:
 
-```
+```shell
 https://historyofvaccines.blog/:year/:month/:date/:slug https://historyofvaccines.org/blog/:slug
 ```
 
