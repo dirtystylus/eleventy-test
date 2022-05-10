@@ -1,7 +1,7 @@
 ---
 title: Redirecting a WordPress.com blog to Netlify
 display_title: Redirecting a Wordpress.com blog to Netlify
-description: DNS and redirects for a blog migration
+description: DNS and redirects for a blog migration.
 date: '2022-05-10T12:48:45.202-04:00'
 tags:
   - bluecadet
