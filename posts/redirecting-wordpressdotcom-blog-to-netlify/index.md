@@ -39,7 +39,7 @@ But the root level [historyofvaccines.blog](https://historyofvaccines.blog) was 
 
 I originally had:
 
-```
+```shell
 https://www.historyofvaccines.blog/* https://historyofvaccines.org/blog/:splat
 ```
     
