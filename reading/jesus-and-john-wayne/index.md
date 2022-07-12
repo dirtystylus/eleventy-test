@@ -11,4 +11,4 @@ start_date: 2022-06-02
 end_date: 2022-07-12
 ---
 
-This took me forever to finish—I realized that I’m still exhausted from having lived in fundamentalist/evangelical spaces most of my life. The movement’s worship of racism, sexism, and violence would be infuriating if it weren’t so banal at this point.
+This took me forever to finish—I realized that it’s probably because I’m still exhausted from having lived in fundamentalist/evangelical spaces most of my life. The movement’s worship of racism, sexism, and violence would be infuriating if it weren’t so banal at this point.
