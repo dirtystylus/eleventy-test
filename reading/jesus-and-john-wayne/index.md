@@ -8,6 +8,6 @@ genre: Nonfiction
 format: Ebook
 date: '2022-06-06T12:42:07.705-04:00'
 start_date: '2022-06-02'
-end_date: '2022-06-06'
+end_date: '2022-07-12'
 ---
 
