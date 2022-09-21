@@ -4,12 +4,13 @@ display_title: 'A Working Library: “Official Myths”'
 description: Mandy Brown on remote/IRL cultures, supporting junior staff, and the flexibility needed to deal with climate/pandemic effects.
 date: '2022-09-12T15:16:33.045-04:00'
 tags:
+  - links
   - management
   - remote-work
   - tech-culture
 ---
 
-I’ve always appreciated Mandy’s specificity when talking about work culture, especially when it comes to how different workers give/receive support. Reading her latest post—[Official Myths](https://aworkinglibrary.com/writing/official-myths)—Mandy argues that the terms “office” and “remote” flatten/obfuscate concrete scenarios that demand care and attention.
+I’ve always appreciated Mandy’s specificity when talking about work culture, especially when it comes to how different workers give/receive support. Reading her latest post—[“Official Myths”](https://aworkinglibrary.com/writing/official-myths)—Mandy argues that the terms “office” and “remote” flatten/obfuscate concrete scenarios that demand care and attention.
 
 On the assumption that IRL office environments are inherently better for supporting junior staff:
 
