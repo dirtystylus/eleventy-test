@@ -14,9 +14,13 @@ I use Don Melton’s [`transcode-video`](https://github.com/donmelton/video_tran
 
 This Github issue set me on the right path: [https://github.com/donmelton/video_transcoding/issues/327#issuecomment-782794541](https://github.com/donmelton/video_transcoding/issues/327#issuecomment-782794541)
 
-To summarize:
+## Finding the subtitle track
 
-* Your source **`mkv`** file[^1] should include the forced subtitle track as well as the full subtitle track
+I use MakeMKV for prepping my file, as Melton suggests. When it scans your disc you may find multiple subtitles in the same language (I tend to include all English subtitle tracks by default). As for identifying which track is the forced track, I tend to play the disc and see whether it defaults to a subtitle track even with subtitles off. If it does, then it’s probably the forced subtitle track.
+
+## Transcoding
+
+* Your source **`mkv`** file should include the forced subtitle track as well as the full subtitle track
 * You use the `--force-subtitle [forced subtitle track number]` flag in your `transcode-video` command
 * The full subtitle track gets added using the `--add-subtitle [subtitle track number]` flag
 
@@ -25,5 +29,3 @@ Here’s what I used for *Mission Impossible: Fallout*, which has forced subtitl
 `transcode-video "./Mission-Impossible Fallout.mkv" --force-subtitle 2 --add-subtitle 1 --add-audio 4="Commentary 1" --add-audio 5="Commentary 2" --add-audio 6="Commentary 3" --avbr --output ./MissionImpossibleFallout-forcedsubs.mkv`
 
 That made the forced subtitle track the default, and then added a second subtitle track with everything subtitled.
-
-[^1]: I use [MakeMKV](http://www.makemkv.com/) to create mine.
