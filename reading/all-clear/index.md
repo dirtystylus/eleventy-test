@@ -7,7 +7,7 @@ cover_image: /reading/all-clear/all-clear.jpg
 genre: Fiction
 format: Hardcover
 date: '2022-11-14T17:21:21.455-05:00'
-start_date: '2022-10-21'
+start_date: '2022-10-31'
 end_date: '2022-11-07'
 ---
 
