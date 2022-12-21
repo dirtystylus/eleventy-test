@@ -1,7 +1,7 @@
 ---
 title: 'Vulture: “TV Has Always Disappeared. This Feels Different.”'
 display_title: 'Vulture: “TV Has Always Disappeared. This Feels Different.”'
-description: Kathryn VanArendonk on HBO Max/Discovery’s slash-and-burn show reductions.
+description: Kathryn VanArendonk on Warner Bros. Discovery’s slash-and-burn show reductions at HBO Max.
 date: '2022-12-21T16:38:55.182-05:00'
 tags:
   - links
