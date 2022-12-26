@@ -764,14 +764,11 @@ blockquote {
   margin-top: 2em;
   padding-top: 1em;
   font-size: 1rem;
+  display: flex;
 }
 
 .post--next-previous-link {
   grid-column: 1;
-}
-
-.pagination--inner {
-  display: flex;
 }
 
 .pagination--next-only {
