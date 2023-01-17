@@ -9,7 +9,7 @@ tags:
   - tv
 ---
 
-Kathryn VanArendonk captures the weird tv/streaming moment we’re in, with an ever-changing buffet of options that may disappear at any moment, never to return:
+Writing for Vulture, Kathryn VanArendonk [captures the weird tv/streaming moment we’re in](https://www.vulture.com/article/hbo-max-warner-cancelations-disappearing-tv-streaming-future.html), with an ever-changing buffet of options that may disappear at any moment, never to return:
 
 > When TV appeared once a week, the rituals and rhythms of appointment viewing meant that although a show might vanish, there was at least one moment beforehand that was fully dedicated to its existence. In the age of newspapers printing TV listings, viewers who really wanted to watch something knew exactly when it happened. Even before then, the reality of the programming grid made television’s temporality crystal clear: In order to see what happened on NBC at 8 p.m., you had to watch NBC at 8 p.m. But streaming has turned TV into an amorphous, unending content blob. There’s no specific time to watch a show, no moment when it solidly exists as a cultural artifact. Each individual title becomes something like Schrödinger’s TV show, an option that sort of still exists as *possible*. Sure, you haven’t watched that show yet. But you haven’t *not* watched it, either — it’s still uncertain, still unresolved. But once a show is gone from its streaming platform, all that exists now is the realization it’s gone.
 
