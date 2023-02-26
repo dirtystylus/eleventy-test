@@ -7,6 +7,10 @@
     {
       "text": "Reading",
       "url": "/reading"
+    },
+    {
+      "text": "Watching",
+      "url": "/watching"
     }
   ],
   "footer_items": [

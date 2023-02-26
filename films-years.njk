@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.filmsByYear
+  size: 1
+  alias: year
+permalink: "watching/years/{{ year }}/"
+eleventyComputed:
+  title: Films I watched in {{ year }}
+  description: Film log for {{ year }}.
+eleventyExcludeFromCollections: true
+templateClass: tmpl-books-list
+---
+<div class="content-main container">
+<h1 class="books-list-title">Film Log for {{ year }}</h1>
+<div class="post--meta">Browse all <a href="{{ '/watching/years/' | url }}">years</a>.</div>
+
+{% set filmslist = collections.filmsByYear[ year ] | reverse %}
+{% include "films-list.njk" %}
+</div>

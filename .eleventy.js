@@ -24,6 +24,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("project", "layouts/project.njk");
   eleventyConfig.addLayoutAlias("book", "layouts/book.njk");
+  eleventyConfig.addLayoutAlias("film", "layouts/film.njk");
 
   // Date filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -129,7 +130,7 @@ module.exports = function(eleventyConfig) {
       .getAll()
       .filter(function (item) {
         return (
-          item.data.content_type == "book" || item.data.content_type == "post"
+          item.data.content_type == "book" || item.data.content_type == "post" || item.data.content_type == "film"
         );
       })
       .sort(function (a, b) {
@@ -180,9 +181,28 @@ module.exports = function(eleventyConfig) {
       .getAll()
       .filter(function (item) {
         return item.data.content_type == "film";
-      });
+      })
+      .sort(function (a, b) {
+          return a.date - b.date;
+          // return (
+          //   new Date(a.data.end_date) - new Date(b.data.end_date);
+          // );
+        });
+      for (let i = 0; i < films.length; i++) {
+        const prevPost = films[i - 1];
+        const nextPost = films[i + 1];
+
+        films[i].data["prevFilm"] = prevPost;
+        films[i].data["nextFilm"] = nextPost;
+      }
+      return [...films].reverse();
 
     return films;
+  });
+
+  // Date filters
+  eleventyConfig.addFilter("isRewatch", (rewatch) => {
+    return rewatch ? "Yes" : "No";
   });
 
   function makeDateFormatter(dateFormat) {
@@ -252,6 +272,27 @@ module.exports = function(eleventyConfig) {
       .getAll()
       .filter(function (item) {
         return item.data.content_type == "book";
+      })
+      .sort(function (a, b) {
+        return a.date - b.date;
+      });
+
+    for (let i = 0; i < coll.length; i++) {
+      const prevPost = coll[i - 1];
+      const nextPost = coll[i + 1];
+
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
+
+    return contentsByYear(coll);
+  });
+
+  eleventyConfig.addCollection("filmsByYear", function (collection) {
+    const coll = collection
+      .getAll()
+      .filter(function (item) {
+        return item.data.content_type == "film";
       })
       .sort(function (a, b) {
         return a.date - b.date;
