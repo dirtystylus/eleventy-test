@@ -184,9 +184,6 @@ module.exports = function(eleventyConfig) {
       })
       .sort(function (a, b) {
           return a.date - b.date;
-          // return (
-          //   new Date(a.data.end_date) - new Date(b.data.end_date);
-          // );
         });
       for (let i = 0; i < films.length; i++) {
         const prevPost = films[i - 1];
