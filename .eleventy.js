@@ -37,7 +37,7 @@ module.exports = function(eleventyConfig) {
       );
     }
   });
-    
+
   eleventyConfig.addNunjucksFilter("date", function (date, format) {
     return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format);
   });
@@ -55,7 +55,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksFilter("createReverseYearsMapFromObject", function (obj) {
     const yearCollection = obj;
     let yearCollectionDescending = new Map();
-    const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});    
+    const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});
     keysSorted.forEach((key) => {
       yearCollectionDescending.set(key, yearCollection[key]);
     });
@@ -88,7 +88,7 @@ module.exports = function(eleventyConfig) {
       return item.data.content_type == "project";
     });
   });
- 
+
       // Return the smallest number argument
   eleventyConfig.addFilter("min", (...numbers) => {
     return Math.min.apply(null, numbers);
@@ -175,26 +175,36 @@ module.exports = function(eleventyConfig) {
     return [...coll].reverse();
   });
 
+  eleventyConfig.addCollection("watching", function (collection) {
+    const films = collection
+      .getAll()
+      .filter(function (item) {
+        return item.data.content_type == "film";
+      });
+
+    return films;
+  });
+
   function makeDateFormatter(dateFormat) {
     return function (date) {
       // return moment(date).format(datePattern);
       return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(dateFormat);
     };
   }
-  
+
   function generateItemsDateSet(items, dateFormatter) {
     const formattedDates = items.map((item) => {
       return dateFormatter(item.data.page.date);
     });
     return [...new Set(formattedDates)];
   }
-  
+
   function getItemsByDate(items, date, dateFormatter) {
     return items.filter((item) => {
       return dateFormatter(item.data.page.date) === date;
     });
   }
-  
+
   const contentByDateString = (items, dateFormatter) => {
     return generateItemsDateSet(items, dateFormatter).reduce(function (
       collected,

@@ -1,0 +1,20 @@
+<ul class="bookslist">
+{% for book in filmslist %}
+  <li class="bookslist-item">
+    <article>
+    <a href="{{ book.url | url }}" class="postlist-link">
+    <div class="book-details">
+      <div class="book-cover book-shadow">
+      {% image book.data.cover_image, book.data.title, "book_thumb" %}
+      </div>
+      <div class="book-meta">
+        <h2 class="book-meta-title">{% markdown %}{{ book.data.display_title or book.data.title }}{% endmarkdown %}</h2>
+        <h3 class="book-meta-author">Rewatch? {{book.data.rewatch}}</h3>
+        <div class="book-meta-finished">Watched {{ book.data.watched_date | readableDate }}</div>
+      </div>
+    </div>
+  </a>
+    </article>
+  </li>
+{% endfor %}
+</ul>

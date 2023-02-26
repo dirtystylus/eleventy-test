@@ -7,3 +7,7 @@ node_modules/
 
 # Eleventy error report
 report.*
+
+# Text Editors
+.nova
+.vscode

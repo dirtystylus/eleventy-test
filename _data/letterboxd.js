@@ -6,7 +6,7 @@ module.exports = async () => {
       return console.log(error);
     }
   });
-  
+
   return items;
 };
 
