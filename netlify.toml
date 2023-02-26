@@ -1,11 +1,3 @@
-[Settings]
-  ID = "0d44d6dd-bf27-49da-b942-66965a018df9"
-
-[build]
-  base = "/"
-  publish = "/_site"
-  command = "eleventy --incremental"
-
 [[redirects]]
   from = "/:year/:month/:date/:slug"
   to = "/posts/:slug"
