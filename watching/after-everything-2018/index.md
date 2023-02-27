@@ -7,4 +7,4 @@ watched_date: 2022-06-10T00:00:00.000Z
 date: 2022-06-10T00:00:00.000Z
 rewatch: false
 ---
-I liked this alright but it mostly made me want to revisit The Big Sick. Maika Monroe’s face sometimes reminds me of Brittany Murphy and that made me feel sad.
+I liked this alright but it mostly made me want to revisit [_The Big Sick_](https://letterboxd.com/film/the-big-sick/). Maika Monroe’s face sometimes reminds me of Brittany Murphy and that made me feel sad.
