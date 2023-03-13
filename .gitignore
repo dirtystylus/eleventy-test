@@ -5,6 +5,9 @@ node_modules/
 # Local Netlify folder
 .netlify
 
+# Environment Vars
+.env
+
 # Eleventy error report
 report.*
 
