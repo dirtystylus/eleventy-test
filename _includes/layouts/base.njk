@@ -55,10 +55,10 @@
       <div class="footer--copyright">Copyright © {{ site.buildTime | date("yyyy") }} Mark Llobrera.
       <ul class="nav">
       {%- for item in navigation.footer_items %}
-        <li class="nav-item"><a href="{{ item.url | url }}" {{helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
+        <li class="nav-item"><a href="{{ item.url | url }}" {% if item.rel %} rel="{{item.rel}}" {% endif %} {{helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
       {%- endfor %}
       </ul>
-      </div>       
+      </div>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
