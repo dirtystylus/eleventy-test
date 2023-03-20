@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-book
+---
+<article class="content-main container">
+<div class="book-details">
+  <div class="book-cover book-shadow">
+  {% image cover_image, title + " cover image" , "book_thumb" %}
+  </div>
+  <div class="book-meta">
+    <h1>{% markdown %}{{ display_title or title }}{% endmarkdown %}</h1>
+    <dl>
+      <dt>Year</dt>
+      <dd>{{ release_year }}</dd>
+      <dt>Watched</dt>
+      <dd>{{ watched_date | readableDate }}</dd>
+      <dt>Rewatch?</dt>
+      <dd>{{ rewatch | isRewatch }}</dd>
+    </dl>
+  </div>
+</div>
+<div class="book-body">
+{{ content | safe }}
+</div>
+{% set prevPost = prevFilm %}
+{% set nextPost = nextFilm %}
+{% include "partials/single-pagination.njk" %}
+</article>

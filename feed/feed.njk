@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
 		<name>{{ metadata.author.name }}</name>
 		<email>{{ metadata.author.email }}</email>
 	</author>
-	{%- for post in collections.combined %}
+	{%- for post in collections.combined | head(20) %}
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>
 		<title>{{ post.data.title }}</title>
@@ -26,7 +26,10 @@ eleventyExcludeFromCollections: true
 		{% if post.data.content_type == "book" %}
 		{% set book_metadata %}<p>{% image metadata.feed_reading.img_base_url + post.data.cover_image, post.data.title + " cover image" , "book_thumb" %}</p><p>Started Reading: {{post.data.start_date | readableDate }}</p><p>Finished Reading: {{post.data.end_date | readableDate }}</p>{% endset %}
 		<content type="html">{{book_metadata | htmlToAbsoluteUrls(absolutePostUrl)}}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-		{% else %}
+		{% elif post.data.content_type == "film" %}
+    {% set film_metadata %}<p>{% image metadata.feed_reading.img_base_url + post.data.cover_image, post.data.title + " cover image" , "book_thumb" %}</p><p>Watched: {{post.data.watched_date | readableDate }}</p>{% endset %}
+    <content type="html">{{film_metadata | htmlToAbsoluteUrls(absolutePostUrl)}}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    {% else %}
 		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 		{% endif %}
 	</entry>

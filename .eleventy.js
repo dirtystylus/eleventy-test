@@ -24,6 +24,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("project", "layouts/project.njk");
   eleventyConfig.addLayoutAlias("book", "layouts/book.njk");
+  eleventyConfig.addLayoutAlias("film", "layouts/film.njk");
 
   // Date filters
   eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -37,7 +38,7 @@ module.exports = function(eleventyConfig) {
       );
     }
   });
-    
+
   eleventyConfig.addNunjucksFilter("date", function (date, format) {
     return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(format);
   });
@@ -55,7 +56,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksFilter("createReverseYearsMapFromObject", function (obj) {
     const yearCollection = obj;
     let yearCollectionDescending = new Map();
-    const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});    
+    const keysSorted = Object.keys(yearCollection).sort(function(a,b){return Number(b)-Number(a)});
     keysSorted.forEach((key) => {
       yearCollectionDescending.set(key, yearCollection[key]);
     });
@@ -88,7 +89,7 @@ module.exports = function(eleventyConfig) {
       return item.data.content_type == "project";
     });
   });
- 
+
       // Return the smallest number argument
   eleventyConfig.addFilter("min", (...numbers) => {
     return Math.min.apply(null, numbers);
@@ -129,7 +130,7 @@ module.exports = function(eleventyConfig) {
       .getAll()
       .filter(function (item) {
         return (
-          item.data.content_type == "book" || item.data.content_type == "post"
+          item.data.content_type == "book" || item.data.content_type == "post" || item.data.content_type == "film"
         );
       })
       .sort(function (a, b) {
@@ -175,26 +176,52 @@ module.exports = function(eleventyConfig) {
     return [...coll].reverse();
   });
 
+  eleventyConfig.addCollection("watching", function (collection) {
+    const films = collection
+      .getAll()
+      .filter(function (item) {
+        return item.data.content_type == "film";
+      })
+      .sort(function (a, b) {
+          return a.date - b.date;
+        });
+      for (let i = 0; i < films.length; i++) {
+        const prevPost = films[i - 1];
+        const nextPost = films[i + 1];
+
+        films[i].data["prevFilm"] = prevPost;
+        films[i].data["nextFilm"] = nextPost;
+      }
+      return [...films].reverse();
+
+    return films;
+  });
+
+  // Date filters
+  eleventyConfig.addFilter("isRewatch", (rewatch) => {
+    return rewatch ? "Yes" : "No";
+  });
+
   function makeDateFormatter(dateFormat) {
     return function (date) {
       // return moment(date).format(datePattern);
       return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(dateFormat);
     };
   }
-  
+
   function generateItemsDateSet(items, dateFormatter) {
     const formattedDates = items.map((item) => {
       return dateFormatter(item.data.page.date);
     });
     return [...new Set(formattedDates)];
   }
-  
+
   function getItemsByDate(items, date, dateFormatter) {
     return items.filter((item) => {
       return dateFormatter(item.data.page.date) === date;
     });
   }
-  
+
   const contentByDateString = (items, dateFormatter) => {
     return generateItemsDateSet(items, dateFormatter).reduce(function (
       collected,
@@ -242,6 +269,27 @@ module.exports = function(eleventyConfig) {
       .getAll()
       .filter(function (item) {
         return item.data.content_type == "book";
+      })
+      .sort(function (a, b) {
+        return a.date - b.date;
+      });
+
+    for (let i = 0; i < coll.length; i++) {
+      const prevPost = coll[i - 1];
+      const nextPost = coll[i + 1];
+
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
+
+    return contentsByYear(coll);
+  });
+
+  eleventyConfig.addCollection("filmsByYear", function (collection) {
+    const coll = collection
+      .getAll()
+      .filter(function (item) {
+        return item.data.content_type == "film";
       })
       .sort(function (a, b) {
         return a.date - b.date;

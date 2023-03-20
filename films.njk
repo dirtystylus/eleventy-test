@@ -1,0 +1,22 @@
+---
+title: Film Log
+description: Film log for Mark Llobrera.
+layout: layouts/base.njk
+templateClass: tmpl-books-list
+permalink: 'watching{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
+paginationPrevText: 'Newer films'
+paginationNextText: 'Older films'
+paginationAnchor: '#post-list'
+pagination:
+  data: collections.watching
+  size: 60
+  alias: filmslist
+---
+<div class="content-main container">
+<h1 class="books-list-title">Watching</h1>
+<div class="post--meta">Browse all <a href="{{ '/watching/years/' | url }}">years</a>.</div>
+
+{# {% set bookslist = collections.reading %} #}
+{% include "filmslist.njk" %}
+{% include "partials/list-pagination.njk" %}
+</div>
