@@ -2,7 +2,7 @@
 title: Syncing Letterboxd Data to Markdown Files
 display_title: Syncing Letterboxd Data to Markdown Files
 description: Owning my Letterboxd data.
-date: '2023-03-21T14:27:09.974-04:00'
+date: '2023-03-22T11:46:52.315-04:00'
 tags:
   - film
   - eleventy
@@ -22,11 +22,15 @@ Well, the idea of being able to keep that data locally on my site never left my 
 
 ## letterboxd-to-markdown
 
-The result is here: [**`letterboxd-to-markdown`**](https://github.com/dirtystylus/letterboxd-to-markdown). The script installs a `letterboxd` command that does one thing: fetches the RSS feed for a Letterboxd account and converts the diary entries to Markdown files, with a folder for each film. That alone would be pretty useful from an archival standpoint, but the next step was integrating it into my site.
+The result is here: [**`letterboxd-to-markdown`**](https://github.com/dirtystylus/letterboxd-to-markdown). The script installs a `letterboxd` command that does one thing: fetches the RSS feed for a Letterboxd account and converts the diary entries to Markdown files, with a folder for each film. 
+
+It’s basically two methods, and it should be easy to modify the data that gets written to the Markdown front matter if you want other details from your diary (I don’t use star ratings, for example).  
+
+Getting things into Markdown is useful from an archival standpoint alone, but the next step was integrating it into my site.
 
 ## Using this with Eleventy
 
-My personal usage is pretty simple: I copied the approach of my hand-built reading log, and at the root level of my Eleventy site I created a folder called **`watching`**, with a **`watching.json`** file that defines a content type `film`. I set this as the output directory, so that when I run `letterboxd` it fills my **`watching`** directory with the folders of all my films.
+I copied the approach of my hand-built reading log, and at the root level of my Eleventy site I created a folder called **`watching`**, with a **`watching.json`** file that defines a content type `film`. I set this as the output directory, so that when I run `letterboxd` it fills my **`watching`** directory with the folders of all my films.
 
 ![A folder filled with subfolders of film information](watching-folder.jpg)
 
@@ -42,19 +46,19 @@ To automate the process further I added an entry in my **`package.json`** file t
   "watch": "eleventy --watch",
   "serve": "eleventy --serve",
   "debug": "DEBUG=* eleventy",
-  "film": "letterboxd rss -a dirtystylus && eleventy"
+  "film": "letterboxd diary -a dirtystylus && eleventy"
 },
 ```
 
 ## Results
 
-I was able to reuse most of the templates I had in place for my [reading log](/posts/book-grid-iterations/). I’m still pretty happy with that CSS Grid code. (The detail pages probably need a bit of rethinking, since my Letterboxd diary entries tend to be pretty short.)
+I was able to reuse most of the templates I had in place for my [reading log](/posts/book-grid-iterations/). I’m still pretty happy with that CSS Grid code, although for movies the detail pages probably need a bit of rethinking, since my Letterboxd diary entries tend to be pretty short.
 
 ![A grid of thumbnails for movies](watching-grid.jpg "My film viewing log"){data-responsiver=cinemascope}
 
-## Next Steps
+While building this I kept thinking back to the early 2000s and how I would pull stuff from Twitter and Flickr into my site. Not much has changed in technical approach, I guess, but now I’m a lot more wary about the longevity (and use) of my data on other platforms. (Yesterday’s news about [DPReview shutting down](/posts/amazon-dpreview/) certainly didn’t help.)
 
-I suppose I could turn this into an actual Eleventy plugin? If there’s anyone who can help me with that, please reach out on [Mastodon](https://mastodon.social/@markllobrera) or [Twitter](https://twitter.com/dirtystylus).
 
 [^1]: Ethan Marcotte said [“Let a website be a worry stone”](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/) and I haven’t forgotten.
+
 [^2]: Yes, it’s called `eleventy-test`. Sometimes you just run with a thing that’s working.
