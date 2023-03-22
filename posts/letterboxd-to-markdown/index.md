@@ -56,5 +56,5 @@ I was able to reuse most of the templates I had in place for my [reading log](/p
 
 I suppose I could turn this into an actual Eleventy plugin? If there’s anyone who can help me with that, please reach out on [Mastodon](https://mastodon.social/@markllobrera) or [Twitter](https://twitter.com/dirtystylus).
 
-[^1]: Ethan Marcotte said [“let a website be a worry stone”](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/).
+[^1]: Ethan Marcotte said [“Let a website be a worry stone”](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/) and I haven’t forgotten.
 [^2]: Yes, it’s called `eleventy-test`. Sometimes you just run with a thing that’s working.
