@@ -7,10 +7,9 @@ tags:
   - film
   - eleventy
 ---
+![The Letterboxd logo on the left with an arrow pointing to the Markdown logo on the right](letterboxd-to-markdown-logos.jpg)
 
-![A grid of thumbnails for movies](watching-grid.jpg "My film viewing log"){data-responsiver=cinemascope}
-
-About two years ago I used [Xavi Benjamin’s handy blog post](https://xavibenjamin.com/2020/07/create-a-film-diary-with-eleventy-and-letterboxd/) display my [Letterboxd diary info](https://letterboxd.com/dirtystylus/) on my Eleventy site. At the time [I said](https://twitter.com/dirtystylus/status/1351214808956350471):
+About two years ago I used [Xavi Benjamin’s handy blog post](https://xavibenjamin.com/2020/07/create-a-film-diary-with-eleventy-and-letterboxd/) display my [Letterboxd diary info](https://letterboxd.com/dirtystylus/) on my Eleventy site. At the time [I noted on Twitter](https://twitter.com/dirtystylus/status/1351214808956350471):
 
 > Why use Letterboxd instead of building it into my own site, like my reading log? Letterboxd is actually nice to use, for one, whereas Goodreads being terrible is why I decided to roll my own
 > 
@@ -27,11 +26,11 @@ The result is here: [**`letterboxd-to-markdown`**](https://github.com/dirtystylu
 
 ## Using this with Eleventy
 
-My personal usage is pretty simple: I copied the approach of my hand-built [reading log](https://www.markllobrera.com/posts/book-grid-iterations/), and at the root level of my Eleventy site I created a folder called **`watching`**, with a **`watching.json`** file that defines a content type `film`. I set this as the output directory for `letterboxd-to-markdown`. When I run `letterboxd` it fills my **`watching`** directory with the folders of all my films.
+My personal usage is pretty simple: I copied the approach of my hand-built reading log, and at the root level of my Eleventy site I created a folder called **`watching`**, with a **`watching.json`** file that defines a content type `film`. I set this as the output directory, so that when I run `letterboxd` it fills my **`watching`** directory with the folders of all my films.
 
 ![A folder filled with subfolders of film information](watching-folder.jpg)
 
-Within my **`.eleventy.js`** file I define a `watching` collection that aggregates all of those film folders and also gives me sub-groupings by [year](/watching/years/). If you’re interested in the code details my site  is on [Github](https://github.com/dirtystylus/eleventy-test).[^2]
+Within my **`.eleventy.js`** file I defined a `watching` collection that aggregates all of those film folders and also gives me sub-groupings by [year](/watching/years/). If you’re interested in the code details, my site  is on [Github](https://github.com/dirtystylus/eleventy-test).[^2]
 
 ## Build
 
@@ -46,6 +45,12 @@ To automate the process further I added an entry in my **`package.json`** file t
   "film": "letterboxd rss -a dirtystylus && eleventy"
 },
 ```
+
+## Results
+
+I was able to reuse most of the templates I had in place for my [reading log](/posts/book-grid-iterations/). I’m still pretty happy with that CSS Grid code. (The detail pages probably need a bit of rethinking, since my Letterboxd diary entries tend to be pretty short.)
+
+![A grid of thumbnails for movies](watching-grid.jpg "My film viewing log"){data-responsiver=cinemascope}
 
 ## Next Steps
 
