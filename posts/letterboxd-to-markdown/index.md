@@ -2,10 +2,11 @@
 title: Syncing Letterboxd Data to Markdown Files
 display_title: Syncing Letterboxd Data to Markdown Files
 description: Owning my Letterboxd data.
-date: '2023-03-22T11:46:52.315-04:00'
+date: '2023-03-22T11:53:53.202-04:00'
 tags:
   - film
   - eleventy
+  - web-development
 ---
 ![The Letterboxd logo on the left with an arrow pointing to the Markdown logo on the right](letterboxd-to-markdown-logos.jpg)
 
