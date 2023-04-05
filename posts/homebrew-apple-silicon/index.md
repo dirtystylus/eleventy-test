@@ -12,7 +12,7 @@ tags:
 
 While kicking the tires on Autogram’s content tool[^1] [Spidergram](https://github.com/autogram-is/spidergram) I ran into a puzzling error:
 
-```
+```shell
 Error: dlopen(/Users/markllobrera/git-workspace/ammp-spidergram/node_modules/canvas/build/Release/canvas.node, 0x0001): symbol not found in flat namespace (_cairo_fill)
     at Object.Module._extensions..node (node:internal/modules/cjs/loader:1361:18)
     at Module.load (node:internal/modules/cjs/loader:1133:32)
@@ -27,11 +27,11 @@ Error: dlopen(/Users/markllobrera/git-workspace/ammp-spidergram/node_modules/can
   code: 'ERR_DLOPEN_FAILED'
 ```
 
-A few dozen browser tabs later it appeared that this was related to [dependencies that were not compatible with ARM64](https://github.com/Automattic/node-canvas/issues/2192), aka the architecture used by the new Mx series of Apple silicon. *Further* investigation revealed that it wasn’t just the NodeJS packages, but the Python dependencies underneath. 
+A few dozen browser tabs later it appeared that this was related to [dependencies that were not compatible with ARM64](https://github.com/Automattic/node-canvas/issues/2192), aka the architecture used by the new M*x* series of Apple silicon. *Further* investigation revealed that it wasn’t just Spidergram’s NodeJS package dependencies, but the Python dependencies underneath. 
 
 \[Deep Breath\]
 
-My initial instinct, as is typical, was to set my machine on fire and renounce this career.
+My initial instinct, as is typical for me, was to set my machine on fire and renounce this career.
 
 I slept on it instead, and here was what I found:
 
