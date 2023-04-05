@@ -40,8 +40,8 @@ I slept on it instead, and here was what I found:
 
 To clean this up:
 
-* I reinstalled Homebrew to `/opt/homebrew` using the default instructions
-* Added `/opt/homebrew/bin` to my `$PATH`
+* I reinstalled Homebrew to **`/opt/homebrew`** using the default instructions
+* Added **`/opt/homebrew/bin`** to my `$PATH`
 * Created a **`Brewfile`** using `brew bundle dump` in **`/usr/local/bin`**, and then copied this file over to **`/opt/homebrew/bin`**
 * Made sure I was using the new brew: `which brew`, pointing to **`/opt/homebrew/bin`**
 * Ran `brew bundle` in the dir with the **`Brewfile`** to install my formulae into the new Homebrew bin
