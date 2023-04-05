@@ -51,4 +51,4 @@ After all that I was able to run `npm install` within my Spidergram project and 
 
 All of this reminded me of Alex Riviere’s recent post, [“Delete Your Dev Environment Regularly”](https://alex.party/posts/2023-03-23-delete-your-dev-environment-regularly/). I think if I had to do things over I would have chosen *not* to use Migration Assistant and reinstalled my tooling from scratch.
 
-[^1]: This does Spidergram a disservice, it is a really ambitious and exciting inventory/analysis tool 
+[^1]: This description does Spidergram a disservice, it is a really ambitious and exciting inventory/analysis tool 
