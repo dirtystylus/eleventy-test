@@ -15,15 +15,20 @@
   ],
   "footer_items": [
     {
-      "text": "RSS (All Content)",
+      "text": "RSS (Everything)",
       "url": "/feed/feed.xml"
     },
     {
-      "text": "RSS (Reading Only)",
+      "text": "RSS (Reading)",
       "url": "/feed/reading.xml"
     },
     {
-      "text": "@dirtystylus",
+      "text": "Mastodon",
+      "url": "https://mastodon.social/@markllobrera",
+      "rel": "me"
+    },
+    {
+      "text": "Twitter",
       "url": "https://twitter.com/dirtystylus"
     }
   ]
