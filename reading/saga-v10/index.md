@@ -3,7 +3,7 @@ title: Saga
 display_title: Saga
 author: Brian K. Vaughan
 isbn: 1534323341
-cover_image: /reading/saga-vol-10/saga-vol-10.jpg
+cover_image: /reading/saga-v10/saga-v10.jpg
 genre: Comic
 format: Paperback
 date: '2023-04-19T19:29:19.287-04:00'
