@@ -8,7 +8,7 @@ genre: Fiction
 format: Paperback
 date: '2023-05-01T10:41:05.328-04:00'
 start_date: '2023-04-12'
-end_date: '2023-04-19'
+end_date: '2023-04-30'
 ---
 
 I let the details of masts/sails wash over me. This book was very “Jack Aubrey fucks around, finds out.”[^1] I was fascinated by the occasional passages centered around naval careerism, war as a noble pursuit vs. enrichment via prize-winning. The political relationship between Ireland and England and how it plays out with Irish officers in the British Navy is also a recurring theme.
