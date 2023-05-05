@@ -25,7 +25,7 @@ At one point the perspective shifts, and now Seo-rae is boxed in on a computer m
 
 At the end of the scene Seo-rae stops translating via phone, and there’s a change in selective focus: now the foreground and reflection are both in focus when each character is speaking.
 
-![A man and a woman sit facing each other, their reflections visible in a mirror in the near distance. The woman is in focus in both the foreground and her reflection.](decision-to-leave-06.jpg ". *Image © Mubi*"){data-responsiver=cinemascope}
+![A man and a woman sit facing each other, their reflections visible in a mirror in the near distance. The woman is in focus in both the foreground and her reflection.](decision-to-leave-06.jpg "*Image © Mubi*"){data-responsiver=cinemascope}
 
 ![A man and a woman sit facing each other, their reflections visible in a mirror in the near distance. The man is in focus in both the foreground and his reflection.](decision-to-leave-07.jpg "Starting on the same plane. *Image © Mubi*"){data-responsiver=cinemascope}
 
