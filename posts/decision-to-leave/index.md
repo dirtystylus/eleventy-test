@@ -27,7 +27,7 @@ At the end of the scene Seo-rae stops translating via phone, and there’s a cha
 
 ![A man and a woman sit facing each other, their reflections visible in a mirror in the near distance. The woman is in focus in both the foreground and her reflection.](decision-to-leave-06.jpg "*Image © Mubi*"){data-responsiver=cinemascope}
 
-![A man and a woman sit facing each other, their reflections visible in a mirror in the near distance. The man is in focus in both the foreground and his reflection.](decision-to-leave-07.jpg "Starting on the same plane. *Image © Mubi*"){data-responsiver=cinemascope}
+![A man and a woman sit facing each other, their reflections visible in a mirror in the near distance. The man is in focus in both the foreground and his reflection.](decision-to-leave-07.jpg "*Image © Mubi*"){data-responsiver=cinemascope}
 
 I still haven’t figured out what Park Chan-wook is trying to communicate with that last change in how the camera sees—is it that the characters now fully understand what the other has said, but they’re still not saying what’s really on their mind?
 
