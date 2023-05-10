@@ -2,7 +2,7 @@
 title: 'Three Colors: Blue'
 display_title: 'Three Colors: Blue'
 release_year: '1993'
-cover_image: /watching/three-colours-blue/three-colors-blue.jpg
+cover_image: /watching/three-colours-blue/three-colours-blue.jpg
 watched_date: 2023-03-12T00:00:00.000Z
 date: 2023-03-12T00:00:00.000Z
 rewatch: false
