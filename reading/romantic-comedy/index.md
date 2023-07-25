@@ -1,6 +1,6 @@
 ---
-title: Romantic Comedy (Reese's Book Club)
-display_title: Romantic Comedy (Reese's Book Club)
+title: Romantic Comedy
+display_title: Romantic Comedy
 author: Curtis Sittenfeld
 isbn: 0399590943
 cover_image: /reading/romantic-comedy/romantic-comedy.jpg
