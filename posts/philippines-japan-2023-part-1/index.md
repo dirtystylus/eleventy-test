@@ -31,9 +31,9 @@ Just poring over the sheer number of notes and photos from our trip, I’ve deci
 
 We met up with my brother and his family to fly out of Dulles, and our itinerary was blown from the start. We had a 4+ hour delay due to mechanical issues, with United flying parts from \[checks notes\] San Francisco. That meant we would miss our connecting flights in Denver and Tokyo on the way to Manila. There were seven of us traveling, so rebooking us was a challenge, but eventually we managed to get a United agent to figure out an alternative route. We ended up getting redirected through San Francisco, where we would stay overnight and catch an early flight to Tokyo. The silver lining was we got to see our good friend Jill, who hung out with us that evening and the next morning.
 
-![A man and a woman sit in a dining area booth, with the woman resting her head on the man’s shoulder](phl-jpn-sf-coron-1.jpg "Jill"){data-responsiver=gallery_4x3}
+![A man and a woman sit in a dining area booth, with the woman resting her head on the man’s shoulder](phl-jpn-sf-coron-1.jpg "Jill")
 
-![A view of San Francisco from an airplane window, with clouds above the ground and ocean.](phl-jpn-sf-coron-2.jpg "Looking down on SF"){data-responsiver=gallery_4x3}
+![A view of San Francisco from an airplane window, with clouds above the ground and ocean.](phl-jpn-sf-coron-2.jpg "Looking down on SF")
 
 ## Coron
 
