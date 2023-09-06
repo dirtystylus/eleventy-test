@@ -4,10 +4,10 @@ display_title: "NY Times: “Americans Are Losing Faith in the Value of College.
 description: A look at the college value proposition.
 date: '2023-09-06T10:54:38.617-04:00'
 tags:
+  - books
   - higher-ed
   - history
   - links
-  - books
 ---
 
 Spoke to my financial advisor recently about saving for my kids’ college education, and as a result this recent [NY Times piece by Paul Tough](https://www.nytimes.com/2023/09/05/magazine/college-worth-price.html) hits hard. Especially this part, on how debt/loans affect the whole value proposition for going to college:
