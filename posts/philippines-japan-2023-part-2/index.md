@@ -1,7 +1,7 @@
 ---
 title: 'Philippines & Japan 2023, Part Two: El Nido'
 display_title: 'Philippines & Japan 2023, Part Two: El Nido'
-description: replace
+description: Kayaks and phenomenal sunsets.
 date: '2023-09-17T15:05:27.982-04:00'
 layout: layouts/post-gallery
 tags:
@@ -21,15 +21,17 @@ Continuing my trip recap:
 * Manila
 * Tokyo
 
-## A bit more fancy
+## Lime Time
 
-We flew from Coron in the early evening, and I was really feeling the jet lag by the time we arrived at our hotel (Lime Resort El Nido). We had originally intended to see what tour packages the hotel had but the markup was so high that my dad ended up searching around for a better provider, and the next morning we booked a custom tour via [El Bacuit Travel and Tours](http://elbacuit.weebly.com). This was probably easier to do because there were nine of us so we could get a whole boat to ourselves—if we had been a smaller party we would likely have to share a boat with other groups.
+We flew from Coron in the early evening—which was good, in that it allowed us to squeeze in an island tour in Coron. On the flip side, I was really feeling the jet lag by the time we arrived at our hotel (Lime Resort El Nido).
+
+We had originally intended to see what tour packages the hotel offered but the markup was so high that my dad ended up searching around for a better provider, and the next morning we booked a custom tour via [El Bacuit Travel and Tours](http://elbacuit.weebly.com). Because there were nine of us so we could get a whole boat to ourselves—if we had been a smaller party we would likely have to share a boat with other groups.
 
 ![An ocean view with multiple islands on the horizon line, with a small boat in the distance. In the foreground is a silhouette of a tree.](phl-jpn-elnido-2.jpg "Looking out from Lime Resort to the ocean"){data-responsiver=cinemascope}
 
 ## Big Lagoon
 
-The first stop on our tour was the Big Lagoon on Miniloc Island, and our guide wanted to get us there early before the rest of the tour groups started to crowd in. We anchored offshore and transferred to kayaks—there was a kayak rental setup on the water, and you would transfer from your banka to a kayak and paddle in to the lagoon
+The first stop on our tour was the Big Lagoon on Miniloc Island, and our guide wanted to get us there early before the rest of the tour groups started to crowd in. We anchored offshore where there was a kayak rental station, transferred from the banka to kayaks, and paddled in. My dad and I shared a kayak.
 
 {% videoloop "./phl-jpn-elnido-biglagoon.mp4", "View from behind multiple kayaks paddling between small islands." %}
 
@@ -61,7 +63,7 @@ After you’re done with drinking the buko juice they cut up the coconut for you
 
 ## Seven Commando Beach
 
-We could see the clouds rolling in while we were on Entalula Island, so we got on the boat to try and make it to Seven Commando Beach. We ended up running straight into pretty heavy rains, and we ended up huddling tightly under the banka canopy. It didn’t help much, though—the rain was so heavy. I was impressed at the crew’s ability to navigate in the rain and fog.
+We could see the clouds rolling in while we were on Entalula Island, so we got on the boat to try and make it to Seven Commando Beach. We ended up running straight into pretty heavy rains, and we huddled tightly under the banka canopy. It didn’t help much, though—the rain was so heavy. I was impressed at the crew’s ability to navigate in the rain and fog.
 
 {% videoloop "./phl-jpn-elnido-banka.mp4", "A view from a banka in a rainstorm, the shoreline shrouded in fog." %}
 
@@ -69,11 +71,11 @@ Fighting through the rain (no audio). *[Full version on Flickr](https://flic.kr/
 
 {% endvideoloop %}
 
-We arrived at Seven Commando beach and it was very quiet, mostly likely due to the rain. The rain eased up and we swam for a while—one of us even saw a sea snake, though I was glad that I didn’t witness that.
+We arrived at Seven Commando beach and it was very quiet, mostly likely due to the rain. The rain eased up and we swam for a while—a few of us even saw a sea snake, though I was glad that I didn’t witness that.
 
 ![A beach with palm trees fading into a foggy hillside.](phl-jpn-elnido-17.jpg)
 
-At this point we were pretty tired, jet lag was setting in, and we decided to skip a final stop and head back to the hotel. We hung out at the pool until it was time for dinner.
+At this point we were pretty tired, jet lag and hunger were setting in, so we decided to skip a final stop and head back to the hotel. We hung out at the pool until it was time for dinner.
 
 ![Two beach chairs on a deck, looking out on an infinity pool.](phl-jpn-elnido-10.jpg)
 
@@ -93,7 +95,7 @@ The ride downtown (no audio). [*Full version on Flickr*](https://flic.kr/p/2p3M2
 
 ## Lime’s Observation Deck
 
-We wrapped up the evening on the pool/observation deck at our hotel, watching the rapidly changing light
+We wrapped up the evening on the pool/observation deck at our hotel, watching the rapidly changing light.
 
 ![A group of islands silhouetted as the sun sets behind an island to the left.](phl-jpn-elnido-11.jpg){data-responsiver=cinemascope}
 
@@ -105,6 +107,8 @@ Some other shots from this leg (click to enlarge):
 
 - ![A tricycle emblazoned with the slogan “God Will Make a Way 2” on the windshield.](phl-jpn-elnido-1.jpg "My mom and I had a good laugh about this one: what happened to God Will Make a Way 1?"){data-responsiver=gallery_3x2}
 - ![A man and a woman in sunglasses and hats, on a boat, smile with islands in the distance.](phl-jpn-elnido-3.jpg "Mom and Dad on the way to the Big Lagoon"){data-responsiver=gallery_3x2}
+- ![A family on an outrigger boat.](phl-jpn-elnido-19.jpg "Aboard the Lenard 4. Photo © Joseph Llobrera."){data-responsiver=gallery_4x3}
+- ![Two men in a yellow kayak.](phl-jpn-elnido-20.jpg "Dad and me"){data-responsiver=gallery_4x3}
 - ![Two women in a kayak with an island cliffside in the background.](phl-jpn-elnido-4.jpg "Jordan and Em at the Big Lagoon"){data-responsiver=gallery_3x4}
 - ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){data-responsiver=gallery_2x3}
 - ![A coconut tree rising into the sky with a hillside in the background.](phl-jpn-elnido-9.jpg "Coconut tree at Entalula Island"){data-responsiver=gallery_2x3}
