@@ -43,13 +43,16 @@ body {
 }
 
 .visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  clip: rect(0 0 0 0) !important;
+  border: 0 !important;
+  clip-path: polygon(0 0, 0 0, 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width:1px !important
 }
 
 p:last-child {
@@ -683,6 +686,27 @@ body {
 
 @media (min-width: 45em) {
   .tmpl-post .container > p {
+    grid-column: content-start / content-end;
+  }
+}
+
+/* Video Inline */
+.video {
+  justify-self: auto;
+  grid-column: 1;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  color: var(--darkgray);
+  margin: 1em 0 2em 0;
+}
+
+.video video {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+@media (min-width: 45em) {
+  .video {
     grid-column: content-start / content-end;
   }
 }

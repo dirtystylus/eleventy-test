@@ -360,6 +360,15 @@ module.exports = function(eleventyConfig) {
     }
   );
 
+  eleventyConfig.addPairedShortcode(
+    "inlinevideo", (content, data, alt) => {
+      const videoURL = markdownLibrary.renderInline(data.trim());
+      const altText = markdownLibrary.renderInline(alt.trim());
+      const divContent = markdownLibrary.renderInline(content.trim());
+      return `<div class="video"><video controls muted playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
+    }
+  );
+
   // Images Responsiver
   const imagesResponsiverConfig = require("./src/utils/images-responsiver-config.js");
   eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
@@ -393,7 +402,8 @@ module.exports = function(eleventyConfig) {
       "jpg",
       "jpeg",
       "gif",
-      "png"
+      "png",
+      "mp4"
     ],
 
     // -----------------------------------------------------------------
