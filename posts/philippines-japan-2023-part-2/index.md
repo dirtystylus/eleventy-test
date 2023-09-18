@@ -12,7 +12,7 @@ tags:
   - travel
 ---
 
-Continuing our little trip recap:
+Continuing my trip recap:
 
 * [DC to Coron](/posts/philippines-japan-2023-part-1)
 * El Nido (this leg)
@@ -23,7 +23,7 @@ Continuing our little trip recap:
 
 ## A bit more fancy
 
-We flew from Coron in the early evening, and I was really feeling the jet lag by the time we arrived at our hotel (Lime Resort El Nido). We had originally intended to see what tour packages the hotel had but the markup was so high that my dad ended up searching around for a better provider, and in the morning we booked a custom tour via El Bacuit Travel and Tours. This was probably easier to do because there were nine of us so we could get a whole boat to ourselves—if we had been a smaller party we would likely have to share a boat with other groups.
+We flew from Coron in the early evening, and I was really feeling the jet lag by the time we arrived at our hotel (Lime Resort El Nido). We had originally intended to see what tour packages the hotel had but the markup was so high that my dad ended up searching around for a better provider, and the next morning we booked a custom tour via [El Bacuit Travel and Tours](http://elbacuit.weebly.com). This was probably easier to do because there were nine of us so we could get a whole boat to ourselves—if we had been a smaller party we would likely have to share a boat with other groups.
 
 ![An ocean view with multiple islands on the horizon line, with a small boat in the distance. In the foreground is a silhouette of a tree.](phl-jpn-elnido-2.jpg "Looking out from Lime Resort to the ocean"){data-responsiver=cinemascope}
 
@@ -31,11 +31,11 @@ We flew from Coron in the early evening, and I was really feeling the jet lag by
 
 The first stop on our tour was the Big Lagoon on Miniloc Island, and our guide wanted to get us there early before the rest of the tour groups started to crowd in. We anchored offshore and transferred to kayaks—there was a kayak rental setup on the water, and you would transfer from your banka to a kayak and paddle in to the lagoon
 
-{% inlinevideo "./phl-jpn-elnido-biglagoon.mp4", "View from behind multiple kayaks paddling between small islands." %}
+{% videoloop "./phl-jpn-elnido-biglagoon.mp4", "View from behind multiple kayaks paddling between small islands." %}
 
-Entering Big Lagoon
+Entering Big Lagoon (no audio). [*Full version on Flickr*](https://flic.kr/p/2p3MSMV).
 
-{% endinlinevideo %}
+{% endvideoloop %}
 
 The water was extremely clear and in the shallower parts it sometimes looked like the kayaks were levitating above the water, because you could see the kayaks’ shadows on the bottom of the lagoon. 
 
@@ -63,11 +63,11 @@ After you’re done with drinking the buko juice they cut up the coconut for you
 
 We could see the clouds rolling in while we were on Entalula Island, so we got on the boat to try and make it to Seven Commando Beach. We ended up running straight into pretty heavy rains, and we ended up huddling tightly under the banka canopy. It didn’t help much, though—the rain was so heavy. I was impressed at the crew’s ability to navigate in the rain and fog.
 
-{% inlinevideo "./phl-jpn-elnido-banka.mp4", "A view from a banka in a rainstorm, the shoreline shrouded in fog." %}
+{% videoloop "./phl-jpn-elnido-banka.mp4", "A view from a banka in a rainstorm, the shoreline shrouded in fog." %}
 
-Fighting through the rain.
+Fighting through the rain (no audio). *[Full version on Flickr](https://flic.kr/p/2p3K3zH)*.
 
-{% endinlinevideo %}
+{% endvideoloop %}
 
 We arrived at Seven Commando beach and it was very quiet, mostly likely due to the rain. The rain eased up and we swam for a while—one of us even saw a sea snake, though I was glad that I didn’t witness that.
 
@@ -81,11 +81,11 @@ At this point we were pretty tired, jet lag was setting in, and we decided to sk
 
 We grabbed dinner downtown at a small restaurant called Maa’s Grill where we stuffed ourselves with grilled squid, then walked down to the shore to look at the water and the boats.
 
-{% inlinevideo "./phl-jpn-elnido-tricycle.mp4", "Riding a tricyle, the camera slowly panning from a view through the windshield to the open doorway as it overtakes another tricycle." %}
+{% videoloop "./phl-jpn-elnido-tricycle.mp4", "Riding a tricyle, the camera slowly panning from a view through the windshield to the open doorway as it overtakes another tricycle." %}
 
-The ride downtown
+The ride downtown (no audio). [*Full version on Flickr*](https://flic.kr/p/2p3M2oS).
 
-{% endinlinevideo %}
+{% endvideoloop %}
 
 ![A family photo in front of a beach with a hillside in the background.](phl-jpn-elnido-18.jpg "Photo © Joseph Llobrera")
 

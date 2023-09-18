@@ -5,12 +5,13 @@ templateClass: tmpl-post
 <article class="content-main container">
 <h1>{% markdown %}{{ display_title or title }}{% endmarkdown %}</h1>
 <div class="post--meta">Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-  {% if tags.length > 0 %} in  
+  {% if tags.length > 0 %} in
   {% for tag in tags -%}
-    <a class="tag" href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>{% if not loop.last %}, {% endif %} 
+    <a class="tag" href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
   {% endfor -%}
   {% endif %}
 </div>
 {{ content | safe }}
 {% include "partials/single-pagination.njk" %}
 </article>
+<script src="{{ '/js/videoloop.js' | url }}" defer></script>

@@ -361,11 +361,11 @@ module.exports = function(eleventyConfig) {
   );
 
   eleventyConfig.addPairedShortcode(
-    "inlinevideo", (content, data, alt) => {
+    "videoloop", (content, data, alt) => {
       const videoURL = markdownLibrary.renderInline(data.trim());
       const altText = markdownLibrary.renderInline(alt.trim());
       const divContent = markdownLibrary.renderInline(content.trim());
-      return `<div class="video"><video controls muted playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
+      return `<div class="video"><video controls loop autoplay muted playsinline aria-labelledby="video-label" src="${videoURL}"></video>${divContent}<div id="video-label" class="visually-hidden" aria-hidden="true">${altText}</div></div>`;
     }
   );
 

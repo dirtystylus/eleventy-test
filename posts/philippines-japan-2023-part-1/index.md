@@ -21,7 +21,7 @@ Our itinerary was fairly ambitious, a big triangle-shaped circuit from Manila th
 Just poring over the sheer number of notes and photos from our trip, I’ve decided to write about it in chunks:
 
 * DC to Coron (this leg)
-* El Nido
+* [El Nido](/posts/philippines-japan-2023-part-2)
 * Puerto Princesa/Iloilo/Cebu
 * Bohol
 * Manila
