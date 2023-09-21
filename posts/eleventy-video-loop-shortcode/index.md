@@ -8,7 +8,7 @@ tags:
   - web-development
 ---
 
-While writing up my memories from my summer trip I had to figure out how I wanted to deal with video—should I upload things to Vimeo and embed them? Or finally figure out something I’ve put off for a while—embedding video directly off my site, just like images.
+While writing up my memories from my summer trip I had to figure out how I wanted to deal with video—should I upload things to Vimeo and embed them? Or finally figure out something I’ve put off for a while—embedding video directly off my site, just like I do with images?
 
 In the end I didn’t have to figure out much, because Tyler Sticka and Cloud Four already did most of the work with their recent writeup [“Accessible Animated GIF Alternatives”](https://cloudfour.com/thinks/accessible-animated-gif-alternatives/). I did have a few remaining bits that I needed to figure out, the first one being an item that Tyler left as a breadcrumb in his post:
 
@@ -20,7 +20,7 @@ The other one was figuring out how to get Eleventy to render the video markup pr
 
 ## Play/Pause with Intersection Observer
 
-I started with this snippet from [skara9 on Stack Overflow](https://stackoverflow.com/a/70192135):
+I wanted videos to remain paused until the user scrolled them into view. I started with this snippet from [skara9 on Stack Overflow](https://stackoverflow.com/a/70192135):
 
 ```js
 const videos = document.querySelectorAll("video"); // Select ALL the Videos
