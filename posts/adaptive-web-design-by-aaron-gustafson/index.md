@@ -1,7 +1,7 @@
 ---
 title: Adaptive Web Design by Aaron Gustafson
-display_title: Adaptive Web Design by Aaron Gustafson
-description: ''
+display_title: "*Adaptive Web Design* by Aaron Gustafson"
+description: A book review for a web design classic.
 date: '2011-08-02T15:10:24-04:00'
 tags:
   - books
@@ -12,7 +12,7 @@ tags:
 
 Until last fall, I spent most of the last ten years primarily building sites using Flash. Since moving to Philadelphia to join [160over90](http://www.160over90.com "160 over 90"), I’ve spent most of my time building sites using HTML/CSS. It’s been a lot of fun, but one of the things I had to do was get up to speed with current standards-based web design. I picked up Aaron Gustafson’s [Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement](https://adaptivewebdesign.info "Adaptive Web Design") on a whim, largely because [Veerle Pieters](http://veerle.duoh.com/ "Veerle Pieters") showed the cover design as part of her talk at [An Event Apart Boston](http://aneventapart.com/2011/boston/ "An Event Apart Boston"). However, it’s quickly become my essential grab-bag guide to the state of the art in web design. Its focus on progressive enhancement through HTML markup, CSS, and JavaScript was exactly what I needed: an overview of today’s best practices. Even if the detail in this book isn’t as comprehensive as its scope (intentionally so), it has enough detail and practical examples to point me in the right direction to dig deeper.
 
-### Progressive Enhancement vs Graceful Degradation
+## Progressive Enhancement vs Graceful Degradation
 
 Chapter 1 defines progressive enhancement this way:
 
@@ -24,7 +24,7 @@ It draws a contrast between that philosophy and the blind alley of “graceful d
 
 Ouch. So that hits a little close to home. But it’s a message that rings true, and thankfully there seems to be no shortage of enthusiasm these days for a content and user-centric approach to web design.
 
-### Stacking it Up
+## Stacking it Up
 
 With the purpose clear, the rest of the book devotes one chapter apiece to HTML markup, CSS, JavaScript, and finally Accessibility. I’ll just list a few of the highlights for me:
 
@@ -33,7 +33,7 @@ With the purpose clear, the rest of the book devotes one chapter apiece to HTML 
 - The JavaScript chapter introduced me to the concept of unobtrusive JavaScript, meaning that essential functionality on the page can be accomplished without JavaScript. In this situation JavaScript improves the experience, but its absence doesn’t cripple the page. I was also introduced to the novel (for me) concept of using JavaScript to generate any additional markup it might need to function correctly. I’ve already used that in some code I’m writing today.
 - The Accessibility chapter taught me about ARIA roles, and it’s already changed the way I write my markup.
 
-### Check it Off
+## Check it Off
 
 I love lists and checking things off, so I was delighted to find that the last chapter is a Progressive Enhancement Checklist broken down into the four major categories of the book. Right now there’s still quite a few unchecked boxes, but hopefully I’ll be checking off more items with each successive site that I build.
 
