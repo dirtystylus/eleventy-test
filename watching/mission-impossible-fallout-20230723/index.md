@@ -2,7 +2,7 @@
 title: 'Mission: Impossible – Fallout'
 display_title: 'Mission: Impossible – Fallout'
 release_year: '2018'
-cover_image: /watching/mission-impossible-fallout/mission-impossible-fallout.jpg
+cover_image: /watching/mission-impossible-fallout-20230723/mission-impossible-fallout.jpg
 watched_date: 2023-07-23T00:00:00.000Z
 date: 2023-07-25T02:37:30.000Z
 rewatch: true

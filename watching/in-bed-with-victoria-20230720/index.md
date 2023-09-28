@@ -2,7 +2,7 @@
 title: In Bed with Victoria
 display_title: In Bed with Victoria
 release_year: '2016'
-cover_image: /watching/in-bed-with-victoria/in-bed-with-victoria.jpg
+cover_image: /watching/in-bed-with-victoria-20230720/in-bed-with-victoria.jpg
 watched_date: 2023-07-20T00:00:00.000Z
 date: 2023-07-25T02:24:44.000Z
 rewatch: false

@@ -2,7 +2,7 @@
 title: Mission to Mars
 display_title: Mission to Mars
 release_year: '2000'
-cover_image: /watching/mission-to-mars/mission-to-mars.jpg
+cover_image: /watching/mission-to-mars-20230521/mission-to-mars.jpg
 watched_date: 2023-05-21T00:00:00.000Z
 date: 2023-05-24T23:52:59.000Z
 rewatch: true

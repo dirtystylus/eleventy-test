@@ -2,7 +2,7 @@
 title: The Innocent
 display_title: The Innocent
 release_year: '2022'
-cover_image: /watching/the-innocent-2022/the-innocent-2022.jpg
+cover_image: /watching/the-innocent-2022-20230525/the-innocent-2022.jpg
 watched_date: 2023-05-25T00:00:00.000Z
 date: 2023-05-26T15:11:06.000Z
 rewatch: false

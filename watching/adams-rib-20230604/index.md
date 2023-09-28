@@ -2,7 +2,7 @@
 title: Adam's Rib
 display_title: Adam's Rib
 release_year: '1949'
-cover_image: /watching/adams-rib/adams-rib.jpg
+cover_image: /watching/adams-rib-20230604/adams-rib.jpg
 watched_date: 2023-06-04T00:00:00.000Z
 date: 2023-06-06T20:49:52.000Z
 rewatch: false

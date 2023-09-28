@@ -2,7 +2,7 @@
 title: Blinded by the Light
 display_title: Blinded by the Light
 release_year: '2019'
-cover_image: /watching/blinded-by-the-light-2019/blinded-by-the-light-2019.jpg
+cover_image: /watching/blinded-by-the-light-2019-20230619/blinded-by-the-light-2019.jpg
 watched_date: 2023-06-19T00:00:00.000Z
 date: 2023-06-20T15:22:11.000Z
 rewatch: false

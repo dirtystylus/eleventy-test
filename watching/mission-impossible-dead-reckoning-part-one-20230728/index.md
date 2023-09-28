@@ -2,8 +2,7 @@
 title: 'Mission: Impossible – Dead Reckoning Part One'
 display_title: 'Mission: Impossible – Dead Reckoning Part One'
 release_year: '2023'
-cover_image: >-
-  /watching/mission-impossible-dead-reckoning-part-one/mission-impossible-dead-reckoning-part-one.jpg
+cover_image: /watching/mission-impossible-dead-reckoning-part-one-20230728/mission-impossible-dead-reckoning-part-one.jpg
 watched_date: 2023-07-28T00:00:00.000Z
 date: 2023-07-28T20:59:37.000Z
 rewatch: false

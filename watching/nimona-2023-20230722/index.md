@@ -2,7 +2,7 @@
 title: Nimona
 display_title: Nimona
 release_year: '2023'
-cover_image: /watching/nimona-2023/nimona-2023.jpg
+cover_image: /watching/nimona-2023-20230722/nimona-2023.jpg
 watched_date: 2023-07-22T00:00:00.000Z
 date: 2023-07-25T02:29:53.000Z
 rewatch: false

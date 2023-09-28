@@ -2,7 +2,7 @@
 title: The 39 Steps
 display_title: The 39 Steps
 release_year: '1935'
-cover_image: /watching/the-39-steps/the-39-steps.jpg
+cover_image: /watching/the-39-steps-20230903/the-39-steps.jpg
 watched_date: 2023-09-03T00:00:00.000Z
 date: 2023-09-03T20:50:39.000Z
 rewatch: true

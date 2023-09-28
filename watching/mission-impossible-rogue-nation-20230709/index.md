@@ -2,7 +2,7 @@
 title: 'Mission: Impossible – Rogue Nation'
 display_title: 'Mission: Impossible – Rogue Nation'
 release_year: '2015'
-cover_image: /watching/mission-impossible-rogue-nation-1/mission-impossible-rogue-nation.jpg
+cover_image: /watching/mission-impossible-rogue-nation-20230709/mission-impossible-rogue-nation.jpg
 watched_date: 2023-07-09T00:00:00.000Z
 date: 2023-07-12T01:02:56.000Z
 rewatch: true

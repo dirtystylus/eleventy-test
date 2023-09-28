@@ -2,7 +2,7 @@
 title: Ronin
 display_title: Ronin
 release_year: '1998'
-cover_image: /watching/ronin/ronin.jpg
+cover_image: /watching/ronin-20230823/ronin.jpg
 watched_date: 2023-08-23T00:00:00.000Z
 date: 2023-08-23T00:00:00.000Z
 rewatch: true

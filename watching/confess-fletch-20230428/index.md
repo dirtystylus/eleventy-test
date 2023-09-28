@@ -2,7 +2,7 @@
 title: 'Confess, Fletch'
 display_title: 'Confess, Fletch'
 release_year: '2022'
-cover_image: /watching/confess-fletch/confess-fletch.jpg
+cover_image: /watching/confess-fletch-20230428/confess-fletch.jpg
 watched_date: 2023-04-28T00:00:00.000Z
 date: 2023-04-29T17:05:28.000Z
 rewatch: false

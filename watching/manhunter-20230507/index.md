@@ -2,7 +2,7 @@
 title: Manhunter
 display_title: Manhunter
 release_year: '1986'
-cover_image: /watching/manhunter/manhunter.jpg
+cover_image: /watching/manhunter-20230507/manhunter.jpg
 watched_date: 2023-05-07T00:00:00.000Z
 date: 2023-05-10T14:32:41.000Z
 rewatch: false

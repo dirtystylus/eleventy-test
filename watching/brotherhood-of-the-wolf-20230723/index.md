@@ -2,7 +2,7 @@
 title: Brotherhood of the Wolf
 display_title: Brotherhood of the Wolf
 release_year: '2001'
-cover_image: /watching/brotherhood-of-the-wolf/brotherhood-of-the-wolf.jpg
+cover_image: /watching/brotherhood-of-the-wolf-20230723/brotherhood-of-the-wolf.jpg
 watched_date: 2023-07-23T00:00:00.000Z
 date: 2023-07-25T02:55:23.000Z
 rewatch: true

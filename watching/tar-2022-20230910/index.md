@@ -2,7 +2,7 @@
 title: TÁR
 display_title: TÁR
 release_year: '2022'
-cover_image: /watching/tar-2022/tar-2022.jpg
+cover_image: /watching/tar-2022-20230910/tar-2022.jpg
 watched_date: 2023-09-10T00:00:00.000Z
 date: 2023-09-10T23:36:26.000Z
 rewatch: false

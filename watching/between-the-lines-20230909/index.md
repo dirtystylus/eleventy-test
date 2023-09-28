@@ -2,7 +2,7 @@
 title: Between the Lines
 display_title: Between the Lines
 release_year: '1977'
-cover_image: /watching/between-the-lines/between-the-lines.jpg
+cover_image: /watching/between-the-lines-20230909/between-the-lines.jpg
 watched_date: 2023-09-09T00:00:00.000Z
 date: 2023-09-10T21:58:20.000Z
 rewatch: false

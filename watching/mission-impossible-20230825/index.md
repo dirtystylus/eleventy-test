@@ -2,7 +2,7 @@
 title: 'Mission: Impossible'
 display_title: 'Mission: Impossible'
 release_year: '1996'
-cover_image: /watching/mission-impossible/mission-impossible.jpg
+cover_image: /watching/mission-impossible-20230825/mission-impossible.jpg
 watched_date: 2023-08-25T00:00:00.000Z
 date: 2023-08-25T21:30:29.000Z
 rewatch: true

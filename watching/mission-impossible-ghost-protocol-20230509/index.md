@@ -2,8 +2,7 @@
 title: 'Mission: Impossible - Ghost Protocol'
 display_title: 'Mission: Impossible - Ghost Protocol'
 release_year: '2011'
-cover_image: >-
-  /watching/mission-impossible-ghost-protocol/mission-impossible-ghost-protocol.jpg
+cover_image: /watching/mission-impossible-ghost-protocol-20230509/mission-impossible-ghost-protocol.jpg
 watched_date: 2023-05-09T00:00:00.000Z
 date: 2023-05-10T14:57:18.000Z
 rewatch: true

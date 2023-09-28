@@ -2,7 +2,7 @@
 title: 'Top Gun: Maverick'
 display_title: 'Top Gun: Maverick'
 release_year: '2022'
-cover_image: /watching/top-gun-maverick/top-gun-maverick.jpg
+cover_image: /watching/top-gun-maverick-20230608/top-gun-maverick.jpg
 watched_date: 2023-06-08T00:00:00.000Z
 date: 2023-06-09T21:31:38.000Z
 rewatch: false

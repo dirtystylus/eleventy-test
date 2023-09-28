@@ -2,7 +2,7 @@
 title: Elemental
 display_title: Elemental
 release_year: '2023'
-cover_image: /watching/elemental-2023/elemental-2023.jpg
+cover_image: /watching/elemental-2023-20230917/elemental-2023.jpg
 watched_date: 2023-09-17T00:00:00.000Z
 date: 2023-09-18T12:57:08.000Z
 rewatch: false

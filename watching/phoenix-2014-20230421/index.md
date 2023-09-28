@@ -2,7 +2,7 @@
 title: Phoenix
 display_title: Phoenix
 release_year: '2014'
-cover_image: /watching/phoenix-2014/phoenix-2014.jpg
+cover_image: /watching/phoenix-2014-20230421/phoenix-2014.jpg
 watched_date: 2023-04-21T00:00:00.000Z
 date: 2023-04-24T12:22:27.000Z
 rewatch: true

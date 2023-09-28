@@ -2,7 +2,7 @@
 title: Casablanca
 display_title: Casablanca
 release_year: '1942'
-cover_image: /watching/casablanca/casablanca.jpg
+cover_image: /watching/casablanca-20230727/casablanca.jpg
 watched_date: 2023-07-27T00:00:00.000Z
 date: 2023-07-28T20:36:43.000Z
 rewatch: true

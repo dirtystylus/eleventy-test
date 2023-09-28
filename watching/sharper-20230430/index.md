@@ -2,7 +2,7 @@
 title: Sharper
 display_title: Sharper
 release_year: '2023'
-cover_image: /watching/sharper/sharper.jpg
+cover_image: /watching/sharper-20230430/sharper.jpg
 watched_date: 2023-04-30T00:00:00.000Z
 date: 2023-04-30T17:23:25.000Z
 rewatch: false

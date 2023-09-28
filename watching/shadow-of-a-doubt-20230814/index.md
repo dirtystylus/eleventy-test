@@ -2,7 +2,7 @@
 title: Shadow of a Doubt
 display_title: Shadow of a Doubt
 release_year: '1943'
-cover_image: /watching/shadow-of-a-doubt/shadow-of-a-doubt.jpg
+cover_image: /watching/shadow-of-a-doubt-20230814/shadow-of-a-doubt.jpg
 watched_date: 2023-08-14T00:00:00.000Z
 date: 2023-08-15T15:19:02.000Z
 rewatch: false

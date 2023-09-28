@@ -2,7 +2,7 @@
 title: Edge of Tomorrow
 display_title: Edge of Tomorrow
 release_year: '2014'
-cover_image: /watching/edge-of-tomorrow/edge-of-tomorrow.jpg
+cover_image: /watching/edge-of-tomorrow-20230824/edge-of-tomorrow.jpg
 watched_date: 2023-08-24T00:00:00.000Z
 date: 2023-08-24T00:00:00.000Z
 rewatch: true

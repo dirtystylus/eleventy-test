@@ -2,7 +2,7 @@
 title: Ikiru
 display_title: Ikiru
 release_year: '1952'
-cover_image: /watching/ikiru/ikiru.jpg
+cover_image: /watching/ikiru-20230603/ikiru.jpg
 watched_date: 2023-06-03T00:00:00.000Z
 date: 2023-06-06T17:26:58.000Z
 rewatch: false

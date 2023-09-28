@@ -2,7 +2,7 @@
 title: Michael Clayton
 display_title: Michael Clayton
 release_year: '2007'
-cover_image: /watching/michael-clayton/michael-clayton.jpg
+cover_image: /watching/michael-clayton-20230505/michael-clayton.jpg
 watched_date: 2023-05-05T00:00:00.000Z
 date: 2023-05-06T03:00:35.000Z
 rewatch: true

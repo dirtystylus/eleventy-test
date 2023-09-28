@@ -2,8 +2,7 @@
 title: 'Teenage Mutant Ninja Turtles: Mutant Mayhem'
 display_title: 'Teenage Mutant Ninja Turtles: Mutant Mayhem'
 release_year: '2023'
-cover_image: >-
-  /watching/teenage-mutant-ninja-turtles-mutant-mayhem/teenage-mutant-ninja-turtles-mutant-mayhem.jpg
+cover_image: /watching/teenage-mutant-ninja-turtles-mutant-mayhem-20230827/teenage-mutant-ninja-turtles-mutant-mayhem.jpg
 watched_date: 2023-08-27T00:00:00.000Z
 date: 2023-08-27T18:50:24.000Z
 rewatch: false

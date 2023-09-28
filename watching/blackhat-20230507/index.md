@@ -2,7 +2,7 @@
 title: Blackhat
 display_title: Blackhat
 release_year: '2015'
-cover_image: /watching/blackhat/blackhat.jpg
+cover_image: /watching/blackhat-20230507/blackhat.jpg
 watched_date: 2023-05-07T00:00:00.000Z
 date: 2023-05-10T14:20:01.000Z
 rewatch: true

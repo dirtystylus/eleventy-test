@@ -2,7 +2,7 @@
 title: Decision to Leave
 display_title: Decision to Leave
 release_year: '2022'
-cover_image: /watching/decision-to-leave/decision-to-leave.jpg
+cover_image: /watching/decision-to-leave-20230423/decision-to-leave.jpg
 watched_date: 2023-01-15T00:00:00.000Z
 date: 2023-01-15T00:00:00.000Z
 rewatch: false

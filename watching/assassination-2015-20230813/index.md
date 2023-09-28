@@ -2,7 +2,7 @@
 title: Assassination
 display_title: Assassination
 release_year: '2015'
-cover_image: /watching/assassination-2015/assassination-2015.jpg
+cover_image: /watching/assassination-2015-20230813/assassination-2015.jpg
 watched_date: 2023-08-13T00:00:00.000Z
 date: 2023-08-15T00:00:00.000Z
 rewatch: false

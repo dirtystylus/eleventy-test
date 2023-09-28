@@ -2,7 +2,7 @@
 title: Barbie
 display_title: Barbie
 release_year: '2023'
-cover_image: /watching/barbie/barbie.jpg
+cover_image: /watching/barbie-20230730/barbie.jpg
 watched_date: 2023-07-30T00:00:00.000Z
 date: 2023-07-30T23:33:38.000Z
 rewatch: false

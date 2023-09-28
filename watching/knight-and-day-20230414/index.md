@@ -2,7 +2,7 @@
 title: Knight and Day
 display_title: Knight and Day
 release_year: '2010'
-cover_image: /watching/knight-and-day/knight-and-day.jpg
+cover_image: /watching/knight-and-day-20230414/knight-and-day.jpg
 watched_date: 2023-04-14T00:00:00.000Z
 date: 2023-04-14T00:00:00.000Z
 rewatch: false

@@ -2,7 +2,7 @@
 title: 'Juliet, Naked'
 display_title: 'Juliet, Naked'
 release_year: '2018'
-cover_image: /watching/juliet-naked/juliet-naked.jpg
+cover_image: /watching/juliet-naked-20230827/juliet-naked.jpg
 watched_date: 2023-08-27T00:00:00.000Z
 date: 2023-08-27T20:08:28.000Z
 rewatch: false
