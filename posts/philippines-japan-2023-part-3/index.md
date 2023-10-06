@@ -1,7 +1,7 @@
 ---
 title: 'Philippines & Japan 2023, Part Three: Puerto Princesa and Iloilo'
 display_title: 'Philippines & Japan 2023, Part Three: Puerto Princesa and Iloilo'
-description: Returning home after 36 years
+description: Returning home after 36 years.
 date: '2023-10-04T16:20:17.221-04:00'
 layout: layouts/post-gallery
 tags:
