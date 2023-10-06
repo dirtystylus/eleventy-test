@@ -89,11 +89,11 @@ After Miagao we spent some time on the campus of SEAFDEC (Southeast Asian Fisher
 
 Everything was small,[^2] except for the trees we used to climb. Those were huge.
 
-![A family of four stands in the driveway in front of a low-slung red house.](phl-jpn-puertoprincesa-iloilo-20.jpg "In front of our old house")
+![A family of four stands in the driveway in front of a low-slung red house.](phl-jpn-puertoprincesa-iloilo-20.jpg "In front of our old house. Photo © Joseph Llobrera.")
 
 Our elementary school was still there! Albeit renamed from West Visayas State University Laboratory School to Kinaadman Elementary.[^3]
 
-![Two men stand in front of a gated entrace to an elementary school called Kinaadman.](phl-jpn-puertoprincesa-iloilo-21.jpg "Elementary school")
+![Two men stand in front of a gated entrace to an elementary school called Kinaadman.](phl-jpn-puertoprincesa-iloilo-21.jpg "Elementary school. Photo © Joseph Llobrera.")
 
 We eventually made our way back to Iloilo city, stopping for lunch at a batchoy restaurant. Batchoy is a pork offal noodle soup that I’ve missed so much, it got its own bullet point on our itinerary.
 
