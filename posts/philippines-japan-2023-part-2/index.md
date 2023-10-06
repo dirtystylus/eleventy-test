@@ -16,7 +16,8 @@ Continuing my trip recap:
 
 * [DC to Coron](/posts/philippines-japan-2023-part-1)
 * El Nido (this leg)
-* Puerto Princesa/Iloilo/Cebu
+* [Puerto Princesa/Iloilo](/posts/philippines-japan-2023-part-3)
+* Cebu
 * Bohol
 * Manila
 * Tokyo
@@ -115,3 +116,5 @@ Some other shots from this leg (click to enlarge):
 - ![An ice cream cart with a color wheel umbrella stops in the middle of a dirt road lined with shops.](phl-jpn-elnido-13.jpg "Ice cream cart"){data-responsiver=gallery_2x3}
 - ![An Italian/Japanese restaurant named “Chef Mark Style”.](phl-jpn-elnido-14.jpg "I’m not sure I trust my namesake here given the food combination"){data-responsiver=gallery_2x3} 
 {% endgallery %}
+
+[More photos on Flickr](https://flic.kr/s/aHBqjAV99V).

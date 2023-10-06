@@ -1,7 +1,7 @@
 ---
 title: 'Mandy Brown: “Writers and talkers and leaders, oh my!”'
 display_title: 'Mandy Brown: “Writers and talkers and leaders, oh my!”'
-description: Communication modes, power, and ways to build collective understanding
+description: Communication modes, power, and ways to build collective understanding.
 date: '2023-09-27T15:46:42.580-04:00'
 tags:
   - links

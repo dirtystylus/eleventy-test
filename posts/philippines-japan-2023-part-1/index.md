@@ -22,7 +22,8 @@ Just poring over the sheer number of notes and photos from our trip, I’ve deci
 
 * DC to Coron (this leg)
 * [El Nido](/posts/philippines-japan-2023-part-2)
-* Puerto Princesa/Iloilo/Cebu
+* [Puerto Princesa/Iloilo](/posts/philippines-japan-2023-part-3)
+* Cebu
 * Bohol
 * Manila
 * Tokyo
@@ -68,5 +69,7 @@ Some other shots from this leg (click to enlarge):
 {% endgallery %}
 
 Coron was one of the big highlights of the trip for me—partly because I had never been there before, but also because we all got the sense that these spots would likely be too busy in the near future, overrun by tourists like myself. It was also fun to finally show my kids what Philippine beaches were like, justifying the snobbery I display whenever we are at the Jersey Shore.
+
+[More photos on Flickr](https://flic.kr/s/aHBqjAV99V).
 
 [^1]: Might I still have the ANA instrumental theme buried in my brain? Perhaps.

@@ -1,7 +1,7 @@
 ---
 title: 'Letterboxd to Markdown Update: Folder Dates for Rewatched Films'
 display_title: 'Letterboxd to Markdown Update: Folder Dates for Rewatched Films'
-description: Adjusting for rewatched films
+description: Adjusting for rewatched films.
 date: '2023-09-28T10:18:23.854-04:00'
 tags:
   - film
