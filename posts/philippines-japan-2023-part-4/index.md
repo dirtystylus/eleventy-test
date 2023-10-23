@@ -2,7 +2,7 @@
 title: 'Philippines & Japan 2023, Part Four: Cebu'
 display_title: 'Philippines & Japan 2023, Part Four: Cebu'
 description: A speed run through Cebu.
-date: '2023-10-20T09:12:26.111-04:00'
+date: '2023-10-23T15:57:56.132-04:00'
 layout: layouts/post-gallery
 tags:
   - cameras
