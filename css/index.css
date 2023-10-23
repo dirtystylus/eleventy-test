@@ -827,7 +827,7 @@ blockquote {
     align-items: flex-start;
   }
 
-  .tmpl-post .aside-right-wrap > p {
+  .tmpl-post .aside-right-wrap .aside-content {
     line-height: 1.4;
     flex: 2 70%;
   }
@@ -891,7 +891,7 @@ blockquote {
     margin: 0;
   }
 
-  .tmpl-post .aside-left-wrap > p {
+  .tmpl-post .aside-left-wrap .aside-content {
     line-height: 1.4;
     order: 2;
     flex: 2 70%;

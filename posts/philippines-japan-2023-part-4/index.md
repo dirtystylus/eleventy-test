@@ -24,7 +24,7 @@ Continuing my trip recap:
 
 ## Cebu
 
-Cebu is the second-largest city in the Philippines, and in a different itinerary we would have spent more time there. For us, though, it was a transit point onward to Bohol. 
+Cebu is the second-largest city in the Philippines, and in a different itinerary we would have spent more time there. For us, though, it was a quick transit point onward to Bohol. We had just a few hours to see the city before our afternoon ferry ride.
 
 We were back to a smaller propeller plane for our flight from Iloilo.
 
@@ -34,9 +34,9 @@ We were back to a smaller propeller plane for our flight from Iloilo.
 
 ## Alegre Guitars
 
-We first stopped in at the Alegre Guitar factory to get a quick tour of their operation. All of their guitars are handmade, and we got to take a peek at some of the craftspeople working on guitars and ukeleles at varying stages of the process. 
+We first stopped in at the Alegre Guitar factory to get a tour of their operation. All of their guitars are handmade, and we got to take a peek at some of the craftspeople working on guitars and ukeleles at varying stages of the process. 
 
-![A man assembles a guitar.](phl-jpn-cebu-3.jpg)
+![A man assembles a guitar.](phl-jpn-cebu-3.jpg){data-responsiver=cinemascope}
 
 ![A closeup of assembled guitars hanging in a row.](phl-jpn-cebu-4.jpg)
 
@@ -48,17 +48,13 @@ We first stopped in at the Alegre Guitar factory to get a quick tour of their op
 
 ## 7D Mango Factory
 
-From there it was on to the 7D mango factory, where we took the tour of their production floor. The 7D stands for “7 times more delicious”. 
+{% aside "7D stands for “seven times more delicious”, just a tasty fact.", "right"%}
 
-{% aside "7D stands for “Seven times more delicious”, just tasty fact.", "right"%}
-
-Overall, though, the Kindle’s interface still contains too many overloaded interface elements. Craig Mod took a look at the Kindle interaction model in this essay, and much of his critique still holds true: What is the iOS Kindle interaction model? The iOS Kindle model is the “hidden spaces” model. That is, all active interface elements are invisible. This “hidden spaces” model of interaction is supremely user antagonistic.
-
-{% endaside %}
+From there it was on to the 7D mango factory, where we took the tour of their sorting and packing operation. I wish we had gotten a peek at the earlier parts: slicing, drying, flavoring.
 
 After the tour we stocked up on different varieties for the rest of the trip and gifts for friends/family.
 
-![A truck painted with the word “Food” next to a smiling mango.](phl-jpn-cebu-8.jpg)
+{% endaside %}
 
 ![Workers at a bench fill bags with dried mangoes.](phl-jpn-cebu-9.jpg)
 
@@ -68,11 +64,13 @@ After the tour we stocked up on different varieties for the rest of the trip and
 
 ![A worker lifts a cardboard box stamped with “7D Mangoes” on its side.](phl-jpn-cebu-12.jpg)
 
+![A truck painted with the word “Food” next to a smiling mango.](phl-jpn-cebu-8.jpg)
+
 ## A Stop for Lechon
 
-We stopped at Rico’s for some lechon—a place that our driver for the day said was one of the more popular spots. The lechon was ok but the skin was chewy instead of crackly, a disappointment. The squid, however, was quite good.
+For lunch we stopped at Rico’s for some lechon—a place that our driver for the day said was one of the more popular spots. The lechon was ok but the skin was chewy instead of crackly, a disappointment. The squid, however, was quite good.
 
-![An illustrated pig printed to give the impression of it peeking around a plate.](phl-jpn-cebu-13.jpg "I love this little ")
+![An illustrated pig printed to give the impression of it peeking around a plate.](phl-jpn-cebu-13.jpg "I love this little pig placemat, which lines up perfectly with their plates.")
 
 ![A smiling woman holds up a can of Del Monte Four Seasons fruit juice.](phl-jpn-cebu-14.jpg "Mom posing with the Four Seasons drink she helped develop")
 
@@ -82,15 +80,17 @@ We stopped at Rico’s for some lechon—a place that our driver for the day sai
 
 ## The Ferry
 
-After lunch we went to the port to catch the ferry to Tagbilaran, Bohol. On the way we stopped real quick to view Magellan’s Cross.
+After lunch we went to the port to catch our ferry to Tagbilaran, Bohol. On the way we made a quick stop to view Magellan’s Cross.
 
-![](phl-jpn-cebu-17.jpg)
+![A cross in the center of a room with a painted ceiling marking the events of Magellan’s arrival in the Philippines.](phl-jpn-cebu-17.jpg)
 
-![](phl-jpn-cebu-18.jpg)
+![Multiple rows of yellow chairs in a waiting room for the ferry.](phl-jpn-cebu-18.jpg)
 
-![](phl-jpn-cebu-19.jpg)
+![A cartoon sailor character painted on the side of a passenger ferry.](phl-jpn-cebu-19.jpg)
 
-![](phl-jpn-cebu-20.jpg)
+![A ferry in the distance with “Lite Ferries” painted on the side](phl-jpn-cebu-20.jpg)
+
+[More photos on Flickr](https://flic.kr/s/aHBqjAV99V).
 
 
 

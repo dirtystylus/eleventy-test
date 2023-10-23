@@ -374,7 +374,7 @@ module.exports = function(eleventyConfig) {
       const asideText = markdownLibrary.render(aside.trim());
       const alignmentClass = alignment == 'left' ? 'aside-left-wrap': 'aside-right-wrap';
       const divContent = markdownLibrary.render(content.trim());
-      return `<div class="${alignmentClass}">${divContent}<aside>${asideText}</aside></div>`;
+      return `<div class="${alignmentClass}"><div class="aside-content">${divContent}</div><aside>${asideText}</aside></div>`;
     }
   );
 
