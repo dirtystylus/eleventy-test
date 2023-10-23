@@ -369,6 +369,15 @@ module.exports = function(eleventyConfig) {
     }
   );
 
+  eleventyConfig.addPairedShortcode(
+    "aside", (content, aside, alignment) => {
+      const asideText = markdownLibrary.render(aside.trim());
+      const alignmentClass = alignment == 'left' ? 'aside-left-wrap': 'aside-right-wrap';
+      const divContent = markdownLibrary.render(content.trim());
+      return `<div class="${alignmentClass}">${divContent}<aside>${asideText}</aside></div>`;
+    }
+  );
+
   // Images Responsiver
   const imagesResponsiverConfig = require("./src/utils/images-responsiver-config.js");
   eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
