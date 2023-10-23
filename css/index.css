@@ -762,6 +762,10 @@ blockquote {
   grid-column: 1;
 }
 
+.tmpl-post .aside-right-wrap .aside-content > p:last-child {
+  margin-bottom: 1em;
+}
+
 @media (min-width: 45em) {
   .tmpl-post .aside-right-wrap {
     grid-column: content-start / content-gutter-end;
@@ -866,6 +870,10 @@ blockquote {
 }
 
 .tmpl-post .aside-left-wrap > aside > p:last-child {
+  margin-bottom: 1em;
+}
+
+.tmpl-post .aside-left-wrap .aside-content > p:last-child {
   margin-bottom: 1em;
 }
 
