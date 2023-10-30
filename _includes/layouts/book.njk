@@ -15,6 +15,10 @@ templateClass: tmpl-book
       <dd>{{ genre }}</dd>
       <dt>Format</dt>
       <dd>{{ format }}</dd>
+      {% if page_count %}
+      <dt>Pages</dt>
+      <dd>{{ page_count }}</dd>
+      {% endif %}
       <dt>Started Reading</dt>
       <dd>{{ start_date | readableDate }}</dd>
       <dt>Finished Reading</dt>
