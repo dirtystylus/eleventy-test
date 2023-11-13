@@ -132,7 +132,7 @@ We walked into a small town square and happened upon a performance by a troupe o
 
 ## Balicasag Island
 
-The next day we boarded a boat to Balicasag Island, a popular destination for snorkeling.
+The next day we boarded a boat to Balicasag Island, a popular destination for snorkeling. The bangka was *loud*! I recommend bringing earplugs if you’re taking these smaller boats around islands—some of them have engine mufflers, and some will absolutely shatter your eardrums.
 
 ![A family boards an outrigger boat using a short set of wooden stairs.](PXL_20230630_003424152.jpg "Photo © Joseph Llobrera")
 
