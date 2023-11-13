@@ -17,8 +17,8 @@ Continuing my trip recap:
 * [DC to Coron](/posts/philippines-japan-2023-part-1)
 * [El Nido](/posts/philippines-japan-2023-part-2)
 * Puerto Princesa/Iloilo (this leg)
-* Cebu
-* Bohol
+* [Cebu](/posts/philippines-japan-2023-part-4)
+* [Bohol](/posts/philippines-japan-2023-part-5)
 * Manila
 * Tokyo
 
