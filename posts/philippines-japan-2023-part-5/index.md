@@ -70,7 +70,7 @@ It was a *hot* day, and we didn’t last too long up at the observation deck. We
 
 The next stop was the Tarsier Conservation Area, where we got a glimpse of the tiny, endanged creatures. Most were asleep but occasionally you would see one with their eyes open. There were staff members along a winding path who would take a photo of them with your camera, so this was one recorded for my niece:
 
-![A series of small brown hills recedes into the horizon.](PXL_20230629_032309182.NIGHT.jpg)
+![A series of small brown hills recedes into the horizon.](PXL_20230629_032309182.NIGHT.jpg "Photo © Melanie Llobrera")
 
 There was a small hut attached to the main area that served fresh buko juice, so we ordered a few for refreshment.
 
@@ -179,6 +179,8 @@ On the way back from Balicasag our boat stopped at Virgin Island, which is a lon
 The island also possesses some weird temporal magic, apparently. This is one of my favorite photos, where my daughter appears to be slipping between realities:
 
 ![A photo glitch splitting the frame in half vertically, so that a girl in the foreground looks like the two halves of her body are offset.](phl-jpn-bohol-31.jpg "Splinched")
+
+Getting three full days in Bohol felt like a luxury after the series of quick stops through Iloilo and Cebu. I’d love to go back again, this time with our friend Jill so she can take us to all the local spots she remembers from her childhood.
 
 [More photos on Flickr](https://flic.kr/s/aHBqjAV99V).
 
