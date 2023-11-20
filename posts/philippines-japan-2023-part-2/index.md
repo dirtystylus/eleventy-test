@@ -17,8 +17,8 @@ Continuing my trip recap:
 * [DC to Coron](/posts/philippines-japan-2023-part-1)
 * El Nido (this leg)
 * [Puerto Princesa/Iloilo](/posts/philippines-japan-2023-part-3)
-* Cebu
-* Bohol
+* [Cebu](/posts/philippines-japan-2023-part-4)
+* [Bohol](/posts/philippines-japan-2023-part-5)
 * Manila
 * Tokyo
 
@@ -32,7 +32,7 @@ We had originally intended to see what tour packages the hotel offered but the m
 
 ## Big Lagoon
 
-The first stop on our tour was the Big Lagoon on Miniloc Island, and our guide wanted to get us there early before the rest of the tour groups started to crowd in. We anchored offshore where there was a kayak rental station, transferred from the banka to kayaks, and paddled in. My dad and I shared a kayak.
+The first stop on our tour was the Big Lagoon on Miniloc Island, and our guide wanted to get us there early before the rest of the tour groups started to crowd in. We anchored offshore where there was a kayak rental station, transferred from the bangka to kayaks, and paddled in. My dad and I shared a kayak.
 
 {% videoloop "./phl-jpn-elnido-biglagoon.mp4", "View from behind multiple kayaks paddling between small islands." %}
 
@@ -64,9 +64,9 @@ After you’re done with drinking the buko juice they cut up the coconut for you
 
 ## Seven Commando Beach
 
-We could see the clouds rolling in while we were on Entalula Island, so we got on the boat to try and make it to Seven Commando Beach. We ended up running straight into pretty heavy rains, and we huddled tightly under the banka canopy. It didn’t help much, though—the rain was so heavy. I was impressed at the crew’s ability to navigate in the rain and fog.
+We could see the clouds rolling in while we were on Entalula Island, so we got on the boat to try and make it to Seven Commando Beach. We ended up running straight into pretty heavy rains, and we huddled tightly under the bangka canopy. It didn’t help much, though—the rain was so heavy. I was impressed at the crew’s ability to navigate in the rain and fog.
 
-{% videoloop "./phl-jpn-elnido-banka.mp4", "A view from a banka in a rainstorm, the shoreline shrouded in fog." %}
+{% videoloop "./phl-jpn-elnido-bangka.mp4", "A view from a bangka in a rainstorm, the shoreline shrouded in fog." %}
 
 Fighting through the rain (no audio). *[Full version on Flickr](https://flic.kr/p/2p3K3zH)*.
 
