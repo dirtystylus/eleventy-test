@@ -1,6 +1,6 @@
 ---
-title: Trust (Pulitzer Prize Winner)
-display_title: Trust (Pulitzer Prize Winner)
+title: Trust
+display_title: Trust
 author: Hernan Diaz
 isbn: 0593420314
 cover_image: /reading/trust/trust.jpg
