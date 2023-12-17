@@ -25,7 +25,7 @@ Just poring over the sheer number of notes and photos from our trip, I’ve deci
 * [Puerto Princesa/Iloilo](/posts/philippines-japan-2023-part-3)
 * [Cebu](/posts/philippines-japan-2023-part-4)
 * [Bohol](/posts/philippines-japan-2023-part-5)
-* Manila
+* [Manila](/posts/philippines-japan-2023-part-6)
 * Tokyo
 
 ## Ready, set…wait.

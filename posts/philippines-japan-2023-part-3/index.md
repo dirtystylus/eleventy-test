@@ -19,7 +19,7 @@ Continuing my trip recap:
 * Puerto Princesa/Iloilo (this leg)
 * [Cebu](/posts/philippines-japan-2023-part-4)
 * [Bohol](/posts/philippines-japan-2023-part-5)
-* Manila
+* [Manila](/posts/philippines-japan-2023-part-6)
 * Tokyo
 
 ## Puerto Princesa
