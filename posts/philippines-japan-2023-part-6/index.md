@@ -2,7 +2,7 @@
 title: 'Philippines & Japan 2023, Part Six: Manila'
 display_title: 'Philippines & Japan 2023, Part Six: Manila'
 description: Back in the capital.
-date: '2023-11-29T13:44:23.459-05:00'
+date: '2023-12-17T12:08:06.450-05:00'
 layout: layouts/post-gallery
 tags:
   - cameras
