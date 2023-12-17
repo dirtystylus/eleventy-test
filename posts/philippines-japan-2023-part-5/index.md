@@ -19,7 +19,7 @@ Continuing my trip recap:
 * [Puerto Princesa/Iloilo](/posts/philippines-japan-2023-part-3)
 * [Cebu](/posts/philippines-japan-2023-part-4)
 * Bohol (this leg)
-* Manila
+* [Manila](/posts/philippines-japan-2023-part-6)
 * Tokyo
 
 ## Wherein our steamer comes into port
