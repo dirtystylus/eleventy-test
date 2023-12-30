@@ -1,8 +1,8 @@
 ---
 title: 'Philippines & Japan 2023, Part Seven: Tokyo'
 display_title: 'Philippines & Japan 2023, Part Seven: Tokyo'
-description: replace
-date: '2023-12-25T17:02:10.612-05:00'
+description: A taste of Tokyo.
+date: '2023-12-30T16:02:16.050-05:00'
 layout: layouts/post-gallery
 tags:
   - cameras
@@ -24,23 +24,23 @@ Concluding my trip recap:
 
 ## Arrival
 
-Flight from Manila was uneventful. We packed into two Grab cars and flew ANA into Narita.
+Our flight from Manila was uneventful. We packed into two Grab cars and flew ANA to Narita. The kids (who love their Nintendo Switch) were very pleased to be greeted by Mario and Yoshi and all I can say is, well played, Nintendo.
 
 ![Characters from Nintendo’s Super Mario video game series hold up signs welcoming travelers to Japan.](phl-jpn-tokyo-1.jpg)
 
 ![A father and daughter wearing masks pose for a selfie while riding an escalator. On the wall in the background are ghost characters from Nintendo’s Super Mario video games.](phl-jpn-tokyo-2.jpg)
 
-We took the JR Express from the airport to the heart of Tokyo for the kids to experience the trains
+We elected to take the JR Express from the airport. My kingdom for a first-class rail system in the United States, I don’t know if Americans are aware of how terribly our systems compare to other major cities!
 
 ![View from inside a JR Express train car.](phl-jpn-tokyo-3.jpg)
 
 {% videoloop "./phl-jpn-tokyo-4.mp4", "A view from a window on the JR Express into Tokyo with Tokyo Skytree visible behind the buildings." %}
 
-JR Express into Tokyo (no audio)
+JR Express into Tokyo (no audio). [*Full version on Flickr*](https://flic.kr/p/2ppobcX).
 
 {% endvideoloop %}
 
-![A vending machine on a rail platform. Across the top of the machine is the message, “Feel and Taste Japan Through Vending Machines”](phl-jpn-tokyo-5.jpg "You can tell a lot about a country by its…vending machines")
+![A vending machine on a rail platform. Across the top of the machine is the message, “Feel and Taste Japan Through Vending Machines”](phl-jpn-tokyo-5.jpg "You can tell a lot about a country by its…vending machines?")
 
 Our Airbnb was located in Shinjuku, not too far from the Shin-Ōkubo JR station. It was accessed via a narrow alleyway, which held some surprises:
 
@@ -54,19 +54,19 @@ Our Airbnb was located in Shinjuku, not too far from the Shin-Ōkubo JR station.
 
 {% endgallery %}
 
-Once we got settled we tried to figure out dinner plans, which was a challenge with 9 people.[^1] Instead of trying to find a restaurant that could accomodate a large party we headed to one of the local grocery stores and assembled a meal from some of the packaged sushi/dumplings/etc
+Once we got settled we tried to figure out dinner plans, which was a challenge with 9 people.[^1] Instead of trying to find a restaurant that could accomodate a large party we headed to one of the local grocery stores and assembled a meal from some of the packaged sushi/dumplings/etc.
 
-![A dining table filled with packaged sushi, dumplings, and edamame.](phl-jpn-tokyo-9.jpg "Supermarket dinner")
+![A dining table filled with packaged sushi, dumplings, and edamame.](phl-jpn-tokyo-9.jpg "Supermarket dinner. Photo © Joseph Llobrera.")
 
-We crammed in and had a decent meal, then passed out in anticipation of a big day.
+We crammed into the tiny dining room and had a decent meal, then passed out in anticipation of the next day.
 
 ## Day One
 
 ### Asakusa/Sensōji
 
-It had been 18 years since my last visit to Japan, and I had forgotten that the train system is a mix of Tokyo subway and JR-operated lines, so that made for some confusion, especially since we didn’t opt for the Suica/Pasmo transit cards for such a short trip. As efficient as the Tokyo transit system is, the UX of its vending machines could really use an update.
+It had been 18 years since my last visit to Japan, and I had forgotten that the train system is a mix of Tokyo subway and JR-operated lines, so that made for some confusion—especially since we didn’t opt to get Suica or Pasmo transit cards for such a short trip.[^2] As efficient as the Tokyo transit system is, the UX of its vending machines could really use an update.
 
-![A row of vending machines under a map of the Tokyo rail system.](phl-jpn-tokyo-10.jpg "Dad and me trying to figure out child/adult tickets to get to Asakusa"){data-responsiver=cinemascope}
+![A row of vending machines under a map of the Tokyo rail system.](phl-jpn-tokyo-10.jpg "Dad and me trying to figure out child/adult tickets to get to Asakusa. Photo © Joseph Llobrera."){data-responsiver=cinemascope}
 
 {% gallery %}
 
@@ -81,7 +81,7 @@ It had been 18 years since my last visit to Japan, and I had forgotten that the 
 
 {% videoloop "./phl-jpn-tokyo-15.mp4", "A set of toys in clear packaging: waving lucky cat toys, and a man eating ramen." %}
 
-Hypnotic (no audio)
+Hypnotic (no audio). [*Full version on Flickr*](https://flic.kr/p/2ppp1sA).
 
 {% endvideoloop %}
 
@@ -93,7 +93,7 @@ Hypnotic (no audio)
 * ![A man in a mask stands in front of a store with a decorative metal sliding door.](phl-jpn-tokyo-26.jpg "Dad taking a breather from the crush"){data-responsiver=gallery_3x2}
 * ![A family dressed in colorful kimonos.](phl-jpn-tokyo-27.jpg){data-responsiver=gallery_2x3}
 * ![Side street off the main Nakamise Shopping Street. Two women wearing kimonos walk under a decorative sign.](phl-jpn-tokyo-28.jpg){data-responsiver=gallery_2x3}
-* ![A girl in a green shirt holds up an ice cream sandwice.](phl-jpn-tokyo-29.jpg "S with a sesame ice cream treat"){data-responsiver=gallery_3x2}
+* ![A girl in a green shirt holds up an ice cream sandwice.](phl-jpn-tokyo-29.jpg "S with a sesame ice cream treat"){data-responsiver=gallery_2x3}
 * ![Closeup of a girl biting into an ice cream sandwich.](phl-jpn-tokyo-30.jpg){data-responsiver=gallery_3x2}
 * ![A girl unwraps a delicate glass figurine of a koi.](phl-jpn-tokyo-31.jpg "E with a glass koi figurine"){data-responsiver=gallery_3x2}
 * ![A girl smiles in front of Hōzōmon gate.](phl-jpn-tokyo-16.jpg "S in front of Hōzōmon gate"){data-responsiver=gallery_3x4}
@@ -136,7 +136,7 @@ While some of us decided to go back to the shops my brother, my dad, and I went 
 
 ### Imperial Palace
 
-We boarded a tokyo hop on/hop off bus bound for the Imperial Palace
+After lunch we boarded a [hop-on/hop-off bus](https://skyhopbus.tokyo/en/) route bound for the Imperial Palace.
 
 ![Seimon Ishibashi bridge in front of Tokyo’s Imperial Palace.](phl-jpn-tokyo-47.jpg "Seimon Ishibashi bridge"){data-responsiver=cinemascope}
 
@@ -157,7 +157,7 @@ The palace area was also great for fun signs:
 {% gallery %}
 
 * ![Yellow crossing sign with silhouttes of children in school clothes.](phl-jpn-tokyo-51.jpg){data-responsiver=gallery_2x3}
-* ![Red-bordered crosswalk sign with an illustrated blue silhouette of a person wearing a hat.](phl-jpn-tokyo-52.jpg "I loved the hats on the figures in this crosswalk sign"){data-responsiver=gallery_3x2}
+* ![Red-bordered crosswalk sign with an illustrated blue silhouette of a person wearing a hat.](phl-jpn-tokyo-52.jpg "I loved the hat on the figure in this crosswalk sign"){data-responsiver=gallery_3x2}
 * ![Signage in front of a urinal urging people to step closer.](phl-jpn-tokyo-53.jpg "I found Japan’s bathroom signage to be very prescriptive"){data-responsiver=gallery_3x2}
 * ![Signs in Kokyo Gaien National Garden prohibiting the playing of soccer, and skateboarding.](phl-jpn-tokyo-54.jpg "[giggles]"){data-responsiver=gallery_2x3}
 
@@ -166,7 +166,7 @@ The palace area was also great for fun signs:
 
 ### Shibuya
 
-Waiting for the hop-on/hop-off bus we took refuge at a the *Have a Nice Tokyo!* visitor center in the Mitsubishi Building. I liked the walls a lot:
+Waiting for the next bus headed to Shibuya we took refuge at a the [*Have a Nice Tokyo!*](https://haveanice.jp/en/index.html) visitor center in the Mitsubishi Building. I liked the walls a lot:
 
 ![A large room with a patterned wooden wall. Small wooden stools are arranged in rows in the foreground, while in the background a woman seated at a small table speaks on her cellphone.](phl-jpn-tokyo-55.jpg)
 
@@ -174,7 +174,7 @@ Outside the center we encountered a security bot:
 
 {% videoloop "./phl-jpn-tokyo-56.mp4", "A white security robot topped with a spinning camera assembly." %}
 
-Paul Blart: Mall Cop (2009) (no audio)
+Paul Blart: Mall Cop (2009) (no audio). [*Full version on Flickr*](https://flic.kr/p/2pphCTy).
 
 {% endvideoloop %}
 
@@ -182,25 +182,25 @@ Some sights from the bus:
 
 {% gallery %}
 
-* ![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-57.jpg){data-responsiver=gallery_3x4}
-* ![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-58.jpg){data-responsiver= gallery_3x4}
-* ![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-59.jpg){data-responsiver= gallery_3x4}
-* ![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-60.jpg){data-responsiver=gallery_3x2}
-* ![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-61.jpg){data-responsiver=gallery_3x2}
-* ![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-62.jpg){data-responsiver=gallery_2x3}
-* ![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-64.jpg){data-responsiver=gallery_3x4}
+* ![A plane flying high above a row of skyscrapers.](phl-jpn-tokyo-57.jpg){data-responsiver=gallery_3x4}
+* ![Cars in a busy intersection.](phl-jpn-tokyo-58.jpg){data-responsiver= gallery_3x4}
+* ![A tall building topped with an advertisement for Tano, featuring a cartoon dog with Tano-kun written across its neck like a collar.](phl-jpn-tokyo-59.jpg){data-responsiver= gallery_3x4}
+* ![Green sign atop Ueno rail station.](phl-jpn-tokyo-60.jpg){data-responsiver=gallery_3x2}
+* ![Cafe sign reading “HARBS”.](phl-jpn-tokyo-61.jpg "Harbo-loading"){data-responsiver=gallery_3x2}
+* ![Advertisement  in a window for a cat cafe.](phl-jpn-tokyo-62.jpg "Cat cafe"){data-responsiver=gallery_2x3}
+* ![Colorful mural of a turtle climbing the outside of a vibrant yellow building.](phl-jpn-tokyo-64.jpg){data-responsiver=gallery_3x4}
 
 {% endgallery %}
 
 {% videoloop "./phl-jpn-tokyo-63.mp4", "An airplane far above the city" %}
 
-A steady stream of airplanes crossing over Tokyo (no audio)
+A steady stream of airplanes crossing over Tokyo (no audio). [*Full version on Flickr*](https://flic.kr/p/2ppob45).
 
 {% endvideoloop %}
 
 The girls had a lot of fun bouncing off the padded decorative exterior of the Moncler store:
 
-![Tourists in colorful kimonos in front of Hōzōmon temple.](phl-jpn-tokyo-65.jpg)
+![Exterior of a Moncler winter apparel store, with silver puffy sections mimicking a puffer jacket.](phl-jpn-tokyo-65.jpg)
 
 {% videoloop "./phl-jpn-tokyo-66.mp4", "A Moncler shop selling outerwear and winter clothing. The exterior is covered with a silver puffy material to mimic a puffer jacket. A girl pushes the exterior, charmed by the bouncy give of the material." %}
 
@@ -224,7 +224,7 @@ Dinner brought a new experience for the kids: conveyor belt sushi! The sushi was
 
 {% videoloop "./phl-jpn-tokyo-73.mp4", "A sushi chef finishes prepping some sushi platters with a blowtorch. In the foreground a conveyor belt bearing sushi on small plates steadily trundles by." %}
 
-Conveyor belt sushi (no audio)
+Conveyor belt sushi (no audio). [*Full version on Flickr*](https://flic.kr/p/2ppp1oc).
 
 {% endvideoloop %}
 
@@ -236,11 +236,122 @@ We capped the night off by observing the famous Shibuya scramble, incredibly bus
 
 {% videoloop "./phl-jpn-tokyo-76.mp4", "Shibuya Crossing: multiple streams of pedestrians cross from multiple intersections in a mix of chaos and order." %}
 
-Shibuya Scramble (no audio)
+Shibuya Scramble (no audio). [*Full version on Flickr*](https://flic.kr/p/2pphDfk).
 
 {% endvideoloop %}
 
 ![A billboard advertising the Shibuya Mark City store. Two illustrated silhouettes of dogs. Under the first dog it says “I’m Mark.”, under the other, “I’m City.”.](phl-jpn-tokyo-78.jpg "I’m Mark, my job is City.")
 
+## Day Two
 
-[^1]: My brother had asked our host for local restaurant picks, and they replied that the neighborhood was actually more Korean than Japanese and they could not recommend any restaurants. Anti-Korean xenophobia in Japan is still very much alive, folks.
+### Shin-Yokohama by Shinkansen
+
+The anchor of our second day was a visit to the [Shin-Yokohama Ramen Museum](https://www.raumen.co.jp/english/). We elected to take the Shinkansen so the kids could say they experienced it, even though Shin-Yokohama is only about twenty miles away and the Shinkansen wouldn’t reach anywhere close to its top speed.
+
+![Elongated nose of a Shinkansen train pulling into the station.](phl-jpn-tokyo-80.jpg){data-responsiver=cinemascope}
+
+{% videoloop "./phl-jpn-tokyo-92.mp4", "A shinkansen train passes through a rail stop" %}
+
+Shinkansen passing through (no audio). [*Full version on Flickr*](https://flic.kr/p/2ppoaYL).
+
+{% endvideoloop %}
+
+![A man and his daughter sitting inside a Shinkansen rail car.](phl-jpn-tokyo-79.jpg "S and me")
+
+### Shin-Yokohama Ramen Museum
+
+{% videoloop "./phl-jpn-tokyo-81.mp4", "A mechanical sculpture of a ramen bowl, with chopsticks moving up and down to lift noodles out of the bowl" %}
+
+Ramen is magic (no audio). [*Full version on Flickr*](https://flic.kr/p/2ppp1on).
+
+{% endvideoloop %}
+
+The museum occupies two main areas—the first floor has an exhibition on the history of ramen, covering its earliest iterations and its explosion in popularity in the 1990s. There was also the Ra-haku Sugomen Lab where you could assemble your own customized bowl of instant ramen, delivered to you in a shrinkwrapped container for later consumption.
+
+![A woman assembles a bowl of instant ramen from a set of ingredients before her.](PXL_20230706_033313497.jpg "Ramen Lab. Photo © Kristen Llobrera.")
+
+{% gallery %}
+
+* ![A girl sits on a seat sculpted to look like a large ball of uncooked ramen noodles.](phl-jpn-tokyo-82.jpg "S on a ramen chair. Photo © Kristen Llobrera"){data-responsiver=gallery_3x4}
+* ![Rows of different ramen bowls mounted on a wall.](phl-jpn-tokyo-84.jpg "Ramen bowl exhibition "){data-responsiver=gallery_3x2}
+* ![Recreation of a wooden ramen cart.](phl-jpn-tokyo-111.jpg){data-responsiver=gallery_4x3}
+* ![Outline map of japan with different ramen bowls affixed to different areas. In front is a touchscreen which visitors can use to explore the different ramen varieties from each region of the country.](phl-jpn-tokyo-112.jpg "Ramen map"){data-responsiver=gallery_4x3}
+
+{% endgallery %}
+
+The basement housed a two-story area filled with recreations of ramen stalls from various eras of Japan’s history. Each stall served a different variety of ramen tied to that era. It’s all very reminiscent of a Disney theme park but despite the kitsch I really enjoyed the experience.
+
+![A series of ramen shops whose facades recreate different historical eras of Japan.](phl-jpn-tokyo-86.jpg){data-responsiver=cinemascope}  
+
+{% gallery %}
+
+* ![View of the basement of the Shin-Yokohama Ramen Museum, recreating various eras of Japanese ramen shops.](phl-jpn-tokyo-85.jpg){data-responsiver=gallery_3x4}
+* ![Red neon sign saying “Flower Garden”.](phl-jpn-tokyo-87.jpg "Google translates this as “Flower Garden”"){data-responsiver=gallery_3x4}
+* ![A girl holds chopsticks poised over a bowl of ramen.](phl-jpn-tokyo-88.jpg "E about to dive in"){data-responsiver=gallery_3x2}
+* ![A directory of different ramen shops.](phl-jpn-tokyo-89.jpg){data-responsiver=gallery_2x3}
+* ![A glass case holding models of different dessert options.](phl-jpn-tokyo-90.jpg "E about to dive in"){data-responsiver=gallery_2x3}
+* ![A sign for a dessert shop named Kateko.](phl-jpn-tokyo-91.jpg "Dessert shop"){data-responsiver=gallery_2x3}
+
+{% endgallery %}
+
+We had an option to take one of the regular regional trains back to Tokyo, but the kids really wanted to ride the Shinkansen back. If we come back I’d love to take the kids to Kyoto or Osaka on the Shinkansen so they could really experience high-speed rail.
+
+### Splitting Up
+
+We made it back to Tokyo station in the early afternoon, and it quickly became evident that we wanted to do different things for the remainder of our last day in Tokyo: my parents wanted to get back on the hop-on/hop-off bus to see other areas of the city, my brother and his family wanted to go to Harajuku, and I wanted to check out the observation tower at the [Tokyo Metropolitan Government Office](https://www.yokoso.metro.tokyo.lg.jp/en/tenbou/index.html). I knew I did not want to get on a open-decked bus in the middle of a Tokyo summer. This led to one of our party throwing a tantrum of embarrassing proportions.[^3] Let this be a lesson to build in separate activities when you are traveling with family!
+
+So: my brother and his family went with my parents, and my family and I set off for the observation deck in Shinjuku. It was a bit confusing once we got there due to ongoing construction, but eventually we made our way to the correct tower. There’s a dedicated elevator that takes you straight to the observatory. In the center there’s a nice shop with books, clothing, and souvenirs, and the outer windows give you a 360º view of the city.
+
+![The twin towers of the Tokyo Metropolitan Government Office.](phl-jpn-tokyo-93.jpg "Tokyo Metropolitan Government Office")
+
+The views are really something. We could *juuuust* barely make out Mount Fuji in the distance:
+
+![Mt Fuji, covered with cloud.](phl-jpn-tokyo-100.jpg "Mt. Fuji is there, under the clouds"){data-responsiver=cinemascope}
+
+{% gallery %}
+
+* ![A view of a very green park, surrounded on all sides by buildings.](phl-jpn-tokyo-94.jpg){data-responsiver=gallery_4x3}
+* ![Tourists shopping and sitting underneath a domed ceiling.](phl-jpn-tokyo-95.jpg){data-responsiver=gallery_4x3}
+* ![Silhouette of two girls looking out on Tokyo through a floor-to-ceiling window.](phl-jpn-tokyo-99.jpg){data-responsiver=gallery_2x3}
+
+{% endgallery %}
+
+After we left the observation deck we walked back through Shinjuku, where I popped into a Yodobashi Camera. They unfortunately did not have any of the Fujifilm items I wanted in stock, which is no surprise given that brand’s well-documented production issues.
+
+![A camera shop display with multiple camera bodies and lenses densely arranged around a table.](phl-jpn-tokyo-103.jpg "Yodobashi Camera")
+
+While I was geeking out over cameras my kids stopped at one of the vending machines outside:
+
+![Two girls in front of a row of vending machines.](phl-jpn-tokyo-104.jpg)
+
+Then it was back to Shin-Okubo to regroup with our family and grab dinner.
+
+## Departure
+
+The next morning we packed up. We were flying out of Haneda so we grabbed a quick breakfast in the neighborhood and then made our way back to Shinjuku to catch one of the airport buses from Shinjuku Express Bus Terminal.
+
+{% gallery %}
+
+* ![A vending machine for sriracha hot sauce, shaped like a bottle of sriracha.](phl-jpn-tokyo-106.jpg "Sriracha vending machine. Photo © Joseph Llobrera."){data-responsiver=gallery_3x4}
+* ![An egg decorated with a face and the words “Eat Me?”.](phl-jpn-tokyo-107.jpg){data-responsiver=gallery_3x4}
+* ![Breakfast sandwich from a cafe called Egg On.](phl-jpn-tokyo-108.jpg "This feels like a cultural analog to a bodega breakfast sandwich"){data-responsiver=gallery_3x4}
+* ![A row of colorful hard-sided rolling suitcases lined up outside an apartment building.](phl-jpn-tokyo-109.jpg "Waiting for the rideshare to Shinjuku station"){data-responsiver=gallery_3x4}
+* ![Sign declaring Shinjuku Express Bus Terminal to be an alcohol-free zone.](phl-jpn-tokyo-110.jpg){data-responsiver=gallery_3x4}
+
+{% endgallery %}
+
+## Reflecting
+
+That’s a wrap on this two-country travelogue! It was a whirlwind summer and I’m glad my whole family got to make the trip—it was deeply meaningful to have my kids see the places where I grew up, so the Philippines can be more than an abstraction for them. But beyond that it was so much fun to see places in the Philippines that I never got to visit in the decade I spent living there. I hope it won’t be another 25 years before my next trip back.
+
+The trip definitely packed in a very aggressive itinerary, and we all agreed that next time would probably focus on just a couple of places, now that everyone has gotten the overview of the country.
+
+As for Japan: Tokyo remains one of my favorite cities, and I think we could have used a solid week there to give us time to visit other areas in Japan. I think it was good for my kids to go from one country where English was so widely spoken, to another where they could feel the language barrier. To be fair, Google Translate made communicating *so* much easier than my last trip 18 years ago.
+
+[More photos on Flickr](https://flic.kr/s/aHBqjAV99V).
+
+[^1]: My brother had asked our Airbnb host for local restaurant picks, and they replied that since the neighborhood was actually more Korean than Japanese they could not recommend any restaurants. Anti-Korean xenophobia in Japan is still very much alive, folks.
+
+[^2]: Our youngest didn’t have their own phone at the time of the trip, I imagine if we were to do this again we would just use the Suica mobile app.
+
+[^3]: Me. It was me.
