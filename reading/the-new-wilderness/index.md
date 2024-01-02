@@ -10,7 +10,7 @@ page_count: 416
 publication_date: '2020-08-11'
 publisher: Harper
 print_type: BOOK
-date: '2023-12-31T22:03:17.469-05:00'
+date: '2023-12-31T12:03:17.469-05:00'
 start_date: '2023-12-18'
 end_date: '2023-12-31'
 ---
