@@ -41,6 +41,16 @@ For my carry-on gear I used a [Bellroy Venture Backpack](https://packhacker.com/
 
 For walking around I used a [9L Bellroy Venture Sling](https://bellroy.com/products/venture-sling?color=ranger_green&material=baida_nylon&size=9l#slide-0). It’s pretty big for everyday use, but I chose it because I could fit a camera, a small 12 oz water bottle, and a packable windbreaker. I’m pretty happy with it although I wish the strap got a tiny bit tighter, for less movement when it’s not fully loaded.
 
+We were on lots of tiny bangka boats in the Philippines, so I’m glad I packed a dry bag. We should have picked up properly-sized snorkel gear for our kids—they would have enjoyed the [Balicasag island excursion in Bohol](/posts/philippines-japan-2023-part-5/)  far more if they weren’t using the one-size-fits-all snorkels.
+
+## Audio
+
+At work I prefer over-ear headphones with a proper wired connection. But for this trip I took a chance and used a pair of Apple’s Airpods Pro—and I have to say that for travel they worked great, and they saved me a lot of space and weight in my backpack. I tend not to use them around the house, but for quick commutes to the office they’re quite handy.[^3]
+
+Finally: don’t forget earplugs! I have a decent pair from Loop, and forgot to bring them the [one time](/posts/philippines-japan-2023-part-5/#balicasag-island) I really needed them. 
+
 [^1]: I got the X-T30 back in 2019 as a stopgap, waiting for the latest version of the X100 to be released, which turned out to be the X100V. I figured I would pick one up before our trip, but did not anticipate the camera being impossible to find, due to a combination of production issues as well as a spike in popularity due to…Tiktok. I almost took my old X100S on the trip, but mine has a wonky power switch and the autofocus is pretty slow.
 
 [^2]: I went back and forth on this decision for a while, but I eventually left it because I wanted to make sure I didn’t do any work, and once I drew that line there were very few other things that necessitated a laptop.
+
+[^3]: I do have a pair of Master & Dynamic MW65 headphones, which sound great but have pretty mediocre ANC. I use them almost exclusively for watching TV/movies on one of our TVs at home.

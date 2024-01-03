@@ -20,7 +20,7 @@ Continuing my trip recap:
 * [Cebu](/posts/philippines-japan-2023-part-4)
 * Bohol (this leg)
 * [Manila](/posts/philippines-japan-2023-part-6)
-* Tokyo
+* [Tokyo](/posts/philippines-japan-2023-part-7)
 
 ## Wherein our steamer comes into port
 

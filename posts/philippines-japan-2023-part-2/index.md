@@ -20,7 +20,7 @@ Continuing my trip recap:
 * [Cebu](/posts/philippines-japan-2023-part-4)
 * [Bohol](/posts/philippines-japan-2023-part-5)
 * [Manila](/posts/philippines-japan-2023-part-6)
-* Tokyo
+* [Tokyo](/posts/philippines-japan-2023-part-7)
 
 ## Lime Time
 
