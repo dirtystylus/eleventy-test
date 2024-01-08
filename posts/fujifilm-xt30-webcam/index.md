@@ -4,8 +4,10 @@ display_title: Fujifilm Webcam X + X-T30
 description: Trying out Fujifilm’s new webcam support for my dedicated camera.
 date: 2021-02-23T8:45:00-05:00
 tags:
+  - cameras
   - photography
   - remote-work
+  - tech
 ---
 
 ![Fujifilm X-T30 on a mounting rod.](xt30-webcam.jpg "New webcam setup."){data-responsiver=cinemascope}
