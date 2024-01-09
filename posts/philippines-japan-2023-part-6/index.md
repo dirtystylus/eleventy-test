@@ -24,7 +24,7 @@ Continuing my trip recap:
 
 ## Waiting
 
-We waited in the Palawan airport for a long while—our midday trip was delayed until the early evening, and the sun was already setting as we took off for Manila.
+We waited in the Panglao airport for a long while—our midday trip was delayed until the early evening, and the sun was already setting as we took off for Manila.
 
 ![Sunset streaming into the inside of an airplane cabin, lighting up the overhead air conditioning nozzles.](phl-jpn-manila-39.jpg)
 
