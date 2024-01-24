@@ -24,7 +24,7 @@ Continuing my trip recap:
 
 ## Puerto Princesa
 
-Puerto Princesa was a five-hour van ride from El Nido, so early in the morning we clambered into a van with a driver and drove south. We traversed some hills and lots of rice fields, with the occasional curiosity in the next lane over:
+Puerto Princesa was a five-hour van ride from El Nido. We were scheduled to dipart midday, so my brother and I went to downtown El Nido to grab coffee and sandwiches for the trip. Then we clambered into a van with a driver and drove south. We traversed some hills and lots of rice fields, with the occasional curiosity in the next lane over:
 
 ![A truck carrying pigs with a pair of goats on the roof](phl-jpn-puertoprincesa-iloilo-2.jpg "Double-decker animal transport")
 
