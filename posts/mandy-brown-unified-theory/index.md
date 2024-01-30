@@ -9,7 +9,7 @@ tags:
   - links
 ---
 
-Mandy Brown, writing about time, and care, and when—and more importantly, where—to give a fuck:
+Mandy Brown, writing about time, and care, and when—and more importantly, where—to [give a fuck](https://aworkinglibrary.com/writing/unified-theory-of------):
 
 > Why *love* your work? It won’t, of course, [love you back](https://aworkinglibrary.com/reading/work-wont-love-you-back). It can’t. Work isn’t a thing that can love. It isn’t alive, it isn’t and won’t ever be *living*. And my answer is: *don’t*. Don’t give a fuck about your work. *Give all your fucks to the living*. Give a fuck about the people you work with, and the people who receive your work—the people who use the tools and products and systems or, more often than not, are used by them.
 
