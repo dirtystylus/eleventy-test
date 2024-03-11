@@ -1,6 +1,6 @@
 ---
 title: Updating letterboxd-to-markdown to ESM
-display_title: Updating letterboxd-to-markdown to ESM
+display_title: Updating **`letterboxd-to-markdown`** to ESM
 description: CommonJS to ESM.
 date: '2024-03-11T09:59:54.102-04:00'
 tags:
