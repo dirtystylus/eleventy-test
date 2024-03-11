@@ -10,6 +10,8 @@ tags:
 ---
 ![The Letterboxd logo on the left with an arrow pointing to the Markdown logo on the right](letterboxd-to-markdown-logos.jpg)
 
+*Update 2024-03-11*: I have [updated things to ESM](/posts/updating-letterboxd-to-markdown-esm).
+
 About two years ago I used [Xavi Benjamin’s handy blog post](https://xavibenjamin.com/2020/07/create-a-film-diary-with-eleventy-and-letterboxd/) display my [Letterboxd diary info](https://letterboxd.com/dirtystylus/) on my Eleventy site. At the time [I noted on Twitter](https://twitter.com/dirtystylus/status/1351214808956350471):
 
 > Why use Letterboxd instead of building it into my own site, like my reading log? Letterboxd is actually nice to use, for one, whereas Goodreads being terrible is why I decided to roll my own
@@ -18,7 +20,7 @@ About two years ago I used [Xavi Benjamin’s handy blog post](https://xavibenja
 
 Well, the idea of being able to keep that data locally on my site never left my brain.[^1] It was nice to dynamically source the data at build time, but Letterboxd’s RSS feeds top out at 50 items, so I couldn’t display an ever-growing log. Plus it felt important to view Letterboxd as an outlet for my information, not the sole keeper of it. So a few weekends ago I rolled up my sleeves and put together a small CLI utility. I already had some useful data scraping bits in another CLI tool that I use to prep my reading log, so I combined that with a fork of the [**`letterboxd`**](https://www.npmjs.com/package/letterboxd) package. I ended up [forking](https://github.com/dirtystylus/letterboxd) **`letterboxd`** for two reasons:
 
-* I needed the CJS version, and the last release of **`letterboxd`** switched to ESM
+* I needed the CommonJS version, and the last release of **`letterboxd`** switched to ESM
 * I needed to add a method to return the diary entry as Markdown
 
 ## letterboxd-to-markdown
