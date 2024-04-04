@@ -56,7 +56,7 @@ Breakfast at Sullivan Street Bakery, then a walk along the High Line up to Hudso
 
 ![Train tracks in the foreground of a series of buildings on New York City’s elevated High Line.”](nyc-march-2024-70.jpg "Mixed materials on the High Line")
 
-After the high line we stopped in at B&H, Moynihan Train Hall, and then rode up to Central Park.
+After the high line we stopped in at B&H, Moynihan Train Hall, and then rode up to Central Park. I have to say, seeing my kids figure out the right Metrocard swipe technique after a few tries really warmed my heart.
 
 ![Two men on a subway platform, shot from inside a subway car. The man on the left wears a red hoodie and a black and red Yankees cap. The man on the right wears a traditional blue and white Yankees cap.”](nyc-march-2024-89.jpg "Subway stare")
 
