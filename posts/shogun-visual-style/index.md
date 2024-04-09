@@ -1,7 +1,7 @@
 ---
 title: Shōgun’s Visual Style
 display_title: Shōgun’s Visual Style
-description: TV’s style bandwidth
+description: The limitations of TV’s style bandwidth.
 date: '2024-04-09T16:47:05.893-04:00'
 tags:
   - film
@@ -41,4 +41,12 @@ Both of these articles could have gone a completely different route. I was remin
 
 These are weird times. On the one hand we have people [strapping diffusion filters onto their expensive digital cameras](https://www.shopmoment.com/reviews/moment-cinebloom-vs-tiffen-black-pro-mist-diffusion-filter) to take the edge/perfection off digital, to the point that camera makers are building diffusion filters into models like the [GR III HDF](https://www.dpreview.com/news/0569067557/ricoh-gr-iii-gr-iix-hdr-highlight-diffusion-filter). On the other we have [viewers who just DGAF about style and intent](https://www.reddit.com/r/ShogunTVShow/comments/1b29uxm/comment/kskiswz/).
 
+A line that has taken up long-term residence in my head is Brandon Taylor’s [blunt assessment of tv aesthetics](https://blgtylr.substack.com/p/the-chair-is-peak-jeans-in-church):[^2] 
+
+> …never has it been easier to borrow the signifiers and attributes of good art and commodify them to disguise deeply mediocre shit.
+
+*Shōgun* and *Ripley* might not be your thing, but they’re both shows that have clearly put care into their visual look, and that deserves better critical engagement.
+
 [^1]: Via tv critic Phillip Maciak, who has been [succinctly interrogating](https://twitter.com/pjmaciak/status/1777746310428295527) the weird framing of these articles.
+
+[^2]: Just an absolutely casual, devastating dismissal that left me reeling.
