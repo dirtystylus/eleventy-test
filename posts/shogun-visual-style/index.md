@@ -45,7 +45,7 @@ A line that has taken up long-term residence in my head is Brandon Taylor’s [b
 
 > …never has it been easier to borrow the signifiers and attributes of good art and commodify them to disguise deeply mediocre shit.
 
-*Shōgun* and *Ripley* might not be your thing, but they’re both shows that have clearly put care into their visual look, and that deserves better critical engagement.
+*Shōgun* and *Ripley* might not be your thing, but they’re both shows that have clearly put care into their visual look—they’re not lazy, and that deserves better critical engagement.
 
 [^1]: Via tv critic Phillip Maciak, who has been [succinctly interrogating](https://twitter.com/pjmaciak/status/1777746310428295527) the weird framing of these articles.
 
