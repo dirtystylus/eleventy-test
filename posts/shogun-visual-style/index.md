@@ -35,7 +35,7 @@ Next, The Independent. [“Netflix users unable to finish Ripley due to ‘annoy
 > 
 > “Black and white is a good way to keep the budget down but adds nothing,” said one viewer.
 
-I know this is all probably tied into generating clicks and engagement. And there’s nothing else to the article—it’s just quotes with no citation: “some people are saying…”.
+I know this is all probably tied into generating clicks and engagement. And there’s nothing else to the article—it’s just quotes with no citation: “some people are saying…”. *Ripley* was shot by [Robert Elswit](https://www.themoviedb.org/person/2950-robert-elswit), who was the cinematographer on…go ahead, look up his filmography, he probably shot one of your favorite filmes. If he’s shooting in black and white, you know he’s not mailing it in.
 
 Both of these articles could have gone a completely different route. I was reminded of how the press around *The Batman* was filled with examples like this article on IndieWire: [“Seeing Into the Darkness: ‘The Batman’ Cinematography Is Subtle, Masterful Work by Oscar Nominee Greig Fraser”](https://www.indiewire.com/features/general/the-batman-cinematography-greig-fraser-matt-reeves-interview-1234704530/). Or this one from No Film School: [“Why Does 'The Batman' Look So Gorgeous? (And How You Can Copy The Look)”](https://nofilmschool.com/why-does-batman-look-so-gorgeous-and-how-you-can-copy). Both dive into the aesthetic intent and technical details in a similar fashion to The Ringer’s *Shōgun* piece, except they are starting from a position of curiosity—*here’s a film that looks unique, why is that?*.
 
