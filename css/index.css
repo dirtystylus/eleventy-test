@@ -36,10 +36,15 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: source serif pro, 'Bitstream Charter', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
   color: var(--darkgray);
   background-color: var(--offwhite);
   height: 100vh;
+}
+
+/* Basic heading typography */
+h1,h2,h3,h4,h5 {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 .visually-hidden {
@@ -526,7 +531,7 @@ a[href].direct-link:focus:visited,
 /* Post */
 
 body {
-  font-family: Georgia, Times, serif;
+  font-family: source serif pro, 'Bitstream Charter', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
   line-height: 1.4;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -571,7 +576,7 @@ body {
 .post--meta {
   grid-column: 1;
   margin-bottom: 2em;
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-size: 0.9em;
   color: var(--gray);
 }
