@@ -988,6 +988,7 @@ blockquote {
 .tmpl-book .book-details h1 {
   font-size: 1.25em;
   font-style: italic;
+  line-height: 1.125;
   margin: 0;
 }
 
