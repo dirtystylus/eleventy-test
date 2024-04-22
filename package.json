@@ -7,7 +7,8 @@
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "film": "letterboxd diary -a dirtystylus && eleventy --serve"
+    "filmrun": "letterboxd diary dirtystylus && eleventy --serve",
+    "filmbuild": "letterboxd diary dirtystylus"
   },
   "repository": {
     "type": "git",
