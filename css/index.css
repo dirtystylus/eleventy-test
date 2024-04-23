@@ -960,6 +960,20 @@ blockquote {
   text-decoration: none;
 }
 
+/* Sidenotes */
+
+.notes-wrapper {
+  grid-column: column-end / content-bleed-end;
+}
+
+.note-identifier {
+  display: inline;
+}
+
+.notes-wrapper .note > p {
+  display: inline;
+}
+
 /* Book Detail */
 .tmpl-book .book-details {
   grid-column: 1;

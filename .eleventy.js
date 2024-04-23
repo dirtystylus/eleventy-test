@@ -325,6 +325,16 @@ module.exports = function(eleventyConfig) {
     .use(markdownItFootnote)
     .use(markdownItAttrs);
 
+  markdownLibrary.renderer.rules.footnote_ref = (tokens, idx, options, env, slf) => {
+    const id = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf)
+    const caption = slf.rules.footnote_caption(tokens, idx, options, env, slf)
+    let refid = id
+
+    if (tokens[idx].meta.subId > 0) refid += `:${tokens[idx].meta.subId}`
+
+    return `<sup class="footnote-ref" id="fn-anchor-${id}"><a href="#fn${id}" id="fnref${refid}">${caption}</a></sup>`
+  }
+
   markdownLibrary.renderer.rules.footnote_caption = (tokens, idx) => {
     let n = Number(tokens[idx].meta.id + 1).toString();
 
