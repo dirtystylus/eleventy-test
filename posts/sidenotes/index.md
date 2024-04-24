@@ -18,7 +18,7 @@ Looking under the hood of Molly’s site I found a **`sidenotes.js`** file, whic
 
 At smaller widths the sidenotes are hidden and the default footnote behavior is restored.
 
-You can view the modified code from my site [here](https://github.com/dirtystylus/eleventy-test/blob/master/js/sidenotes.js).
+You can view the modified code from my site [here](https://github.com/dirtystylus/eleventy-test/blob/master/js/sidenotes.js). You may also want to read this older post about [Markdown and footnotes](/posts/eleventy-markdown-and-footnotes/).
 
 Here’s what it looks like on a [recent post](/posts/shogun-visual-style/):
 
