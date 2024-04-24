@@ -124,10 +124,42 @@ function onResize() {
   }
 }
 
+function onAnchorClick(evt) {
+  const mediaQuery = window.matchMedia("(min-width: 45rem)");
+  dehilightNotes();
+  if (mediaQuery.matches) {
+    const sidenote = document.getElementById(evt.target.parentNode.id.replace("anchor-", "sidenote-"));
+    if (sidenote) {
+      evt.preventDefault();
+      evt.stopPropagation();
+      evt.target.classList.add("active-sidenote");
+      const sidenote = document.getElementById(evt.target.parentNode.id.replace("anchor-", "sidenote-"));
+      sidenote.classList.add("active-sidenote");
+    }
+  }
+}
+
+function dehilightNotes(evt) {
+  const highlighted = document.querySelectorAll(".active-sidenote");
+  for (let highlight of highlighted) {
+    highlight.classList.remove("active-sidenote");
+  }
+}
+
 function sidenotes({showFootnotes = true} = {}) {
   if (document.getElementsByTagName('main')[0].classList.contains(postClass)) {
     if (showFootnotes) {
       window.addEventListener("resize", debounce(onResize, 100));
+      window.addEventListener("resize", debounce(onResize, 100));
+      const anchors = document.querySelectorAll(".footnote-ref");
+      for (const anchor of anchors) {
+        anchor.addEventListener("click", onAnchorClick);
+      }
+      document.addEventListener("click", (evt) => {
+        if (evt.target.nodeName !== "A") {
+          dehilightNotes();
+        }
+      });
       insertAndPositionSidenotes({showFootnotes});
     }
 

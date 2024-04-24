@@ -18,6 +18,7 @@
   --grid--wide: calc(50vw - 31.25rem) [content-bleed-start] 1fr [content-gutter-start] 100px [content-start] repeat(6, [col-start] 1fr) [content-end] 100px [content-gutter-end] 1fr [content-bleed-end] calc(50vw - 31.25rem);
   --grid--books--list--narrow: repeat(auto-fit, minmax(110px, 1fr));
   --grid--books--list--wide: repeat(auto-fit, minmax(160px, 1fr));
+  --sidenote-highlight-background: rgba(0,0,0,.05);
 }
 
 /* Global stylesheet */
@@ -973,19 +974,27 @@ blockquote {
 }
 
 .note-identifier {
-  display: inline;
   font-family: var(--font--sans);
-  margin-right: .5rem;
+  left: -34px;
+  position: absolute;
+  text-align: right;
+  width: 28px;
 }
 
 .note {
   position: absolute;
   font-size: .8rem;
   left: 1em;
+  padding: 5px 10px;
 }
 
 .notes-wrapper .note > p {
-  display: inline;
+  margin: 0;
+}
+
+.active-sidenote {
+  background-color: var(--sidenote-highlight-background);
+  border: 1px dashed var(--darkgray);
 }
 
 /* Book Detail */
