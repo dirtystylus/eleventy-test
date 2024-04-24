@@ -1,13 +1,41 @@
 let postClass = 'tmpl-post';
 let articleSelector = 'article.content-main';
-let noteWrapperClass = 'notes-wrapper';
+let notesWrapperSelector = '.notes-wrapper';
+let notesWrapperClass = 'notes-wrapper';
 let footnoteRefClass = 'footnote-ref'
+
+// Returns a function, that, as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// N milliseconds. If `immediate` is passed, trigger the function on the
+// leading edge, instead of the trailing.
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+
+function showSidenotes() {
+  document.querySelector(articleSelector).classList.remove("hide-sidenotes");
+}
+
+function hideSidenotes() {
+  document.querySelector(articleSelector).classList.add("hide-sidenotes");
+}
 
 function insertSidenotes({showFootnotes}) {
   const articleContent = document.querySelector(articleSelector);
   for (const child of articleContent.children) {
     if (
-      child.classList.contains('notes-wrapper') // noteWrapperClass
+      child.classList.contains('notes-wrapper') // notesWrapperSelector
     ) {
       continue;
     }
@@ -42,19 +70,64 @@ function insertSidenotes({showFootnotes}) {
   }
 }
 
+function positionSidenotes() {
+  const sidenotes = document.querySelectorAll("aside.note");
+  for (let i = 0; i < sidenotes.length; i++) {
+    const sidenote = sidenotes[i];
+    const anchorId = sidenote.getAttribute("data-anchor-id");
+    const anchor = document.querySelector(
+      `${articleSelector} > *:not(.notes-wrapper, .footnotes) #${anchorId}`
+    );
+    // const anchorParent = getAnchorParentContainer(anchor);
+    const anchorParent = anchor.parentNode;
+
+    const anchorPosition = anchor.getBoundingClientRect().top;
+    const anchorParentPosition = anchorParent.getBoundingClientRect().top;
+
+    // Bump down sidenote if it would overlap with the previous one
+    let newPosition = anchorPosition;
+    if (i > 0) {
+      const prevSideNote = sidenotes[i - 1];
+      const prevSidenoteEnd = prevSideNote.getBoundingClientRect().bottom;
+      if (anchorPosition < prevSidenoteEnd) {
+        newPosition = prevSidenoteEnd + 20;
+      }
+    }
+
+    sidenote.style.top = `${Math.round(newPosition - anchorParentPosition)}px`;
+  }
+}
+
 function insertAndPositionSidenotes({showFootnotes}) {
   const mediaQuery = window.matchMedia("(min-width: 45rem)");
   if (mediaQuery.matches) {
     insertSidenotes({showFootnotes});
-    // positionSidenotes();
-    // setTimeout(() => positionSidenotes(), 200);
+    positionSidenotes();
+    setTimeout(() => positionSidenotes(), 200);
+  }
+}
+
+function onResize() {
+  const sidenotesInDom = Boolean(document.querySelector(notesWrapperSelector));
+  console.log('sidenotesInDom', sidenotesInDom);
+  const mediaQuery = window.matchMedia("(min-width: 45rem)");
+  if (mediaQuery.matches) {
+    if (!sidenotesInDom) {
+      insertSidenotes({showFootnotes: true});
+    }
+    showSidenotes();
+    positionSidenotes();
+  } else {
+    if (sidenotesInDom) {
+      hideSidenotes();
+    }
   }
 }
 
 function sidenotes({showFootnotes = true} = {}) {
   if (document.getElementsByTagName('main')[0].classList.contains(postClass)) {
     if (showFootnotes) {
-      //window.addEventListener("resize", debounce(onResize, 100));
+      window.addEventListener("resize", debounce(onResize, 100));
       insertAndPositionSidenotes({showFootnotes});
     }
 

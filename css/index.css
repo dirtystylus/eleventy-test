@@ -955,19 +955,33 @@ blockquote {
 .footnote-ref a[href],
 .footnote-ref a[href]:visited {
   color: var(--red);
-  font-size: 1em;
+  font-family: var(--font--sans);
+  font-size: .8rem;
   margin: 0 0 0 0.1em;
   text-decoration: none;
 }
 
 /* Sidenotes */
 
+.hide-sidenotes .notes-wrapper {
+  display: none;
+}
+
 .notes-wrapper {
-  grid-column: column-end / content-bleed-end;
+  grid-column: content-end / content-bleed-end;
+  position: relative;
 }
 
 .note-identifier {
   display: inline;
+  font-family: var(--font--sans);
+  margin-right: .5rem;
+}
+
+.note {
+  position: absolute;
+  font-size: .8rem;
+  left: 1em;
 }
 
 .notes-wrapper .note > p {
