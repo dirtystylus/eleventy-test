@@ -99,7 +99,7 @@ function positionSidenotes() {
 }
 
 function insertAndPositionSidenotes({showFootnotes}) {
-  const mediaQuery = window.matchMedia("(min-width: 45rem)");
+  const mediaQuery = window.matchMedia("(min-width: 65rem)");
   if (mediaQuery.matches) {
     insertSidenotes({showFootnotes});
     positionSidenotes();
@@ -110,7 +110,7 @@ function insertAndPositionSidenotes({showFootnotes}) {
 function onResize() {
   const sidenotesInDom = Boolean(document.querySelector(notesWrapperSelector));
   console.log('sidenotesInDom', sidenotesInDom);
-  const mediaQuery = window.matchMedia("(min-width: 45rem)");
+  const mediaQuery = window.matchMedia("(min-width: 65rem)");
   if (mediaQuery.matches) {
     if (!sidenotesInDom) {
       insertSidenotes({showFootnotes: true});
@@ -125,7 +125,7 @@ function onResize() {
 }
 
 function onAnchorClick(evt) {
-  const mediaQuery = window.matchMedia("(min-width: 45rem)");
+  const mediaQuery = window.matchMedia("(min-width: 65rem)");
   dehilightNotes();
   if (mediaQuery.matches) {
     const sidenote = document.getElementById(evt.target.parentNode.id.replace("anchor-", "sidenote-"));

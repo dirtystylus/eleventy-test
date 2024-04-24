@@ -971,6 +971,7 @@ blockquote {
 .notes-wrapper {
   grid-column: content-end / content-bleed-end;
   position: relative;
+  margin-left: .5em;
 }
 
 .note-identifier {
