@@ -2,7 +2,8 @@
 :root {
   --red: #c5004a;
   --darkred: #7f0036;
-  --lightpink: #fed5e5;
+  --lightpink: rgba(254, 213, 229, 1);
+  --palepink: rgba(254, 213, 229, .5);
   --lightgray: #c0c0c0;
   --gray: #666;
   --darkgray: #333;
@@ -48,6 +49,11 @@ h1,h2,h3,h4,h5 {
   font-family: var(--font--sans);
   font-weight: 600;
 }
+
+h1,h2,h3,h4,h5,p {
+  word-break: break-word;
+}
+
 
 .visually-hidden {
   clip: rect(0 0 0 0) !important;
@@ -968,6 +974,11 @@ blockquote {
   display: none;
 }
 
+.hide-endnotes .footnotes-sep,
+.hide-endnotes .footnotes {
+  display: none;
+}
+
 .notes-wrapper {
   grid-column: content-end / content-bleed-end;
   position: relative;
@@ -994,8 +1005,8 @@ blockquote {
 }
 
 .active-sidenote {
-  background-color: var(--sidenote-highlight-background);
-  border: 1px dashed var(--darkgray);
+  background-color: var(--palepink);
+  border: 1px dotted var(--darkgray);
 }
 
 /* Book Detail */

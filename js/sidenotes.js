@@ -2,7 +2,8 @@ let postClass = 'tmpl-post';
 let articleSelector = 'article.content-main';
 let notesWrapperSelector = '.notes-wrapper';
 let notesWrapperClass = 'notes-wrapper';
-let footnoteRefClass = 'footnote-ref'
+let footnoteRefClass = 'footnote-ref';
+let footnoteRefSelector = '.footnote-ref';
 
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
@@ -31,18 +32,26 @@ function hideSidenotes() {
   document.querySelector(articleSelector).classList.add("hide-sidenotes");
 }
 
+function showEndnotes() {
+  document.querySelector(articleSelector).classList.remove("hide-endnotes");
+}
+
+function hideEndnotes() {
+  document.querySelector(articleSelector).classList.add("hide-endnotes");
+}
+
 function insertSidenotes({showFootnotes}) {
   const articleContent = document.querySelector(articleSelector);
   for (const child of articleContent.children) {
     if (
-      child.classList.contains('notes-wrapper') // notesWrapperSelector
+      child.classList.contains(notesWrapperClass) // notesWrapperSelector
     ) {
       continue;
     }
-    const anchors = child.querySelectorAll('.footnote-ref'); // footnoteRefClass
+    const anchors = child.querySelectorAll(footnoteRefSelector); // footnoteRefClass
     if (anchors.length) {
       const sidenoteContainer = document.createElement("div");
-      sidenoteContainer.setAttribute("class", "notes-wrapper");
+      sidenoteContainer.setAttribute("class", notesWrapperClass);
       for (anchor of anchors) {
         const id = anchor.id;
         const contentId = id.replace("-anchor-", "");
@@ -76,7 +85,7 @@ function positionSidenotes() {
     const sidenote = sidenotes[i];
     const anchorId = sidenote.getAttribute("data-anchor-id");
     const anchor = document.querySelector(
-      `${articleSelector} > *:not(.notes-wrapper, .footnotes) #${anchorId}`
+      `${articleSelector} > *:not(${notesWrapperSelector}, .footnotes) #${anchorId}`
     );
     // const anchorParent = getAnchorParentContainer(anchor);
     const anchorParent = anchor.parentNode;
@@ -103,6 +112,7 @@ function insertAndPositionSidenotes({showFootnotes}) {
   if (mediaQuery.matches) {
     insertSidenotes({showFootnotes});
     positionSidenotes();
+    hideEndnotes();
     setTimeout(() => positionSidenotes(), 200);
   }
 }
@@ -116,10 +126,12 @@ function onResize() {
       insertSidenotes({showFootnotes: true});
     }
     showSidenotes();
+    hideEndnotes();
     positionSidenotes();
   } else {
     if (sidenotesInDom) {
       hideSidenotes();
+      showEndnotes();
     }
   }
 }
@@ -151,7 +163,7 @@ function sidenotes({showFootnotes = true} = {}) {
     if (showFootnotes) {
       window.addEventListener("resize", debounce(onResize, 100));
       window.addEventListener("resize", debounce(onResize, 100));
-      const anchors = document.querySelectorAll(".footnote-ref");
+      const anchors = document.querySelectorAll(footnoteRefSelector);
       for (const anchor of anchors) {
         anchor.addEventListener("click", onAnchorClick);
       }
