@@ -18,6 +18,6 @@ The breadth of releases—in terms of budget and genre—really deepens my sadne
 
 ![A 7x6 board detailing The Big Picture podcast’s 1999 movie draft. The columns are arranged by the various podcast hosts and guests, and the rows are different categories: drama, action/thriller/horror, comedy, blockbuster, oscar nom, and wild card.](the-big-picture-1999-draft.jpg "Image copyright The Ringer")
 
-You’ve got massive romantic comedies like *Notting Hill*,^[Which was a regular ol’ release at the time but which now feels like a miracle on rewatch.] big ensemble pieces like *Magnolia*, ground-breaking genre spectacles like *The Matrix*, *Pulp Fiction* knockoffs that were somehow also good (*Go*). But also some absolutely weird stuff as well: *Existenz*, *Being John Malkovich*, *Dogma*. How many of these could get made today, much less garner a theatrical release?
+You’ve got massive romantic comedies like *Notting Hill*,^[Which was a regular ol’ release at the time but which now feels like a miracle on rewatch.] big ensemble pieces like *Magnolia*, ground-breaking genre spectacles like *The Matrix*, *Pulp Fiction* knockoffs that were somehow also good (*Go*^[A film that’s absurdly hard to track down on Blu-ray. Fingers crossed for a rerelease.]). But also some absolutely weird stuff as well: *Existenz*, *Being John Malkovich*, *Dogma*. How many of these could get made today, much less garner a theatrical release?
 
 
