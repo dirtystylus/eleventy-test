@@ -29,9 +29,10 @@ const runAfterHook = (image, document) => {
 		figure.appendChild(image.cloneNode(true));
 	}
 
+  dbg('replace image with figure? ', image.parentNode.nodeName);
 	// Parent node of the image is a <p> because image is an inline element,
 	// and Markdown will wrap in a < p > tag
-	if (image.parentNode.nodeName === "p") {
+	if (image.parentNode.nodeName.toLowerCase() === "p") {
 		image.parentNode.replaceWith(figure);
 	}
 };
@@ -43,24 +44,24 @@ const runAfterHookGallery = (image, document) => {
 		if (caption !== null) {
 			caption = md.renderInline(caption.trim());
 		}
-		
+
 	const figure = document.createElement("figure");
 		figure.classList.add(...image.classList);
 		// TODO: decide whether classes should be removed from the image or not
 		image.classList.remove(...image.classList);
-		
+
 		const link = document.createElement("a");
 		link.setAttribute("href", imageUrl);
 		link.setAttribute("data-size", figure.classList[0]);
 		link.appendChild(image.cloneNode(true));
-		
+
 		figure.appendChild(link);
 		if (caption) {
 		let figCaption = document.createElement("figcaption");
 		figCaption.innerHTML =
 			(caption ? caption : "");
 		figure.appendChild(figCaption);
-			
+
 		}
 
 		// Parent node of the image is a <p> because image is an inline element,
@@ -147,5 +148,5 @@ module.exports = {
 		steps: 3,
 		runAfter: runAfterHookGallery,
 	},
-	
+
 };

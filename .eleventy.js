@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const path = require('path');
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -10,9 +11,11 @@ const markdownItAttrs = require("markdown-it-attrs");
 const now = new Date();
 const debug = require("debug")("markllobrera");
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function(eleventyConfig) {
   // Add plugins
+  eleventyConfig.addPlugin(UpgradeHelper);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -62,6 +65,7 @@ module.exports = function(eleventyConfig) {
     });
     return yearCollectionDescending;
   });
+
 
   // Limit filter
   eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
@@ -151,6 +155,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy(
+    path.join('{reading,posts,watching}/**/*.{jpg,jpeg,png,gif,mp4}')
+  );
   eleventyConfig.addPassthroughCopy("_redirects");
 
   // Next/Previous navigation
@@ -349,10 +356,24 @@ module.exports = function(eleventyConfig) {
   // An image helper to generate figure markup
   eleventyConfig.addShortcode("image", require("./src/utils/image.js"));
 
+  eleventyConfig.addFilter("markdownInline", function (data) {
+    if (data) {
+      return markdownLibrary.renderInline(data);
+    }
+    else {
+      return "";
+    }
+  });
+
+
   eleventyConfig.addPairedShortcode(
     "markdown",
     (data) => {
-      return markdownLibrary.renderInline(data);
+      if (data) {
+        return markdownLibrary.renderInline(data);
+      } else {
+        return "";
+      }
     }
   );
 
@@ -417,12 +438,7 @@ module.exports = function(eleventyConfig) {
       "md",
       "njk",
       "html",
-      "liquid",
-      "jpg",
-      "jpeg",
-      "gif",
-      "png",
-      "mp4"
+      "liquid"
     ],
 
     // -----------------------------------------------------------------

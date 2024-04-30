@@ -10,7 +10,7 @@ tags:
   - tv
 ---
 
-While researching replacements for the [now-shuttered DVD-by-mail wing of Netflix](/posts/rip-netflix-dvd/) I came across a small outfit: [3D Bluray Rental](https://www.store-3d-blurayrental.com). It dates back to 2011, clearly hoping to ride the hype of 3D cinema/home video that never really happened. 
+While researching replacements for the [now-shuttered DVD-by-mail wing of Netflix](/posts/rip-netflix-dvd/) I came across a small outfit: [3D Bluray Rental](https://www.store-3d-blurayrental.com). It dates back to 2011, clearly hoping to ride the hype of 3D cinema/home video that never really happened.
 
 The site’s design and UX is quite quirky (to be charitable)—it has a real DIY vibe. But the catalog is decent,[^1] they carry 4K discs, and shipping is included. You can rent a la carte or do a monthly subscription, and things get shipped in a plain white envelope that is designed like Netflix’s—same tearaway flap/adhesive strip turning it into a return envelope, only without the iconic red color. There is no queue in the same sense as Netflix’s—instead there’s a Wish List to keep track of titles you want to rent, but you have to manually add them to a cart and check out. So far I’ve done one test rental and it went pretty smoothly, so I will probably use them for the many things I can’t find on streaming.
 

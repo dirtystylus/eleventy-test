@@ -15,4 +15,3 @@ The syntax has changed a bit, the main command is now `letterboxd diary [account
 
 The slow move from CommonJS to ESM is confusing, to say the least. Modules that have been updated to support ESM often have documentation that is CommonJS-centric, and most of the blog posts out there are the same. So…lots of trawling through Github issue queues to find workarounds.
 
- 
