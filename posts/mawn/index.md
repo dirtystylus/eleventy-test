@@ -1,7 +1,7 @@
 ---
 title: Mawn Noodle House
 display_title: Mawn Noodle House
-description: replace
+description: A new Cambodian restaurant in Philadelphia.
 date: '2024-04-30T09:17:10.217-04:00'
 tags:
   - food
