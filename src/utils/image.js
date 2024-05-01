@@ -9,7 +9,7 @@ module.exports = (image, altText, styleName) => {
       classes: ["film-thumb"],
     },
     default: {
-      sizes: "(min - width: 650px) 850px, 400px",
+      sizes: "(min-width: 650px) 850px, 400px",
       classes: ["default"],
     },
   };

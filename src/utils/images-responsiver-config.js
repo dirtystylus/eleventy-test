@@ -14,6 +14,7 @@ const runAfterHook = (image, document) => {
 
 	const figure = document.createElement("figure");
 	figure.classList.add(...image.classList);
+
 	// TODO: decide whether classes should be removed from the image or not
 	// image.classList.remove(...image.classList);
 	if (caption || zoom) {
@@ -52,9 +53,8 @@ const runAfterHookGallery = (image, document) => {
 
 		const link = document.createElement("a");
 		link.setAttribute("href", imageUrl);
-		link.setAttribute("data-size", figure.classList[0]);
+		link.setAttribute("data-size", ...figure.classList);
 		link.appendChild(image.cloneNode(true));
-
 		figure.appendChild(link);
 		if (caption) {
 		let figCaption = document.createElement("figcaption");
