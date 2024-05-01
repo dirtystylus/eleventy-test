@@ -15,7 +15,7 @@ const runAfterHook = (image, document) => {
 	const figure = document.createElement("figure");
 	figure.classList.add(...image.classList);
 	// TODO: decide whether classes should be removed from the image or not
-	image.classList.remove(...image.classList);
+	// image.classList.remove(...image.classList);
 	if (caption || zoom) {
 		let figCaption = document.createElement("figcaption");
 		figCaption.innerHTML =
@@ -29,10 +29,10 @@ const runAfterHook = (image, document) => {
 		figure.appendChild(image.cloneNode(true));
 	}
 
-  dbg('replace image with figure? ', image.parentNode.nodeName);
 	// Parent node of the image is a <p> because image is an inline element,
 	// and Markdown will wrap in a < p > tag
 	if (image.parentNode.nodeName.toLowerCase() === "p") {
+    image.classList.remove(...image.classList);
 		image.parentNode.replaceWith(figure);
 	}
 };
@@ -48,7 +48,7 @@ const runAfterHookGallery = (image, document) => {
 	const figure = document.createElement("figure");
 		figure.classList.add(...image.classList);
 		// TODO: decide whether classes should be removed from the image or not
-		image.classList.remove(...image.classList);
+		// image.classList.remove(...image.classList);
 
 		const link = document.createElement("a");
 		link.setAttribute("href", imageUrl);
@@ -66,7 +66,7 @@ const runAfterHookGallery = (image, document) => {
 
 		// Parent node of the image is a <p> because image is an inline element,
 		// and Markdown will wrap in a < p > tag
-		if (image.parentNode.nodeName === "p") {
+		if (image.parentNode.nodeName.toLowerCase() === "p") {
 			image.parentNode.replaceWith(figure);
 		} else {
 			image.replaceWith(figure);
