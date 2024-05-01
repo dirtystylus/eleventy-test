@@ -10,6 +10,32 @@ tags:
 
 With Eleventy 3.0 on the horizon I decided to finally see what the upgrade process is like by taking my site from 0.12 to 1.0. Eleventy has a handy [eleventy-upgrade-help plugin](https://github.com/11ty/eleventy-upgrade-help/tree/v1.x) which made this relatively painless. I only ran into a few small issues which I’m noting here.^[Mostly for my future self’s sake.]
 
+## Image/Video Passthrough Copy
+
+I previously had image/video types in a templateFormats block, like so:
+
+```js
+templateFormats: [
+	"md",
+	"njk",
+	"html",
+	"liquid",
+	"jpg",
+	"jpeg",
+	"gif",
+	"png",
+	"mp4"
+],
+```
+
+This caused the build to break. So I’ve moved those into a passthrough glob, as suggested in this [Github issue](https://github.com/11ty/eleventy/issues/2174):
+
+```js
+eleventyConfig.addPassthroughCopy(
+  path.join('{reading,posts,watching}/**/*.{jpg,jpeg,png,gif,mp4}')
+);
+```
+
 ## Markdown Paired Shortcode
 
 I had previously used a paired shortcode to return inline Markdown, which I use for post titles/descriptions in front matter that need some styling on render, as in [this post](/posts/updating-letterboxd-to-markdown-esm/). The shortcode looked like this:
