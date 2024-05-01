@@ -5,7 +5,7 @@ templateClass: tmpl-book
 <article class="content-main container">
 <div class="book-details">
   <div class="book-cover book-shadow">
-  {% image cover_image, title + " cover image" , "book_thumb" %}
+  {% image cover_image, title + " cover image" %}
   </div>
   <div class="book-meta">
     <h1>{% markdown %}{{ display_title or title }}{% endmarkdown %}</h1>
