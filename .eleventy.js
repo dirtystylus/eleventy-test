@@ -11,11 +11,9 @@ const markdownItAttrs = require("markdown-it-attrs");
 const now = new Date();
 const debug = require("debug")("markllobrera");
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function(eleventyConfig) {
   // Add plugins
-  eleventyConfig.addPlugin(UpgradeHelper);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
